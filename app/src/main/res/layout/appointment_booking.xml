@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/main_YYMM_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="27 / 5 / 21016"
+        android:textColor="#fff"
+        android:textSize="@dimen/eighteen_sp"
+        pixlui:typeface="Satisfy-Regular.ttf" />
+
+    <sun.bob.mcalendarview.views.WeekColumnView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ccc" />
+
+    <sun.bob.mcalendarview.views.ExpCalendarView
+        android:id="@+id/calendar_exp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp" />
+
+    <ImageView
+        android:id="@+id/main_expandIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_arrow_up"
+        android:visibility="gone" />
+
+    <com.example.lenovo.SpaApp.CustomViews.ExpandableHeightGridView
+        android:id="@+id/timingGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:isScrollContainer="false"
+        android:numColumns="5"
+        android:stretchMode="columnWidth" />
+</LinearLayout>

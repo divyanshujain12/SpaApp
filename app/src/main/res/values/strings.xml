@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Spa2Go</string>
+    <string name="action_settings">Settings</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_empty">Cant Left Blank!</string>
+    <string name="err_msg_city">Enter city name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="err_msg_number">Enter the valid Number</string>
+    <string name="err_wrong_pass">You have entered wrong old password!</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="facebook_app_id">770270483104747</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="password">password</string>
+    <string name="log_in">LOG IN</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="mismatch_password">Passwords did not match</string>
+    <string name="alert">ALERT</string>
+    <string name="no_internet_connection">No Internet Connection!</string>
+    <string name="unable_find_facebook">"Unable to get your mail id due to facebook policy! Kindly sign up manually!"</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="skip_to_continue">Skip to continue</string>
+    <string name="dummy_text">Delivering premier beauty and wellness services to your door</string>
+    <string name="how_it_works">How It Works</string>
+    <string name="our_services">OUR \n SERVICES</string>
+    <string name="openDrawer"></string>
+    <string name="go_for_it">GO FOR IT</string>
+    <string-array name="timing_array">
+        <item>8:00 AM</item>
+        <item>9:00 AM</item>
+        <item>10:00 AM</item>
+        <item>11:00 AM</item>
+        <item>12:00 PM</item>
+        <item>1:00 PM</item>
+        <item>2:00 PM</item>
+        <item>3:00 PM</item>
+        <item>4:00 PM</item>
+        <item>5:00 PM</item>
+        <item>6:00 PM</item>
+        <item>7:00 PM</item>
+        <item>8:00 PM</item>
+    </string-array>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:id="@+id/backgroundFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgNewYork"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/new_york_back" />
+
+        <ImageView
+            android:id="@+id/imgLondon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/london_back" />
+
+        <ImageView
+            android:id="@+id/imgLosAngles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/los_angles_back" />
+    </ViewFlipper>
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:gravity="center"
+        android:text="Select Your City"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/twenty_eight_dp"
+        pixlui:typeface="Titillium-Regular.otf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:id="@+id/txtNewYork"
+            android:layout_width="@dimen/one_hundred_twenty_sp"
+            android:layout_height="@dimen/one_hundred_twenty_sp"
+            android:layout_margin="@dimen/ten_dp"
+            android:background="@drawable/selected_city"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="ChangeCity"
+            android:padding="@dimen/eight_dp"
+            android:text="NEW YORK"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/fourteen_sp"
+            pixlui:typeface="Titillium-Regular.otf" />
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:id="@+id/txtLondon"
+            android:layout_width="@dimen/one_hundred_twenty_sp"
+            android:layout_height="@dimen/one_hundred_twenty_sp"
+            android:layout_margin="@dimen/ten_dp"
+            android:background="@drawable/london"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="ChangeCity"
+            android:padding="@dimen/eight_dp"
+            android:text="LONDON"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/fourteen_sp"
+            pixlui:typeface="Titillium-Regular.otf" />
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:id="@+id/txtLosAngeles"
+            android:layout_width="@dimen/one_hundred_twenty_sp"
+            android:layout_height="@dimen/one_hundred_twenty_sp"
+            android:layout_margin="@dimen/ten_dp"
+            android:background="@drawable/los_angles"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="ChangeCity"
+            android:padding="@dimen/eight_dp"
+            android:text="LOS ANGLES"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/fourteen_sp"
+            pixlui:typeface="Titillium-Regular.otf" />
+    </LinearLayout>
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/txtSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="ConfirmCity"
+        android:padding="@dimen/fifteen_dp"
+        android:text="Confirm City"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/twenty_two_sp"
+        pixlui:typeface="Titillium-Regular.otf" />
+</RelativeLayout>
