@@ -18,7 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.android.volley.Request;
-import com.example.lenovo.SpaApp.HomeActivity;
+import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
 import com.example.lenovo.SpaApp.MyApplication;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.CallBackInterface;
@@ -102,7 +102,7 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
             MySharedPereference.getInstance().setString(getActivity(), Constants.NAME, new_user.getString(Constants.NAME));
             MySharedPereference.getInstance().setString(getActivity(), Constants.EMAIL, new_user.getString(Constants.EMAIL));
             MySharedPereference.getInstance().setBoolean(getActivity(), Constants.LOGGED_IN, true);
-            Intent i = new Intent(getActivity(), HomeActivity.class);
+            Intent i = new Intent(getActivity(), HomeActivityController.class);
             startActivity(i);
             getActivity().finish();
 

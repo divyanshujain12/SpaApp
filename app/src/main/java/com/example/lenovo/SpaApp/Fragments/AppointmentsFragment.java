@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.lenovo.SpaApp.HomeActivity;
+import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
 import com.example.lenovo.SpaApp.R;
 
 /**

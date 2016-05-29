@@ -1,52 +1,269 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     android:orientation="vertical">
 
+    <com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="@dimen/seventy_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/five_dp">
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/name"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/eighteen_sp"
+                    pixlui:typeface="Titillium-Bold.otf" />
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/nameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_name"
+                    android:padding="10dp"
+                    android:textColor="#fff"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/eighteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_with_alpha" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/five_dp">
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/number"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/eighteen_sp"
+                    pixlui:typeface="Titillium-Bold.otf" />
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/numberET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_number"
+                    android:padding="10dp"
+                    android:textColor="#fff"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/eighteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_with_alpha" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/five_dp">
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/email"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/eighteen_sp"
+                    pixlui:typeface="Titillium-Bold.otf" />
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/emailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_email"
+                    android:padding="10dp"
+                    android:textColor="#fff"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/eighteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_with_alpha" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/five_dp">
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/address"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/eighteen_sp"
+                    pixlui:typeface="Titillium-Bold.otf" />
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/addressET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:hint="@string/enter_address"
+                    android:minLines="2"
+                    android:padding="10dp"
+                    android:textColor="#fff"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/eighteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_with_alpha" />
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/select_your_availability"
+                android:textColor="#fff"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:id="@+id/main_YYMM_Tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="#000000"
+                android:gravity="center_vertical"
+                android:padding="@dimen/eight_dp"
+                android:text="2016-5"
+                android:textColor="#fff"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Satisfy-Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/calendarLeftIV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/left" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:orientation="vertical">
+
+                    <sun.bob.mcalendarview.views.WeekColumnView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:paddingTop="12dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc" />
+
+
+                    <sun.bob.mcalendarview.views.ExpCalendarView
+                        android:id="@+id/calendar_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_dp"
+                        android:background="@color/colorPrimary" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/calendarrightIV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/main_expandIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_arrow_up"
+                android:visibility="gone" />
+
+            <com.example.lenovo.SpaApp.CustomViews.ExpandableHeightGridView
+                android:id="@+id/timingGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:isScrollContainer="false"
+                android:numColumns="5"
+                android:stretchMode="columnWidth" />
+        </LinearLayout>
+
+    </ScrollView>
+
     <com.neopixl.pixlui.components.textview.TextView
-        android:id="@+id/main_YYMM_Tv"
+        android:id="@+id/confirmTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#000000"
-        android:gravity="center_vertical"
-        android:padding="10dp"
-        android:text="27 / 5 / 21016"
-        android:textColor="#fff"
-        android:textSize="@dimen/eighteen_sp"
-        pixlui:typeface="Satisfy-Regular.ttf" />
-
-    <sun.bob.mcalendarview.views.WeekColumnView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="12dp"
-        android:paddingTop="12dp" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="#ccc" />
-
-    <sun.bob.mcalendarview.views.ExpCalendarView
-        android:id="@+id/calendar_exp"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/fifty_dp" />
-
-    <ImageView
-        android:id="@+id/main_expandIV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/icon_arrow_up"
-        android:visibility="gone" />
-
-    <com.example.lenovo.SpaApp.CustomViews.ExpandableHeightGridView
-        android:id="@+id/timingGrid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
         android:gravity="center"
-        android:isScrollContainer="false"
-        android:numColumns="5"
-        android:stretchMode="columnWidth" />
-</LinearLayout>
+        android:padding="@dimen/twenty_dp"
+        android:text="@string/confirm"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/eighteen_sp"
+        pixlui:typeface="Titillium-Bold.otf" />
+</RelativeLayout>

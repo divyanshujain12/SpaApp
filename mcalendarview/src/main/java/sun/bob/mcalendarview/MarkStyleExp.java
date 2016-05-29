@@ -53,7 +53,7 @@ public class MarkStyleExp {
         {
             paint = new Paint();
             paint.setAntiAlias(true);
-            paint.setColor(lightGrayColor);
+            paint.setColor(chooseColor);
         }
 
         @Override

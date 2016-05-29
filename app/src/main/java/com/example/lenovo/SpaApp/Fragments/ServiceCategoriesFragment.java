@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.lenovo.SpaApp.Adapters.ServiceCategoryAdapter;
-import com.example.lenovo.SpaApp.HomeActivity;
+import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 import com.example.lenovo.SpaApp.Utils.FlipAnimation;

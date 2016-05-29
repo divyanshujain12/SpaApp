@@ -13,6 +13,7 @@
     <string name="enter_email">Enter Email</string>
     <string name="enter_name">Enter Name</string>
     <string name="enter_number">Enter Number</string>
+    <string name="enter_address">Enter Address</string>
     <string name="password">password</string>
     <string name="log_in">LOG IN</string>
     <string name="confirm_password">confirm password</string>
@@ -28,7 +29,13 @@
     <string name="how_it_works">How It Works</string>
     <string name="our_services">OUR \n SERVICES</string>
     <string name="openDrawer"></string>
-    <string name="go_for_it">GO FOR IT</string>
+    <string name="lets_get_pampered">LETS GET PAMPERED</string>
+    <string name="confirm">CONFIRM BOOKING</string>
+    <string name="name">NAME -</string>
+    <string name="email">EMAIL -</string>
+    <string name="number">NUMBER -</string>
+    <string name="address">ADDRESS -</string>
+    <string name="select_your_availability">SELECT YOUR AVAILABILITY -</string>
     <string-array name="timing_array">
         <item>8:00 AM</item>
         <item>9:00 AM</item>

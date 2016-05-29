@@ -11,6 +11,9 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
+import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
+import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
+
 /**
  * Created by divyanshu on 4/3/2016.
  */
@@ -77,7 +80,7 @@ public class SelectCityActivity extends AppCompatActivity {
 
     public void ConfirmCity(View view) {
         int pos = getIntent().getIntExtra("pos", -1);
-        Intent i = new Intent(this, HomeActivity.class);
+        Intent i = new Intent(this, HomeActivityController.class);
         if (pos > -1) {
             i = new Intent(this, MainActivity.class);
             i.putExtra("pos", pos);

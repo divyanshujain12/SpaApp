@@ -20,7 +20,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import com.android.volley.Request;
-import com.example.lenovo.SpaApp.HomeActivity;
+import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
+import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
 import com.example.lenovo.SpaApp.MyApplication;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.CallBackInterface;
@@ -32,16 +33,16 @@ import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.neopixl.pixlui.components.edittext.EditText;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
 
+import GlobalClasses.GlobalFragment;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 
-public class SignUpFragment extends Fragment implements View.OnClickListener, CallBackInterface {
+public class SignUpFragment extends GlobalFragment implements View.OnClickListener {
 
 
     SharedPreferences preferences;
@@ -113,7 +114,7 @@ public class SignUpFragment extends Fragment implements View.OnClickListener, Ca
         }
         editor.apply();*/
         MySharedPereference.getInstance().setBoolean(getActivity(), Constants.LOGGED_IN, true);
-        Intent i = new Intent(getActivity(), HomeActivity.class);
+        Intent i = new Intent(getActivity(), HomeActivityController.class);
         startActivity(i);
         getActivity().finish();
 
@@ -240,7 +241,6 @@ public class SignUpFragment extends Fragment implements View.OnClickListener, Ca
         if (!validatePasswords()) {
             return;
         }
-
 
 
         CallWebService.getInstance(getActivity(), true).hitJSONObjectVolleyWebService(Request.Method.POST, Constants.WebServices.SIGN_UP, createMapForPostingData(), SignUpFragment.this);

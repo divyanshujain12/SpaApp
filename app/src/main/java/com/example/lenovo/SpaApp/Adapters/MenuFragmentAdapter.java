@@ -17,8 +17,8 @@ public class MenuFragmentAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
     private Context context;
     private int itemsCount = 0;
-    private String[] serviceName = {"Appointments", "Buy Services", "Service Categories", "Contact", "Notifications", "Settings", "LogIn Or SignUp", "How It Works"};
-    private int[] serviceIcons = {R.drawable.appointment, R.drawable.buy_services, R.drawable.categories, R.drawable.contact, R.drawable.notification, R.drawable.setting};
+    private String[] serviceName = {"My Appointments", "Buy Services", "Contact", "Settings", "LogIn Or SignUp", "How It Works"};
+    private int[] serviceIcons = {R.drawable.appointment, R.drawable.buy_services, R.drawable.contact, R.drawable.setting};
 
     public MenuFragmentAdapter(Context context) {
         this.context = context;

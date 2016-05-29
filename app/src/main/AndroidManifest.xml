@@ -36,7 +36,7 @@
         <activity
             android:name="com.example.lenovo.SpaApp.MainActivity"
             android:label="MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
             android:name="com.example.lenovo.SpaApp.ForgotPassword"
@@ -53,11 +53,14 @@
                </intent-filter>-->
         </activity>
         <activity
-            android:name="com.example.lenovo.SpaApp.HomeActivity"
+            android:name=".HomeActivityMVC.HomeActivityController"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SelectCityActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AppointmentDescriptionActivity" />
+        <!--<activity android:name=".AppointmentBookingMVC.AppointmentBookingActivity" />-->
+        <activity android:name=".AppointmentBookingMVC.AppointmentBookingController" />
     </application>
 
 </manifest>

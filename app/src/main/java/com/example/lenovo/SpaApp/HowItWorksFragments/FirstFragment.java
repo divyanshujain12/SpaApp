@@ -10,11 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.example.lenovo.SpaApp.HomeActivity;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.SelectCityActivity;
 import com.neopixl.pixlui.components.textview.TextView;
