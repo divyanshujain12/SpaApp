@@ -57,7 +57,6 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
            /* calendarExp.getMarkedDates().removeAdd();
             calendarExp.markDate(date);
 */
-            calendarExp.
             String clickedDate = date.getDayString() + "/" + date.getMonthString() + "/" + String.valueOf(date.getYear());
             CommonFunctions.showSnackBarWithoutAction(mainExpandIV, clickedDate);
 
