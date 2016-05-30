@@ -7,7 +7,9 @@ import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 
 import butterknife.OnClick;
 import sun.bob.mcalendarview.listeners.OnDateClickListener;
+import sun.bob.mcalendarview.listeners.OnExpDateClickListener;
 import sun.bob.mcalendarview.listeners.OnMonthChangeListener;
+import sun.bob.mcalendarview.listeners.OnMonthScrollListener;
 import sun.bob.mcalendarview.vo.DateData;
 
 /**
@@ -20,23 +22,48 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
         super.onResume();
 
         calendarExp.setOnDateClickListener(dateClickListener);
-        calendarExp.setOnMonthChangeListener(new OnMonthChangeListener() {
+       /* calendarExp.setOnDateClickListener(new OnExpDateClickListener()).setOnMonthScrollListener(new OnMonthScrollListener() {
             @Override
             public void onMonthChange(int year, int month) {
                 mainYYMMTv.setText(String.valueOf(year) + "-" + String.valueOf(month));
             }
+
+            @Override
+            public void onMonthScroll(float positionOffset) {
+//                Log.i("listener", "onMonthScroll:" + positionOffset);
+            }
+
         });
+*/
+
+
+
+        /* calendarExp.setOnMonthScrollListener(new OnMonthScrollListener() {
+            @Override
+            public void onMonthChange(int year, int month) {
+                mainYYMMTv.setText(String.valueOf(year) + "-" + String.valueOf(month));
+            }
+
+            @Override
+            public void onMonthScroll(float positionOffset) {
+
+            }
+        });*/
     }
 
-    OnDateClickListener dateClickListener = new OnDateClickListener() {
+    OnExpDateClickListener dateClickListener = new OnExpDateClickListener() {
         @Override
         public void onDateClick(View view, DateData date) {
-
+           /* calendarExp.getMarkedDates().removeAdd();
+            calendarExp.markDate(date);
+*/
+            calendarExp.
             String clickedDate = date.getDayString() + "/" + date.getMonthString() + "/" + String.valueOf(date.getYear());
             CommonFunctions.showSnackBarWithoutAction(mainExpandIV, clickedDate);
 
         }
     };
+
 
     @OnClick({R.id.calendarLeftIV, R.id.calendarrightIV, R.id.confirmTV})
     public void onClick(View view) {
