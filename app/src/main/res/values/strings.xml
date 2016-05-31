@@ -40,6 +40,13 @@
     <string name="address">ADDRESS -</string>
     <string name="additional_notes">ADDITIONAL NOTES -</string>
     <string name="select_your_availability">SELECT YOUR AVAILABILITY -</string>
+    <string name="available_slots">AVAILABLE SLOTS -</string>
+    <string name="service_name">SERVICE NAME</string>
+    <string name="dummy_amount">$ 20</string>
+    <string name="dummy_duration">2 HOURS</string>
+    <string name="duration">DURATION</string>
+    <string name="cost">COST</string>
+    <string name="dummy_date">31-may-2016</string>
     <string-array name="timing_array">
         <item>8:00 AM</item>
         <item>9:00 AM</item>

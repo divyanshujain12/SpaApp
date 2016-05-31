@@ -1,9 +1,8 @@
 package com.example.lenovo.SpaApp.AppointmentBookingMVC;
 
-import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -12,33 +11,22 @@ import com.example.lenovo.SpaApp.CustomViews.ExpandableHeightGridView;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
+import com.imanoweb.calendarview.CustomCalendarView;
 import com.neopixl.pixlui.components.edittext.EditText;
 import com.neopixl.pixlui.components.textview.TextView;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Locale;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import butterknife.OnClick;
-import sun.bob.mcalendarview.CellConfig;
-import sun.bob.mcalendarview.MarkStyle;
-import sun.bob.mcalendarview.listeners.OnDateClickListener;
-import sun.bob.mcalendarview.listeners.OnExpDateClickListener;
-import sun.bob.mcalendarview.listeners.OnMonthScrollListener;
-import sun.bob.mcalendarview.views.ExpCalendarView;
-import sun.bob.mcalendarview.vo.DateData;
 
 /**
  * Created by divyanshu.jain on 5/27/2016.
  */
 public class AppointmentBookingActivity extends AppCompatActivity {
 
-    @InjectView(R.id.main_YYMM_Tv)
-    protected TextView mainYYMMTv;
-    @InjectView(R.id.calendar_exp)
-    protected ExpCalendarView calendarExp;
-    @InjectView(R.id.main_expandIV)
-    protected ImageView mainExpandIV;
     @InjectView(R.id.timingGrid)
     protected ExpandableHeightGridView timingGrid;
     @InjectView(R.id.toolbar)
@@ -53,10 +41,12 @@ public class AppointmentBookingActivity extends AppCompatActivity {
     protected EditText addressET;
     @InjectView(R.id.confirmTV)
     protected TextView confirmTV;
-    @InjectView(R.id.calendarLeftIV)
-    protected ImageView calendarLeftIV;
-    @InjectView(R.id.calendarrightIV)
-    protected ImageView calendarrightIV;
+    @InjectView(R.id.serviceTV)
+    TextView serviceTV;
+    @InjectView(R.id.additionalET)
+    EditText additionalET;
+    @InjectView(R.id.calendar_view)
+    CustomCalendarView calendarView;
     private boolean ifExpand = true;
     protected ArrayList<String> availableTimeSlotsArray = new ArrayList<>();
 
@@ -77,9 +67,20 @@ public class AppointmentBookingActivity extends AppCompatActivity {
 
         setToolBar();
         timingGrid.setExpanded(true);
-        CellConfig.Month2WeekPos = CellConfig.middlePosition;
-        CellConfig.ifMonth = false;
-        calendarExp.shrink();
+
+        //Initialize calendar with date
+        Calendar currentCalendar = Calendar.getInstance(Locale.getDefault());
+
+        //Show monday as first date of week
+        calendarView.setFirstDayOfWeek(Calendar.MONDAY);
+
+        //Show/hide overflow days of a month
+        calendarView.setShowOverflowDate(false);
+
+        //call refreshCalendar to update calendar the view
+        calendarView.refreshCalendar(currentCalendar);
+
+        calendarView.setCustomTypeface(Typeface.createFromAsset(getAssets(),"fonts/Titillium-Regular.otf"));
 
         ArrayAdapter<CharSequence> arrayAdapter = new ArrayAdapter<CharSequence>(this, R.layout.single_textview, getResources().getStringArray(R.array.timing_array));
         timingGrid.setAdapter(arrayAdapter);

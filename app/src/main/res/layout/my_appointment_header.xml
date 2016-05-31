@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/seven_dp">
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:padding="@dimen/seven_dp"
+            android:text="@string/service_name"
+            android:textColor="#fff"
+            android:textSize="@dimen/sixteen_sp"
+            pixlui:typeface="Titillium-Bold.otf" />
+
+        <include layout="@layout/vertical_line_white" />
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="@dimen/seven_dp"
+            android:text="@string/duration"
+            android:textColor="#fff"
+            android:textSize="@dimen/sixteen_sp"
+            pixlui:typeface="Titillium-Bold.otf" />
+
+        <include layout="@layout/vertical_line_white" />
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="@dimen/seven_dp"
+            android:text="@string/cost"
+            android:textColor="#fff"
+            android:textSize="@dimen/sixteen_sp"
+            pixlui:typeface="Titillium-Bold.otf" />
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_white_line" />
+</LinearLayout>

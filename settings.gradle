@@ -1,1 +1,1 @@
-include ':app', ':explosionfield', ':animator', ':menulibrary', ':mcalendarview'
+include ':app', ':explosionfield', ':animator', ':menulibrary', ':mcalendarview', ':Calendarlibrary'

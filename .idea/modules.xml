@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Calendarlibrary/Calendarlibrary.iml" filepath="$PROJECT_DIR$/Calendarlibrary/Calendarlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpaApp.iml" filepath="$PROJECT_DIR$/SpaApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/animator/animator.iml" filepath="$PROJECT_DIR$/animator/animator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/explosionfield/explosionfield.iml" filepath="$PROJECT_DIR$/explosionfield/explosionfield.iml" />
       <module fileurl="file://$PROJECT_DIR$/mcalendarview/mcalendarview.iml" filepath="$PROJECT_DIR$/mcalendarview/mcalendarview.iml" />
       <module fileurl="file://$PROJECT_DIR$/menulibrary/menulibrary.iml" filepath="$PROJECT_DIR$/menulibrary/menulibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spa app.iml" filepath="$PROJECT_DIR$/spa app.iml" />
     </modules>
   </component>
 </project>

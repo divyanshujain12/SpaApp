@@ -8,16 +8,13 @@
     android:orientation="vertical">
 
 
-
     <com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_below="@+id/toolbar"
-        android:background="@android:color/white" />
+
+    <include layout="@layout/horizontal_white_line" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

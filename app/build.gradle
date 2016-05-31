@@ -34,5 +34,5 @@ dependencies {
     compile project(':animator')
     compile project(':menulibrary')
     compile 'com.jakewharton:butterknife:6.1.0'
-    compile project(':mcalendarview')
+    compile project(':Calendarlibrary')
 }

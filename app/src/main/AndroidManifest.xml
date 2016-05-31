@@ -42,7 +42,7 @@
             android:name="com.example.lenovo.SpaApp.ForgotPassword"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.lenovo.SpaApp.HowToWork"
+            android:name=".HowItWork"
             android:configChanges="orientation|keyboard"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">

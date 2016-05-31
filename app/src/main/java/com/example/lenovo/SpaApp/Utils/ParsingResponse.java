@@ -12,6 +12,18 @@ import java.util.ArrayList;
  */
 public class ParsingResponse {
 
+    private static ParsingResponse parsingResponse = null;
+    private ParsingResponse(){
+
+    }
+    public static ParsingResponse getInstance(){
+        if(parsingResponse == null)
+            parsingResponse = new ParsingResponse();
+
+        return parsingResponse;
+    }
+
+
     public <T> ArrayList<T> parseJsonArrayWithJsonObject(JSONArray jsonArray, Class modelClass) {
         Object obj = null;
 
