@@ -88,7 +88,7 @@ public class AppointmentBookingActivity extends AppCompatActivity {
     }
 
     private void setToolBar() {
-        toolbar.InitToolbar(this, "BOOKING");
+        toolbar.InitToolbar(this, getString(R.string.booking));
     }
 
     protected void submitClickedOK() {

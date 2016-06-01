@@ -47,6 +47,15 @@
     <string name="duration">DURATION</string>
     <string name="cost">COST</string>
     <string name="dummy_date">31-may-2016</string>
+    <string name="remove">REMOVE</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="cancel_appointment">CANCEL</string>
+    <string name="are_you_sure_cancel">Are you sure you want to cancel this appointment.</string>
+    <string name="are_you_sure_remove">Are you sure you want to remove this appointment.</string>
+    <string name="my_cart">MY CART</string>
+    <string name="booking">BOOKING</string>
+    <string name="checkout">CHECKOUT</string>
+    <string name="no_item">NO ITEM AVAILABLE!</string>
     <string-array name="timing_array">
         <item>8:00 AM</item>
         <item>9:00 AM</item>

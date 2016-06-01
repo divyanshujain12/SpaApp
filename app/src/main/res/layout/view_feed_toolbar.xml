@@ -6,28 +6,61 @@
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
     android:background="@color/header_color"
-    app:elevation="8dp"
     app:contentInsetEnd="0dp"
     app:contentInsetLeft="0dp"
     app:contentInsetRight="0dp"
     app:contentInsetStart="0dp"
+    app:elevation="8dp"
     app:layout_scrollFlags="scroll|enterAlways"
     app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-    <ImageView
-        android:id="@+id/content_hamburger"
-        style="@style/ImageView.Hamburger"
-        android:src="@drawable/ic_menu_90" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <com.neopixl.pixlui.components.textview.TextView
-        android:id="@+id/toolbar_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:singleLine="true"
-        android:text="HOME"
-        android:textAllCaps="true"
-        android:textColor="#ffffff"
-        android:textSize="20sp"
-        pixlui:typeface="Titillium-Bold.otf" />
+        <ImageView
+            android:id="@+id/content_hamburger"
+            style="@style/ImageView.Hamburger"
+            android:src="@drawable/ic_menu_90"
+            android:layout_centerVertical="true"/>
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="HOME"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            pixlui:typeface="Titillium-Bold.otf" />
+
+        <RelativeLayout
+            android:id="@+id/cartRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/cartIV"
+                style="@style/ImageView.Hamburger"
+                android:src="@drawable/cart" />
+
+            <com.neopixl.pixlui.components.textview.TextView
+                xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+                android:id="@+id/badgeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/badge_circle"
+                android:text="10"
+                android:padding="@dimen/seven_dp"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:textSize="12sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+        </RelativeLayout>
+    </RelativeLayout>
 </android.support.v7.widget.Toolbar>

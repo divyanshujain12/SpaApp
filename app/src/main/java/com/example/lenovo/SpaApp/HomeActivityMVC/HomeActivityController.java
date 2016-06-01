@@ -15,8 +15,12 @@ import com.example.lenovo.SpaApp.HomeFragmentMVC.HomeFragment;
 import com.example.lenovo.SpaApp.HomeFragmentMVC.HomeFragmentControllers;
 import com.example.lenovo.SpaApp.HowItWork;
 import com.example.lenovo.SpaApp.MainActivity;
+import com.example.lenovo.SpaApp.MyCartMVC.MyCartActivity;
+import com.example.lenovo.SpaApp.MyCartMVC.MyCartController;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.RecyclerItemClickListener;
+
+import butterknife.OnClick;
 
 /**
  * Created by divyanshu on 5/29/2016.
@@ -58,6 +62,12 @@ public class HomeActivityController extends HomeActivity {
         }));
         /*homeFragment = ServiceCategoriesFragment.getInstance("SERVICES");*/
         updateFragment(new HomeFragmentControllers());
+    }
+
+    @OnClick(R.id.cartRL)
+    public void onClick() {
+        Intent intent = new Intent(this, MyCartController.class);
+        startActivity(intent);
     }
 
     public void updateFragment(Fragment fragment) {

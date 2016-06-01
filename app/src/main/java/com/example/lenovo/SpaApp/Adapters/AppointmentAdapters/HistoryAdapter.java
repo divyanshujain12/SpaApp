@@ -5,9 +5,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Model.AppointmentsModel;
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Utils.AlertMessage;
+import com.example.lenovo.SpaApp.Utils.SnackBarCallback;
 import com.neopixl.pixlui.components.textview.TextView;
 
 import java.util.ArrayList;
@@ -15,7 +18,7 @@ import java.util.ArrayList;
 /**
  * Created by divyanshu.jain on 5/31/2016.
  */
-public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements View.OnClickListener {
 
     private ArrayList<AppointmentsModel> appointmentsModels;
     private Context context;
@@ -48,6 +51,8 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         holder.durationTV.setText(appointmentsModel.getDuration());
         holder.amountTV.setText(appointmentsModel.getCost());
         holder.dateTV.setText(appointmentsModel.getDate());
+        holder.removeTV.setId(position);
+        holder.removeTV.setOnClickListener(this);
     }
 
     @Override
@@ -55,8 +60,9 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         return appointmentsModels.size();
     }
 
+
     public static class AppointmentsViewHolder extends RecyclerView.ViewHolder {
-        TextView serviceNameTV, subServiceNameTV, durationTV, amountTV, dateTV;
+        TextView serviceNameTV, subServiceNameTV, durationTV, amountTV, dateTV, removeTV;
 
         public AppointmentsViewHolder(View view) {
             super(view);
@@ -66,7 +72,18 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             durationTV = (TextView) view.findViewById(R.id.durationTV);
             amountTV = (TextView) view.findViewById(R.id.amountTV);
             dateTV = (TextView) view.findViewById(R.id.dateTV);
+            removeTV = (TextView) view.findViewById(R.id.removeTV);
         }
+    }
+
+    @Override
+    public void onClick(View v) {
+        AlertMessage.showAlertDialogWithCallBack(context, context.getString(R.string.alert), context.getString(R.string.are_you_sure_cancel), new SnackBarCallback() {
+            @Override
+            public void doAction() {
+                Toast.makeText(context, "Ok Clicked!", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
 

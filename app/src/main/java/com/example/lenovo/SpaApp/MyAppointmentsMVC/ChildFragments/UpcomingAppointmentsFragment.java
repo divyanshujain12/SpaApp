@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.lenovo.SpaApp.Adapters.AppointmentAdapters.UpcomingAdapter;
+import com.example.lenovo.SpaApp.CustomViews.SimpleDividerItemDecoration;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Model.AppointmentsModel;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
 import com.example.lenovo.SpaApp.R;
@@ -22,6 +23,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import GlobalClasses.DummyJsons;
 import GlobalClasses.GlobalFragment;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -32,7 +34,7 @@ import butterknife.InjectView;
 public class UpcomingAppointmentsFragment extends GlobalFragment {
 
     @InjectView(R.id.myUpcomingAppointmentsRV)
-   protected RecyclerView myUpcomingAppointmentsRV;
+    protected RecyclerView myUpcomingAppointmentsRV;
     protected UpcomingAdapter upcomingAdapter;
     protected ArrayList<AppointmentsModel> appointmentsModels;
 
@@ -51,9 +53,9 @@ public class UpcomingAppointmentsFragment extends GlobalFragment {
 
         myUpcomingAppointmentsRV.setLayoutManager(new LinearLayoutManager(getActivity()));
         appointmentsModels = new ArrayList<>();
-        upcomingAdapter = new UpcomingAdapter(getActivity(),appointmentsModels);
+        upcomingAdapter = new UpcomingAdapter(getActivity(), appointmentsModels);
         try {
-            onJsonObjectSuccess(new JSONObject(MyAppointmentsFragment.dummyJSON));
+            onJsonObjectSuccess(new JSONObject(DummyJsons.appointmentJSON));
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -69,11 +71,10 @@ public class UpcomingAppointmentsFragment extends GlobalFragment {
     public void onJsonObjectSuccess(JSONObject object) {
         try {
             JSONArray data = object.getJSONArray(Constants.DATA);
-            appointmentsModels = ParsingResponse.getInstance().parseJsonArrayWithJsonObject(data,AppointmentsModel.class);
-            upcomingAdapter = new UpcomingAdapter(getActivity(),appointmentsModels);
+            appointmentsModels = ParsingResponse.getInstance().parseJsonArrayWithJsonObject(data, AppointmentsModel.class);
+            upcomingAdapter = new UpcomingAdapter(getActivity(), appointmentsModels);
             myUpcomingAppointmentsRV.setAdapter(upcomingAdapter);
-        }
-        catch (JSONException e){
+        } catch (JSONException e) {
             e.printStackTrace();
         }
 

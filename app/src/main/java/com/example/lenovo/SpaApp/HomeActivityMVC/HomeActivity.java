@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import com.example.lenovo.SpaApp.Adapters.MenuFragmentAdapter;
 import com.example.lenovo.SpaApp.R;
@@ -17,15 +19,22 @@ import com.yalantis.guillotine.animation.GuillotineAnimation;
 import GlobalClasses.GlobalActivity;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.OnClick;
 
 /**
  * Created by Lenovo on 01-03-2016.
  */
 public class HomeActivity extends GlobalActivity {
 
-    public Toolbar toolbar;
+    protected Toolbar toolbar;
     public static TextView headerText;
     protected RecyclerView menuRV;
+    @InjectView(R.id.cartIV)
+    ImageView cartIV;
+    @InjectView(R.id.badgeTV)
+    TextView badgeTV;
+    @InjectView(R.id.cartRL)
+    RelativeLayout cartRL;
     private MenuFragmentAdapter menuFragmentAdapter;
     protected FragmentManager fragmentManager;
     @InjectView(R.id.root)
@@ -73,9 +82,4 @@ public class HomeActivity extends GlobalActivity {
 
     }
 
-
-
-   /* public void onCardClick(View view) {
-        homeFragment.onCardClick(view);
-    }*/
 }

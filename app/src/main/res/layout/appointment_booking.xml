@@ -308,7 +308,7 @@
         android:background="@android:color/black"
         android:gravity="center"
         android:padding="@dimen/twenty_dp"
-        android:text="@string/confirm"
+        android:text="@string/add_to_cart"
         android:textAllCaps="true"
         android:textColor="@android:color/white"
         android:textSize="@dimen/eighteen_sp"

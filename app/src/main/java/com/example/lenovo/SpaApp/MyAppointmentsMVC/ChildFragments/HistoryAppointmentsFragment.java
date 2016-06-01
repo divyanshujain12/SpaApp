@@ -8,7 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.lenovo.SpaApp.Adapters.AppointmentAdapters.HistoryAdapter;
 import com.example.lenovo.SpaApp.Adapters.AppointmentAdapters.UpcomingAdapter;
+import com.example.lenovo.SpaApp.CustomViews.SimpleDividerItemDecoration;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Model.AppointmentsModel;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
 import com.example.lenovo.SpaApp.R;
@@ -21,6 +23,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import GlobalClasses.DummyJsons;
 import GlobalClasses.GlobalFragment;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -31,7 +34,7 @@ import butterknife.InjectView;
 public class HistoryAppointmentsFragment extends GlobalFragment {
     @InjectView(R.id.myUpcomingAppointmentsRV)
     protected RecyclerView myUpcomingAppointmentsRV;
-    protected UpcomingAdapter upcomingAdapter;
+    protected HistoryAdapter upcomingAdapter;
     protected ArrayList<AppointmentsModel> appointmentsModels;
 
     @Nullable
@@ -49,9 +52,9 @@ public class HistoryAppointmentsFragment extends GlobalFragment {
 
         myUpcomingAppointmentsRV.setLayoutManager(new LinearLayoutManager(getActivity()));
         appointmentsModels = new ArrayList<>();
-        upcomingAdapter = new UpcomingAdapter(getActivity(), appointmentsModels);
+        upcomingAdapter = new HistoryAdapter(getActivity(), appointmentsModels);
         try {
-            onJsonObjectSuccess(new JSONObject(MyAppointmentsFragment.dummyJSON));
+            onJsonObjectSuccess(new JSONObject(DummyJsons.appointmentJSON));
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -68,7 +71,7 @@ public class HistoryAppointmentsFragment extends GlobalFragment {
         try {
             JSONArray data = object.getJSONArray(Constants.DATA);
             appointmentsModels = ParsingResponse.getInstance().parseJsonArrayWithJsonObject(data, AppointmentsModel.class);
-            upcomingAdapter = new UpcomingAdapter(getActivity(), appointmentsModels);
+            upcomingAdapter = new HistoryAdapter(getActivity(), appointmentsModels);
             myUpcomingAppointmentsRV.setAdapter(upcomingAdapter);
         } catch (JSONException e) {
             e.printStackTrace();
