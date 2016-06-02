@@ -73,9 +73,7 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
 
     private boolean checkFields() {
 
-        Realm realm = Realm.getDefaultInstance();
-        realm.beginTransaction();
-        appointmentBookingModel = realm.createObject(AppointmentBookingModel.class);
+
         categoryNameString = serviceTV.getText().toString();
         nameString = nameET.getText().toString();
         numberString = numberET.getText().toString();
@@ -87,17 +85,25 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
             return false;
         else if (nameString.isEmpty()) {
             nameET.setError(getString(R.string.err_msg_name));
+            nameET.requestFocus();
             return false;
         } else if (!CommonFunctions.isValidNumber(numberString)) {
             numberET.setError(getString(R.string.err_msg_number));
+            nameET.requestFocus();
             return false;
         } else if (!CommonFunctions.isValidEmail(emailString)) {
             emailET.setError(getString(R.string.err_msg_email));
+            nameET.requestFocus();
             return false;
         } else if (addressString.isEmpty()) {
             addressET.setError(getString(R.string.err_msg_address));
+            nameET.requestFocus();
             return false;
         }
+
+        Realm realm = Realm.getDefaultInstance();
+        realm.beginTransaction();
+        appointmentBookingModel = realm.createObject(AppointmentBookingModel.class);
 
         appointmentBookingModel.setCategory_id(SingeltonClass.getInstance().serviceModel.getCategory_id());
         appointmentBookingModel.setProduct_id(SingeltonClass.getInstance().productModel.getId());
