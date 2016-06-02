@@ -56,7 +56,7 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
     private void InitViews() {
         setToolBar();
         pos = getIntent().getIntExtra(Constants.POS, -1);
-        productModel = SingeltonClass.getInstance().productModels.get(pos);
+        productModel = SingeltonClass.getInstance().getProductModel(pos);
         categoryTV.setText(SingeltonClass.getInstance().serviceModel.getName());
         productTV.setText(productModel.getName());
         priceTV.setText(productModel.getCost());

@@ -4,18 +4,18 @@ package com.example.lenovo.SpaApp.Models;
  * Created by Lenovo on 23-03-2016.
  */
 public class ProductModel {
-    String id;
-    String name;
+    String product_id;
+    String product_name;
     String description;
     String cost;
     String duration;
 
     public String getId() {
-        return id;
+        return product_id;
     }
 
     public void setId(String id) {
-        this.id = id;
+        this.product_id = id;
     }
 
     public String getDescription() {
@@ -35,11 +35,11 @@ public class ProductModel {
     }
 
     public String getName() {
-        return name;
+        return product_name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.product_name = name;
     }
 
     public String getCost() {

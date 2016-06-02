@@ -13,6 +13,9 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
+
 
 public class MyApplication extends Application {
 
@@ -66,8 +69,8 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         mInstance = this;
-        preference = getSharedPreferences("Buying Office",MODE_PRIVATE);
-
+        RealmConfiguration realmConfiguration = new RealmConfiguration.Builder(mInstance).build();
+        Realm.setDefaultConfiguration(realmConfiguration);
     }
 
     public RequestQueue getRequestQueue() {

@@ -11,11 +11,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingModel;
 import com.example.lenovo.SpaApp.MyCartMVC.MyCartController;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.neopixl.pixlui.components.textview.TextView;
+
+import io.realm.Realm;
 
 /**
  * Created by divyanshu.jain on 6/2/2016.
@@ -26,6 +29,7 @@ public class ToolbarWithHamburg extends LinearLayout implements View.OnClickList
     RelativeLayout cartRL;
     ImageView content_hamburger;
     AppCompatActivity activity;
+    Realm realm;
 
 
     public ToolbarWithHamburg(Context context, AttributeSet attrs) {
@@ -35,7 +39,8 @@ public class ToolbarWithHamburg extends LinearLayout implements View.OnClickList
     }
 
     public void InitToolbar(AppCompatActivity context, String name) {
-
+        realm = Realm.getDefaultInstance();
+      //  realm.beginTransaction();
         this.activity = context;
         LayoutInflater inflater = LayoutInflater.from(context);
         View customToolbarView = inflater.inflate(R.layout.view_feed_toolbar, this);
@@ -68,11 +73,20 @@ public class ToolbarWithHamburg extends LinearLayout implements View.OnClickList
     }
 
     public void setProductCount() {
-        String count = MySharedPereference.getInstance().getString(activity, Constants.PRODUCT_COUNT);
-        if (!count.equals(""))
-            badgeTV.setText(count);
+        int size = realm.allObjects(AppointmentBookingModel.class).size();
+        if (size > 0) {
+            badgeTV.setVisibility(View.VISIBLE);
+            badgeTV.setText(String.valueOf(size));
+        }
         else
             badgeTV.setVisibility(View.GONE);
+
+      /*  try {
+            realm.commitTransaction();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }*/
+
     }
 
     public ImageView getHamburgImage() {

@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingModel;
 import com.example.lenovo.SpaApp.MyCartMVC.MyCartModel;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
@@ -15,19 +16,23 @@ import com.neopixl.pixlui.components.textview.TextView;
 
 import java.util.ArrayList;
 
+import io.realm.Realm;
+
 /**
  * Created by divyanshu.jain on 6/1/2016.
  */
 public class MyCartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements View.OnClickListener {
 
-    private ArrayList<MyCartModel> myCartModels;
+    private ArrayList<AppointmentBookingModel> myCartModels;
     private Context context;
     private LayoutInflater layoutInflater;
+    private Realm realm;
 
-    public MyCartAdapter(Context context, ArrayList<MyCartModel> myCartModels) {
+    public MyCartAdapter(Context context, ArrayList<AppointmentBookingModel> myCartModels) {
         this.context = context;
         this.myCartModels = myCartModels;
         layoutInflater = LayoutInflater.from(context);
+        realm = Realm.getDefaultInstance();
     }
 
     @Override
@@ -45,10 +50,11 @@ public class MyCartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     }
 
     private void bindDefaultFeedItem(int position, AppointmentsViewHolder holder) {
-        MyCartModel appointmentsModel = myCartModels.get(position);
-        holder.serviceNameTV.setText(appointmentsModel.getService_name());
-        holder.subServiceNameTV.setText(appointmentsModel.getSub_service_name());
-        holder.durationTV.setText(appointmentsModel.getDuration());
+
+        AppointmentBookingModel appointmentsModel = myCartModels.get(position);
+        holder.serviceNameTV.setText(appointmentsModel.getCategory_id());
+        holder.subServiceNameTV.setText(appointmentsModel.getProduct_name());
+        holder.durationTV.setText(appointmentsModel.getTime());
         holder.amountTV.setText(appointmentsModel.getCost());
         holder.dateTV.setText(appointmentsModel.getDate());
         holder.removeTV.setId(position);
@@ -79,11 +85,20 @@ public class MyCartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
     @Override
     public void onClick(View v) {
+        final int pos = v.getId();
         AlertMessage.showAlertDialogWithCallBack(context, context.getString(R.string.alert), context.getString(R.string.are_you_sure_remove), new SnackBarCallback() {
             @Override
             public void doAction() {
+                realm.beginTransaction();
+                realm.where(AppointmentBookingModel.class).findAll().remove(pos);
+                realm.commitTransaction();
+
+                myCartModels.remove(pos);
+                notifyItemRemoved(pos);
                 Toast.makeText(context, "Ok Clicked!", Toast.LENGTH_SHORT).show();
             }
         });
     }
+
+
 }

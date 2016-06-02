@@ -22,6 +22,8 @@ public class SingeltonClass {
 
     public ServiceModel serviceModel;
 
+    public ProductModel productModel;
+
     private SingeltonClass() {
     }
 
@@ -29,5 +31,9 @@ public class SingeltonClass {
         serviceModel = serviceModelArrayList.get(pos);
         productModels = serviceModel.getProducts();
         return productModels;
+    }
+    public ProductModel getProductModel(int pos){
+        productModel = productModels.get(pos);
+        return productModel;
     }
 }

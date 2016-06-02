@@ -6,25 +6,33 @@ import java.util.ArrayList;
  * Created by Lenovo on 23-03-2016.
  */
 public class ServiceModel {
-    String id;
-    String name;
-    String icon;
+    String category_id;
+    String category_name;
+    String category_icon;
     ArrayList<ProductModel> products;
 
+    public String getCategory_id() {
+        return category_id;
+    }
+
+    public void setCategory_id(String category_id) {
+        this.category_id = category_id;
+    }
+
     public String getName() {
-        return name;
+        return category_name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.category_name = name;
     }
 
     public String getIcon() {
-        return icon;
+        return category_icon;
     }
 
     public void setIcon(String icon) {
-        this.icon = icon;
+        this.category_icon = icon;
     }
 
     public ArrayList<ProductModel> getProducts() {

@@ -63,34 +63,34 @@ public class DummyJsons {
                 "\"message\":\"saved successfully!\",\n" +
                 "\"data\":[\n" +
                 "{\n" +
-                "\"id\":\"1\",\n" +
-                "\"name\":\"SERVICE 1\",\n" +
-                "\"icon\":\"image url\",\n" +
+                "\"category_id\":\"1\",\n" +
+                "\"category_name\":\"SERVICE 1\",\n" +
+                "\"category_icon\":\"image url\",\n" +
                 "\"products\":[\n" +
                 "{\n" +
-                "\"id\":\"1\",\n" +
-                "\"name\":\"name\",\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
                 "\"description\":\"description\",\n" +
                 "\"cost\":\"$ 20\",\n" +
                 "\"duration\":\"2 hr\"\n" +
                 "},\n" +
                 "{\n" +
-                "\"id\":\"1\",\n" +
-                "\"name\":\"name\",\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
                 "\"description\":\"description\",\n" +
                 "\"cost\":\"$ 20\",\n" +
                 "\"duration\":\"2 hr\"\n" +
                 "},\n" +
                 "{\n" +
-                "\"id\":\"1\",\n" +
-                "\"name\":\"name\",\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
                 "\"description\":\"description\",\n" +
                 "\"cost\":\"$ 20\",\n" +
                 "\"duration\":\"2 hr\"\n" +
                 "},\n" +
                 "{\n" +
-                "\"id\":\"1\",\n" +
-                "\"name\":\"name\",\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
                 "\"description\":\"description\",\n" +
                 "\"cost\":\"$ 20\",\n" +
                 "\"duration\":\"2 hr\"\n" +
@@ -98,34 +98,139 @@ public class DummyJsons {
                 "]\n" +
                 "},\n" +
                 "{\n" +
-                "\"id\":\"1\",\n" +
-                "\"name\":\"SERVICE 1\",\n" +
-                "\"icon\":\"image url\",\n" +
+                "\"category_id\":\"1\",\n" +
+                "\"category_name\":\"SERVICE 1\",\n" +
+                "\"category_icon\":\"image url\",\n" +
                 "\"products\":[\n" +
                 "{\n" +
-                "\"id\":\"1\",\n" +
-                "\"name\":\"name\",\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
                 "\"description\":\"description\",\n" +
                 "\"cost\":\"$ 20\",\n" +
                 "\"duration\":\"2 hr\"\n" +
                 "},\n" +
                 "{\n" +
-                "\"id\":\"1\",\n" +
-                "\"name\":\"name\",\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
                 "\"description\":\"description\",\n" +
                 "\"cost\":\"$ 20\",\n" +
                 "\"duration\":\"2 hr\"\n" +
                 "},\n" +
                 "{\n" +
-                "\"id\":\"1\",\n" +
-                "\"name\":\"name\",\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
                 "\"description\":\"description\",\n" +
                 "\"cost\":\"$ 20\",\n" +
                 "\"duration\":\"2 hr\"\n" +
                 "},\n" +
                 "{\n" +
-                "\"id\":\"1\",\n" +
-                "\"name\":\"name\",\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
+                "\"description\":\"description\",\n" +
+                "\"cost\":\"$ 20\",\n" +
+                "\"duration\":\"2 hr\"\n" +
+                "}\n" +
+                "]\n" +
+                "},\n" +
+                "{\n" +
+                "\"category_id\":\"1\",\n" +
+                "\"category_name\":\"SERVICE 1\",\n" +
+                "\"category_icon\":\"image url\",\n" +
+                "\"products\":[\n" +
+                "{\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
+                "\"description\":\"description\",\n" +
+                "\"cost\":\"$ 20\",\n" +
+                "\"duration\":\"2 hr\"\n" +
+                "},\n" +
+                "{\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
+                "\"description\":\"description\",\n" +
+                "\"cost\":\"$ 20\",\n" +
+                "\"duration\":\"2 hr\"\n" +
+                "},\n" +
+                "{\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
+                "\"description\":\"description\",\n" +
+                "\"cost\":\"$ 20\",\n" +
+                "\"duration\":\"2 hr\"\n" +
+                "},\n" +
+                "{\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
+                "\"description\":\"description\",\n" +
+                "\"cost\":\"$ 20\",\n" +
+                "\"duration\":\"2 hr\"\n" +
+                "}\n" +
+                "]\n" +
+                "},\n" +
+                "{\n" +
+                "\"category_id\":\"1\",\n" +
+                "\"category_name\":\"SERVICE 1\",\n" +
+                "\"category_icon\":\"image url\",\n" +
+                "\"products\":[\n" +
+                "{\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
+                "\"description\":\"description\",\n" +
+                "\"cost\":\"$ 20\",\n" +
+                "\"duration\":\"2 hr\"\n" +
+                "},\n" +
+                "{\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
+                "\"description\":\"description\",\n" +
+                "\"cost\":\"$ 20\",\n" +
+                "\"duration\":\"2 hr\"\n" +
+                "},\n" +
+                "{\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
+                "\"description\":\"description\",\n" +
+                "\"cost\":\"$ 20\",\n" +
+                "\"duration\":\"2 hr\"\n" +
+                "},\n" +
+                "{\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
+                "\"description\":\"description\",\n" +
+                "\"cost\":\"$ 20\",\n" +
+                "\"duration\":\"2 hr\"\n" +
+                "}\n" +
+                "]\n" +
+                "},\n" +
+                "{\n" +
+                "\"category_id\":\"1\",\n" +
+                "\"category_name\":\"SERVICE 1\",\n" +
+                "\"category_icon\":\"image url\",\n" +
+                "\"products\":[\n" +
+                "{\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
+                "\"description\":\"description\",\n" +
+                "\"cost\":\"$ 20\",\n" +
+                "\"duration\":\"2 hr\"\n" +
+                "},\n" +
+                "{\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
+                "\"description\":\"description\",\n" +
+                "\"cost\":\"$ 20\",\n" +
+                "\"duration\":\"2 hr\"\n" +
+                "},\n" +
+                "{\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
+                "\"description\":\"description\",\n" +
+                "\"cost\":\"$ 20\",\n" +
+                "\"duration\":\"2 hr\"\n" +
+                "},\n" +
+                "{\n" +
+                "\"product_id\":\"1\",\n" +
+                "\"product_name\":\"name\",\n" +
                 "\"description\":\"description\",\n" +
                 "\"cost\":\"$ 20\",\n" +
                 "\"duration\":\"2 hr\"\n" +

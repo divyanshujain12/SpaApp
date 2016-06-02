@@ -78,4 +78,9 @@ public class HomeActivityController extends HomeActivity {
         }
 
     }
+
+    public void onResume(){
+        super.onResume();
+        toolbar.setProductCount();
+    }
 }

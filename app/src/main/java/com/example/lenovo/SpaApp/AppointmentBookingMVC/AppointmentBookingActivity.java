@@ -1,16 +1,19 @@
 package com.example.lenovo.SpaApp.AppointmentBookingMVC;
 
+import android.content.Context;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 
 import com.example.lenovo.SpaApp.CustomViews.ExpandableHeightGridView;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
+import com.example.lenovo.SpaApp.Utils.Constants;
+import com.example.lenovo.SpaApp.Utils.MySharedPereference;
+import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.imanoweb.calendarview.CustomCalendarView;
 import com.neopixl.pixlui.components.edittext.EditText;
 import com.neopixl.pixlui.components.textview.TextView;
@@ -19,13 +22,14 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 
+import GlobalClasses.GlobalActivity;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 /**
  * Created by divyanshu.jain on 5/27/2016.
  */
-public class AppointmentBookingActivity extends AppCompatActivity {
+public class AppointmentBookingActivity extends GlobalActivity {
 
     @InjectView(R.id.timingGrid)
     protected ExpandableHeightGridView timingGrid;
@@ -49,6 +53,8 @@ public class AppointmentBookingActivity extends AppCompatActivity {
     CustomCalendarView calendarView;
     private boolean ifExpand = true;
     protected ArrayList<String> availableTimeSlotsArray = new ArrayList<>();
+    protected AppointmentBookingModel appointmentBookingModel = null;
+    protected String categoryNameString, nameString, numberString, emailString, addressString, dateString, timeString, additionalString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,34 +70,48 @@ public class AppointmentBookingActivity extends AppCompatActivity {
 
     private void InitViews() {
 
+        serviceTV.setText(SingeltonClass.getInstance().serviceModel.getName());
 
-        setToolBar();
+        toolbar.InitToolbar(this, getString(R.string.booking));
+
         timingGrid.setExpanded(true);
 
-        //Initialize calendar with date
         Calendar currentCalendar = Calendar.getInstance(Locale.getDefault());
 
-        //Show monday as first date of week
         calendarView.setFirstDayOfWeek(Calendar.MONDAY);
 
-        //Show/hide overflow days of a month
         calendarView.setShowOverflowDate(false);
 
-        //call refreshCalendar to update calendar the view
         calendarView.refreshCalendar(currentCalendar);
 
-        calendarView.setCustomTypeface(Typeface.createFromAsset(getAssets(),"fonts/Titillium-Regular.otf"));
+        calendarView.setCustomTypeface(Typeface.createFromAsset(getAssets(), "fonts/Titillium-Regular.otf"));
 
         ArrayAdapter<CharSequence> arrayAdapter = new ArrayAdapter<CharSequence>(this, R.layout.single_textview, getResources().getStringArray(R.array.timing_array));
         timingGrid.setAdapter(arrayAdapter);
 
     }
 
-    private void setToolBar() {
-        toolbar.InitToolbar(this, getString(R.string.booking));
-    }
 
     protected void submitClickedOK() {
-        CommonFunctions.showSnackBarWithoutAction(timingGrid, "SUBMIT CLICKED!");
+        toolbar.setProductCount();
+        //IncrementProductCountAndSave(this);
+        CommonFunctions.showSnackBarWithoutAction(timingGrid, getString(R.string.successfully_added));
+    }
+
+    public void onResume() {
+        super.onResume();
+        toolbar.setProductCount();
+
+    }
+
+    private void IncrementProductCountAndSave(Context context) {
+        String productCount = MySharedPereference.getInstance().getString(context, Constants.PRODUCT_COUNT);
+        if (productCount.isEmpty())
+            productCount = "1";
+        else
+            productCount = String.valueOf(Integer.parseInt(productCount) + 1);
+
+        MySharedPereference.getInstance().setString(context, Constants.PRODUCT_COUNT, productCount);
+        toolbar.setProductCount();
     }
 }
