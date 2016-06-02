@@ -15,8 +15,19 @@ import android.widget.TextView;
 
 import com.example.lenovo.SpaApp.Adapters.HomeServiceCategoryAdapter;
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
+import com.example.lenovo.SpaApp.Models.ProductModel;
+import com.example.lenovo.SpaApp.Models.ServiceModel;
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Utils.Constants;
+import com.example.lenovo.SpaApp.Utils.ParsingResponse;
+import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+
+import GlobalClasses.DummyJsons;
 import GlobalClasses.GlobalFragment;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -59,12 +70,28 @@ public class HomeFragment extends GlobalFragment {
         servicesRV.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL));
 
         recyclerview = (RecyclerView) view.findViewById(R.id.recyclerview);
-        servicesRV.setAdapter(new HomeServiceCategoryAdapter(getActivity()));
+
 
         sheetsView = (LinearLayout) view.findViewById(R.id.sheetsView);
         mParent = view;
         mBluePair = (FrameLayout) view.findViewById(R.id.transition_blue_pair);
 
+        try {
+            onJsonObjectSuccess(new JSONObject(DummyJsons.SERVICES_JSON));
+        } catch (JSONException exce) {
+            exce.printStackTrace();
+        }
+    }
 
+    @Override
+    public void onJsonObjectSuccess(JSONObject object) throws JSONException {
+        super.onJsonObjectSuccess(object);
+        SingeltonClass.serviceModelArrayList = (ParsingResponse.getInstance().parseJsonArrayWithJsonObject(object.getJSONArray(Constants.DATA), ServiceModel.class));
+        servicesRV.setAdapter(new HomeServiceCategoryAdapter(getActivity()));
+    }
+
+    @Override
+    public void onFailure(String str) {
+        super.onFailure(str);
     }
 }

@@ -22,7 +22,12 @@ public class Constants {
     public static String USER = "user";
     public static String PASSWORD = "password";
     public static String PHONE_NUMBER = "phonenumber";
-
+    public static String CATEGORY_ID = "category_id";
+    public static String PRODUCT_ID = "product_id";
+    public static String CATEGORY_NAME = "cat_name";
+    public static String PRODUCT_NAME = "product_name";
+    public static String PRODUCT_COUNT = "product_count";
+    public static String POS = "pos";
 
 
     public static String FACEBOOK_FRIEND_COUNT_PREFS = "pref_facebook_friends_count";
@@ -56,7 +61,7 @@ public class Constants {
 
         public static String EVENTS = BASE + "events.php";
 
-        public static String USER_EVENTS = BASE+"userevents.php?accesstoken=8dd9294632aeed1b62a6bc2eba8b41c5";
+        public static String USER_EVENTS = BASE + "userevents.php?accesstoken=8dd9294632aeed1b62a6bc2eba8b41c5";
 
     }
 }

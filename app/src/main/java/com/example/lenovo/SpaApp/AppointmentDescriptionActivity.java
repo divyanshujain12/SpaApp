@@ -2,14 +2,15 @@ package com.example.lenovo.SpaApp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
-import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingActivity;
 import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingController;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
+import com.example.lenovo.SpaApp.Models.ProductModel;
+import com.example.lenovo.SpaApp.Utils.Constants;
+import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.neopixl.pixlui.components.textview.TextView;
 
 import GlobalClasses.GlobalActivity;
@@ -25,7 +26,7 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
     @InjectView(R.id.categoryTV)
     TextView categoryTV;
     @InjectView(R.id.subCategoryTV)
-    TextView subCategoryTV;
+    TextView productTV;
     @InjectView(R.id.categoriesLL)
     LinearLayout categoriesLL;
     @InjectView(R.id.priceTV)
@@ -36,6 +37,10 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
     TextView confirmTV;
     @InjectView(R.id.toolbar)
     ToolbarWithBackButton toolbar;
+    int pos = 0;
+    ProductModel productModel;
+    @InjectView(R.id.durationTV)
+    TextView durationTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,8 +49,20 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.appointment_activity);
         ButterKnife.inject(this);
+        InitViews();
 
+    }
+
+    private void InitViews() {
         setToolBar();
+        pos = getIntent().getIntExtra(Constants.POS, -1);
+        productModel = SingeltonClass.getInstance().productModels.get(pos);
+        categoryTV.setText(SingeltonClass.getInstance().serviceModel.getName());
+        productTV.setText(productModel.getName());
+        priceTV.setText(productModel.getCost());
+        descriptionTV.setText(productModel.getDescription());
+        durationTV.setText(productModel.getDuration());
+
     }
 
     private void setToolBar() {

@@ -64,7 +64,11 @@ public class CallWebService {
                                 @Override
                                 public void run() {
                                     customCardleDialog.dismiss();
-                                    callBackinerface.onJsonObjectSuccess(response);
+                                    try {
+                                        callBackinerface.onJsonObjectSuccess(response);
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
 
                                 }
                             }, 2000);

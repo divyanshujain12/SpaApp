@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Calendarlibrary/Calendarlibrary.iml" filepath="$PROJECT_DIR$/Calendarlibrary/Calendarlibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpaApp.iml" filepath="$PROJECT_DIR$/SpaApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpaAppNew.iml" filepath="$PROJECT_DIR$/SpaAppNew.iml" />
       <module fileurl="file://$PROJECT_DIR$/animator/animator.iml" filepath="$PROJECT_DIR$/animator/animator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/explosionfield/explosionfield.iml" filepath="$PROJECT_DIR$/explosionfield/explosionfield.iml" />

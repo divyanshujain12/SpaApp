@@ -8,6 +8,7 @@ import com.example.lenovo.SpaApp.Utils.SnackBarCallback;
 import com.example.lenovo.SpaApp.Utils.UpdateUiCallback;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
@@ -15,7 +16,7 @@ import org.json.JSONObject;
  */
 public class GlobalFragment extends Fragment implements CallBackInterface, SnackBarCallback,UpdateUiCallback {
     @Override
-    public void onJsonObjectSuccess(JSONObject object) {
+    public void onJsonObjectSuccess(JSONObject object) throws JSONException {
 
     }
 

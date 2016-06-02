@@ -30,6 +30,7 @@ public class HomeActivityController extends HomeActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         menuRV.addOnItemTouchListener(new RecyclerItemClickListener(this, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
@@ -64,13 +65,8 @@ public class HomeActivityController extends HomeActivity {
         updateFragment(new HomeFragmentControllers());
     }
 
-    @OnClick(R.id.cartRL)
-    public void onClick() {
-        Intent intent = new Intent(this, MyCartController.class);
-        startActivity(intent);
-    }
-
     public void updateFragment(Fragment fragment) {
+
         String name = fragment.getClass().getName();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         boolean isPopped = fragmentManager.popBackStackImmediate(name, FragmentManager.POP_BACK_STACK_INCLUSIVE);

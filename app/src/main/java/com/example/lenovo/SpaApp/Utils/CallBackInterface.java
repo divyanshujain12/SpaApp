@@ -1,6 +1,7 @@
 package com.example.lenovo.SpaApp.Utils;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
@@ -8,7 +9,7 @@ import org.json.JSONObject;
  */
 public interface CallBackInterface {
 
-    public void onJsonObjectSuccess(JSONObject object);
+    public void onJsonObjectSuccess(JSONObject object) throws JSONException;
 
     public void onJsonArrarSuccess(JSONArray array);
 

@@ -7,12 +7,13 @@
     <string name="err_msg_email">Enter valid email address</string>
     <string name="err_msg_password">Enter the password</string>
     <string name="err_msg_number">Enter the valid Number</string>
+    <string name="err_msg_address">ENter the Address!</string>
     <string name="err_wrong_pass">You have entered wrong old password!</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="facebook_app_id">770270483104747</string>
     <string name="enter_email">Enter Email</string>
     <string name="enter_name">Enter Name</string>
-
+    <string name="services">SERVICES</string>
     <string name="enter_number">Enter Number</string>
     <string name="enter_address">Enter Address</string>
     <string name="password">password</string>
@@ -56,6 +57,7 @@
     <string name="booking">BOOKING</string>
     <string name="checkout">CHECKOUT</string>
     <string name="no_item">NO ITEM AVAILABLE!</string>
+    <string name="successfully_added">SUCCESSFULLY ADDED!</string>
     <string-array name="timing_array">
         <item>8:00 AM</item>
         <item>9:00 AM</item>

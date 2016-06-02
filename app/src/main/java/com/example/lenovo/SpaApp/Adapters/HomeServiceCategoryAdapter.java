@@ -7,7 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.example.lenovo.SpaApp.Models.ServiceModel;
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.neopixl.pixlui.components.textview.TextView;
 
 /**
@@ -18,7 +20,6 @@ public class HomeServiceCategoryAdapter extends RecyclerView.Adapter<RecyclerVie
     private Context context;
     private int itemsCount = 0;
     private int[] serviceIncons = {R.drawable.service_icon1, R.drawable.service_icon2, R.drawable.service_icon3, R.drawable.service_icon4, R.drawable.service_icon5, R.drawable.service_icon6};
-    private String[] filenames = {"SERVICE 1", "SERVICE 2", "SERVICE 3", "SERVICE 4", "SERVICE 5", "SERVICE 6"};
 
     public HomeServiceCategoryAdapter(Context context) {
         this.context = context;
@@ -40,9 +41,11 @@ public class HomeServiceCategoryAdapter extends RecyclerView.Adapter<RecyclerVie
     }
 
     private void bindDefaultFeedItem(int position, CellFeedViewHolder holder) {
+
+        ServiceModel serviceModel = SingeltonClass.serviceModelArrayList.get(position);
         //     holder.feedImage.setTag(categoryArray[position]);
         holder.serviceIcon.setImageResource(serviceIncons[position]);
-        holder.txtServiceName.setText(filenames[position]);
+        holder.txtServiceName.setText(serviceModel.getName());
     }
 
     public void updateItems() {
@@ -57,7 +60,7 @@ public class HomeServiceCategoryAdapter extends RecyclerView.Adapter<RecyclerVie
 
     @Override
     public int getItemCount() {
-        return filenames.length;
+        return SingeltonClass.serviceModelArrayList.size();
     }
 
     public static class CellFeedViewHolder extends RecyclerView.ViewHolder {

@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 
-import com.example.lenovo.SpaApp.Adapters.ServiceCategoryAdapter;
+import com.example.lenovo.SpaApp.Adapters.ProductsAdapter;
 import com.example.lenovo.SpaApp.AppointmentDescriptionActivity;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
+import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.RecyclerItemClickListener;
 import com.example.lenovo.SpaApp.Utils.SimpleListener;
+import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.nineoldandroids.animation.Animator;
 
 import io.codetail.animation.SupportAnimator;
@@ -30,9 +32,9 @@ public class HomeFragmentControllers extends HomeFragment implements View.OnClic
         txtCancel.setOnClickListener(this);
     }
 
-    public void onServiceSelected(View view) {
+    public void onServiceSelected(View view, int pos) {
         recyclerview.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL));
-        recyclerview.setAdapter(new ServiceCategoryAdapter(getActivity()));
+        recyclerview.setAdapter(new ProductsAdapter(getActivity(), SingeltonClass.getInstance().getProductsArrayList(pos)));
         clickedView = view;
         startBlueX = CommonFunctions.centerX(clickedView);
         startBlueY = CommonFunctions.centerY(clickedView);
@@ -105,9 +107,9 @@ public class HomeFragmentControllers extends HomeFragment implements View.OnClic
 
     }
 
-    private void OnServiceClick(View view) {
+    private void OnServiceClick(View view, int pos) {
 
-        onServiceSelected(view);
+        onServiceSelected(view, pos);
     }
 
     private RecyclerItemClickListener recyclerItemClickListener = new RecyclerItemClickListener(getActivity(), new RecyclerItemClickListener.OnItemClickListener() {
@@ -115,11 +117,12 @@ public class HomeFragmentControllers extends HomeFragment implements View.OnClic
         public void onItemClick(View view, int position) {
             View parentView = (View) view.getParent();
             if (parentView == servicesRV)
-                OnServiceClick(view);
+                OnServiceClick(view, position);
 
             else if (parentView == recyclerview) {
                 disappearBluePair();
                 Intent intent = new Intent(getActivity(), AppointmentDescriptionActivity.class);
+                intent.putExtra(Constants.POS, position);
                 startActivity(intent);
             }
         }
