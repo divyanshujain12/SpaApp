@@ -5,15 +5,25 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
+import com.example.lenovo.SpaApp.Interfaces.CallBackInterface;
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
+import com.example.lenovo.SpaApp.Utils.Constants;
+import com.example.lenovo.SpaApp.Utils.ParsingResponse;
 import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.imanoweb.calendarview.CalendarListener;
 import com.neopixl.pixlui.components.textview.TextView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 import butterknife.OnClick;
@@ -37,7 +47,6 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
 
                 view.setBackgroundColor(Color.BLACK);
                 previousView = view;
-
                 timeString = ((TextView) view).getText().toString();
             }
         });
@@ -46,9 +55,10 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
         calendarView.setCalendarListener(new CalendarListener() {
             @Override
             public void onDateSelected(Date date) {
-                SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+                SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
                 dateString = df.format(date);
-                Toast.makeText(AppointmentBookingController.this, dateString, Toast.LENGTH_SHORT).show();
+                getAvailableSlots(dateString);
+             //   Toast.makeText(AppointmentBookingController.this, dateString, Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -69,6 +79,29 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
                     submitClickedOK();
                 break;
         }
+    }
+
+    private void getAvailableSlots(String date) {
+        CallWebService.getInstance(this, true).hitJSONObjectVolleyWebService(CallWebService.POST, Constants.WebServices.AVAILABLE_SLOTS, createMapForGetAvailableTimeSlots(date), new CallBackInterface() {
+            @Override
+            public void onJsonObjectSuccess(JSONObject object) throws JSONException {
+                ArrayList<CharSequence> slots = new ArrayList<CharSequence>();
+
+                slots = ParsingResponse.getInstance().parseJsonArrayWithJsonObject(object.getJSONArray(Constants.DATA), String.class);
+                arrayAdapter = new ArrayAdapter<CharSequence>(AppointmentBookingController.this, R.layout.single_textview, slots);
+                timingGrid.setAdapter(arrayAdapter);
+            }
+
+            @Override
+            public void onJsonArrarSuccess(JSONArray array) {
+
+            }
+
+            @Override
+            public void onFailure(String str) {
+
+            }
+        });
     }
 
     private boolean checkFields() {
@@ -106,10 +139,11 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
         appointmentBookingModel = realm.createObject(AppointmentBookingModel.class);
 
         appointmentBookingModel.setCategory_id(SingeltonClass.getInstance().serviceModel.getCategory_id());
-        appointmentBookingModel.setProduct_id(SingeltonClass.getInstance().productModel.getId());
         appointmentBookingModel.setCategory_name(SingeltonClass.getInstance().serviceModel.getName());
         appointmentBookingModel.setProduct_name(SingeltonClass.getInstance().productModel.getName());
         appointmentBookingModel.setDuration(SingeltonClass.getInstance().productModel.getDuration());
+        appointmentBookingModel.setCity_id(SingeltonClass.getInstance().productModel.getCity_id());
+        appointmentBookingModel.setProduct_id(SingeltonClass.getInstance().productModel.getId());
         appointmentBookingModel.setCost(SingeltonClass.getInstance().productModel.getCost());
         appointmentBookingModel.setName(nameString);
         appointmentBookingModel.setNumber(numberString);
@@ -118,7 +152,6 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
         appointmentBookingModel.setDate(dateString);
         appointmentBookingModel.setTime(timeString);
         appointmentBookingModel.setAdditional_notes(additionalString);
-
 
         realm.commitTransaction();
         RealmResults<AppointmentBookingModel> bookingModels = realm.allObjects(AppointmentBookingModel.class);

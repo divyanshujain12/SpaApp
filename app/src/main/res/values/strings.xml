@@ -52,12 +52,15 @@
     <string name="add_to_cart">ADD TO CART</string>
     <string name="cancel_appointment">CANCEL</string>
     <string name="are_you_sure_cancel">Are you sure you want to cancel this appointment.</string>
-    <string name="are_you_sure_remove">Are you sure you want to remove this appointment.</string>
+    <string name="are_you_sure_remove">Do you really want to remove this appointment.</string>
     <string name="my_cart">MY CART</string>
     <string name="booking">BOOKING</string>
     <string name="checkout">CHECKOUT</string>
     <string name="no_item">NO ITEM AVAILABLE!</string>
     <string name="successfully_added">SUCCESSFULLY ADDED!</string>
+    <string name="log_in_alert_msg">Kindly log in for make this booking.</string>
+
+
     <string-array name="timing_array">
         <item>8:00 AM</item>
         <item>9:00 AM</item>

@@ -36,6 +36,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
 
+import com.example.lenovo.SpaApp.Interfaces.PageIndicator;
 import com.example.lenovo.SpaApp.R;
 
 

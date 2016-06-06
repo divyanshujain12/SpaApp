@@ -14,12 +14,12 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/sad_face" />
+            android:layout_width="@dimen/one_hundred_dp"
+            android:layout_height="@dimen/one_hundred_dp"
+            android:src="@drawable/sad_face"
+            />
 
         <com.neopixl.pixlui.components.textview.TextView
-            android:id="@+id/confirmTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/twenty_dp"

@@ -9,7 +9,9 @@ import android.widget.LinearLayout;
 import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingController;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
 import com.example.lenovo.SpaApp.Models.ProductModel;
+import com.example.lenovo.SpaApp.Utils.AlertMessage;
 import com.example.lenovo.SpaApp.Utils.Constants;
+import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.neopixl.pixlui.components.textview.TextView;
 
@@ -74,11 +76,33 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.confirmTV:
-                Intent intent = new Intent(this, AppointmentBookingController.class);
-                startActivity(intent);
+                if (MySharedPereference.getInstance().getBoolean(this, Constants.LOGGED_IN)) {
+                    Intent intent = new Intent(this, AppointmentBookingController.class);
+                    startActivity(intent);
+                } else {
+                    AlertMessage.showAlertDialogWithCallBack(this, "LOGIN ALERT", getString(R.string.log_in_alert_msg), this);
+                }
                 break;
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 
+    public void onResume() {
+        super.onResume();
+        toolbar.setProductCount();
+    }
+
+    @Override
+    public void doAction() {
+        super.doAction();
+
+        SingeltonClass.getInstance().AFTER_LOGIN_ACTION = 1;
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
+    }
 }

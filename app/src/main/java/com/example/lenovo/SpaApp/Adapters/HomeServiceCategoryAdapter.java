@@ -9,20 +9,23 @@ import android.widget.ImageView;
 
 import com.example.lenovo.SpaApp.Models.ServiceModel;
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Interfaces.RecyclerViewClick;
 import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.neopixl.pixlui.components.textview.TextView;
 
 /**
  * Created by divyanshu on 4/6/2016.
  */
-public class HomeServiceCategoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class HomeServiceCategoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements View.OnClickListener {
 
     private Context context;
     private int itemsCount = 0;
+    private RecyclerViewClick recyclerViewClick;
     private int[] serviceIncons = {R.drawable.service_icon1, R.drawable.service_icon2, R.drawable.service_icon3, R.drawable.service_icon4, R.drawable.service_icon5, R.drawable.service_icon6};
 
-    public HomeServiceCategoryAdapter(Context context) {
+    public HomeServiceCategoryAdapter(Context context, RecyclerViewClick recyclerViewClick) {
         this.context = context;
+        this.recyclerViewClick = recyclerViewClick;
 
     }
 
@@ -44,8 +47,10 @@ public class HomeServiceCategoryAdapter extends RecyclerView.Adapter<RecyclerVie
 
         ServiceModel serviceModel = SingeltonClass.serviceModelArrayList.get(position);
         //     holder.feedImage.setTag(categoryArray[position]);
+        holder.customView.setId(position);
         holder.serviceIcon.setImageResource(serviceIncons[position]);
         holder.txtServiceName.setText(serviceModel.getName());
+        holder.customView.setOnClickListener(this);
     }
 
     public void updateItems() {
@@ -63,12 +68,19 @@ public class HomeServiceCategoryAdapter extends RecyclerView.Adapter<RecyclerVie
         return SingeltonClass.serviceModelArrayList.size();
     }
 
+    @Override
+    public void onClick(View v) {
+        recyclerViewClick.onClickItem(v.getId(), v);
+    }
+
     public static class CellFeedViewHolder extends RecyclerView.ViewHolder {
         TextView txtServiceName;
         ImageView serviceIcon;
+        View customView;
 
         public CellFeedViewHolder(View view) {
             super(view);
+            customView = view;
             serviceIcon = (ImageView) view.findViewById(R.id.serviceIcon);
             txtServiceName = (TextView) view.findViewById(R.id.txtServiceName);
 

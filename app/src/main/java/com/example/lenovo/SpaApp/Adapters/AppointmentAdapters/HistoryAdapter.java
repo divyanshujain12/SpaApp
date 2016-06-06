@@ -10,7 +10,7 @@ import android.widget.Toast;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Model.AppointmentsModel;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
-import com.example.lenovo.SpaApp.Utils.SnackBarCallback;
+import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
 import com.neopixl.pixlui.components.textview.TextView;
 
 import java.util.ArrayList;

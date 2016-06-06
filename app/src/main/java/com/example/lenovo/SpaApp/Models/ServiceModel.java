@@ -7,9 +7,10 @@ import java.util.ArrayList;
  */
 public class ServiceModel {
     String category_id;
-    String category_name;
-    String category_icon;
-    ArrayList<ProductModel> products;
+    String name;
+    String image;
+    String city_id;
+    ArrayList<ProductModel> services;
 
     public String getCategory_id() {
         return category_id;
@@ -20,26 +21,34 @@ public class ServiceModel {
     }
 
     public String getName() {
-        return category_name;
+        return name;
     }
 
     public void setName(String name) {
-        this.category_name = name;
+        this.name = name;
     }
 
     public String getIcon() {
-        return category_icon;
+        return image;
     }
 
     public void setIcon(String icon) {
-        this.category_icon = icon;
+        this.image = icon;
     }
 
     public ArrayList<ProductModel> getProducts() {
-        return products;
+        return services;
     }
 
     public void setProducts(ArrayList<ProductModel> products) {
-        this.products = products;
+        this.services = products;
+    }
+
+    public String getCity_id() {
+        return city_id;
+    }
+
+    public void setCity_id(String city_id) {
+        this.city_id = city_id;
     }
 }

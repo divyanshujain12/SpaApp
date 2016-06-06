@@ -18,8 +18,11 @@ import com.imanoweb.calendarview.CustomCalendarView;
 import com.neopixl.pixlui.components.edittext.EditText;
 import com.neopixl.pixlui.components.textview.TextView;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashMap;
 import java.util.Locale;
 
 import GlobalClasses.GlobalActivity;
@@ -54,6 +57,7 @@ public class AppointmentBookingActivity extends GlobalActivity {
     private boolean ifExpand = true;
     protected ArrayList<String> availableTimeSlotsArray = new ArrayList<>();
     protected AppointmentBookingModel appointmentBookingModel = null;
+    protected ArrayAdapter<CharSequence> arrayAdapter;
     protected String categoryNameString, nameString, numberString, emailString, addressString, dateString, timeString, additionalString;
 
     @Override
@@ -86,15 +90,11 @@ public class AppointmentBookingActivity extends GlobalActivity {
 
         calendarView.setCustomTypeface(Typeface.createFromAsset(getAssets(), "fonts/Titillium-Regular.otf"));
 
-        ArrayAdapter<CharSequence> arrayAdapter = new ArrayAdapter<CharSequence>(this, R.layout.single_textview, getResources().getStringArray(R.array.timing_array));
-        timingGrid.setAdapter(arrayAdapter);
-
     }
 
 
     protected void submitClickedOK() {
         toolbar.setProductCount();
-        //IncrementProductCountAndSave(this);
         CommonFunctions.showSnackBarWithoutAction(timingGrid, getString(R.string.successfully_added));
     }
 
@@ -104,14 +104,20 @@ public class AppointmentBookingActivity extends GlobalActivity {
 
     }
 
-    private void IncrementProductCountAndSave(Context context) {
-        String productCount = MySharedPereference.getInstance().getString(context, Constants.PRODUCT_COUNT);
-        if (productCount.isEmpty())
-            productCount = "1";
-        else
-            productCount = String.valueOf(Integer.parseInt(productCount) + 1);
+    protected HashMap<String, String> createMapForGetAvailableTimeSlots(String date) {
 
-        MySharedPereference.getInstance().setString(context, Constants.PRODUCT_COUNT, productCount);
-        toolbar.setProductCount();
+        HashMap<String, String> hashMap = new HashMap<>();
+        hashMap.put(Constants.EMAIL, MySharedPereference.getInstance().getString(this, Constants.EMAIL));
+        hashMap.put(Constants.CITY_ID, SingeltonClass.getInstance().serviceModel.getCity_id());
+        hashMap.put(Constants.CATEGORY_ID, SingeltonClass.getInstance().serviceModel.getCategory_id());
+        hashMap.put(Constants.ID, SingeltonClass.getInstance().productModel.getId());
+        hashMap.put(Constants.DATE, date);
+        return hashMap;
+
+    }
+
+    @Override
+    public void onJsonObjectSuccess(JSONObject object) {
+        super.onJsonObjectSuccess(object);
     }
 }

@@ -4,18 +4,45 @@ package com.example.lenovo.SpaApp.Models;
  * Created by Lenovo on 23-03-2016.
  */
 public class ProductModel {
-    String product_id;
-    String product_name;
+    String id;
+    String category_id;
+    String city_id;
+    String title;
     String description;
-    String cost;
+    String price;
     String duration;
+    String image;
+
+    public String getCategory_id() {
+        return category_id;
+    }
+
+    public void setCategory_id(String category_id) {
+        this.category_id = category_id;
+    }
+
+    public String getCity_id() {
+        return city_id;
+    }
+
+    public void setCity_id(String city_id) {
+        this.city_id = city_id;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
 
     public String getId() {
-        return product_id;
+        return id;
     }
 
     public void setId(String id) {
-        this.product_id = id;
+        this.id = id;
     }
 
     public String getDescription() {
@@ -35,19 +62,19 @@ public class ProductModel {
     }
 
     public String getName() {
-        return product_name;
+        return title;
     }
 
     public void setName(String name) {
-        this.product_name = name;
+        this.title = name;
     }
 
     public String getCost() {
-        return cost;
+        return price;
     }
 
     public void setCost(String cost) {
-        this.cost = cost;
+        this.price = cost;
     }
 
 }

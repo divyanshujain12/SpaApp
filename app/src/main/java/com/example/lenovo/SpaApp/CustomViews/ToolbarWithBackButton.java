@@ -8,6 +8,7 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -28,7 +29,7 @@ import io.realm.Realm;
 public class ToolbarWithBackButton extends LinearLayout implements OnClickListener {
     Toolbar toolbar;
     TextView toolbar_title, badgeTV;
-    RelativeLayout cartRL;
+    FrameLayout cartRL;
     ImageView backIV;
     AppCompatActivity context;
     Realm realm;
@@ -50,7 +51,7 @@ public class ToolbarWithBackButton extends LinearLayout implements OnClickListen
         backIV = (ImageView) findViewById(R.id.backIV);
         toolbar_title = (TextView) findViewById(R.id.toolbar_title);
         badgeTV = (TextView) findViewById(R.id.badgeTV);
-        cartRL = (RelativeLayout) findViewById(R.id.cartRL);
+        cartRL = (FrameLayout) findViewById(R.id.cartRL);
         cartRL.setOnClickListener(this);
 
         toolbar_title.setText(name);

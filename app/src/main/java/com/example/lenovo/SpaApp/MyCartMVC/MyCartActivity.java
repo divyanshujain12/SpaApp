@@ -3,24 +3,29 @@ package com.example.lenovo.SpaApp.MyCartMVC;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.lenovo.SpaApp.Adapters.MyCartAdapter;
 import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingModel;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.Constants;
+import com.example.lenovo.SpaApp.Utils.ModelToJson;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
+import com.neopixl.pixlui.components.textview.TextView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import GlobalClasses.DummyJsons;
 import GlobalClasses.GlobalActivity;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.OnClick;
 import io.realm.Realm;
 
 /**
@@ -35,6 +40,12 @@ public class MyCartActivity extends GlobalActivity {
     protected MyCartAdapter myCartAdapter;
     protected ArrayList<AppointmentBookingModel> myCartModels = new ArrayList<>();
     protected Realm realm;
+    @InjectView(R.id.contentRL)
+    RelativeLayout contentRL;
+    @InjectView(R.id.noItemLL)
+    LinearLayout noItemLL;
+    @InjectView(R.id.confirmTV)
+    TextView confirmTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,26 +64,37 @@ public class MyCartActivity extends GlobalActivity {
         myCartRV.setLayoutManager(new LinearLayoutManager(this));
         realm = Realm.getDefaultInstance();
         myCartModels.addAll(realm.allObjects(AppointmentBookingModel.class));
-        myCartAdapter = new MyCartAdapter(this, myCartModels);
+        myCartAdapter = new MyCartAdapter(this, myCartModels, this);
         myCartRV.setAdapter(myCartAdapter);
-      /*  try {
-            onJsonObjectSuccess(new JSONObject(DummyJsons.appointmentJSON));
-        } catch (JSONException e) {
 
-        }*/
+        if (myCartModels.size() <= 0)
+            hideContentLayout(true);
+        else
+            hideContentLayout(false);
+
+    }
+
+    public void hideContentLayout(boolean b) {
+        noItemLL.setVisibility(b ? View.VISIBLE : View.GONE);
+        contentRL.setVisibility(b ? View.GONE : View.VISIBLE);
     }
 
 
     @Override
     public void onJsonObjectSuccess(JSONObject object) {
         super.onJsonObjectSuccess(object);
-        try {
-            myCartModels = ParsingResponse.getInstance().parseJsonArrayWithJsonObject(object.getJSONArray(Constants.DATA), MyCartModel.class);
-            myCartAdapter = new MyCartAdapter(this, myCartModels);
-            myCartRV.setAdapter(myCartAdapter);
 
-        } catch (JSONException e) {
+    }
+
+    @OnClick(R.id.confirmTV)
+    public void onClick() {
+    }
+
+  /*  protected JSONObject getJSONObjectForCheckout() {
+
+        for (AppointmentBookingModel appointmentBookingModel : myCartModels) {
+            JSONObject jsonObject = ModelToJson.getInstance().createJSONFromModelClass(appointmentBookingModel);
 
         }
-    }
+    }*/
 }

@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Utils.Constants;
+import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.neopixl.pixlui.components.textview.TextView;
 
 /**
@@ -21,6 +23,8 @@ public class MenuFragmentAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     private int[] serviceIcons = {R.drawable.appointment, R.drawable.buy_services, R.drawable.contact, R.drawable.setting};
 
     public MenuFragmentAdapter(Context context) {
+        if (MySharedPereference.getInstance().getBoolean(context, Constants.LOGGED_IN))
+            serviceName[4] = "Logout";
         this.context = context;
 
     }

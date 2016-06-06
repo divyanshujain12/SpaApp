@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -26,7 +27,7 @@ import io.realm.Realm;
 public class ToolbarWithHamburg extends LinearLayout implements View.OnClickListener {
     Toolbar toolbar;
     TextView toolbar_title, badgeTV;
-    RelativeLayout cartRL;
+    FrameLayout cartRL;
     ImageView content_hamburger;
     AppCompatActivity activity;
     Realm realm;
@@ -49,7 +50,7 @@ public class ToolbarWithHamburg extends LinearLayout implements View.OnClickList
         content_hamburger = (ImageView) findViewById(R.id.content_hamburger);
         toolbar_title = (TextView) findViewById(R.id.toolbar_title);
         badgeTV = (TextView) findViewById(R.id.badgeTV);
-        cartRL = (RelativeLayout) findViewById(R.id.cartRL);
+        cartRL = (FrameLayout) findViewById(R.id.cartRL);
         cartRL.setOnClickListener(this);
 
         toolbar_title.setText(name);

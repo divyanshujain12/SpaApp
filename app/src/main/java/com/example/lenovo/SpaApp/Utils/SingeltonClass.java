@@ -24,6 +24,8 @@ public class SingeltonClass {
 
     public ProductModel productModel;
 
+    public int AFTER_LOGIN_ACTION = 0; //***1 for go back to previous screen*****//
+
     private SingeltonClass() {
     }
 

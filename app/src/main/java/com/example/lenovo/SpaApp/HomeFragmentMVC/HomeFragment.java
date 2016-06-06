@@ -1,5 +1,6 @@
 package com.example.lenovo.SpaApp.HomeFragmentMVC;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
@@ -14,12 +15,15 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.lenovo.SpaApp.Adapters.HomeServiceCategoryAdapter;
+import com.example.lenovo.SpaApp.AppointmentDescriptionActivity;
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
 import com.example.lenovo.SpaApp.Models.ProductModel;
 import com.example.lenovo.SpaApp.Models.ServiceModel;
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
+import com.example.lenovo.SpaApp.Utils.RecyclerItemClickListener;
 import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 
 import org.json.JSONException;
@@ -71,23 +75,25 @@ public class HomeFragment extends GlobalFragment {
 
         recyclerview = (RecyclerView) view.findViewById(R.id.recyclerview);
 
-
         sheetsView = (LinearLayout) view.findViewById(R.id.sheetsView);
         mParent = view;
         mBluePair = (FrameLayout) view.findViewById(R.id.transition_blue_pair);
 
+        CallWebService.getInstance(getActivity(), true).hitJSONObjectVolleyWebService(CallWebService.GET, Constants.WebServices.GET_CATEGORY, null, this);
+/*
         try {
             onJsonObjectSuccess(new JSONObject(DummyJsons.SERVICES_JSON));
         } catch (JSONException exce) {
             exce.printStackTrace();
-        }
+        }*/
+
     }
 
     @Override
     public void onJsonObjectSuccess(JSONObject object) throws JSONException {
         super.onJsonObjectSuccess(object);
         SingeltonClass.serviceModelArrayList = (ParsingResponse.getInstance().parseJsonArrayWithJsonObject(object.getJSONArray(Constants.DATA), ServiceModel.class));
-        servicesRV.setAdapter(new HomeServiceCategoryAdapter(getActivity()));
+        servicesRV.setAdapter(new HomeServiceCategoryAdapter(getActivity(), this));
     }
 
     @Override

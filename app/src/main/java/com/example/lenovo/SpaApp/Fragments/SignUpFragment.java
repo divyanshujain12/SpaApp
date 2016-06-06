@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -20,11 +19,10 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import com.android.volley.Request;
-import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
+import com.example.lenovo.SpaApp.Interfaces.UpdateViewPagerPosition;
 import com.example.lenovo.SpaApp.MyApplication;
 import com.example.lenovo.SpaApp.R;
-import com.example.lenovo.SpaApp.Utils.CallBackInterface;
 import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 import com.example.lenovo.SpaApp.Utils.ConnectionDetector;
@@ -56,9 +54,14 @@ public class SignUpFragment extends GlobalFragment implements View.OnClickListen
     EditText edtxtNumber;
     @InjectView(R.id.inpNumber)
     TextInputLayout inpNumber;
+    UpdateViewPagerPosition updateViewPagerPosition;
 
     public SignUpFragment() {
         // Required empty public constructor
+    }
+
+    public SignUpFragment(UpdateViewPagerPosition updateViewPagerPosition) {
+        this.updateViewPagerPosition = updateViewPagerPosition;
     }
 
     @Override
@@ -113,10 +116,11 @@ public class SignUpFragment extends GlobalFragment implements View.OnClickListen
             e.printStackTrace();
         }
         editor.apply();*/
-        MySharedPereference.getInstance().setBoolean(getActivity(), Constants.LOGGED_IN, true);
+        updateViewPagerPosition.updatePosition(0);
+       /* MySharedPereference.getInstance().setBoolean(getActivity(), Constants.LOGGED_IN, true);
         Intent i = new Intent(getActivity(), HomeActivityController.class);
         startActivity(i);
-        getActivity().finish();
+        getActivity().finish();*/
 
     }
 

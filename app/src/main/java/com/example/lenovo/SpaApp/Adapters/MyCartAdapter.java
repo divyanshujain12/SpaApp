@@ -8,10 +8,10 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingModel;
-import com.example.lenovo.SpaApp.MyCartMVC.MyCartModel;
+import com.example.lenovo.SpaApp.MyCartMVC.MyCartActivity;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
-import com.example.lenovo.SpaApp.Utils.SnackBarCallback;
+import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
 import com.neopixl.pixlui.components.textview.TextView;
 
 import java.util.ArrayList;
@@ -27,12 +27,14 @@ public class MyCartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     private Context context;
     private LayoutInflater layoutInflater;
     private Realm realm;
+    private MyCartActivity instance;
 
-    public MyCartAdapter(Context context, ArrayList<AppointmentBookingModel> myCartModels) {
+    public MyCartAdapter(Context context, ArrayList<AppointmentBookingModel> myCartModels, MyCartActivity instance) {
         this.context = context;
         this.myCartModels = myCartModels;
         layoutInflater = LayoutInflater.from(context);
         realm = Realm.getDefaultInstance();
+        this.instance = instance;
     }
 
     @Override
@@ -92,13 +94,18 @@ public class MyCartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 realm.beginTransaction();
                 realm.where(AppointmentBookingModel.class).findAll().remove(pos);
                 realm.commitTransaction();
-
-                myCartModels.remove(pos);
-                notifyItemRemoved(pos);
+                removeItem(pos);
                 Toast.makeText(context, "Ok Clicked!", Toast.LENGTH_SHORT).show();
             }
         });
     }
 
+
+    private void removeItem(int pos) {
+        myCartModels.remove(pos);
+        notifyItemRemoved(pos);
+        if (myCartModels.size() == 0)
+            instance.hideContentLayout(true);
+    }
 
 }

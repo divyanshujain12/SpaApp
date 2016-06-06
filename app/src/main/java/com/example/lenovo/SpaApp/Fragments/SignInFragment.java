@@ -19,14 +19,17 @@ import android.view.ViewGroup;
 
 import com.android.volley.Request;
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
+import com.example.lenovo.SpaApp.Interfaces.CallBackInterface;
+import com.example.lenovo.SpaApp.Models.UserDetailModel;
 import com.example.lenovo.SpaApp.MyApplication;
 import com.example.lenovo.SpaApp.R;
-import com.example.lenovo.SpaApp.Utils.CallBackInterface;
 import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 import com.example.lenovo.SpaApp.Utils.ConnectionDetector;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
+import com.example.lenovo.SpaApp.Utils.ParsingResponse;
+import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.neopixl.pixlui.components.button.Button;
 import com.neopixl.pixlui.components.edittext.EditText;
 
@@ -35,6 +38,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+
+import io.realm.Realm;
 
 
 public class SignInFragment extends Fragment implements View.OnClickListener, CallBackInterface {
@@ -46,6 +51,7 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
     EditText edtemail, edtpassword;
     TextInputLayout tilEmail, tilpassword;
     View v;
+    UserDetailModel userDetailModel;
 
     public SignInFragment() {
         // Required empty public constructor
@@ -98,14 +104,25 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
         String message = "";
         try {
             message = object.getString(Constants.MESSAGE);
-            JSONObject new_user = object.getJSONObject(Constants.DATA);
+            /*JSONObject new_user = object.getJSONObject(Constants.DATA);
             MySharedPereference.getInstance().setString(getActivity(), Constants.NAME, new_user.getString(Constants.NAME));
-            MySharedPereference.getInstance().setString(getActivity(), Constants.EMAIL, new_user.getString(Constants.EMAIL));
+            MySharedPereference.getInstance().setString(getActivity(), Constants.EMAIL, new_user.getString(Constants.EMAIL));*/
             MySharedPereference.getInstance().setBoolean(getActivity(), Constants.LOGGED_IN, true);
-            Intent i = new Intent(getActivity(), HomeActivityController.class);
-            startActivity(i);
-            getActivity().finish();
 
+            Realm realm = Realm.getDefaultInstance();
+            realm.beginTransaction();
+            userDetailModel = realm.createObject(UserDetailModel.class);
+            userDetailModel = ParsingResponse.getInstance().parseJsonObject(object.getJSONObject(Constants.DATA), UserDetailModel.class);
+            realm.commitTransaction();
+
+            if (SingeltonClass.getInstance().AFTER_LOGIN_ACTION == 1) {
+                SingeltonClass.getInstance().AFTER_LOGIN_ACTION = 0;
+                getActivity().onBackPressed();
+            } else {
+                Intent i = new Intent(getActivity(), HomeActivityController.class);
+                startActivity(i);
+                getActivity().finish();
+            }
         } catch (JSONException e) {
             e.printStackTrace();
             message = e.getMessage();

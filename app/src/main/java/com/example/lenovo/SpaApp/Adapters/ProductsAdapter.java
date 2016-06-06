@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.example.lenovo.SpaApp.Models.ProductModel;
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Interfaces.RecyclerViewClick;
 import com.neopixl.pixlui.components.textview.TextView;
 
 import java.util.ArrayList;
@@ -16,15 +17,17 @@ import java.util.ArrayList;
 /**
  * Created by Lenovo on 23-03-2016.
  */
-public class ProductsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class ProductsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements View.OnClickListener {
 
     private Context context;
     private int itemsCount = 0;
     private ArrayList<ProductModel> subServiceModels;
+    private RecyclerViewClick recyclerViewClick;
 
-    public ProductsAdapter(Context context, ArrayList<ProductModel> subServiceModels) {
+    public ProductsAdapter(Context context, ArrayList<ProductModel> subServiceModels, RecyclerViewClick recyclerViewClick) {
         this.context = context;
         this.subServiceModels = subServiceModels;
+        this.recyclerViewClick = recyclerViewClick;
     }
 
     @Override
@@ -44,8 +47,11 @@ public class ProductsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     private void bindDefaultFeedItem(int position, CellFeedViewHolder holder) {
 
         ProductModel subServiceModel = subServiceModels.get(position);
+        holder.customView.setId(position);
         holder.txtServiceSub.setText(subServiceModel.getName());
         holder.txtPrice.setText(subServiceModel.getCost());
+
+        holder.customView.setOnClickListener(this);
     }
 
     public void updateItems() {
@@ -63,12 +69,18 @@ public class ProductsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         return subServiceModels.size();
     }
 
+    @Override
+    public void onClick(View v) {
+        recyclerViewClick.onClickItem(v.getId(), v);
+    }
+
     public static class CellFeedViewHolder extends RecyclerView.ViewHolder {
         TextView txtServiceSub, txtPrice;
+        View customView;
 
         public CellFeedViewHolder(View view) {
             super(view);
-
+            customView = view;
             txtServiceSub = (TextView) view.findViewById(R.id.txtServiceSub);
             txtPrice = (TextView) view.findViewById(R.id.txtPrice);
         }

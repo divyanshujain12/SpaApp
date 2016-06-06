@@ -13,6 +13,7 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
+import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
 import com.example.lenovo.SpaApp.Utils.ConnectionDetector;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
@@ -46,7 +47,7 @@ public class SplashActivity extends AppCompatActivity {
                 public void run() {
                     Intent i = null;
                     if (MySharedPereference.getInstance().getBoolean(SplashActivity.this, Constants.LOGGED_IN)) {
-                        i = new Intent(SplashActivity.this, HomeActivity.class);
+                        i = new Intent(SplashActivity.this, HomeActivityController.class);
 
                     } else {
                         i = new Intent(SplashActivity.this, HowItWork.class);

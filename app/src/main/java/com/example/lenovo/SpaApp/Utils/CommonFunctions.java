@@ -1,16 +1,8 @@
 package com.example.lenovo.SpaApp.Utils;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.os.AsyncTask;
-import android.os.Build;
-import android.renderscript.Allocation;
-import android.renderscript.Element;
-import android.renderscript.RenderScript;
-import android.renderscript.ScriptIntrinsicBlur;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
 import android.text.TextUtils;
@@ -19,6 +11,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
 import com.example.lenovo.SpaApp.R;
 import com.neopixl.pixlui.components.edittext.EditText;
 import com.nineoldandroids.view.ViewHelper;

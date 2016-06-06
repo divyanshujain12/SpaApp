@@ -2,9 +2,9 @@ package GlobalClasses;
 
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.lenovo.SpaApp.Utils.CallBackInterface;
-import com.example.lenovo.SpaApp.Utils.SnackBarCallback;
-import com.example.lenovo.SpaApp.Utils.UpdateUiCallback;
+import com.example.lenovo.SpaApp.Interfaces.CallBackInterface;
+import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
+import com.example.lenovo.SpaApp.Interfaces.UpdateUiCallback;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

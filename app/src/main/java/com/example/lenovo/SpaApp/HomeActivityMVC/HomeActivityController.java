@@ -18,6 +18,7 @@ import com.example.lenovo.SpaApp.MainActivity;
 import com.example.lenovo.SpaApp.MyCartMVC.MyCartActivity;
 import com.example.lenovo.SpaApp.MyCartMVC.MyCartController;
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.RecyclerItemClickListener;
 
 import butterknife.OnClick;
@@ -48,6 +49,7 @@ public class HomeActivityController extends HomeActivity {
                         updateFragment(SettingFragment.getInstance("SETTINGS"));
                         break;
                     case 4:
+                        MySharedPereference.getInstance().clearSharedPreference(HomeActivityController.this);
                         Intent intent = new Intent(HomeActivityController.this, MainActivity.class);
                         startActivity(intent);
                         finish();
@@ -79,7 +81,7 @@ public class HomeActivityController extends HomeActivity {
 
     }
 
-    public void onResume(){
+    public void onResume() {
         super.onResume();
         toolbar.setProductCount();
     }

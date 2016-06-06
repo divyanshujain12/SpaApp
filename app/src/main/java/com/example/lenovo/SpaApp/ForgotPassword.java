@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
-import com.example.lenovo.SpaApp.Utils.CallBackInterface;
+import com.example.lenovo.SpaApp.Interfaces.CallBackInterface;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.neopixl.pixlui.components.edittext.EditText;

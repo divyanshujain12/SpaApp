@@ -13,53 +13,35 @@
     app:elevation="8dp"
     app:layout_scrollFlags="scroll|enterAlways"
     app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageView
             android:id="@+id/backIV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/back_arrow"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/ten_dp"/>
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:src="@drawable/back_arrow" />
 
         <com.neopixl.pixlui.components.textview.TextView
             android:id="@+id/toolbar_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:layout_gravity="center"
             android:singleLine="true"
             android:text="APPOINTMENT"
             android:textAllCaps="true"
-            android:layout_centerInParent="true"
             android:textColor="#ffffff"
             android:textSize="20sp"
             pixlui:typeface="Titillium-Bold.otf" />
-        <RelativeLayout
-            android:id="@+id/cartRL"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true">
 
-            <ImageView
-                android:id="@+id/cartIV"
-                style="@style/ImageView.Hamburger"
-                android:src="@drawable/cart" />
 
-            <com.neopixl.pixlui.components.textview.TextView
-                xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
-                android:id="@+id/badgeTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/badge_circle"
-                android:text="10"
-                android:padding="@dimen/seven_dp"
-                android:gravity="center"
-                android:textColor="#FFF"
-                android:textSize="12sp"
-                pixlui:typeface="Titillium-Regular.otf" />
-        </RelativeLayout>
+        <include layout="@layout/badge_view" />
+
+
     </RelativeLayout>
 </android.support.v7.widget.Toolbar>

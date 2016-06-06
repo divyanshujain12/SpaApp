@@ -18,13 +18,16 @@ import android.widget.ViewFlipper;
 
 import com.example.lenovo.SpaApp.Fragments.SignInFragment;
 import com.example.lenovo.SpaApp.Fragments.SignUpFragment;
+import com.example.lenovo.SpaApp.Interfaces.UpdateViewPagerPosition;
 import com.example.lenovo.SpaApp.Utils.NonSwipeableViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import GlobalClasses.GlobalActivity;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends GlobalActivity implements UpdateViewPagerPosition {
     private NonSwipeableViewPager viewPager;
     private TabLayout tabLayout;
 
@@ -46,9 +49,14 @@ public class MainActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new SignInFragment(), getResources().getString(R.string.log_in));
-        adapter.addFragment(new SignUpFragment(), getResources().getString(R.string.sign_up));
+        adapter.addFragment(new SignUpFragment(this), getResources().getString(R.string.sign_up));
 
         viewPager.setAdapter(adapter);
+    }
+
+    @Override
+    public void updatePosition(int pos) {
+        viewPager.setCurrentItem(pos);
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -78,5 +86,7 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return mFragmentTitleList.get(position);
         }
+
+
     }
 }
