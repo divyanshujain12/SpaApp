@@ -1,5 +1,6 @@
 package com.example.lenovo.SpaApp.MyAppointmentsMVC;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,9 +14,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.ChildFragments.InProgressFragment;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers.CanceledFragmentController;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers.HistoryAppointmentsController;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers.InProgressFragmentController;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers.UpcomingAppointmentsController;
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Utils.Constants;
+import com.example.lenovo.SpaApp.Utils.MySharedPereference;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -30,6 +39,7 @@ public class MyAppointmentsFragment extends Fragment {
     ViewPager viewPager;
     private PagerAdapter pagerAdapter;
     private int modeFixed;
+    private static Context context;
 
     public static MyAppointmentsFragment getInstance(String Name) {
         MyAppointmentsFragment appointmentsFragment = new MyAppointmentsFragment();
@@ -43,6 +53,7 @@ public class MyAppointmentsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        context = getActivity();
         View view = inflater.inflate(R.layout.my_appointments, container, false);
         ButterKnife.inject(this, view);
         return view;
@@ -88,6 +99,12 @@ public class MyAppointmentsFragment extends Fragment {
                 case 1:
                     frag = new HistoryAppointmentsController();
                     break;
+                case 2:
+                    frag = new CanceledFragmentController();
+                    break;
+                case 3:
+                    frag = new InProgressFragmentController();
+                    break;
 
             }
             return frag;
@@ -108,10 +125,30 @@ public class MyAppointmentsFragment extends Fragment {
                 case 1:
                     title = "HISTORY";
                     break;
+                case 2:
+                    title = "CANCELLED";
+                    break;
+                case 3:
+                    title = "IN PROGRESS";
+                    break;
 
             }
 
             return title;
         }
+    }
+
+    public static JSONObject createJSONForgetAppointments(String type) {
+
+        String emailID = MySharedPereference.getInstance().getString(context, Constants.EMAIL);
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put(Constants.EMAIL, emailID);
+            jsonObject.put(Constants.TYPE, type);
+            return jsonObject;
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

@@ -46,11 +46,11 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     private void bindDefaultFeedItem(int position, AppointmentsViewHolder holder) {
         AppointmentsModel appointmentsModel = appointmentsModels.get(position);
-        holder.serviceNameTV.setText(appointmentsModel.getService_name());
-        holder.subServiceNameTV.setText(appointmentsModel.getSub_service_name());
-        holder.durationTV.setText(appointmentsModel.getDuration());
-        holder.amountTV.setText(appointmentsModel.getCost());
-        holder.dateTV.setText(appointmentsModel.getDate());
+        holder.serviceNameTV.setText(appointmentsModel.getCategory());
+        holder.subServiceNameTV.setText(appointmentsModel.getService());
+        holder.durationTV.setText(appointmentsModel.getOrder_time());
+        holder.amountTV.setText(appointmentsModel.getPrice());
+        holder.dateTV.setText(appointmentsModel.getOrder_date());
         holder.removeTV.setId(position);
         holder.removeTV.setOnClickListener(this);
     }

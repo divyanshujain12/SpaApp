@@ -104,16 +104,17 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
         String message = "";
         try {
             message = object.getString(Constants.MESSAGE);
-            /*JSONObject new_user = object.getJSONObject(Constants.DATA);
+            JSONObject new_user = object.getJSONObject(Constants.DATA);
             MySharedPereference.getInstance().setString(getActivity(), Constants.NAME, new_user.getString(Constants.NAME));
-            MySharedPereference.getInstance().setString(getActivity(), Constants.EMAIL, new_user.getString(Constants.EMAIL));*/
+            MySharedPereference.getInstance().setString(getActivity(), Constants.EMAIL, new_user.getString(Constants.EMAIL));
+            MySharedPereference.getInstance().setString(getActivity(), Constants.PHONE_NUMBER, new_user.getString(Constants.PHONE_NUMBER));
             MySharedPereference.getInstance().setBoolean(getActivity(), Constants.LOGGED_IN, true);
 
-            Realm realm = Realm.getDefaultInstance();
+           /* Realm realm = Realm.getDefaultInstance();
             realm.beginTransaction();
             userDetailModel = realm.createObject(UserDetailModel.class);
             userDetailModel = ParsingResponse.getInstance().parseJsonObject(object.getJSONObject(Constants.DATA), UserDetailModel.class);
-            realm.commitTransaction();
+            realm.commitTransaction();*/
 
             if (SingeltonClass.getInstance().AFTER_LOGIN_ACTION == 1) {
                 SingeltonClass.getInstance().AFTER_LOGIN_ACTION = 0;

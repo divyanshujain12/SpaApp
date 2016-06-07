@@ -69,7 +69,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         mInstance = this;
-        RealmConfiguration realmConfiguration = new RealmConfiguration.Builder(mInstance).build();
+        RealmConfiguration realmConfiguration = new RealmConfiguration.Builder(mInstance).deleteRealmIfMigrationNeeded().build();
         Realm.setDefaultConfiguration(realmConfiguration);
     }
 

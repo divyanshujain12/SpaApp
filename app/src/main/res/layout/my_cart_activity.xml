@@ -9,7 +9,8 @@
     <com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton
         android:id="@+id/customToolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
 
     <RelativeLayout
         android:id="@+id/contentRL"
@@ -42,6 +43,7 @@
         android:id="@+id/noItemLL"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/customToolbar"
         android:gravity="center"
         android:visibility="gone">
 

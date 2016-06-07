@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 
+import com.example.lenovo.SpaApp.Models.UserDetailModel;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
 import com.example.lenovo.SpaApp.Fragments.BuyServicesFragment;
 import com.example.lenovo.SpaApp.Fragments.ContactFragment;
@@ -22,6 +23,7 @@ import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.RecyclerItemClickListener;
 
 import butterknife.OnClick;
+import io.realm.Realm;
 
 /**
  * Created by divyanshu on 5/29/2016.
@@ -50,6 +52,10 @@ public class HomeActivityController extends HomeActivity {
                         break;
                     case 4:
                         MySharedPereference.getInstance().clearSharedPreference(HomeActivityController.this);
+                        Realm realm = Realm.getDefaultInstance();
+                        realm.beginTransaction();
+                        realm.allObjects(UserDetailModel.class).clear();
+                        realm.commitTransaction();
                         Intent intent = new Intent(HomeActivityController.this, MainActivity.class);
                         startActivity(intent);
                         finish();
@@ -82,6 +88,8 @@ public class HomeActivityController extends HomeActivity {
     }
 
     public void onResume() {
+
+
         super.onResume();
         toolbar.setProductCount();
     }

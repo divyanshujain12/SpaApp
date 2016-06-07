@@ -9,11 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.lenovo.SpaApp.Adapters.AppointmentAdapters.UpcomingAdapter;
-import com.example.lenovo.SpaApp.CustomViews.SimpleDividerItemDecoration;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Model.AppointmentsModel;
-import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
 import com.example.lenovo.SpaApp.R;
-import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
 
@@ -42,7 +39,7 @@ public class UpcomingAppointmentsFragment extends GlobalFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.upcoming_appointments_fragments, null);
+        View view = inflater.inflate(R.layout.appointments_fragments, null);
         ButterKnife.inject(this, view);
         return view;
     }
@@ -53,12 +50,7 @@ public class UpcomingAppointmentsFragment extends GlobalFragment {
 
         myUpcomingAppointmentsRV.setLayoutManager(new LinearLayoutManager(getActivity()));
         appointmentsModels = new ArrayList<>();
-        upcomingAdapter = new UpcomingAdapter(getActivity(), appointmentsModels);
-        try {
-            onJsonObjectSuccess(new JSONObject(DummyJsons.appointmentJSON));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+
     }
 
     @Override
@@ -79,4 +71,5 @@ public class UpcomingAppointmentsFragment extends GlobalFragment {
         }
 
     }
+
 }

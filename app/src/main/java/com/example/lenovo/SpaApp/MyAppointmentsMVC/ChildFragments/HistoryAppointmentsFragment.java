@@ -9,10 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.lenovo.SpaApp.Adapters.AppointmentAdapters.HistoryAdapter;
-import com.example.lenovo.SpaApp.Adapters.AppointmentAdapters.UpcomingAdapter;
-import com.example.lenovo.SpaApp.CustomViews.SimpleDividerItemDecoration;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Model.AppointmentsModel;
-import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
@@ -33,15 +30,15 @@ import butterknife.InjectView;
  */
 public class HistoryAppointmentsFragment extends GlobalFragment {
     @InjectView(R.id.myUpcomingAppointmentsRV)
-    protected RecyclerView myUpcomingAppointmentsRV;
-    protected HistoryAdapter upcomingAdapter;
+    protected RecyclerView appointmentsRV;
+    protected HistoryAdapter historyAdapter;
     protected ArrayList<AppointmentsModel> appointmentsModels;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.upcoming_appointments_fragments, null);
+        View view = inflater.inflate(R.layout.appointments_fragments, null);
         ButterKnife.inject(this, view);
         return view;
     }
@@ -50,14 +47,10 @@ public class HistoryAppointmentsFragment extends GlobalFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        myUpcomingAppointmentsRV.setLayoutManager(new LinearLayoutManager(getActivity()));
+        appointmentsRV.setLayoutManager(new LinearLayoutManager(getActivity()));
         appointmentsModels = new ArrayList<>();
-        upcomingAdapter = new HistoryAdapter(getActivity(), appointmentsModels);
-        try {
-            onJsonObjectSuccess(new JSONObject(DummyJsons.appointmentJSON));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+        historyAdapter = new HistoryAdapter(getActivity(), appointmentsModels);
+
     }
 
     @Override
@@ -71,8 +64,8 @@ public class HistoryAppointmentsFragment extends GlobalFragment {
         try {
             JSONArray data = object.getJSONArray(Constants.DATA);
             appointmentsModels = ParsingResponse.getInstance().parseJsonArrayWithJsonObject(data, AppointmentsModel.class);
-            upcomingAdapter = new HistoryAdapter(getActivity(), appointmentsModels);
-            myUpcomingAppointmentsRV.setAdapter(upcomingAdapter);
+            historyAdapter = new HistoryAdapter(getActivity(), appointmentsModels);
+            appointmentsRV.setAdapter(historyAdapter);
         } catch (JSONException e) {
             e.printStackTrace();
         }

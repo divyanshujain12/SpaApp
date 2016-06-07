@@ -3,7 +3,12 @@ package com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers;
 import android.view.View;
 
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.ChildFragments.UpcomingAppointmentsFragment;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
+import com.example.lenovo.SpaApp.Utils.CallWebService;
+import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.RecyclerItemClickListener;
+
+import org.json.JSONObject;
 
 /**
  * Created by divyanshu.jain on 5/31/2016.
@@ -18,5 +23,8 @@ public class UpcomingAppointmentsController extends UpcomingAppointmentsFragment
 
             }
         }));
+
+        CallWebService.getInstance(getActivity(), false).hitWithJSONObjectVolleyWebService(CallWebService.POST, Constants.WebServices.MY_SERVICES, MyAppointmentsFragment.createJSONForgetAppointments("1"), this);
     }
+
 }

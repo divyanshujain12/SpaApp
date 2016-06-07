@@ -106,6 +106,7 @@ public class MyCartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         notifyItemRemoved(pos);
         if (myCartModels.size() == 0)
             instance.hideContentLayout(true);
+        else instance.hideContentLayout(false);
     }
 
 }

@@ -4,6 +4,8 @@ android {
     compileSdkVersion 22
     buildToolsVersion "21.1.2"
 
+
+
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -11,6 +13,9 @@ android {
             res.srcDirs = ['res']
             assets.srcDir("assets")
         }
+    }
+    lintOptions {
+        abortOnError false
     }
 }
 

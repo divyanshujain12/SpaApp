@@ -23,6 +23,13 @@ public class Constants {
     public static String CITY_ID = "city_id";
     public static String ID = "id";
     public static String DATE = "date";
+    public static String TIME = "time";
+    public static String PRICE = "price";
+    public static String ADDITIONAL_NOTES = "additional_notes";
+    public static String NUMBER = "number";
+    public static String MENU = "menu";
+    public static String ADDRESS = "address";
+    public static String TYPE = "type";
 
     public interface WebServices {
 
@@ -36,7 +43,11 @@ public class Constants {
 
         String GET_CATEGORY = BASE + "getcategory";
 
-        public static String AVAILABLE_SLOTS = BASE + "available_slot";
+        String AVAILABLE_SLOTS = BASE + "available_slot";
+
+        String CHECKOUT = BASE + "checkout";
+
+        String MY_SERVICES = BASE + "my_services";
 
         public static String HOME = BASE + "home";
 

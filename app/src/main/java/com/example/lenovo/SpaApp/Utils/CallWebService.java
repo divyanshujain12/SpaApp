@@ -154,23 +154,6 @@ public class CallWebService {
                 try {
                     MyApplication.getInstance(context).getRequestQueue().getCache().invalidate(url, true);
                     if (response.getString(Constants.STATUS_CODE).equalsIgnoreCase("True")) {
-                        if (customCardleDialog != null) {
-                            customCardleDialog.Success();
-
-                            Handler handler = new Handler();
-                            handler.postDelayed(new Runnable() {
-                                @Override
-                                public void run() {
-                                    customCardleDialog.dismiss();
-                                    try {
-                                        callBackinerface.onJsonObjectSuccess(response);
-                                    } catch (JSONException e) {
-                                        e.printStackTrace();
-                                    }
-
-                                }
-                            }, 2000);
-                        } else
                             callBackinerface.onJsonObjectSuccess(response);
                     } else {
                         if (customCardleDialog != null) {

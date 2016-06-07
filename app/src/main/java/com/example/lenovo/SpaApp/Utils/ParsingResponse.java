@@ -95,13 +95,14 @@ public class ParsingResponse {
 
                 } else
                     f.set(object, jsonObject.opt(f.getName()));
+
             }
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        data = (T) object;
+        data =((T) object);
 
         return data;
     }
