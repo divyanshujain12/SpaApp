@@ -74,6 +74,7 @@ public class MyAppointmentsFragment extends Fragment {
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.setTabMode(modeFixed);
         tabLayout.setTabTextColors(Color.GRAY, Color.WHITE);
+        viewPager.setOffscreenPageLimit(4);
 
     }
 
@@ -112,7 +113,7 @@ public class MyAppointmentsFragment extends Fragment {
 
         @Override
         public int getCount() {
-            return 2;
+            return 4;
         }
 
         @Override

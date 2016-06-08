@@ -8,8 +8,6 @@ import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.RecyclerItemClickListener;
 
-import org.json.JSONObject;
-
 /**
  * Created by divyanshu.jain on 5/31/2016.
  */
@@ -17,7 +15,7 @@ public class UpcomingAppointmentsController extends UpcomingAppointmentsFragment
     @Override
     public void onResume() {
         super.onResume();
-        myUpcomingAppointmentsRV.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), new RecyclerItemClickListener.OnItemClickListener() {
+        appointmentsRV.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
 

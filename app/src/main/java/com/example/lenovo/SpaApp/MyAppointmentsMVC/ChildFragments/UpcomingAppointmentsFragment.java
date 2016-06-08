@@ -7,12 +7,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
 import com.example.lenovo.SpaApp.Adapters.AppointmentAdapters.UpcomingAdapter;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Model.AppointmentsModel;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
+import com.neopixl.pixlui.components.textview.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,7 +22,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import GlobalClasses.DummyJsons;
 import GlobalClasses.GlobalFragment;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -31,9 +32,13 @@ import butterknife.InjectView;
 public class UpcomingAppointmentsFragment extends GlobalFragment {
 
     @InjectView(R.id.myUpcomingAppointmentsRV)
-    protected RecyclerView myUpcomingAppointmentsRV;
+    protected RecyclerView appointmentsRV;
     protected UpcomingAdapter upcomingAdapter;
     protected ArrayList<AppointmentsModel> appointmentsModels;
+    @InjectView(R.id.progressBar)
+    ProgressBar progressBar;
+    @InjectView(R.id.noItemTV)
+    TextView noItemTV;
 
     @Nullable
     @Override
@@ -48,7 +53,7 @@ public class UpcomingAppointmentsFragment extends GlobalFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        myUpcomingAppointmentsRV.setLayoutManager(new LinearLayoutManager(getActivity()));
+        appointmentsRV.setLayoutManager(new LinearLayoutManager(getActivity()));
         appointmentsModels = new ArrayList<>();
 
     }
@@ -62,14 +67,30 @@ public class UpcomingAppointmentsFragment extends GlobalFragment {
     @Override
     public void onJsonObjectSuccess(JSONObject object) {
         try {
+            ItemAvailable(true, "");
             JSONArray data = object.getJSONArray(Constants.DATA);
             appointmentsModels = ParsingResponse.getInstance().parseJsonArrayWithJsonObject(data, AppointmentsModel.class);
             upcomingAdapter = new UpcomingAdapter(getActivity(), appointmentsModels);
-            myUpcomingAppointmentsRV.setAdapter(upcomingAdapter);
+            appointmentsRV.setAdapter(upcomingAdapter);
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
+    }
+
+    @Override
+    public void onFailure(String str) {
+        super.onFailure(str);
+        ItemAvailable(false, str);
+    }
+
+    private void ItemAvailable(boolean b, String Text) {
+        progressBar.setVisibility(View.GONE);
+        if (!b) {
+            noItemTV.setText(Text);
+            appointmentsRV.setVisibility(View.GONE);
+            noItemTV.setVisibility(View.VISIBLE);
+        }
     }
 
 }

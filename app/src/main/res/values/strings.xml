@@ -61,6 +61,7 @@
     <string name="log_in_alert_msg">Kindly log in for make this booking.</string>
 
 
+
     <string-array name="timing_array">
         <item>8:00 AM</item>
         <item>9:00 AM</item>

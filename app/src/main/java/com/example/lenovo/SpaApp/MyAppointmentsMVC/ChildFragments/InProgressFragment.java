@@ -7,12 +7,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
 import com.example.lenovo.SpaApp.Adapters.AppointmentAdapters.InProgressAdapter;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Model.AppointmentsModel;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
+import com.neopixl.pixlui.components.textview.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,7 +35,10 @@ public class InProgressFragment extends GlobalFragment {
     protected RecyclerView appointmentsRV;
     protected InProgressAdapter inProgressAdapter;
     protected ArrayList<AppointmentsModel> appointmentsModels;
-
+    @InjectView(R.id.progressBar)
+    ProgressBar progressBar;
+    @InjectView(R.id.noItemTV)
+    TextView noItemTV;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -60,6 +65,7 @@ public class InProgressFragment extends GlobalFragment {
     @Override
     public void onJsonObjectSuccess(JSONObject object) {
         try {
+            ItemAvailable(true, "");
             JSONArray data = object.getJSONArray(Constants.DATA);
             appointmentsModels = ParsingResponse.getInstance().parseJsonArrayWithJsonObject(data, AppointmentsModel.class);
             inProgressAdapter = new InProgressAdapter(getActivity(), appointmentsModels);
@@ -68,5 +74,19 @@ public class InProgressFragment extends GlobalFragment {
             e.printStackTrace();
         }
 
+    }
+    @Override
+    public void onFailure(String str) {
+        super.onFailure(str);
+        ItemAvailable(false, str);
+    }
+
+    private void ItemAvailable(boolean b, String Text) {
+        progressBar.setVisibility(View.GONE);
+        if (!b) {
+            noItemTV.setText(Text);
+            appointmentsRV.setVisibility(View.GONE);
+            noItemTV.setVisibility(View.VISIBLE);
+        }
     }
 }
