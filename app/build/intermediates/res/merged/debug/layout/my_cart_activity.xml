@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton
+        android:id="@+id/customToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/contentRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/customToolbar">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/myCartRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/fifty_dp"
+            android:foregroundGravity="center" />
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:id="@+id/confirmTV"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:text="@string/checkout"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/eighteen_sp"
+            pixlui:typeface="Titillium-Bold.otf" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/noItemLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/customToolbar"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <include layout="@layout/no_item_available" />
+    </LinearLayout>
+</RelativeLayout>

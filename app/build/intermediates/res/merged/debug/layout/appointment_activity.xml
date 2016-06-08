@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/header_color"
+    android:orientation="vertical">
+
+
+    <com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/horizontal_white_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="@dimen/fifty_four_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/categoriesLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ten_dp">
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:id="@+id/categoryTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/five_dp"
+                        android:text="CATEGORY NAME"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/twenty_sp"
+                        pixlui:typeface="Titillium-Bold.otf" />
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:id="@+id/subCategoryTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/five_dp"
+                        android:text="SUB_CATEGORY NAME"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sixteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+
+                </LinearLayout>
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:id="@+id/priceTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:padding="@dimen/five_dp"
+                    android:text="$ 20"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/twenty_six_sp"
+                    pixlui:typeface="Satisfy-Regular.ttf" />
+
+                <View
+                    android:id="@+id/viewLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/categoriesLL"
+                    android:background="@color/white_with_alpha" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/ten_dp">
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/five_dp"
+                    android:text="Description"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/eighteen_sp"
+                    pixlui:typeface="Titillium-Bold.otf" />
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:id="@+id/descriptionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/five_dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:padding="@dimen/five_dp"
+                    android:text="DURATION"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/eighteen_sp"
+                    pixlui:typeface="Titillium-Bold.otf" />
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:id="@+id/durationTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/five_dp"
+                    android:text="2 HOURS"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/eighteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/confirmTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="@dimen/twenty_dp"
+        android:text="@string/lets_get_pampered"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/eighteen_sp"
+        pixlui:typeface="Titillium-Bold.otf" />
+
+
+</RelativeLayout>

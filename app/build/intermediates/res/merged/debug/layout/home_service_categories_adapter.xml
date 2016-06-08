@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/service1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_dp"
+        android:background="@drawable/circle_test_button_red"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:layout_marginRight="@dimen/ten_dp"
+        android:layout_marginBottom="@dimen/five_dp"
+    android:layout_marginTop="@dimen/five_dp"
+        android:paddingLeft="@dimen/ten_dp">
+
+        <ImageView
+            android:id="@+id/serviceIcon"
+            android:layout_width="@dimen/fourty_dp"
+            android:layout_height="@dimen/fourty_dp"
+            android:background="@drawable/blurred_white_circle"
+            android:padding="@dimen/two_dp"
+            android:src="@drawable/service_icon1" />
+
+        <com.neopixl.pixlui.components.textview.TextView
+            xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+            android:id="@+id/txtServiceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty_dp"
+            android:text="SERVICE 1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/twenty_sp"
+            pixlui:typeface="Titillium-Regular.otf"/>
+    </LinearLayout>
+</LinearLayout>
