@@ -11,27 +11,24 @@ import android.widget.RelativeLayout;
 import com.example.lenovo.SpaApp.Adapters.MyCartAdapter;
 import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingModel;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
-import com.example.lenovo.SpaApp.Models.UserDetailModel;
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Utils.AddEventAndReminder;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
-import com.example.lenovo.SpaApp.Utils.Constants;
-import com.example.lenovo.SpaApp.Utils.ModelToJson;
-import com.example.lenovo.SpaApp.Utils.MySharedPereference;
-import com.example.lenovo.SpaApp.Utils.ParsingResponse;
 import com.neopixl.pixlui.components.textview.TextView;
 
-import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.TimeZone;
 
 import GlobalClasses.GlobalActivity;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import butterknife.OnClick;
 import io.realm.Realm;
-import io.realm.RealmResults;
 
 /**
  * Created by divyanshu.jain on 6/1/2016.
@@ -92,12 +89,51 @@ public class MyCartActivity extends GlobalActivity {
     @Override
     public void onJsonObjectSuccess(JSONObject object) {
         super.onJsonObjectSuccess(object);
-        myCartModels.clear();
-        myCartAdapter.notifyDataSetChanged();
-        hideContentLayout(true);
-        AlertMessage.showAlertDialog(this, "Congratulation!", "Your requests has been accepted! We will get back to you shortly!", false);
+
+        AlertMessage.showAlertDialogWithCallBack(this, "Congratulation!", "Add To Reminder!", this);
 
     }
 
+    @Override
+    public void doAction() {
+        super.doAction();
 
+        for (AppointmentBookingModel appointmentBookingModel : myCartModels) {
+            long timeInMS = 0;
+            String date = appointmentBookingModel.getDate();
+            String address = appointmentBookingModel.getAddress();
+            String title = appointmentBookingModel.getName();
+            String desc = appointmentBookingModel.getProduct_name();
+            String time = appointmentBookingModel.getTime();
+            SimpleDateFormat Formatter = new SimpleDateFormat("hh:mm aa");
+            Formatter.setTimeZone(TimeZone.getDefault());
+
+            try {
+                time = "10:00 AM";
+                date = "2016-06-11";
+                Date timeD = Formatter.parse(time.toUpperCase());
+                Formatter = new SimpleDateFormat("dd-mm-yyyy");
+                Date dateD = Formatter.parse(Formatter.format(date));
+                timeInMS = CombineDateAnTime(dateD, timeD).getTime();
+
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+
+
+            AddEventAndReminder.getInstance(this).addEventsToCalender(title, desc, address, timeInMS);
+
+        }
+        myCartModels.clear();
+        myCartAdapter.notifyDataSetChanged();
+        hideContentLayout(true);
+
+    }
+
+    private Date CombineDateAnTime(Date date, Date time) {
+        return new Date(
+                date.getYear(), date.getMonth(), date.getDay(),
+                time.getHours(), time.getMinutes(), time.getSeconds()
+        );
+    }
 }

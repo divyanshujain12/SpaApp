@@ -14,12 +14,12 @@
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 63,
+                        "startLine": 64,
                         "startColumn": 4,
-                        "startOffset": 3625,
-                        "endLine": 77,
+                        "startOffset": 3627,
+                        "endLine": 78,
                         "endColumn": 19,
-                        "endOffset": 4073
+                        "endOffset": 4075
                     }
                 }
             },

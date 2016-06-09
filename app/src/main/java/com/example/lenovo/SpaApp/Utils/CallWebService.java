@@ -154,7 +154,9 @@ public class CallWebService {
                 try {
                     MyApplication.getInstance(context).getRequestQueue().getCache().invalidate(url, true);
                     if (response.getString(Constants.STATUS_CODE).equalsIgnoreCase("True")) {
-                            callBackinerface.onJsonObjectSuccess(response);
+                        if (customCardleDialog != null)
+                            customCardleDialog.dismiss();
+                        callBackinerface.onJsonObjectSuccess(response);
                     } else {
                         if (customCardleDialog != null) {
                             customCardleDialog.Fail(response.optString(Constants.MESSAGE));
