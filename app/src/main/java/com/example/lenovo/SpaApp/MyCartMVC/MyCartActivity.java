@@ -23,6 +23,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 import java.util.TimeZone;
 
 import GlobalClasses.GlobalActivity;
@@ -105,17 +106,17 @@ public class MyCartActivity extends GlobalActivity {
             String title = appointmentBookingModel.getName();
             String desc = appointmentBookingModel.getProduct_name();
             String time = appointmentBookingModel.getTime();
-            SimpleDateFormat Formatter = new SimpleDateFormat("hh:mm aa");
+            SimpleDateFormat Formatter = new SimpleDateFormat("yyyy-MM-dd hh:mm aa", Locale.ENGLISH);
             Formatter.setTimeZone(TimeZone.getDefault());
 
             try {
-                time = "10:00 AM";
-                date = "2016-06-11";
-                Date timeD = Formatter.parse(time.toUpperCase());
-                Formatter = new SimpleDateFormat("dd-mm-yyyy");
-                Date dateD = Formatter.parse(Formatter.format(date));
-                timeInMS = CombineDateAnTime(dateD, timeD).getTime();
-
+                time = "3:42 PM";
+                date = "2016-06-10" + " " + time;
+             /*   Date timeD = Formatter.parse(time.toUpperCase());
+                Formatter = new SimpleDateFormat("", Locale.ENGLISH);*/
+                Date dateD = Formatter.parse(date);
+                //  timeInMS = CombineDateAnTime(dateD, timeD);
+                timeInMS = dateD.getTime();
             } catch (ParseException e) {
                 e.printStackTrace();
             }
@@ -130,10 +131,22 @@ public class MyCartActivity extends GlobalActivity {
 
     }
 
-    private Date CombineDateAnTime(Date date, Date time) {
-        return new Date(
-                date.getYear(), date.getMonth(), date.getDay(),
-                time.getHours(), time.getMinutes(), time.getSeconds()
-        );
+    private long CombineDateAnTime(Date date, Date time) {
+        /*Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+
+        int yearInt = cal.get(Calendar.YEAR);
+        int monthInt = cal.get(Calendar.MONTH);
+        int dayInt = cal.get(Calendar.DAY_OF_MONTH);
+
+        cal.setTime(time);
+        int hoursInt = cal.get(Calendar.HOUR);
+        int minutesInt = cal.get(Calendar.MINUTE);*/
+
+        long sum = date.getTime() + time.getTime();
+
+        Date combinedDate = new Date(sum);
+        /*cal.setTime(combinedDate);*/
+        return combinedDate.getTime();
     }
 }
