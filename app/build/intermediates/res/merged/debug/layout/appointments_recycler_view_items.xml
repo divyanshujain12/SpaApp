@@ -22,7 +22,6 @@
             android:padding="@dimen/eight_dp"
             android:text="@string/service_name"
             android:textColor="#fff"
-
             android:textSize="@dimen/sixteen_sp"
             pixlui:typeface="Titillium-Bold.otf" />
 

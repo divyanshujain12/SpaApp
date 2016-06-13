@@ -59,8 +59,14 @@
     <string name="no_item">NO ITEM AVAILABLE!</string>
     <string name="successfully_added">SUCCESSFULLY ADDED!</string>
     <string name="log_in_alert_msg">Kindly log in for make this booking.</string>
-
-
+    <string name="success">SUCCESS</string>
+    <string name="yes">YES</string>
+    <string name="close">CLOSE</string>
+    <string name="add_reminder">ADD REMINDER</string>
+    <string name="no">NO</string>
+    <string name="add_reminder_text">Do you want to add a reminder to your calendar?</string>
+    <string name="set_reminder_alert_content_pre">Your appointment request for this checkout (</string>
+    <string name="set_reminder_alert_content_post">) has been placed.</string>
 
     <string-array name="timing_array">
         <item>8:00 AM</item>

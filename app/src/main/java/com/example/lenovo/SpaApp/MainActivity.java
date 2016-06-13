@@ -38,6 +38,7 @@ public class MainActivity extends GlobalActivity implements UpdateViewPagerPosit
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
         viewPager = (NonSwipeableViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
         viewPager.setCurrentItem(getIntent().getIntExtra("pos", 0));

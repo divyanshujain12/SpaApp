@@ -8,10 +8,10 @@ import butterknife.ButterKnife.Injector;
 public class SignUpFragment$$ViewInjector<T extends com.example.lenovo.SpaApp.Fragments.SignUpFragment> implements Injector<T> {
   @Override public void inject(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131558638, "field 'edtxtNumber'");
-    target.edtxtNumber = finder.castView(view, 2131558638, "field 'edtxtNumber'");
-    view = finder.findRequiredView(source, 2131558637, "field 'inpNumber'");
-    target.inpNumber = finder.castView(view, 2131558637, "field 'inpNumber'");
+    view = finder.findRequiredView(source, 2131558641, "field 'edtxtNumber'");
+    target.edtxtNumber = finder.castView(view, 2131558641, "field 'edtxtNumber'");
+    view = finder.findRequiredView(source, 2131558640, "field 'inpNumber'");
+    target.inpNumber = finder.castView(view, 2131558640, "field 'inpNumber'");
   }
 
   @Override public void reset(T target) {

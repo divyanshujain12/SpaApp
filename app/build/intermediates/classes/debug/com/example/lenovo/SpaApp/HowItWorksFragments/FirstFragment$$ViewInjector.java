@@ -8,8 +8,8 @@ import butterknife.ButterKnife.Injector;
 public class FirstFragment$$ViewInjector<T extends com.example.lenovo.SpaApp.HowItWorksFragments.FirstFragment> implements Injector<T> {
   @Override public void inject(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131558562, "field 'txtSkip' and method 'onClick'");
-    target.txtSkip = finder.castView(view, 2131558562, "field 'txtSkip'");
+    view = finder.findRequiredView(source, 2131558565, "field 'txtSkip' and method 'onClick'");
+    target.txtSkip = finder.castView(view, 2131558565, "field 'txtSkip'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -18,8 +18,8 @@ public class FirstFragment$$ViewInjector<T extends com.example.lenovo.SpaApp.How
           target.onClick(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131558564, "field 'txtSignIn' and method 'onClick'");
-    target.txtSignIn = finder.castView(view, 2131558564, "field 'txtSignIn'");
+    view = finder.findRequiredView(source, 2131558567, "field 'txtSignIn' and method 'onClick'");
+    target.txtSignIn = finder.castView(view, 2131558567, "field 'txtSignIn'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -28,8 +28,8 @@ public class FirstFragment$$ViewInjector<T extends com.example.lenovo.SpaApp.How
           target.onClick(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131558565, "field 'txtSignUp' and method 'onClick'");
-    target.txtSignUp = finder.castView(view, 2131558565, "field 'txtSignUp'");
+    view = finder.findRequiredView(source, 2131558568, "field 'txtSignUp' and method 'onClick'");
+    target.txtSignUp = finder.castView(view, 2131558568, "field 'txtSignUp'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -38,14 +38,14 @@ public class FirstFragment$$ViewInjector<T extends com.example.lenovo.SpaApp.How
           target.onClick(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131558563, "field 'bottomViews'");
-    target.bottomViews = finder.castView(view, 2131558563, "field 'bottomViews'");
-    view = finder.findRequiredView(source, 2131558561, "field 'txtInstruction'");
-    target.txtInstruction = finder.castView(view, 2131558561, "field 'txtInstruction'");
-    view = finder.findRequiredView(source, 2131558560, "field 'contentRL'");
-    target.contentRL = finder.castView(view, 2131558560, "field 'contentRL'");
-    view = finder.findRequiredView(source, 2131558559, "field 'mainContainer'");
-    target.mainContainer = finder.castView(view, 2131558559, "field 'mainContainer'");
+    view = finder.findRequiredView(source, 2131558566, "field 'bottomViews'");
+    target.bottomViews = finder.castView(view, 2131558566, "field 'bottomViews'");
+    view = finder.findRequiredView(source, 2131558564, "field 'txtInstruction'");
+    target.txtInstruction = finder.castView(view, 2131558564, "field 'txtInstruction'");
+    view = finder.findRequiredView(source, 2131558563, "field 'contentRL'");
+    target.contentRL = finder.castView(view, 2131558563, "field 'contentRL'");
+    view = finder.findRequiredView(source, 2131558562, "field 'mainContainer'");
+    target.mainContainer = finder.castView(view, 2131558562, "field 'mainContainer'");
   }
 
   @Override public void reset(T target) {

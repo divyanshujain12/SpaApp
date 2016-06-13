@@ -5,24 +5,32 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
+import com.example.lenovo.SpaApp.Interfaces.CallBackInterface;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.CreateCommonJSON;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Model.AppointmentsModel;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
 import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
+import com.example.lenovo.SpaApp.Utils.CallWebService;
+import com.example.lenovo.SpaApp.Utils.Constants;
 import com.neopixl.pixlui.components.textview.TextView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
 /**
  * Created by divyanshu.jain on 5/31/2016.
  */
-public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements View.OnClickListener {
+public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements View.OnClickListener, CallBackInterface {
 
     private ArrayList<AppointmentsModel> appointmentsModels;
     private Context context;
     private LayoutInflater layoutInflater;
+    private int id;
 
     public HistoryAdapter(Context context, ArrayList<AppointmentsModel> appointmentsModels) {
         this.context = context;
@@ -78,12 +86,30 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     @Override
     public void onClick(View v) {
+        id = v.getId();
         AlertMessage.showAlertDialogWithCallBack(context, context.getString(R.string.alert), context.getString(R.string.are_you_sure_cancel), new SnackBarCallback() {
             @Override
             public void doAction() {
-                Toast.makeText(context, "Ok Clicked!", Toast.LENGTH_SHORT).show();
+
+                CallWebService.getInstance(context, true).hitWithJSONObjectVolleyWebService(CallWebService.POST, Constants.WebServices.CANCEL_ORDER, CreateCommonJSON.getInstance().createJsonObjectForCancelOrder(context, appointmentsModels.get(id).getOrder_id()), HistoryAdapter.this);
             }
         });
+    }
+
+    @Override
+    public void onJsonObjectSuccess(JSONObject object) throws JSONException {
+        appointmentsModels.remove(id);
+        notifyItemRemoved(id);
+    }
+
+    @Override
+    public void onJsonArrarSuccess(JSONArray array) {
+
+    }
+
+    @Override
+    public void onFailure(String str) {
+
     }
 }
 

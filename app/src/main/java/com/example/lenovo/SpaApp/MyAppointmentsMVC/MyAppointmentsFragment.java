@@ -139,17 +139,5 @@ public class MyAppointmentsFragment extends Fragment {
         }
     }
 
-    public static JSONObject createJSONForgetAppointments(String type) {
 
-        String emailID = MySharedPereference.getInstance().getString(context, Constants.EMAIL);
-        JSONObject jsonObject = new JSONObject();
-        try {
-            jsonObject.put(Constants.EMAIL, emailID);
-            jsonObject.put(Constants.TYPE, type);
-            return jsonObject;
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
 }

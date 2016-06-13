@@ -8,8 +8,8 @@ import butterknife.ButterKnife.Injector;
 public class HomeFragment$$ViewInjector<T extends com.example.lenovo.SpaApp.HomeFragmentMVC.HomeFragment> implements Injector<T> {
   @Override public void inject(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131558569, "field 'txtCancel'");
-    target.txtCancel = finder.castView(view, 2131558569, "field 'txtCancel'");
+    view = finder.findRequiredView(source, 2131558572, "field 'txtCancel'");
+    target.txtCancel = finder.castView(view, 2131558572, "field 'txtCancel'");
   }
 
   @Override public void reset(T target) {

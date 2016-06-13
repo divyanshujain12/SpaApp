@@ -12,16 +12,20 @@
         "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\drawable\\light_green_border_circle.xml"
     },
     {
-        "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
         "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right.png",
         "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\drawable\\right.png"
     },
     {
+        "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
         "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\correct.png",
+        "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\drawable\\correct.png"
     },
     {
         "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categories.png",
@@ -52,6 +56,10 @@
         "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\drawable\\syc.png"
     },
     {
+        "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alert_yes_button_background.xml",
+        "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\drawable\\alert_yes_button_background.xml"
+    },
+    {
         "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_gradient_drawable.xml",
         "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\drawable\\blue_gradient_drawable.xml"
     },
@@ -62,6 +70,10 @@
     {
         "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\line_divider.xml",
         "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\drawable\\line_divider.xml"
+    },
+    {
+        "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_white_circle.xml",
+        "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\drawable\\rounded_white_circle.xml"
     },
     {
         "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
@@ -136,6 +148,10 @@
         "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
+        "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top_corner_rounded_pink.xml",
+        "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\drawable\\top_corner_rounded_pink.xml"
+    },
+    {
         "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
         "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
@@ -154,6 +170,10 @@
     {
         "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back_arrow.png",
         "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\drawable\\back_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alert_no_background.xml",
+        "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\drawable\\alert_no_background.xml"
     },
     {
         "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",

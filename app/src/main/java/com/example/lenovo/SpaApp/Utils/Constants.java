@@ -30,6 +30,7 @@ public class Constants {
     public static String MENU = "menu";
     public static String ADDRESS = "address";
     public static String TYPE = "type";
+    public static String ORDER_ID = "order_id";
 
     public interface WebServices {
 
@@ -48,6 +49,8 @@ public class Constants {
         String CHECKOUT = BASE + "checkout";
 
         String MY_SERVICES = BASE + "my_services";
+
+        String CANCEL_ORDER = BASE + "cancel_order";
 
         public static String HOME = BASE + "home";
 

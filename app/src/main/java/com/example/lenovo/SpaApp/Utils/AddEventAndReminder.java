@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
@@ -17,6 +18,7 @@ import android.util.EventLog;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.TimeZone;
@@ -40,24 +42,20 @@ public class AddEventAndReminder {
 
     public void addEventsToCalender(String title, String desription, String address, long startDate) {
         try {
+
             String eventString = "content://com.android.calendar/events";
             ContentValues eventValues = new ContentValues();
+            eventValues.put("eventTimezone", TimeZone.getDefault().getID());
             eventValues.put("calendar_id", 1); // id, We need to choose from // our mobile for primary its 1
             eventValues.put("title", title);
             eventValues.put("description", desription);
             eventValues.put("eventLocation", address);
             //For next 10min
             long endDate = startDate + 1000 * 10 * 10;
-            eventValues.put("dtstart", startDate);
-            eventValues.put("dtend", endDate);
+            eventValues.put(CalendarContract.Events.DTSTART, startDate);
+            eventValues.put(CalendarContract.Events.DTEND, endDate);
             // If it is bithday alarm or such // kind (which should remind me for whole day) 0 for false, 1 // for true
-            eventValues.put("allDay", 1);
-            eventValues.put("eventStatus", 1);
-            // This information is // sufficient for most // entries tentative (0), // confirmed (1) or canceled // (2):
-            String timeZone = TimeZone.getDefault().getDisplayName();
-            eventValues.put("eventTimezone", timeZone);
-             /* * Comment below visibility and transparency column to avoid * java.lang.IllegalArgumentException column visibility is invalid * error */
-            eventValues.put("allDay", 1);
+            eventValues.put(CalendarContract.Events.STATUS, 1);
             // You can control whether // an event consumes time // opaque (0) or transparent // (1).
             eventValues.put("hasAlarm", 1);
             // 0 for false, 1 for true
@@ -74,6 +72,29 @@ public class AddEventAndReminder {
             Log.i("Error message", "Error in adding event on calendar" + ex.getMessage());
         }
     }
+
+
+ /*   public void addEvent(Context context,long start) {
+        Intent intent = new Intent(Intent.ACTION_INSERT)
+                .setData(CalendarContract.Events.CONTENT_URI)
+                .setType("vnd.android.cursor.item/event")
+                .putExtra(CalendarContract.Events.TITLE, "Tuesdays")
+                .putExtra(CalendarContract.Events.DESCRIPTION, "Tuesday Specials")
+                .putExtra(CalendarContract.Events.EVENT_LOCATION, "Lixious Bench")
+                //.putExtra(CalendarContract.Events.RRULE, "FREQ=WEEKLY;BYDAY=TU;UNTIL=20150428")
+
+                        // to specify start time use "beginTime" instead of "dtstart"
+                        //.putExtra(Events.DTSTART, calendar.getTimeInMillis())
+                .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, start)
+                *//*.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, end)*//*
+
+                        // if you want to go from 6pm to 9pm, don't specify all day
+                        //.putExtra(CalendarContract.EXTRA_EVENT_ALL_DAY, true)
+                .putExtra(CalendarContract.Events.HAS_ALARM, 1)
+                .putExtra(CalendarContract.Events.AVAILABILITY, CalendarContract.Events.AVAILABILITY_BUSY);
+
+        context.startActivity(intent);
+    }*/
 
     private void addReminder(long eventID, Activity context) {
         /***************** Event: Reminder(with alert) Adding reminder to event *******************/

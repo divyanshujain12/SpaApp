@@ -3,6 +3,7 @@ package com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers;
 import android.view.View;
 
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.ChildFragments.CanceledFragment;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.CreateCommonJSON;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
 import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.Constants;
@@ -23,6 +24,6 @@ public class CanceledFragmentController extends CanceledFragment{
             }
         }));
 
-        CallWebService.getInstance(getActivity(), false).hitWithJSONObjectVolleyWebService(CallWebService.POST, Constants.WebServices.MY_SERVICES, MyAppointmentsFragment.createJSONForgetAppointments("3"), this);
+        CallWebService.getInstance(getActivity(), false).hitWithJSONObjectVolleyWebService(CallWebService.POST, Constants.WebServices.MY_SERVICES, CreateCommonJSON.getInstance().createJSONForGetAppointments(getActivity(),"3"), this);
     }
 }

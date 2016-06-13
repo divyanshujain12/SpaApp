@@ -10,8 +10,8 @@ public class HomeActivity$$ViewInjector<T extends com.example.lenovo.SpaApp.Home
     View view;
     view = finder.findRequiredView(source, 2131558518, "field 'toolbar'");
     target.toolbar = finder.castView(view, 2131558518, "field 'toolbar'");
-    view = finder.findRequiredView(source, 2131558579, "field 'root'");
-    target.root = finder.castView(view, 2131558579, "field 'root'");
+    view = finder.findRequiredView(source, 2131558582, "field 'root'");
+    target.root = finder.castView(view, 2131558582, "field 'root'");
   }
 
   @Override public void reset(T target) {

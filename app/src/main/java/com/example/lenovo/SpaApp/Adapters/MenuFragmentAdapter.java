@@ -19,12 +19,12 @@ public class MenuFragmentAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
     private Context context;
     private int itemsCount = 0;
-    private String[] serviceName = {"My Appointments", "Buy Services", "Contact", "Settings", "LogIn Or SignUp", "How It Works"};
+    private String[] serviceName = {"Home", "My Appointments", "How It Works", "FAQ", "My Account", "Corporate Inquiries", "Contact", "LogIn Or SignUp"};
     private int[] serviceIcons = {R.drawable.appointment, R.drawable.buy_services, R.drawable.contact, R.drawable.setting};
 
     public MenuFragmentAdapter(Context context) {
         if (MySharedPereference.getInstance().getBoolean(context, Constants.LOGGED_IN))
-            serviceName[4] = "Logout";
+            serviceName[serviceName.length - 1] = "Logout";
         this.context = context;
 
     }

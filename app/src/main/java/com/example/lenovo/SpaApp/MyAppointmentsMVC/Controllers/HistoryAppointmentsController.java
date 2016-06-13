@@ -3,6 +3,7 @@ package com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers;
 import android.view.View;
 
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.ChildFragments.HistoryAppointmentsFragment;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.CreateCommonJSON;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
 import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.Constants;
@@ -22,6 +23,6 @@ public class HistoryAppointmentsController extends HistoryAppointmentsFragment{
             }
         }));
 
-        CallWebService.getInstance(getActivity(), false).hitWithJSONObjectVolleyWebService(CallWebService.POST, Constants.WebServices.MY_SERVICES, MyAppointmentsFragment.createJSONForgetAppointments("2"), this);
+        CallWebService.getInstance(getActivity(), false).hitWithJSONObjectVolleyWebService(CallWebService.POST, Constants.WebServices.MY_SERVICES, CreateCommonJSON.getInstance().createJSONForGetAppointments(getActivity(), "2"), this);
     }
 }

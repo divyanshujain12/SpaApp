@@ -11,6 +11,7 @@ import android.widget.RelativeLayout;
 import com.example.lenovo.SpaApp.Adapters.MyCartAdapter;
 import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingModel;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
+import com.example.lenovo.SpaApp.Interfaces.AlertDialogInterface;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.AddEventAndReminder;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
@@ -90,8 +91,26 @@ public class MyCartActivity extends GlobalActivity {
     @Override
     public void onJsonObjectSuccess(JSONObject object) {
         super.onJsonObjectSuccess(object);
+        double totalCost = 0;
+        for (AppointmentBookingModel appointmentBookingModel : myCartModels) {
 
-        AlertMessage.showAlertDialogWithCallBack(this, "Congratulation!", "Add To Reminder!", this);
+            String price = appointmentBookingModel.getCost();
+            double priceInDounble = Double.parseDouble(price);
+            totalCost += priceInDounble;
+        }
+
+
+        AlertMessage.showAlertDialogWithActions(this, getString(R.string.set_reminder_alert_content_pre) + String.valueOf(totalCost) + getString(R.string.set_reminder_alert_content_post), new AlertDialogInterface() {
+            @Override
+            public void Yes() {
+                doAction();
+            }
+
+            @Override
+            public void No() {
+                clearData();
+            }
+        });
 
     }
 
@@ -110,43 +129,26 @@ public class MyCartActivity extends GlobalActivity {
             Formatter.setTimeZone(TimeZone.getDefault());
 
             try {
-                time = "3:42 PM";
-                date = "2016-06-10" + " " + time;
-             /*   Date timeD = Formatter.parse(time.toUpperCase());
-                Formatter = new SimpleDateFormat("", Locale.ENGLISH);*/
+                time = "4:05 PM";
+                date = "2016-06-13" + " " + time;
                 Date dateD = Formatter.parse(date);
-                //  timeInMS = CombineDateAnTime(dateD, timeD);
                 timeInMS = dateD.getTime();
             } catch (ParseException e) {
                 e.printStackTrace();
             }
-
-
             AddEventAndReminder.getInstance(this).addEventsToCalender(title, desc, address, timeInMS);
-
+            //AddEventAndReminder.getInstance(this).addEvent(this, timeInMS);
         }
-        myCartModels.clear();
-        myCartAdapter.notifyDataSetChanged();
-        hideContentLayout(true);
+        clearData();
 
     }
 
-    private long CombineDateAnTime(Date date, Date time) {
-        /*Calendar cal = Calendar.getInstance();
-        cal.setTime(date);
-
-        int yearInt = cal.get(Calendar.YEAR);
-        int monthInt = cal.get(Calendar.MONTH);
-        int dayInt = cal.get(Calendar.DAY_OF_MONTH);
-
-        cal.setTime(time);
-        int hoursInt = cal.get(Calendar.HOUR);
-        int minutesInt = cal.get(Calendar.MINUTE);*/
-
-        long sum = date.getTime() + time.getTime();
-
-        Date combinedDate = new Date(sum);
-        /*cal.setTime(combinedDate);*/
-        return combinedDate.getTime();
+    private void clearData() {
+      /*  realm.beginTransaction();
+        realm.where(AppointmentBookingModel.class).findAll().clear();
+        realm.commitTransaction();*/
+        myCartModels.clear();
+        myCartAdapter.notifyDataSetChanged();
+        hideContentLayout(true);
     }
 }

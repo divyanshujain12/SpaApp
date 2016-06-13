@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 
+import com.example.lenovo.SpaApp.FAQFragmentMVC.FaqFragmentController;
 import com.example.lenovo.SpaApp.Models.UserDetailModel;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
 import com.example.lenovo.SpaApp.Fragments.BuyServicesFragment;
@@ -39,18 +40,29 @@ public class HomeActivityController extends HomeActivity {
             public void onItemClick(View view, int position) {
                 switch (position) {
                     case 0:
-                        updateFragment(MyAppointmentsFragment.getInstance("MY APPOINTMENTS"));
+                        updateFragment(new HomeFragmentControllers());
                         break;
                     case 1:
-                        updateFragment(BuyServicesFragment.getInstance("BUY SERVICES"));
+                        updateFragment(MyAppointmentsFragment.getInstance("MY APPOINTMENTS"));
                         break;
                     case 2:
-                        updateFragment(ContactFragment.getInstance("CONTACTS"));
+                        Intent intent1 = new Intent(HomeActivityController.this, HowItWork.class);
+                        startActivity(intent1);
+                        finish();
                         break;
                     case 3:
-                        updateFragment(SettingFragment.getInstance("SETTINGS"));
+                        updateFragment(FaqFragmentController.getInstance("BUY SERVICES"));
                         break;
                     case 4:
+                        updateFragment(SettingFragment.getInstance("MY ACCOUNT"));
+                        break;
+                    case 5:
+                        updateFragment(SettingFragment.getInstance("CORPORATE INQUIRIES"));
+                        break;
+                    case 6:
+                        updateFragment(ContactFragment.getInstance("CONTACTS"));
+                        break;
+                    case 7:
                         MySharedPereference.getInstance().clearSharedPreference(HomeActivityController.this);
                         Realm realm = Realm.getDefaultInstance();
                         realm.beginTransaction();
@@ -58,11 +70,6 @@ public class HomeActivityController extends HomeActivity {
                         realm.commitTransaction();
                         Intent intent = new Intent(HomeActivityController.this, MainActivity.class);
                         startActivity(intent);
-                        finish();
-                        break;
-                    case 5:
-                        Intent intent1 = new Intent(HomeActivityController.this, HowItWork.class);
-                        startActivity(intent1);
                         finish();
                         break;
                 }
