@@ -14,17 +14,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
-import com.example.lenovo.SpaApp.MyAppointmentsMVC.ChildFragments.InProgressFragment;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers.CanceledFragmentController;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers.HistoryAppointmentsController;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers.InProgressFragmentController;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers.UpcomingAppointmentsController;
 import com.example.lenovo.SpaApp.R;
-import com.example.lenovo.SpaApp.Utils.Constants;
-import com.example.lenovo.SpaApp.Utils.MySharedPereference;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;

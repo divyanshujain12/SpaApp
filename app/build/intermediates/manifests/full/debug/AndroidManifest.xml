@@ -61,6 +61,7 @@
         </activity>
         <activity
             android:name="com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController"
+            android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.example.lenovo.SpaApp.SelectCityActivity"

@@ -5,5 +5,5 @@ import GlobalClasses.GlobalFragment;
 /**
  * Created by divyanshu.jain on 6/13/2016.
  */
-public class FaqFragment extends GlobalFragment{
+class FaqFragment extends GlobalFragment{
 }

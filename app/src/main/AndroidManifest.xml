@@ -56,7 +56,8 @@
         </activity>
         <activity
             android:name=".HomeActivityMVC.HomeActivityController"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTask"/>
         <activity
             android:name=".SelectCityActivity"
             android:theme="@style/AppTheme.NoActionBar" />

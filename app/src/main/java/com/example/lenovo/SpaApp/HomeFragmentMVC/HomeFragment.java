@@ -37,7 +37,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 
-public class HomeFragment extends GlobalFragment {
+class HomeFragment extends GlobalFragment {
 
     protected View mParent;
     protected FrameLayout mBluePair;

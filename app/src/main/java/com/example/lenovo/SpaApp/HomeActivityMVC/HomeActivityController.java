@@ -8,22 +8,17 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 
 import com.example.lenovo.SpaApp.FAQFragmentMVC.FaqFragmentController;
-import com.example.lenovo.SpaApp.Models.UserDetailModel;
-import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
-import com.example.lenovo.SpaApp.Fragments.BuyServicesFragment;
 import com.example.lenovo.SpaApp.Fragments.ContactFragment;
 import com.example.lenovo.SpaApp.Fragments.SettingFragment;
-import com.example.lenovo.SpaApp.HomeFragmentMVC.HomeFragment;
 import com.example.lenovo.SpaApp.HomeFragmentMVC.HomeFragmentControllers;
 import com.example.lenovo.SpaApp.HowItWork;
 import com.example.lenovo.SpaApp.MainActivity;
-import com.example.lenovo.SpaApp.MyCartMVC.MyCartActivity;
-import com.example.lenovo.SpaApp.MyCartMVC.MyCartController;
+import com.example.lenovo.SpaApp.Models.UserDetailModel;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.RecyclerItemClickListener;
 
-import butterknife.OnClick;
 import io.realm.Realm;
 
 /**
@@ -87,7 +82,7 @@ public class HomeActivityController extends HomeActivity {
         boolean isPopped = fragmentManager.popBackStackImmediate(name, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         if (fragment != null && !isPopped) {
             fragmentTransaction.replace(R.id.frameLayout, fragment);
-            if (!(fragment instanceof HomeFragment))
+            if (!(fragment instanceof HomeFragmentControllers))
                 fragmentTransaction.addToBackStack(name);
             fragmentTransaction.commit();
         }

@@ -1,6 +1,7 @@
 package com.example.lenovo.SpaApp.AppointmentBookingMVC;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import android.widget.ArrayAdapter;
 
 import com.example.lenovo.SpaApp.CustomViews.ExpandableHeightGridView;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
+import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 import com.example.lenovo.SpaApp.Utils.Constants;
@@ -32,7 +34,7 @@ import butterknife.InjectView;
 /**
  * Created by divyanshu.jain on 5/27/2016.
  */
-public class AppointmentBookingActivity extends GlobalActivity {
+class AppointmentBookingActivity extends GlobalActivity {
 
     @InjectView(R.id.timingGrid)
     protected ExpandableHeightGridView timingGrid;
@@ -96,6 +98,9 @@ public class AppointmentBookingActivity extends GlobalActivity {
     protected void submitClickedOK() {
         toolbar.setProductCount();
         CommonFunctions.showSnackBarWithoutAction(timingGrid, getString(R.string.successfully_added));
+        Intent intent = new Intent(this, HomeActivityController.class);
+        startActivity(intent);
+        finish();
     }
 
     public void onResume() {

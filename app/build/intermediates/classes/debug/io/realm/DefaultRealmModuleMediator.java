@@ -23,8 +23,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     private static final List<Class<? extends RealmObject>> MODEL_CLASSES;
     static {
         List<Class<? extends RealmObject>> modelClasses = new ArrayList<Class<? extends RealmObject>>();
-        modelClasses.add(AppointmentBookingModel.class);
         modelClasses.add(UserDetailModel.class);
+        modelClasses.add(AppointmentBookingModel.class);
         MODEL_CLASSES = Collections.unmodifiableList(modelClasses);
     }
 
@@ -32,10 +32,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public Table createTable(Class<? extends RealmObject> clazz, ImplicitTransaction transaction) {
         checkClass(clazz);
 
-        if (clazz.equals(AppointmentBookingModel.class)) {
-            return AppointmentBookingModelRealmProxy.initTable(transaction);
-        } else if (clazz.equals(UserDetailModel.class)) {
+        if (clazz.equals(UserDetailModel.class)) {
             return UserDetailModelRealmProxy.initTable(transaction);
+        } else if (clazz.equals(AppointmentBookingModel.class)) {
+            return AppointmentBookingModelRealmProxy.initTable(transaction);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -45,10 +45,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public void validateTable(Class<? extends RealmObject> clazz, ImplicitTransaction transaction) {
         checkClass(clazz);
 
-        if (clazz.equals(AppointmentBookingModel.class)) {
-            AppointmentBookingModelRealmProxy.validateTable(transaction);
-        } else if (clazz.equals(UserDetailModel.class)) {
+        if (clazz.equals(UserDetailModel.class)) {
             UserDetailModelRealmProxy.validateTable(transaction);
+        } else if (clazz.equals(AppointmentBookingModel.class)) {
+            AppointmentBookingModelRealmProxy.validateTable(transaction);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -58,10 +58,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public List<String> getFieldNames(Class<? extends RealmObject> clazz) {
         checkClass(clazz);
 
-        if (clazz.equals(AppointmentBookingModel.class)) {
-            return AppointmentBookingModelRealmProxy.getFieldNames();
-        } else if (clazz.equals(UserDetailModel.class)) {
+        if (clazz.equals(UserDetailModel.class)) {
             return UserDetailModelRealmProxy.getFieldNames();
+        } else if (clazz.equals(AppointmentBookingModel.class)) {
+            return AppointmentBookingModelRealmProxy.getFieldNames();
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -71,10 +71,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public String getTableName(Class<? extends RealmObject> clazz) {
         checkClass(clazz);
 
-        if (clazz.equals(AppointmentBookingModel.class)) {
-            return AppointmentBookingModelRealmProxy.getTableName();
-        } else if (clazz.equals(UserDetailModel.class)) {
+        if (clazz.equals(UserDetailModel.class)) {
             return UserDetailModelRealmProxy.getTableName();
+        } else if (clazz.equals(AppointmentBookingModel.class)) {
+            return AppointmentBookingModelRealmProxy.getTableName();
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -84,10 +84,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public <E extends RealmObject> E newInstance(Class<E> clazz) {
         checkClass(clazz);
 
-        if (clazz.equals(AppointmentBookingModel.class)) {
-            return clazz.cast(new AppointmentBookingModelRealmProxy());
-        } else if (clazz.equals(UserDetailModel.class)) {
+        if (clazz.equals(UserDetailModel.class)) {
             return clazz.cast(new UserDetailModelRealmProxy());
+        } else if (clazz.equals(AppointmentBookingModel.class)) {
+            return clazz.cast(new AppointmentBookingModelRealmProxy());
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -102,10 +102,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public Map<String, Long> getColumnIndices(Class<? extends RealmObject> clazz) {
         checkClass(clazz);
 
-        if (clazz.equals(AppointmentBookingModel.class)) {
-            return AppointmentBookingModelRealmProxy.getColumnIndices();
-        } else if (clazz.equals(UserDetailModel.class)) {
+        if (clazz.equals(UserDetailModel.class)) {
             return UserDetailModelRealmProxy.getColumnIndices();
+        } else if (clazz.equals(AppointmentBookingModel.class)) {
+            return AppointmentBookingModelRealmProxy.getColumnIndices();
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -117,10 +117,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass());
 
-        if (clazz.equals(AppointmentBookingModel.class)) {
-            return clazz.cast(AppointmentBookingModelRealmProxy.copyOrUpdate(realm, (AppointmentBookingModel) obj, update, cache));
-        } else if (clazz.equals(UserDetailModel.class)) {
+        if (clazz.equals(UserDetailModel.class)) {
             return clazz.cast(UserDetailModelRealmProxy.copyOrUpdate(realm, (UserDetailModel) obj, update, cache));
+        } else if (clazz.equals(AppointmentBookingModel.class)) {
+            return clazz.cast(AppointmentBookingModelRealmProxy.copyOrUpdate(realm, (AppointmentBookingModel) obj, update, cache));
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -131,10 +131,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws JSONException {
         checkClass(clazz);
 
-        if (clazz.equals(AppointmentBookingModel.class)) {
-            return clazz.cast(AppointmentBookingModelRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
-        } else if (clazz.equals(UserDetailModel.class)) {
+        if (clazz.equals(UserDetailModel.class)) {
             return clazz.cast(UserDetailModelRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        } else if (clazz.equals(AppointmentBookingModel.class)) {
+            return clazz.cast(AppointmentBookingModelRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -145,10 +145,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws IOException {
         checkClass(clazz);
 
-        if (clazz.equals(AppointmentBookingModel.class)) {
-            return clazz.cast(AppointmentBookingModelRealmProxy.createUsingJsonStream(realm, reader));
-        } else if (clazz.equals(UserDetailModel.class)) {
+        if (clazz.equals(UserDetailModel.class)) {
             return clazz.cast(UserDetailModelRealmProxy.createUsingJsonStream(realm, reader));
+        } else if (clazz.equals(AppointmentBookingModel.class)) {
+            return clazz.cast(AppointmentBookingModelRealmProxy.createUsingJsonStream(realm, reader));
         } else {
             throw getMissingProxyClassException(clazz);
         }

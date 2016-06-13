@@ -600,7 +600,14 @@
                     "endOffset": 3675
                 },
                 "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\colors.xml"
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 157,
+                        "endColumn": 45,
+                        "endOffset": 198
+                    }
                 }
             },
             {
@@ -6995,9 +7002,9 @@
                     "startLine": 1472,
                     "startColumn": 4,
                     "startOffset": 115905,
-                    "endLine": 1476,
+                    "endLine": 1478,
                     "endColumn": 12,
-                    "endOffset": 116226
+                    "endOffset": 116248
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\styles.xml"
@@ -7005,33 +7012,25 @@
             },
             {
                 "to": {
-                    "startLine": 1477,
+                    "startLine": 1479,
                     "startColumn": 4,
-                    "startOffset": 116231,
-                    "endLine": 1484,
+                    "startOffset": 116253,
+                    "endLine": 1486,
                     "endColumn": 12,
-                    "endOffset": 116621
+                    "endOffset": 116649
                 },
                 "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 55,
-                        "startColumn": 4,
-                        "startOffset": 2563,
-                        "endLine": 62,
-                        "endColumn": 12,
-                        "endOffset": 2960
-                    }
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\styles.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 1485,
+                    "startLine": 1487,
                     "startColumn": 4,
-                    "startOffset": 116626,
-                    "endLine": 1522,
+                    "startOffset": 116654,
+                    "endLine": 1524,
                     "endColumn": 12,
-                    "endOffset": 119483
+                    "endOffset": 119511
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7039,12 +7038,12 @@
             },
             {
                 "to": {
-                    "startLine": 1523,
+                    "startLine": 1525,
                     "startColumn": 4,
-                    "startOffset": 119488,
-                    "endLine": 1561,
+                    "startOffset": 119516,
+                    "endLine": 1563,
                     "endColumn": 12,
-                    "endOffset": 122485
+                    "endOffset": 122513
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7052,11 +7051,11 @@
             },
             {
                 "to": {
-                    "startLine": 1562,
+                    "startLine": 1564,
                     "startColumn": 4,
-                    "startOffset": 122490,
+                    "startOffset": 122518,
                     "endColumn": 61,
-                    "endOffset": 122547
+                    "endOffset": 122575
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7064,12 +7063,12 @@
             },
             {
                 "to": {
-                    "startLine": 1563,
+                    "startLine": 1565,
                     "startColumn": 4,
-                    "startOffset": 122552,
-                    "endLine": 1572,
+                    "startOffset": 122580,
+                    "endLine": 1574,
                     "endColumn": 12,
-                    "endOffset": 123177
+                    "endOffset": 123205
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7077,12 +7076,12 @@
             },
             {
                 "to": {
-                    "startLine": 1573,
+                    "startLine": 1575,
                     "startColumn": 4,
-                    "startOffset": 123182,
-                    "endLine": 1581,
+                    "startOffset": 123210,
+                    "endLine": 1583,
                     "endColumn": 12,
-                    "endOffset": 123791
+                    "endOffset": 123819
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7090,24 +7089,11 @@
             },
             {
                 "to": {
-                    "startLine": 1582,
+                    "startLine": 1584,
                     "startColumn": 4,
-                    "startOffset": 123796,
+                    "startOffset": 123824,
                     "endColumn": 85,
-                    "endOffset": 123877
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1583,
-                    "startColumn": 4,
-                    "startOffset": 123882,
-                    "endLine": 1584,
-                    "endColumn": 12,
-                    "endOffset": 123990
+                    "endOffset": 123905
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7117,10 +7103,10 @@
                 "to": {
                     "startLine": 1585,
                     "startColumn": 4,
-                    "startOffset": 123995,
-                    "endLine": 1588,
+                    "startOffset": 123910,
+                    "endLine": 1586,
                     "endColumn": 12,
-                    "endOffset": 124219
+                    "endOffset": 124018
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7128,12 +7114,12 @@
             },
             {
                 "to": {
-                    "startLine": 1589,
+                    "startLine": 1587,
                     "startColumn": 4,
-                    "startOffset": 124224,
-                    "endLine": 1592,
+                    "startOffset": 124023,
+                    "endLine": 1590,
                     "endColumn": 12,
-                    "endOffset": 124557
+                    "endOffset": 124247
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7141,12 +7127,12 @@
             },
             {
                 "to": {
-                    "startLine": 1593,
+                    "startLine": 1591,
                     "startColumn": 4,
-                    "startOffset": 124562,
-                    "endLine": 1595,
+                    "startOffset": 124252,
+                    "endLine": 1594,
                     "endColumn": 12,
-                    "endOffset": 124717
+                    "endOffset": 124585
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7154,12 +7140,12 @@
             },
             {
                 "to": {
-                    "startLine": 1596,
+                    "startLine": 1595,
                     "startColumn": 4,
-                    "startOffset": 124722,
-                    "endLine": 1598,
+                    "startOffset": 124590,
+                    "endLine": 1597,
                     "endColumn": 12,
-                    "endOffset": 124869
+                    "endOffset": 124745
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7167,12 +7153,12 @@
             },
             {
                 "to": {
-                    "startLine": 1599,
+                    "startLine": 1598,
                     "startColumn": 4,
-                    "startOffset": 124874,
-                    "endLine": 1601,
+                    "startOffset": 124750,
+                    "endLine": 1600,
                     "endColumn": 12,
-                    "endOffset": 125040
+                    "endOffset": 124897
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7180,12 +7166,12 @@
             },
             {
                 "to": {
-                    "startLine": 1602,
+                    "startLine": 1601,
                     "startColumn": 4,
-                    "startOffset": 125045,
-                    "endLine": 1604,
+                    "startOffset": 124902,
+                    "endLine": 1603,
                     "endColumn": 12,
-                    "endOffset": 125207
+                    "endOffset": 125068
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7193,12 +7179,12 @@
             },
             {
                 "to": {
-                    "startLine": 1605,
+                    "startLine": 1604,
                     "startColumn": 4,
-                    "startOffset": 125212,
-                    "endLine": 1608,
+                    "startOffset": 125073,
+                    "endLine": 1606,
                     "endColumn": 12,
-                    "endOffset": 125450
+                    "endOffset": 125235
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7206,12 +7192,12 @@
             },
             {
                 "to": {
-                    "startLine": 1609,
+                    "startLine": 1607,
                     "startColumn": 4,
-                    "startOffset": 125455,
-                    "endLine": 1611,
+                    "startOffset": 125240,
+                    "endLine": 1610,
                     "endColumn": 12,
-                    "endOffset": 125620
+                    "endOffset": 125478
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7219,12 +7205,12 @@
             },
             {
                 "to": {
-                    "startLine": 1612,
+                    "startLine": 1611,
                     "startColumn": 4,
-                    "startOffset": 125625,
-                    "endLine": 1614,
+                    "startOffset": 125483,
+                    "endLine": 1613,
                     "endColumn": 12,
-                    "endOffset": 125793
+                    "endOffset": 125648
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7232,12 +7218,12 @@
             },
             {
                 "to": {
-                    "startLine": 1615,
+                    "startLine": 1614,
                     "startColumn": 4,
-                    "startOffset": 125798,
-                    "endLine": 1617,
+                    "startOffset": 125653,
+                    "endLine": 1616,
                     "endColumn": 12,
-                    "endOffset": 125964
+                    "endOffset": 125821
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7245,12 +7231,12 @@
             },
             {
                 "to": {
-                    "startLine": 1618,
+                    "startLine": 1617,
                     "startColumn": 4,
-                    "startOffset": 125969,
-                    "endLine": 1621,
+                    "startOffset": 125826,
+                    "endLine": 1619,
                     "endColumn": 12,
-                    "endOffset": 126238
+                    "endOffset": 125992
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7258,12 +7244,12 @@
             },
             {
                 "to": {
-                    "startLine": 1622,
+                    "startLine": 1620,
                     "startColumn": 4,
-                    "startOffset": 126243,
-                    "endLine": 1624,
+                    "startOffset": 125997,
+                    "endLine": 1623,
                     "endColumn": 12,
-                    "endOffset": 126437
+                    "endOffset": 126266
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7271,23 +7257,12 @@
             },
             {
                 "to": {
-                    "startLine": 1625,
+                    "startLine": 1624,
                     "startColumn": 4,
-                    "startOffset": 126442,
-                    "endColumn": 83,
-                    "endOffset": 126521
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1626,
-                    "startColumn": 4,
-                    "startOffset": 126526,
-                    "endColumn": 95,
-                    "endOffset": 126617
+                    "startOffset": 126271,
+                    "endLine": 1626,
+                    "endColumn": 12,
+                    "endOffset": 126465
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7297,9 +7272,9 @@
                 "to": {
                     "startLine": 1627,
                     "startColumn": 4,
-                    "startOffset": 126622,
-                    "endColumn": 95,
-                    "endOffset": 126713
+                    "startOffset": 126470,
+                    "endColumn": 83,
+                    "endOffset": 126549
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7309,9 +7284,9 @@
                 "to": {
                     "startLine": 1628,
                     "startColumn": 4,
-                    "startOffset": 126718,
-                    "endColumn": 97,
-                    "endOffset": 126811
+                    "startOffset": 126554,
+                    "endColumn": 95,
+                    "endOffset": 126645
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7321,9 +7296,9 @@
                 "to": {
                     "startLine": 1629,
                     "startColumn": 4,
-                    "startOffset": 126816,
-                    "endColumn": 99,
-                    "endOffset": 126911
+                    "startOffset": 126650,
+                    "endColumn": 95,
+                    "endOffset": 126741
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7333,9 +7308,9 @@
                 "to": {
                     "startLine": 1630,
                     "startColumn": 4,
-                    "startOffset": 126916,
-                    "endColumn": 101,
-                    "endOffset": 127013
+                    "startOffset": 126746,
+                    "endColumn": 97,
+                    "endOffset": 126839
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7345,9 +7320,9 @@
                 "to": {
                     "startLine": 1631,
                     "startColumn": 4,
-                    "startOffset": 127018,
-                    "endColumn": 101,
-                    "endOffset": 127115
+                    "startOffset": 126844,
+                    "endColumn": 99,
+                    "endOffset": 126939
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7357,9 +7332,9 @@
                 "to": {
                     "startLine": 1632,
                     "startColumn": 4,
-                    "startOffset": 127120,
+                    "startOffset": 126944,
                     "endColumn": 101,
-                    "endOffset": 127217
+                    "endOffset": 127041
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7369,9 +7344,9 @@
                 "to": {
                     "startLine": 1633,
                     "startColumn": 4,
-                    "startOffset": 127222,
+                    "startOffset": 127046,
                     "endColumn": 101,
-                    "endOffset": 127319
+                    "endOffset": 127143
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7381,9 +7356,9 @@
                 "to": {
                     "startLine": 1634,
                     "startColumn": 4,
-                    "startOffset": 127324,
+                    "startOffset": 127148,
                     "endColumn": 101,
-                    "endOffset": 127421
+                    "endOffset": 127245
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7393,9 +7368,9 @@
                 "to": {
                     "startLine": 1635,
                     "startColumn": 4,
-                    "startOffset": 127426,
-                    "endColumn": 99,
-                    "endOffset": 127521
+                    "startOffset": 127250,
+                    "endColumn": 101,
+                    "endOffset": 127347
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7405,9 +7380,9 @@
                 "to": {
                     "startLine": 1636,
                     "startColumn": 4,
-                    "startOffset": 127526,
-                    "endColumn": 95,
-                    "endOffset": 127617
+                    "startOffset": 127352,
+                    "endColumn": 101,
+                    "endOffset": 127449
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7417,9 +7392,9 @@
                 "to": {
                     "startLine": 1637,
                     "startColumn": 4,
-                    "startOffset": 127622,
-                    "endColumn": 111,
-                    "endOffset": 127729
+                    "startOffset": 127454,
+                    "endColumn": 99,
+                    "endOffset": 127549
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7429,9 +7404,9 @@
                 "to": {
                     "startLine": 1638,
                     "startColumn": 4,
-                    "startOffset": 127734,
-                    "endColumn": 128,
-                    "endOffset": 127858
+                    "startOffset": 127554,
+                    "endColumn": 95,
+                    "endOffset": 127645
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7441,9 +7416,9 @@
                 "to": {
                     "startLine": 1639,
                     "startColumn": 4,
-                    "startOffset": 127863,
-                    "endColumn": 122,
-                    "endOffset": 127981
+                    "startOffset": 127650,
+                    "endColumn": 111,
+                    "endOffset": 127757
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7453,10 +7428,21 @@
                 "to": {
                     "startLine": 1640,
                     "startColumn": 4,
-                    "startOffset": 127986,
-                    "endLine": 1641,
-                    "endColumn": 12,
-                    "endOffset": 128135
+                    "startOffset": 127762,
+                    "endColumn": 128,
+                    "endOffset": 127886
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1641,
+                    "startColumn": 4,
+                    "startOffset": 127891,
+                    "endColumn": 122,
+                    "endOffset": 128009
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7466,10 +7452,10 @@
                 "to": {
                     "startLine": 1642,
                     "startColumn": 4,
-                    "startOffset": 128140,
+                    "startOffset": 128014,
                     "endLine": 1643,
                     "endColumn": 12,
-                    "endOffset": 128289
+                    "endOffset": 128163
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7479,21 +7465,10 @@
                 "to": {
                     "startLine": 1644,
                     "startColumn": 4,
-                    "startOffset": 128294,
-                    "endColumn": 97,
-                    "endOffset": 128387
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1645,
-                    "startColumn": 4,
-                    "startOffset": 128392,
-                    "endColumn": 113,
-                    "endOffset": 128501
+                    "startOffset": 128168,
+                    "endLine": 1645,
+                    "endColumn": 12,
+                    "endOffset": 128317
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7503,9 +7478,9 @@
                 "to": {
                     "startLine": 1646,
                     "startColumn": 4,
-                    "startOffset": 128506,
-                    "endColumn": 93,
-                    "endOffset": 128595
+                    "startOffset": 128322,
+                    "endColumn": 97,
+                    "endOffset": 128415
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7515,10 +7490,21 @@
                 "to": {
                     "startLine": 1647,
                     "startColumn": 4,
-                    "startOffset": 128600,
-                    "endLine": 1648,
-                    "endColumn": 12,
-                    "endOffset": 128735
+                    "startOffset": 128420,
+                    "endColumn": 113,
+                    "endOffset": 128529
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1648,
+                    "startColumn": 4,
+                    "startOffset": 128534,
+                    "endColumn": 93,
+                    "endOffset": 128623
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7528,10 +7514,10 @@
                 "to": {
                     "startLine": 1649,
                     "startColumn": 4,
-                    "startOffset": 128740,
+                    "startOffset": 128628,
                     "endLine": 1650,
                     "endColumn": 12,
-                    "endOffset": 128869
+                    "endOffset": 128763
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7541,21 +7527,10 @@
                 "to": {
                     "startLine": 1651,
                     "startColumn": 4,
-                    "startOffset": 128874,
-                    "endColumn": 95,
-                    "endOffset": 128965
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1652,
-                    "startColumn": 4,
-                    "startOffset": 128970,
-                    "endColumn": 111,
-                    "endOffset": 129077
+                    "startOffset": 128768,
+                    "endLine": 1652,
+                    "endColumn": 12,
+                    "endOffset": 128897
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7565,9 +7540,9 @@
                 "to": {
                     "startLine": 1653,
                     "startColumn": 4,
-                    "startOffset": 129082,
-                    "endColumn": 99,
-                    "endOffset": 129177
+                    "startOffset": 128902,
+                    "endColumn": 95,
+                    "endOffset": 128993
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7577,9 +7552,9 @@
                 "to": {
                     "startLine": 1654,
                     "startColumn": 4,
-                    "startOffset": 129182,
-                    "endColumn": 115,
-                    "endOffset": 129293
+                    "startOffset": 128998,
+                    "endColumn": 111,
+                    "endOffset": 129105
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7589,9 +7564,9 @@
                 "to": {
                     "startLine": 1655,
                     "startColumn": 4,
-                    "startOffset": 129298,
-                    "endColumn": 95,
-                    "endOffset": 129389
+                    "startOffset": 129110,
+                    "endColumn": 99,
+                    "endOffset": 129205
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7601,9 +7576,9 @@
                 "to": {
                     "startLine": 1656,
                     "startColumn": 4,
-                    "startOffset": 129394,
-                    "endColumn": 111,
-                    "endOffset": 129501
+                    "startOffset": 129210,
+                    "endColumn": 115,
+                    "endOffset": 129321
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7613,10 +7588,21 @@
                 "to": {
                     "startLine": 1657,
                     "startColumn": 4,
-                    "startOffset": 129506,
-                    "endLine": 1658,
-                    "endColumn": 12,
-                    "endOffset": 129641
+                    "startOffset": 129326,
+                    "endColumn": 95,
+                    "endOffset": 129417
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1658,
+                    "startColumn": 4,
+                    "startOffset": 129422,
+                    "endColumn": 111,
+                    "endOffset": 129529
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7626,9 +7612,10 @@
                 "to": {
                     "startLine": 1659,
                     "startColumn": 4,
-                    "startOffset": 129646,
-                    "endColumn": 135,
-                    "endOffset": 129777
+                    "startOffset": 129534,
+                    "endLine": 1660,
+                    "endColumn": 12,
+                    "endOffset": 129669
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7636,12 +7623,11 @@
             },
             {
                 "to": {
-                    "startLine": 1660,
+                    "startLine": 1661,
                     "startColumn": 4,
-                    "startOffset": 129782,
-                    "endLine": 1661,
-                    "endColumn": 12,
-                    "endOffset": 129941
+                    "startOffset": 129674,
+                    "endColumn": 135,
+                    "endOffset": 129805
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7651,9 +7637,10 @@
                 "to": {
                     "startLine": 1662,
                     "startColumn": 4,
-                    "startOffset": 129946,
-                    "endColumn": 129,
-                    "endOffset": 130071
+                    "startOffset": 129810,
+                    "endLine": 1663,
+                    "endColumn": 12,
+                    "endOffset": 129969
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7661,12 +7648,11 @@
             },
             {
                 "to": {
-                    "startLine": 1663,
+                    "startLine": 1664,
                     "startColumn": 4,
-                    "startOffset": 130076,
-                    "endLine": 1664,
-                    "endColumn": 12,
-                    "endOffset": 130229
+                    "startOffset": 129974,
+                    "endColumn": 129,
+                    "endOffset": 130099
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7676,10 +7662,10 @@
                 "to": {
                     "startLine": 1665,
                     "startColumn": 4,
-                    "startOffset": 130234,
+                    "startOffset": 130104,
                     "endLine": 1666,
                     "endColumn": 12,
-                    "endOffset": 130379
+                    "endOffset": 130257
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7689,9 +7675,10 @@
                 "to": {
                     "startLine": 1667,
                     "startColumn": 4,
-                    "startOffset": 130384,
-                    "endColumn": 140,
-                    "endOffset": 130520
+                    "startOffset": 130262,
+                    "endLine": 1668,
+                    "endColumn": 12,
+                    "endOffset": 130407
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7699,12 +7686,11 @@
             },
             {
                 "to": {
-                    "startLine": 1668,
+                    "startLine": 1669,
                     "startColumn": 4,
-                    "startOffset": 130525,
-                    "endLine": 1669,
-                    "endColumn": 12,
-                    "endOffset": 130664
+                    "startOffset": 130412,
+                    "endColumn": 140,
+                    "endOffset": 130548
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7714,21 +7700,10 @@
                 "to": {
                     "startLine": 1670,
                     "startColumn": 4,
-                    "startOffset": 130669,
-                    "endColumn": 134,
-                    "endOffset": 130799
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1671,
-                    "startColumn": 4,
-                    "startOffset": 130804,
-                    "endColumn": 111,
-                    "endOffset": 130911
+                    "startOffset": 130553,
+                    "endLine": 1671,
+                    "endColumn": 12,
+                    "endOffset": 130692
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7738,9 +7713,9 @@
                 "to": {
                     "startLine": 1672,
                     "startColumn": 4,
-                    "startOffset": 130916,
-                    "endColumn": 127,
-                    "endOffset": 131039
+                    "startOffset": 130697,
+                    "endColumn": 134,
+                    "endOffset": 130827
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7750,10 +7725,21 @@
                 "to": {
                     "startLine": 1673,
                     "startColumn": 4,
-                    "startOffset": 131044,
-                    "endLine": 1674,
-                    "endColumn": 12,
-                    "endOffset": 131175
+                    "startOffset": 130832,
+                    "endColumn": 111,
+                    "endOffset": 130939
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1674,
+                    "startColumn": 4,
+                    "startOffset": 130944,
+                    "endColumn": 127,
+                    "endOffset": 131067
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7763,10 +7749,10 @@
                 "to": {
                     "startLine": 1675,
                     "startColumn": 4,
-                    "startOffset": 131180,
+                    "startOffset": 131072,
                     "endLine": 1676,
                     "endColumn": 12,
-                    "endOffset": 131317
+                    "endOffset": 131203
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7776,10 +7762,10 @@
                 "to": {
                     "startLine": 1677,
                     "startColumn": 4,
-                    "startOffset": 131322,
+                    "startOffset": 131208,
                     "endLine": 1678,
                     "endColumn": 12,
-                    "endOffset": 131459
+                    "endOffset": 131345
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7789,21 +7775,10 @@
                 "to": {
                     "startLine": 1679,
                     "startColumn": 4,
-                    "startOffset": 131464,
-                    "endColumn": 111,
-                    "endOffset": 131571
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1680,
-                    "startColumn": 4,
-                    "startOffset": 131576,
-                    "endColumn": 139,
-                    "endOffset": 131711
+                    "startOffset": 131350,
+                    "endLine": 1680,
+                    "endColumn": 12,
+                    "endOffset": 131487
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7813,74 +7788,9 @@
                 "to": {
                     "startLine": 1681,
                     "startColumn": 4,
-                    "startOffset": 131716,
-                    "endLine": 1683,
-                    "endColumn": 12,
-                    "endOffset": 131912
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1684,
-                    "startColumn": 4,
-                    "startOffset": 131917,
-                    "endLine": 1686,
-                    "endColumn": 12,
-                    "endOffset": 132096
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1687,
-                    "startColumn": 4,
-                    "startOffset": 132101,
-                    "endLine": 1689,
-                    "endColumn": 12,
-                    "endOffset": 132271
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1690,
-                    "startColumn": 4,
-                    "startOffset": 132276,
-                    "endLine": 1693,
-                    "endColumn": 12,
-                    "endOffset": 132524
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1694,
-                    "startColumn": 4,
-                    "startOffset": 132529,
-                    "endLine": 1698,
-                    "endColumn": 12,
-                    "endOffset": 132792
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1699,
-                    "startColumn": 4,
-                    "startOffset": 132797,
-                    "endColumn": 67,
-                    "endOffset": 132860
+                    "startOffset": 131492,
+                    "endColumn": 111,
+                    "endOffset": 131599
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7888,23 +7798,88 @@
             },
             {
                 "to": {
-                    "startLine": 1700,
+                    "startLine": 1682,
                     "startColumn": 4,
-                    "startOffset": 132865,
-                    "endColumn": 72,
-                    "endOffset": 132933
+                    "startOffset": 131604,
+                    "endColumn": 139,
+                    "endOffset": 131739
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1683,
+                    "startColumn": 4,
+                    "startOffset": 131744,
+                    "endLine": 1685,
+                    "endColumn": 12,
+                    "endOffset": 131940
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1686,
+                    "startColumn": 4,
+                    "startOffset": 131945,
+                    "endLine": 1688,
+                    "endColumn": 12,
+                    "endOffset": 132124
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1689,
+                    "startColumn": 4,
+                    "startOffset": 132129,
+                    "endLine": 1691,
+                    "endColumn": 12,
+                    "endOffset": 132299
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1692,
+                    "startColumn": 4,
+                    "startOffset": 132304,
+                    "endLine": 1695,
+                    "endColumn": 12,
+                    "endOffset": 132552
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1696,
+                    "startColumn": 4,
+                    "startOffset": 132557,
+                    "endLine": 1700,
+                    "endColumn": 12,
+                    "endOffset": 132820
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 1701,
                     "startColumn": 4,
-                    "startOffset": 132938,
-                    "endColumn": 73,
-                    "endOffset": 133007
+                    "startOffset": 132825,
+                    "endColumn": 67,
+                    "endOffset": 132888
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7914,9 +7889,9 @@
                 "to": {
                     "startLine": 1702,
                     "startColumn": 4,
-                    "startOffset": 133012,
+                    "startOffset": 132893,
                     "endColumn": 72,
-                    "endOffset": 133080
+                    "endOffset": 132961
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7926,9 +7901,9 @@
                 "to": {
                     "startLine": 1703,
                     "startColumn": 4,
-                    "startOffset": 133085,
+                    "startOffset": 132966,
                     "endColumn": 73,
-                    "endOffset": 133154
+                    "endOffset": 133035
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7938,23 +7913,9 @@
                 "to": {
                     "startLine": 1704,
                     "startColumn": 4,
-                    "startOffset": 133159,
-                    "endLine": 1707,
-                    "endColumn": 12,
-                    "endOffset": 133354
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\vpi__styles.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1708,
-                    "startColumn": 4,
-                    "startOffset": 133359,
-                    "endLine": 1709,
-                    "endColumn": 12,
-                    "endOffset": 133500
+                    "startOffset": 133040,
+                    "endColumn": 72,
+                    "endOffset": 133108
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7962,12 +7923,37 @@
             },
             {
                 "to": {
+                    "startLine": 1705,
+                    "startColumn": 4,
+                    "startOffset": 133113,
+                    "endColumn": 73,
+                    "endOffset": 133182
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1706,
+                    "startColumn": 4,
+                    "startOffset": 133187,
+                    "endLine": 1709,
+                    "endColumn": 12,
+                    "endOffset": 133382
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\vpi__styles.xml"
+                }
+            },
+            {
+                "to": {
                     "startLine": 1710,
                     "startColumn": 4,
-                    "startOffset": 133505,
+                    "startOffset": 133387,
                     "endLine": 1711,
                     "endColumn": 12,
-                    "endOffset": 133644
+                    "endOffset": 133528
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7977,10 +7963,10 @@
                 "to": {
                     "startLine": 1712,
                     "startColumn": 4,
-                    "startOffset": 133649,
+                    "startOffset": 133533,
                     "endLine": 1713,
                     "endColumn": 12,
-                    "endOffset": 133782
+                    "endOffset": 133672
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -7990,21 +7976,10 @@
                 "to": {
                     "startLine": 1714,
                     "startColumn": 4,
-                    "startOffset": 133787,
-                    "endColumn": 65,
-                    "endOffset": 133848
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1715,
-                    "startColumn": 4,
-                    "startOffset": 133853,
-                    "endColumn": 89,
-                    "endOffset": 133938
+                    "startOffset": 133677,
+                    "endLine": 1715,
+                    "endColumn": 12,
+                    "endOffset": 133810
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8014,9 +7989,9 @@
                 "to": {
                     "startLine": 1716,
                     "startColumn": 4,
-                    "startOffset": 133943,
-                    "endColumn": 79,
-                    "endOffset": 134018
+                    "startOffset": 133815,
+                    "endColumn": 65,
+                    "endOffset": 133876
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8026,9 +8001,9 @@
                 "to": {
                     "startLine": 1717,
                     "startColumn": 4,
-                    "startOffset": 134023,
-                    "endColumn": 91,
-                    "endOffset": 134110
+                    "startOffset": 133881,
+                    "endColumn": 89,
+                    "endOffset": 133966
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8038,9 +8013,9 @@
                 "to": {
                     "startLine": 1718,
                     "startColumn": 4,
-                    "startOffset": 134115,
-                    "endColumn": 97,
-                    "endOffset": 134208
+                    "startOffset": 133971,
+                    "endColumn": 79,
+                    "endOffset": 134046
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8050,10 +8025,21 @@
                 "to": {
                     "startLine": 1719,
                     "startColumn": 4,
-                    "startOffset": 134213,
-                    "endLine": 1720,
-                    "endColumn": 12,
-                    "endOffset": 134318
+                    "startOffset": 134051,
+                    "endColumn": 91,
+                    "endOffset": 134138
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1720,
+                    "startColumn": 4,
+                    "startOffset": 134143,
+                    "endColumn": 97,
+                    "endOffset": 134236
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8063,21 +8049,10 @@
                 "to": {
                     "startLine": 1721,
                     "startColumn": 4,
-                    "startOffset": 134323,
-                    "endColumn": 77,
-                    "endOffset": 134396
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1722,
-                    "startColumn": 4,
-                    "startOffset": 134401,
-                    "endColumn": 105,
-                    "endOffset": 134502
+                    "startOffset": 134241,
+                    "endLine": 1722,
+                    "endColumn": 12,
+                    "endOffset": 134346
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8087,9 +8062,9 @@
                 "to": {
                     "startLine": 1723,
                     "startColumn": 4,
-                    "startOffset": 134507,
-                    "endColumn": 91,
-                    "endOffset": 134594
+                    "startOffset": 134351,
+                    "endColumn": 77,
+                    "endOffset": 134424
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8099,9 +8074,9 @@
                 "to": {
                     "startLine": 1724,
                     "startColumn": 4,
-                    "startOffset": 134599,
-                    "endColumn": 103,
-                    "endOffset": 134698
+                    "startOffset": 134429,
+                    "endColumn": 105,
+                    "endOffset": 134530
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8111,9 +8086,9 @@
                 "to": {
                     "startLine": 1725,
                     "startColumn": 4,
-                    "startOffset": 134703,
-                    "endColumn": 109,
-                    "endOffset": 134808
+                    "startOffset": 134535,
+                    "endColumn": 91,
+                    "endOffset": 134622
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8123,10 +8098,21 @@
                 "to": {
                     "startLine": 1726,
                     "startColumn": 4,
-                    "startOffset": 134813,
-                    "endLine": 1727,
-                    "endColumn": 12,
-                    "endOffset": 134930
+                    "startOffset": 134627,
+                    "endColumn": 103,
+                    "endOffset": 134726
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1727,
+                    "startColumn": 4,
+                    "startOffset": 134731,
+                    "endColumn": 109,
+                    "endOffset": 134836
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8136,10 +8122,10 @@
                 "to": {
                     "startLine": 1728,
                     "startColumn": 4,
-                    "startOffset": 134935,
-                    "endLine": 1731,
+                    "startOffset": 134841,
+                    "endLine": 1729,
                     "endColumn": 12,
-                    "endOffset": 135093
+                    "endOffset": 134958
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8147,12 +8133,12 @@
             },
             {
                 "to": {
-                    "startLine": 1732,
+                    "startLine": 1730,
                     "startColumn": 4,
-                    "startOffset": 135098,
-                    "endLine": 1735,
+                    "startOffset": 134963,
+                    "endLine": 1733,
                     "endColumn": 12,
-                    "endOffset": 135250
+                    "endOffset": 135121
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8160,12 +8146,25 @@
             },
             {
                 "to": {
-                    "startLine": 1736,
+                    "startLine": 1734,
                     "startColumn": 4,
-                    "startOffset": 135255,
-                    "endLine": 1739,
+                    "startOffset": 135126,
+                    "endLine": 1737,
                     "endColumn": 12,
-                    "endOffset": 135503
+                    "endOffset": 135278
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1738,
+                    "startColumn": 4,
+                    "startOffset": 135283,
+                    "endLine": 1741,
+                    "endColumn": 12,
+                    "endOffset": 135531
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\vpi__styles.xml"
@@ -8173,35 +8172,11 @@
             },
             {
                 "to": {
-                    "startLine": 1740,
-                    "startColumn": 4,
-                    "startOffset": 135508,
-                    "endColumn": 79,
-                    "endOffset": 135583
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1741,
-                    "startColumn": 4,
-                    "startOffset": 135588,
-                    "endColumn": 99,
-                    "endOffset": 135683
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
                     "startLine": 1742,
                     "startColumn": 4,
-                    "startOffset": 135688,
-                    "endColumn": 89,
-                    "endOffset": 135773
+                    "startOffset": 135536,
+                    "endColumn": 79,
+                    "endOffset": 135611
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8211,9 +8186,9 @@
                 "to": {
                     "startLine": 1743,
                     "startColumn": 4,
-                    "startOffset": 135778,
-                    "endColumn": 109,
-                    "endOffset": 135883
+                    "startOffset": 135616,
+                    "endColumn": 99,
+                    "endOffset": 135711
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8223,9 +8198,9 @@
                 "to": {
                     "startLine": 1744,
                     "startColumn": 4,
-                    "startOffset": 135888,
-                    "endColumn": 91,
-                    "endOffset": 135975
+                    "startOffset": 135716,
+                    "endColumn": 89,
+                    "endOffset": 135801
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8235,49 +8210,9 @@
                 "to": {
                     "startLine": 1745,
                     "startColumn": 4,
-                    "startOffset": 135980,
-                    "endLine": 1751,
-                    "endColumn": 12,
-                    "endOffset": 136328
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\styles.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1752,
-                    "startColumn": 4,
-                    "startOffset": 136333,
-                    "endLine": 1762,
-                    "endColumn": 12,
-                    "endOffset": 137045
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\styles.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1763,
-                    "startColumn": 4,
-                    "startOffset": 137050,
-                    "endLine": 1764,
-                    "endColumn": 12,
-                    "endOffset": 137084
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\vpi__styles.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1765,
-                    "startColumn": 4,
-                    "startOffset": 137089,
-                    "endLine": 1766,
-                    "endColumn": 12,
-                    "endOffset": 137184
+                    "startOffset": 135806,
+                    "endColumn": 109,
+                    "endOffset": 135911
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8285,12 +8220,63 @@
             },
             {
                 "to": {
+                    "startLine": 1746,
+                    "startColumn": 4,
+                    "startOffset": 135916,
+                    "endColumn": 91,
+                    "endOffset": 136003
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1747,
+                    "startColumn": 4,
+                    "startOffset": 136008,
+                    "endLine": 1753,
+                    "endColumn": 12,
+                    "endOffset": 136356
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1754,
+                    "startColumn": 4,
+                    "startOffset": 136361,
+                    "endLine": 1764,
+                    "endColumn": 12,
+                    "endOffset": 137073
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1765,
+                    "startColumn": 4,
+                    "startOffset": 137078,
+                    "endLine": 1766,
+                    "endColumn": 12,
+                    "endOffset": 137112
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\vpi__styles.xml"
+                }
+            },
+            {
+                "to": {
                     "startLine": 1767,
                     "startColumn": 4,
-                    "startOffset": 137189,
+                    "startOffset": 137117,
                     "endLine": 1768,
                     "endColumn": 12,
-                    "endOffset": 137296
+                    "endOffset": 137212
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8300,10 +8286,10 @@
                 "to": {
                     "startLine": 1769,
                     "startColumn": 4,
-                    "startOffset": 137301,
+                    "startOffset": 137217,
                     "endLine": 1770,
                     "endColumn": 12,
-                    "endOffset": 137410
+                    "endOffset": 137324
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8313,10 +8299,10 @@
                 "to": {
                     "startLine": 1771,
                     "startColumn": 4,
-                    "startOffset": 137415,
+                    "startOffset": 137329,
                     "endLine": 1772,
                     "endColumn": 12,
-                    "endOffset": 137526
+                    "endOffset": 137438
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8326,10 +8312,10 @@
                 "to": {
                     "startLine": 1773,
                     "startColumn": 4,
-                    "startOffset": 137531,
+                    "startOffset": 137443,
                     "endLine": 1774,
                     "endColumn": 12,
-                    "endOffset": 137642
+                    "endOffset": 137554
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8339,21 +8325,10 @@
                 "to": {
                     "startLine": 1775,
                     "startColumn": 4,
-                    "startOffset": 137647,
-                    "endColumn": 93,
-                    "endOffset": 137736
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1776,
-                    "startColumn": 4,
-                    "startOffset": 137741,
-                    "endColumn": 113,
-                    "endOffset": 137850
+                    "startOffset": 137559,
+                    "endLine": 1776,
+                    "endColumn": 12,
+                    "endOffset": 137670
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8363,9 +8338,9 @@
                 "to": {
                     "startLine": 1777,
                     "startColumn": 4,
-                    "startOffset": 137855,
-                    "endColumn": 117,
-                    "endOffset": 137968
+                    "startOffset": 137675,
+                    "endColumn": 93,
+                    "endOffset": 137764
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8375,10 +8350,21 @@
                 "to": {
                     "startLine": 1778,
                     "startColumn": 4,
-                    "startOffset": 137973,
-                    "endLine": 1779,
-                    "endColumn": 12,
-                    "endOffset": 138070
+                    "startOffset": 137769,
+                    "endColumn": 113,
+                    "endOffset": 137878
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1779,
+                    "startColumn": 4,
+                    "startOffset": 137883,
+                    "endColumn": 117,
+                    "endOffset": 137996
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8388,10 +8374,10 @@
                 "to": {
                     "startLine": 1780,
                     "startColumn": 4,
-                    "startOffset": 138075,
+                    "startOffset": 138001,
                     "endLine": 1781,
                     "endColumn": 12,
-                    "endOffset": 138190
+                    "endOffset": 138098
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8401,10 +8387,10 @@
                 "to": {
                     "startLine": 1782,
                     "startColumn": 4,
-                    "startOffset": 138195,
+                    "startOffset": 138103,
                     "endLine": 1783,
                     "endColumn": 12,
-                    "endOffset": 138312
+                    "endOffset": 138218
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8414,21 +8400,10 @@
                 "to": {
                     "startLine": 1784,
                     "startColumn": 4,
-                    "startOffset": 138317,
-                    "endColumn": 81,
-                    "endOffset": 138394
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1785,
-                    "startColumn": 4,
-                    "startOffset": 138399,
-                    "endColumn": 103,
-                    "endOffset": 138498
+                    "startOffset": 138223,
+                    "endLine": 1785,
+                    "endColumn": 12,
+                    "endOffset": 138340
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8438,9 +8413,9 @@
                 "to": {
                     "startLine": 1786,
                     "startColumn": 4,
-                    "startOffset": 138503,
-                    "endColumn": 119,
-                    "endOffset": 138618
+                    "startOffset": 138345,
+                    "endColumn": 81,
+                    "endOffset": 138422
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8450,9 +8425,9 @@
                 "to": {
                     "startLine": 1787,
                     "startColumn": 4,
-                    "startOffset": 138623,
-                    "endColumn": 125,
-                    "endOffset": 138744
+                    "startOffset": 138427,
+                    "endColumn": 103,
+                    "endOffset": 138526
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8462,9 +8437,9 @@
                 "to": {
                     "startLine": 1788,
                     "startColumn": 4,
-                    "startOffset": 138749,
-                    "endColumn": 97,
-                    "endOffset": 138842
+                    "startOffset": 138531,
+                    "endColumn": 119,
+                    "endOffset": 138646
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8474,9 +8449,9 @@
                 "to": {
                     "startLine": 1789,
                     "startColumn": 4,
-                    "startOffset": 138847,
-                    "endColumn": 93,
-                    "endOffset": 138936
+                    "startOffset": 138651,
+                    "endColumn": 125,
+                    "endOffset": 138772
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8486,9 +8461,9 @@
                 "to": {
                     "startLine": 1790,
                     "startColumn": 4,
-                    "startOffset": 138941,
-                    "endColumn": 87,
-                    "endOffset": 139024
+                    "startOffset": 138777,
+                    "endColumn": 97,
+                    "endOffset": 138870
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8498,9 +8473,9 @@
                 "to": {
                     "startLine": 1791,
                     "startColumn": 4,
-                    "startOffset": 139029,
-                    "endColumn": 111,
-                    "endOffset": 139136
+                    "startOffset": 138875,
+                    "endColumn": 93,
+                    "endOffset": 138964
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8510,9 +8485,9 @@
                 "to": {
                     "startLine": 1792,
                     "startColumn": 4,
-                    "startOffset": 139141,
-                    "endColumn": 115,
-                    "endOffset": 139252
+                    "startOffset": 138969,
+                    "endColumn": 87,
+                    "endOffset": 139052
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8522,9 +8497,9 @@
                 "to": {
                     "startLine": 1793,
                     "startColumn": 4,
-                    "startOffset": 139257,
-                    "endColumn": 121,
-                    "endOffset": 139374
+                    "startOffset": 139057,
+                    "endColumn": 111,
+                    "endOffset": 139164
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8534,9 +8509,9 @@
                 "to": {
                     "startLine": 1794,
                     "startColumn": 4,
-                    "startOffset": 139379,
-                    "endColumn": 111,
-                    "endOffset": 139486
+                    "startOffset": 139169,
+                    "endColumn": 115,
+                    "endOffset": 139280
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8546,34 +8521,34 @@
                 "to": {
                     "startLine": 1795,
                     "startColumn": 4,
-                    "startOffset": 139491,
-                    "endLine": 1797,
+                    "startOffset": 139285,
+                    "endColumn": 121,
+                    "endOffset": 139402
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1796,
+                    "startColumn": 4,
+                    "startOffset": 139407,
+                    "endColumn": 111,
+                    "endOffset": 139514
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1797,
+                    "startColumn": 4,
+                    "startOffset": 139519,
+                    "endLine": 1799,
                     "endColumn": 12,
-                    "endOffset": 139661
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1798,
-                    "startColumn": 4,
-                    "startOffset": 139666,
-                    "endColumn": 115,
-                    "endOffset": 139777
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1799,
-                    "startColumn": 4,
-                    "startOffset": 139782,
-                    "endColumn": 85,
-                    "endOffset": 139863
+                    "endOffset": 139689
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8583,10 +8558,21 @@
                 "to": {
                     "startLine": 1800,
                     "startColumn": 4,
-                    "startOffset": 139868,
-                    "endLine": 1801,
-                    "endColumn": 12,
-                    "endOffset": 139975
+                    "startOffset": 139694,
+                    "endColumn": 115,
+                    "endOffset": 139805
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1801,
+                    "startColumn": 4,
+                    "startOffset": 139810,
+                    "endColumn": 85,
+                    "endOffset": 139891
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8596,10 +8582,10 @@
                 "to": {
                     "startLine": 1802,
                     "startColumn": 4,
-                    "startOffset": 139980,
+                    "startOffset": 139896,
                     "endLine": 1803,
                     "endColumn": 12,
-                    "endOffset": 140099
+                    "endOffset": 140003
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8609,9 +8595,10 @@
                 "to": {
                     "startLine": 1804,
                     "startColumn": 4,
-                    "startOffset": 140104,
-                    "endColumn": 66,
-                    "endOffset": 140166
+                    "startOffset": 140008,
+                    "endLine": 1805,
+                    "endColumn": 12,
+                    "endOffset": 140127
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8619,12 +8606,11 @@
             },
             {
                 "to": {
-                    "startLine": 1805,
+                    "startLine": 1806,
                     "startColumn": 4,
-                    "startOffset": 140171,
-                    "endLine": 1806,
-                    "endColumn": 12,
-                    "endOffset": 140292
+                    "startOffset": 140132,
+                    "endColumn": 66,
+                    "endOffset": 140194
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8634,9 +8620,10 @@
                 "to": {
                     "startLine": 1807,
                     "startColumn": 4,
-                    "startOffset": 140297,
-                    "endColumn": 67,
-                    "endOffset": 140360
+                    "startOffset": 140199,
+                    "endLine": 1808,
+                    "endColumn": 12,
+                    "endOffset": 140320
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8644,12 +8631,11 @@
             },
             {
                 "to": {
-                    "startLine": 1808,
+                    "startLine": 1809,
                     "startColumn": 4,
-                    "startOffset": 140365,
-                    "endLine": 1809,
-                    "endColumn": 12,
-                    "endOffset": 140488
+                    "startOffset": 140325,
+                    "endColumn": 67,
+                    "endOffset": 140388
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8659,10 +8645,10 @@
                 "to": {
                     "startLine": 1810,
                     "startColumn": 4,
-                    "startOffset": 140493,
+                    "startOffset": 140393,
                     "endLine": 1811,
                     "endColumn": 12,
-                    "endOffset": 140632
+                    "endOffset": 140516
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8672,10 +8658,10 @@
                 "to": {
                     "startLine": 1812,
                     "startColumn": 4,
-                    "startOffset": 140637,
+                    "startOffset": 140521,
                     "endLine": 1813,
                     "endColumn": 12,
-                    "endOffset": 140760
+                    "endOffset": 140660
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8685,21 +8671,10 @@
                 "to": {
                     "startLine": 1814,
                     "startColumn": 4,
-                    "startOffset": 140765,
-                    "endColumn": 68,
-                    "endOffset": 140829
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1815,
-                    "startColumn": 4,
-                    "startOffset": 140834,
-                    "endColumn": 94,
-                    "endOffset": 140924
+                    "startOffset": 140665,
+                    "endLine": 1815,
+                    "endColumn": 12,
+                    "endOffset": 140788
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8709,9 +8684,9 @@
                 "to": {
                     "startLine": 1816,
                     "startColumn": 4,
-                    "startOffset": 140929,
-                    "endColumn": 114,
-                    "endOffset": 141039
+                    "startOffset": 140793,
+                    "endColumn": 68,
+                    "endOffset": 140857
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8721,9 +8696,9 @@
                 "to": {
                     "startLine": 1817,
                     "startColumn": 4,
-                    "startOffset": 141044,
-                    "endColumn": 112,
-                    "endOffset": 141152
+                    "startOffset": 140862,
+                    "endColumn": 94,
+                    "endOffset": 140952
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8733,9 +8708,9 @@
                 "to": {
                     "startLine": 1818,
                     "startColumn": 4,
-                    "startOffset": 141157,
-                    "endColumn": 98,
-                    "endOffset": 141251
+                    "startOffset": 140957,
+                    "endColumn": 114,
+                    "endOffset": 141067
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8745,9 +8720,9 @@
                 "to": {
                     "startLine": 1819,
                     "startColumn": 4,
-                    "startOffset": 141256,
-                    "endColumn": 108,
-                    "endOffset": 141360
+                    "startOffset": 141072,
+                    "endColumn": 112,
+                    "endOffset": 141180
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8757,9 +8732,9 @@
                 "to": {
                     "startLine": 1820,
                     "startColumn": 4,
-                    "startOffset": 141365,
-                    "endColumn": 110,
-                    "endOffset": 141471
+                    "startOffset": 141185,
+                    "endColumn": 98,
+                    "endOffset": 141279
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8769,9 +8744,9 @@
                 "to": {
                     "startLine": 1821,
                     "startColumn": 4,
-                    "startOffset": 141476,
-                    "endColumn": 110,
-                    "endOffset": 141582
+                    "startOffset": 141284,
+                    "endColumn": 108,
+                    "endOffset": 141388
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8781,9 +8756,9 @@
                 "to": {
                     "startLine": 1822,
                     "startColumn": 4,
-                    "startOffset": 141587,
-                    "endColumn": 100,
-                    "endOffset": 141683
+                    "startOffset": 141393,
+                    "endColumn": 110,
+                    "endOffset": 141499
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8793,9 +8768,9 @@
                 "to": {
                     "startLine": 1823,
                     "startColumn": 4,
-                    "startOffset": 141688,
-                    "endColumn": 104,
-                    "endOffset": 141788
+                    "startOffset": 141504,
+                    "endColumn": 110,
+                    "endOffset": 141610
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8805,10 +8780,21 @@
                 "to": {
                     "startLine": 1824,
                     "startColumn": 4,
-                    "startOffset": 141793,
-                    "endLine": 1825,
-                    "endColumn": 12,
-                    "endOffset": 141900
+                    "startOffset": 141615,
+                    "endColumn": 100,
+                    "endOffset": 141711
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1825,
+                    "startColumn": 4,
+                    "startOffset": 141716,
+                    "endColumn": 104,
+                    "endOffset": 141816
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8818,10 +8804,10 @@
                 "to": {
                     "startLine": 1826,
                     "startColumn": 4,
-                    "startOffset": 141905,
+                    "startOffset": 141821,
                     "endLine": 1827,
                     "endColumn": 12,
-                    "endOffset": 142030
+                    "endOffset": 141928
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8831,21 +8817,10 @@
                 "to": {
                     "startLine": 1828,
                     "startColumn": 4,
-                    "startOffset": 142035,
-                    "endColumn": 90,
-                    "endOffset": 142121
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1829,
-                    "startColumn": 4,
-                    "startOffset": 142126,
-                    "endColumn": 122,
-                    "endOffset": 142244
+                    "startOffset": 141933,
+                    "endLine": 1829,
+                    "endColumn": 12,
+                    "endOffset": 142058
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8855,10 +8830,21 @@
                 "to": {
                     "startLine": 1830,
                     "startColumn": 4,
-                    "startOffset": 142249,
-                    "endLine": 1831,
-                    "endColumn": 12,
-                    "endOffset": 142356
+                    "startOffset": 142063,
+                    "endColumn": 90,
+                    "endOffset": 142149
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1831,
+                    "startColumn": 4,
+                    "startOffset": 142154,
+                    "endColumn": 122,
+                    "endOffset": 142272
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8868,21 +8854,10 @@
                 "to": {
                     "startLine": 1832,
                     "startColumn": 4,
-                    "startOffset": 142361,
-                    "endColumn": 85,
-                    "endOffset": 142442
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1833,
-                    "startColumn": 4,
-                    "startOffset": 142447,
-                    "endColumn": 103,
-                    "endOffset": 142546
+                    "startOffset": 142277,
+                    "endLine": 1833,
+                    "endColumn": 12,
+                    "endOffset": 142384
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8892,10 +8867,21 @@
                 "to": {
                     "startLine": 1834,
                     "startColumn": 4,
-                    "startOffset": 142551,
-                    "endLine": 1835,
-                    "endColumn": 12,
-                    "endOffset": 142654
+                    "startOffset": 142389,
+                    "endColumn": 85,
+                    "endOffset": 142470
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1835,
+                    "startColumn": 4,
+                    "startOffset": 142475,
+                    "endColumn": 103,
+                    "endOffset": 142574
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8905,10 +8891,10 @@
                 "to": {
                     "startLine": 1836,
                     "startColumn": 4,
-                    "startOffset": 142659,
+                    "startOffset": 142579,
                     "endLine": 1837,
                     "endColumn": 12,
-                    "endOffset": 142754
+                    "endOffset": 142682
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8918,10 +8904,10 @@
                 "to": {
                     "startLine": 1838,
                     "startColumn": 4,
-                    "startOffset": 142759,
+                    "startOffset": 142687,
                     "endLine": 1839,
                     "endColumn": 12,
-                    "endOffset": 142872
+                    "endOffset": 142782
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8931,10 +8917,10 @@
                 "to": {
                     "startLine": 1840,
                     "startColumn": 4,
-                    "startOffset": 142877,
+                    "startOffset": 142787,
                     "endLine": 1841,
                     "endColumn": 12,
-                    "endOffset": 142976
+                    "endOffset": 142900
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8944,10 +8930,10 @@
                 "to": {
                     "startLine": 1842,
                     "startColumn": 4,
-                    "startOffset": 142981,
+                    "startOffset": 142905,
                     "endLine": 1843,
                     "endColumn": 12,
-                    "endOffset": 143080
+                    "endOffset": 143004
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8957,10 +8943,10 @@
                 "to": {
                     "startLine": 1844,
                     "startColumn": 4,
-                    "startOffset": 143085,
+                    "startOffset": 143009,
                     "endLine": 1845,
                     "endColumn": 12,
-                    "endOffset": 143206
+                    "endOffset": 143108
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8970,21 +8956,10 @@
                 "to": {
                     "startLine": 1846,
                     "startColumn": 4,
-                    "startOffset": 143211,
-                    "endColumn": 87,
-                    "endOffset": 143294
-                },
-                "from": {
-                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1847,
-                    "startColumn": 4,
-                    "startOffset": 143299,
-                    "endColumn": 89,
-                    "endOffset": 143384
+                    "startOffset": 143113,
+                    "endLine": 1847,
+                    "endColumn": 12,
+                    "endOffset": 143234
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -8994,9 +8969,9 @@
                 "to": {
                     "startLine": 1848,
                     "startColumn": 4,
-                    "startOffset": 143389,
-                    "endColumn": 109,
-                    "endOffset": 143494
+                    "startOffset": 143239,
+                    "endColumn": 87,
+                    "endOffset": 143322
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -9006,9 +8981,9 @@
                 "to": {
                     "startLine": 1849,
                     "startColumn": 4,
-                    "startOffset": 143499,
-                    "endColumn": 83,
-                    "endOffset": 143578
+                    "startOffset": 143327,
+                    "endColumn": 89,
+                    "endOffset": 143412
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -9018,9 +8993,9 @@
                 "to": {
                     "startLine": 1850,
                     "startColumn": 4,
-                    "startOffset": 143583,
-                    "endColumn": 53,
-                    "endOffset": 143632
+                    "startOffset": 143417,
+                    "endColumn": 109,
+                    "endOffset": 143522
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -9030,9 +9005,9 @@
                 "to": {
                     "startLine": 1851,
                     "startColumn": 4,
-                    "startOffset": 143637,
-                    "endColumn": 63,
-                    "endOffset": 143696
+                    "startOffset": 143527,
+                    "endColumn": 83,
+                    "endOffset": 143606
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -9042,9 +9017,9 @@
                 "to": {
                     "startLine": 1852,
                     "startColumn": 4,
-                    "startOffset": 143701,
-                    "endColumn": 105,
-                    "endOffset": 143802
+                    "startOffset": 143611,
+                    "endColumn": 53,
+                    "endOffset": 143660
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -9054,9 +9029,9 @@
                 "to": {
                     "startLine": 1853,
                     "startColumn": 4,
-                    "startOffset": 143807,
-                    "endColumn": 109,
-                    "endOffset": 143912
+                    "startOffset": 143665,
+                    "endColumn": 63,
+                    "endOffset": 143724
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -9066,9 +9041,9 @@
                 "to": {
                     "startLine": 1854,
                     "startColumn": 4,
-                    "startOffset": 143917,
-                    "endColumn": 83,
-                    "endOffset": 143996
+                    "startOffset": 143729,
+                    "endColumn": 105,
+                    "endOffset": 143830
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -9078,9 +9053,9 @@
                 "to": {
                     "startLine": 1855,
                     "startColumn": 4,
-                    "startOffset": 144001,
-                    "endColumn": 119,
-                    "endOffset": 144116
+                    "startOffset": 143835,
+                    "endColumn": 109,
+                    "endOffset": 143940
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
@@ -9090,10 +9065,34 @@
                 "to": {
                     "startLine": 1856,
                     "startColumn": 4,
-                    "startOffset": 144121,
-                    "endLine": 1859,
+                    "startOffset": 143945,
+                    "endColumn": 83,
+                    "endOffset": 144024
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1857,
+                    "startColumn": 4,
+                    "startOffset": 144029,
+                    "endColumn": 119,
+                    "endOffset": 144144
+                },
+                "from": {
+                    "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1858,
+                    "startColumn": 4,
+                    "startOffset": 144149,
+                    "endLine": 1861,
                     "endColumn": 12,
-                    "endOffset": 144334
+                    "endOffset": 144362
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
@@ -9101,12 +9100,12 @@
             },
             {
                 "to": {
-                    "startLine": 1860,
+                    "startLine": 1862,
                     "startColumn": 4,
-                    "startOffset": 144339,
-                    "endLine": 1863,
+                    "startOffset": 144367,
+                    "endLine": 1865,
                     "endColumn": 12,
-                    "endOffset": 144541
+                    "endOffset": 144569
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
@@ -9114,12 +9113,12 @@
             },
             {
                 "to": {
-                    "startLine": 1864,
+                    "startLine": 1866,
                     "startColumn": 4,
-                    "startOffset": 144546,
-                    "endLine": 1866,
+                    "startOffset": 144574,
+                    "endLine": 1868,
                     "endColumn": 12,
-                    "endOffset": 144700
+                    "endOffset": 144728
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
@@ -9127,12 +9126,12 @@
             },
             {
                 "to": {
-                    "startLine": 1867,
+                    "startLine": 1869,
                     "startColumn": 4,
-                    "startOffset": 144705,
-                    "endLine": 1875,
+                    "startOffset": 144733,
+                    "endLine": 1877,
                     "endColumn": 12,
-                    "endOffset": 145267
+                    "endOffset": 145295
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
@@ -9140,12 +9139,12 @@
             },
             {
                 "to": {
-                    "startLine": 1876,
+                    "startLine": 1878,
                     "startColumn": 4,
-                    "startOffset": 145272,
-                    "endLine": 1881,
+                    "startOffset": 145300,
+                    "endLine": 1883,
                     "endColumn": 12,
-                    "endOffset": 145628
+                    "endOffset": 145656
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
@@ -9153,12 +9152,12 @@
             },
             {
                 "to": {
-                    "startLine": 1882,
+                    "startLine": 1884,
                     "startColumn": 4,
-                    "startOffset": 145633,
-                    "endLine": 1884,
+                    "startOffset": 145661,
+                    "endLine": 1886,
                     "endColumn": 12,
-                    "endOffset": 145757
+                    "endOffset": 145785
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
@@ -9166,12 +9165,12 @@
             },
             {
                 "to": {
-                    "startLine": 1885,
+                    "startLine": 1887,
                     "startColumn": 4,
-                    "startOffset": 145762,
-                    "endLine": 1894,
+                    "startOffset": 145790,
+                    "endLine": 1896,
                     "endColumn": 12,
-                    "endOffset": 146501
+                    "endOffset": 146529
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
@@ -9179,12 +9178,12 @@
             },
             {
                 "to": {
-                    "startLine": 1895,
+                    "startLine": 1897,
                     "startColumn": 4,
-                    "startOffset": 146506,
-                    "endLine": 1898,
+                    "startOffset": 146534,
+                    "endLine": 1900,
                     "endColumn": 12,
-                    "endOffset": 146681
+                    "endOffset": 146709
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
@@ -9192,12 +9191,12 @@
             },
             {
                 "to": {
-                    "startLine": 1899,
+                    "startLine": 1901,
                     "startColumn": 4,
-                    "startOffset": 146686,
-                    "endLine": 1902,
+                    "startOffset": 146714,
+                    "endLine": 1904,
                     "endColumn": 12,
-                    "endOffset": 146931
+                    "endOffset": 146959
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\values\\values.xml"
@@ -9205,12 +9204,12 @@
             },
             {
                 "to": {
-                    "startLine": 1903,
+                    "startLine": 1905,
                     "startColumn": 4,
-                    "startOffset": 146936,
-                    "endLine": 1906,
+                    "startOffset": 146964,
+                    "endLine": 1908,
                     "endColumn": 12,
-                    "endOffset": 147121
+                    "endOffset": 147149
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\vpi__styles.xml"
@@ -9218,12 +9217,12 @@
             },
             {
                 "to": {
-                    "startLine": 1907,
+                    "startLine": 1909,
                     "startColumn": 4,
-                    "startOffset": 147126,
-                    "endLine": 1917,
+                    "startOffset": 147154,
+                    "endLine": 1919,
                     "endColumn": 12,
-                    "endOffset": 147723
+                    "endOffset": 147751
                 },
                 "from": {
                     "file": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\values\\vpi__styles.xml"

@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
-import com.example.lenovo.SpaApp.Adapters.AppointmentAdapters.UpcomingAdapter;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.AppointmentAdapters.UpcomingAdapter;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Model.AppointmentsModel;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.Constants;

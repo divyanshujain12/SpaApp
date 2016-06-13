@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
-import com.example.lenovo.SpaApp.Adapters.AppointmentAdapters.InProgressAdapter;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.AppointmentAdapters.InProgressAdapter;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Model.AppointmentsModel;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.Constants;
@@ -22,7 +22,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import GlobalClasses.DummyJsons;
 import GlobalClasses.GlobalFragment;
 import butterknife.ButterKnife;
 import butterknife.InjectView;

@@ -12,12 +12,12 @@
         "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\layout\\how_to_work_viewpager_item.xml"
     },
     {
-        "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_fragment.xml",
-        "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\layout\\home_fragment.xml"
-    },
-    {
         "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu_fragment_item.xml",
         "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\layout\\menu_fragment_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_fragment.xml",
+        "source": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\src\\main\\res\\layout\\home_fragment.xml"
     },
     {
         "merged": "C:\\Users\\divyanshu.jain\\Downloads\\SpaAppNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
