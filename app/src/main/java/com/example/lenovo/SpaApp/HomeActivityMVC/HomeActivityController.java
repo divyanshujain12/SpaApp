@@ -3,17 +3,17 @@ package com.example.lenovo.SpaApp.HomeActivityMVC;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 
 import com.example.lenovo.SpaApp.FAQFragmentMVC.FaqFragmentController;
 import com.example.lenovo.SpaApp.Fragments.ContactFragment;
-import com.example.lenovo.SpaApp.Fragments.SettingFragment;
 import com.example.lenovo.SpaApp.HomeFragmentMVC.HomeFragmentControllers;
 import com.example.lenovo.SpaApp.HowItWork;
 import com.example.lenovo.SpaApp.MainActivity;
 import com.example.lenovo.SpaApp.Models.UserDetailModel;
+import com.example.lenovo.SpaApp.MyAccountMVC.MyAccountFragment;
+import com.example.lenovo.SpaApp.MyAccountMVC.MyAccountFragmentController;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
@@ -46,13 +46,13 @@ public class HomeActivityController extends HomeActivity {
                         finish();
                         break;
                     case 3:
-                        updateFragment(FaqFragmentController.getInstance("BUY SERVICES"));
+                        updateFragment(FaqFragmentController.getInstance("FAQ'S"));
                         break;
                     case 4:
-                        updateFragment(SettingFragment.getInstance("MY ACCOUNT"));
+                        updateFragment(MyAccountFragment.getInstance("MY ACCOUNT"));
                         break;
                     case 5:
-                        updateFragment(SettingFragment.getInstance("CORPORATE INQUIRIES"));
+                        updateFragment(MyAccountFragment.getInstance("CORPORATE INQUIRIES"));
                         break;
                     case 6:
                         updateFragment(ContactFragment.getInstance("CONTACTS"));
@@ -79,11 +79,10 @@ public class HomeActivityController extends HomeActivity {
 
         String name = fragment.getClass().getName();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        boolean isPopped = fragmentManager.popBackStackImmediate(name, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-        if (fragment != null && !isPopped) {
-            fragmentTransaction.replace(R.id.frameLayout, fragment);
-            if (!(fragment instanceof HomeFragmentControllers))
-                fragmentTransaction.addToBackStack(name);
+        boolean isPopped = fragmentManager.popBackStackImmediate(name, 0);
+        if (fragment != null && !isPopped && fragmentManager.findFragmentByTag(name) == null) {
+            fragmentTransaction.replace(R.id.frameLayout, fragment, name);
+            fragmentTransaction.addToBackStack(name);
             fragmentTransaction.commit();
         }
 
@@ -94,5 +93,16 @@ public class HomeActivityController extends HomeActivity {
 
         super.onResume();
         toolbar.setProductCount();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (getSupportFragmentManager().getBackStackEntryCount() == 1) {
+            finish();
+        } else if (fragmentManager.getBackStackEntryCount() > 1) {
+            fragmentManager.popBackStack();
+        } else {
+            super.onBackPressed();
+        }
     }
 }

@@ -8,14 +8,14 @@ import butterknife.ButterKnife.Injector;
 public class MyCartActivity$$ViewInjector<T extends com.example.lenovo.SpaApp.MyCartMVC.MyCartActivity> implements Injector<T> {
   @Override public void inject(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131558599, "field 'myCartRV'");
-    target.myCartRV = finder.castView(view, 2131558599, "field 'myCartRV'");
-    view = finder.findRequiredView(source, 2131558598, "field 'customToolbar'");
-    target.customToolbar = finder.castView(view, 2131558598, "field 'customToolbar'");
+    view = finder.findRequiredView(source, 2131558609, "field 'myCartRV'");
+    target.myCartRV = finder.castView(view, 2131558609, "field 'myCartRV'");
+    view = finder.findRequiredView(source, 2131558608, "field 'customToolbar'");
+    target.customToolbar = finder.castView(view, 2131558608, "field 'customToolbar'");
     view = finder.findRequiredView(source, 2131558563, "field 'contentRL'");
     target.contentRL = finder.castView(view, 2131558563, "field 'contentRL'");
-    view = finder.findRequiredView(source, 2131558600, "field 'noItemLL'");
-    target.noItemLL = finder.castView(view, 2131558600, "field 'noItemLL'");
+    view = finder.findRequiredView(source, 2131558610, "field 'noItemLL'");
+    target.noItemLL = finder.castView(view, 2131558610, "field 'noItemLL'");
     view = finder.findRequiredView(source, 2131558526, "field 'confirmTV'");
     target.confirmTV = finder.castView(view, 2131558526, "field 'confirmTV'");
   }

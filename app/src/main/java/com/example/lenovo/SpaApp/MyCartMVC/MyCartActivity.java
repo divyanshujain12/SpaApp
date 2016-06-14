@@ -72,6 +72,7 @@ class MyCartActivity extends GlobalActivity {
     }
 
     private void InitViews() {
+
         customToolbar.InitToolbar(this, getString(R.string.my_cart));
         customToolbar.hideCartView(true);
         myCartRV.setLayoutManager(new LinearLayoutManager(this));
@@ -79,7 +80,6 @@ class MyCartActivity extends GlobalActivity {
         myCartModels.addAll(realm.allObjects(AppointmentBookingModel.class));
         myCartAdapter = new MyCartAdapter(this, myCartModels, this);
         myCartRV.setAdapter(myCartAdapter);
-
 
         if (myCartModels.size() <= 0)
             hideContentLayout(true);
@@ -171,12 +171,10 @@ class MyCartActivity extends GlobalActivity {
 
         if (ContextCompat.checkSelfPermission(caller, Manifest.permission.WRITE_CALENDAR) != PackageManager.PERMISSION_GRANTED) {
             permissionList.add(Manifest.permission.WRITE_CALENDAR);
-
         }
 
         if (ContextCompat.checkSelfPermission(caller, Manifest.permission.READ_CALENDAR) != PackageManager.PERMISSION_GRANTED) {
             permissionList.add(Manifest.permission.READ_CALENDAR);
-
         }
 
         if (permissionList.size() > 0) {
@@ -185,7 +183,6 @@ class MyCartActivity extends GlobalActivity {
             for (int i = 0; i < permissionList.size(); i++) {
                 permissionArray[i] = permissionList.get(i);
             }
-
             ActivityCompat.requestPermissions(caller,
                     permissionArray,
                     CALENDARHELPER_PERMISSION_REQUEST_CODE);

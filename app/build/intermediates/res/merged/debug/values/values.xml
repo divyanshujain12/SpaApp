@@ -443,6 +443,7 @@
     <string name="checkout">CHECKOUT</string>
     <string name="close">CLOSE</string>
     <string name="confirm">CONFIRM BOOKING</string>
+    <string name="confirm_pass">CONFIRM PASSWORD -</string>
     <string name="confirm_password">confirm password</string>
     <string name="cost">COST</string>
     <string name="dummy_amount">$ 20</string>
@@ -455,6 +456,7 @@
     <string name="enter_email">Enter Email</string>
     <string name="enter_name">Enter Name</string>
     <string name="enter_number">Enter Number</string>
+    <string name="enter_password">NEW PASSWORD</string>
     <string name="err_msg_address">ENter the Address!</string>
     <string name="err_msg_city">Enter city name</string>
     <string name="err_msg_email">Enter valid email address</string>
@@ -471,14 +473,27 @@
     <string name="mismatch_password">Passwords did not match</string>
     <string name="my_cart">MY CART</string>
     <string name="name">NAME -</string>
+    <string name="new_email">NEW EMAIL -</string>
+    <string name="new_name">NEW NAME -</string>
+    <string name="new_number">NEW NUMBER - </string>
+    <string name="new_pass_mismatch">New password mismatch!</string>
+    <string name="new_password">NEW PASSWORD -</string>
     <string name="no">NO</string>
     <string name="no_internet_connection">No Internet Connection!</string>
     <string name="no_item">NO ITEM AVAILABLE!</string>
     <string name="number">NUMBER -</string>
     <string name="ok">OK</string>
+    <string name="old_email">OLD EMAIL -</string>
+    <string name="old_name">OLD NAME -</string>
+    <string name="old_number">OLD NUMBER - </string>
+    <string name="old_pass_et">OLD PASSWORD</string>
+    <string name="old_pass_mismatch">Old password mismatch!</string>
+    <string name="old_password">OLD PASSWORD -</string>
     <string name="openDrawer"/>
     <string name="our_services">OUR \n SERVICES</string>
+    <string name="pass_caps">PASSWORD -</string>
     <string name="password">password</string>
+    <string name="reenter_pass">REENTER PASSWORD</string>
     <string name="remove">REMOVE</string>
     <string name="select_your_availability">SELECT YOUR AVAILABILITY -</string>
     <string name="service">SERVICE -</string>
@@ -493,6 +508,7 @@
     <string name="successfully_added">SUCCESSFULLY ADDED!</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="unable_find_facebook">"Unable to get your mail id due to facebook policy! Kindly sign up manually!"</string>
+    <string name="update">UPDATE</string>
     <string name="yes">YES</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

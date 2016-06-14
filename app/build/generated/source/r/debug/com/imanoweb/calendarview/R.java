@@ -64,12 +64,12 @@ public final class R {
 		public static final int custom_calendar_layout = 0x7f040022;
 		public static final int custom_calendar_title_layout = 0x7f040023;
 		public static final int custom_calendar_weeks_layout = 0x7f040024;
-		public static final int roboto_calendar_week_1 = 0x7f040049;
-		public static final int roboto_calendar_week_2 = 0x7f04004a;
-		public static final int roboto_calendar_week_3 = 0x7f04004b;
-		public static final int roboto_calendar_week_4 = 0x7f04004c;
-		public static final int roboto_calendar_week_5 = 0x7f04004d;
-		public static final int roboto_calendar_week_6 = 0x7f04004e;
+		public static final int roboto_calendar_week_1 = 0x7f04004a;
+		public static final int roboto_calendar_week_2 = 0x7f04004b;
+		public static final int roboto_calendar_week_3 = 0x7f04004c;
+		public static final int roboto_calendar_week_4 = 0x7f04004d;
+		public static final int roboto_calendar_week_5 = 0x7f04004e;
+		public static final int roboto_calendar_week_6 = 0x7f04004f;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f080004;
