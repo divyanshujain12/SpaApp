@@ -9,7 +9,7 @@ public class AppointmentBookingController$$ViewInjector<T extends com.example.le
     super.inject(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131558526, "method 'onClick'");
+    view = finder.findRequiredView(source, 2131624062, "method 'onClick'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

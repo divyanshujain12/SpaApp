@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 
+import com.example.lenovo.SpaApp.CorporateEnquiriesMVC.CorporateFragmentController;
 import com.example.lenovo.SpaApp.FAQFragmentMVC.FaqFragmentController;
 import com.example.lenovo.SpaApp.Fragments.ContactFragment;
 import com.example.lenovo.SpaApp.HomeFragmentMVC.HomeFragmentControllers;
@@ -52,7 +53,7 @@ public class HomeActivityController extends HomeActivity {
                         updateFragment(MyAccountFragment.getInstance("MY ACCOUNT"));
                         break;
                     case 5:
-                        updateFragment(MyAccountFragment.getInstance("CORPORATE INQUIRIES"));
+                        updateFragment(CorporateFragmentController.getInstance("CORPORATE INQUIRIES"));
                         break;
                     case 6:
                         updateFragment(ContactFragment.getInstance("CONTACTS"));

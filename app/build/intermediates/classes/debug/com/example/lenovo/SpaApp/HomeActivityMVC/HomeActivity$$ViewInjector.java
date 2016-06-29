@@ -8,10 +8,10 @@ import butterknife.ButterKnife.Injector;
 public class HomeActivity$$ViewInjector<T extends com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity> implements Injector<T> {
   @Override public void inject(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131558518, "field 'toolbar'");
-    target.toolbar = finder.castView(view, 2131558518, "field 'toolbar'");
-    view = finder.findRequiredView(source, 2131558582, "field 'root'");
-    target.root = finder.castView(view, 2131558582, "field 'root'");
+    view = finder.findRequiredView(source, 2131624054, "field 'toolbar'");
+    target.toolbar = finder.castView(view, 2131624054, "field 'toolbar'");
+    view = finder.findRequiredView(source, 2131624149, "field 'root'");
+    target.root = finder.castView(view, 2131624149, "field 'root'");
   }
 
   @Override public void reset(T target) {

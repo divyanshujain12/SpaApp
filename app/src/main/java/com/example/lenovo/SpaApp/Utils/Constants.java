@@ -52,11 +52,14 @@ public class Constants {
 
         String CANCEL_ORDER = BASE + "cancel_order";
 
+        String FAQS = BASE + "faq";
+
         public static String HOME = BASE + "home";
 
         public static String EVENTS = BASE + "events.php";
 
         public static String USER_EVENTS = BASE + "userevents.php?accesstoken=8dd9294632aeed1b62a6bc2eba8b41c5";
+
 
     }
 }
