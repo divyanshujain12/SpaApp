@@ -147,6 +147,10 @@
     <string name="question">Que-</string>
     <string name="answer">Ans-</string>
 
+    <string name="corporate_inquiry_first_par">For private and corporate event bookings please visit our website or call us and we’d be happy to help plan your event. </string>
+    <string name="website">http://www.myspa2go.com/private-events/</string>
+    <string name="spa_number">tel\: 646.241.4477</string>
+
     <string-array name="timing_array">
         <item>8:00 AM</item>
         <item>9:00 AM</item>

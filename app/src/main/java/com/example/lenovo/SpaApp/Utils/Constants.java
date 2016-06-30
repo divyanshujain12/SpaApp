@@ -54,6 +54,8 @@ public class Constants {
 
         String FAQS = BASE + "faq";
 
+        String CHANGE_PASSWORD = BASE+"changepassword";
+
         public static String HOME = BASE + "home";
 
         public static String EVENTS = BASE + "events.php";

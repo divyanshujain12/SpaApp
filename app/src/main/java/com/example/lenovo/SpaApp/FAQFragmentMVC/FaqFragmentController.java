@@ -46,11 +46,11 @@ public class FaqFragmentController extends FaqFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         HomeActivity.headerText.setText(getArguments().getString("name"));
-        CallWebService.getInstance(getActivity(), true).hitJSONObjectVolleyWebService(CallWebService.POST, Constants.WebServices.FAQS, null, this);
+        CallWebService.getInstance(getContext(), true).hitJSONObjectVolleyWebService(CallWebService.POST, Constants.WebServices.FAQS, null, this);
     }
 
     private void addViewInScrollview() {
-        LayoutInflater inflater = LayoutInflater.from(getActivity());
+        LayoutInflater inflater = LayoutInflater.from(getContext());
         for (FaqModel faqModel : faqModels) {
             View view = inflater.inflate(R.layout.faq_content_view, null);
             TextView questionTV = (TextView) view.findViewById(R.id.questionTV);

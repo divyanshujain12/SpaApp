@@ -144,8 +144,8 @@ class MyCartActivity extends GlobalActivity {
             Formatter.setTimeZone(TimeZone.getDefault());
 
             try {
-                time = "4:05 PM";
-                date = "2016-06-13" + " " + time;
+
+                date = date + " " + time;
                 Date dateD = Formatter.parse(date);
                 timeInMS = dateD.getTime();
             } catch (ParseException e) {

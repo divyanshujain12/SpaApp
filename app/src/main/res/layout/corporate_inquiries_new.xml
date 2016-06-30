@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/ten_dp"
+    android:orientation="vertical">
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/corporate_inquiry_first_par"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/eighteen_sp"
+        pixlui:typeface="Titillium-Bold.otf" />
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/websiteTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:text="@string/website"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:autoLink="web"
+        android:textSize="@dimen/eighteen_sp"
+        pixlui:typeface="Titillium-Regular.otf" />
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/numberTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:text="@string/spa_number"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textColor="@android:color/holo_blue_dark"
+        android:autoLink="phone"
+        android:textSize="@dimen/eighteen_sp"
+        pixlui:typeface="Titillium-Regular.otf" />
+</LinearLayout>

@@ -82,7 +82,7 @@ public class MyAccountFragmentController {
                     case NUMBER:
                         if (!isValidString(finalValue))
                             errorMsg = context.getString(R.string.err_msg_empty);
-                        else if (!CommonFunctions.isValidEmail(finalValue))
+                        else if (!CommonFunctions.isValidNumber(finalValue))
                             errorMsg = context.getString(R.string.err_msg_number);
                         break;
                 }

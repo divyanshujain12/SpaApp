@@ -22,7 +22,7 @@ class CorporateFragment extends GlobalFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         context = getActivity();
-        View view = inflater.inflate(R.layout.corporate_enquiry, container, false);
+        View view = inflater.inflate(R.layout.corporate_inquiries_new, container, false);
 
         ButterKnife.inject(this, view);
         return view;
