@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\divyanshu.jain\Downloads\SpaAppNew\Calendarlibrary\src\main\assets"/><source path="C:\Users\divyanshu.jain\Downloads\SpaAppNew\Calendarlibrary\assets"/></dataSet><dataSet config="debug"><source path="C:\Users\divyanshu.jain\Downloads\SpaAppNew\Calendarlibrary\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\spa\SpaAppNew\Calendarlibrary\src\main\assets"/><source path="D:\spa\SpaAppNew\Calendarlibrary\assets"/></dataSet><dataSet config="debug"><source path="D:\spa\SpaAppNew\Calendarlibrary\src\debug\assets"/></dataSet></merger>

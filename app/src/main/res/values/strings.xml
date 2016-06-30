@@ -38,6 +38,7 @@
     <string name="service">SERVICE -</string>
     <string name="name">NAME -</string>
     <string name="email">EMAIL -</string>
+
     <string name="number">NUMBER -</string>
     <string name="address">ADDRESS -</string>
     <string name="additional_notes">ADDITIONAL NOTES -</string>
@@ -85,6 +86,66 @@
     <string name="old_pass_mismatch">Old password mismatch!</string>
     <string name="new_pass_mismatch">New password mismatch!</string>
 
+    <!--enquiry for strings-->
+    <!-- company detail-->
+    <string name="company_details">Company Details</string>
+    <string name="company_name">Company Name</string>
+    <string name="location_of_services">Location of services</string>
+    <string name="contact_person">Contact person</string>
+    <string name="contact_email">Contact email</string>
+    <string name="contact_phone">Contact phone</string>
+
+    <!--When would you like to book the services for?-->
+    <string name="book_service_for">When would you like to book the services for?</string>
+    <string name="prefered_date">Preferred Date</string>
+    <string name="hours_of_services">Hours of Service</string>
+    <string name="approximate_guests">Approximate number of guests to service:</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+
+    <!--Please choose a list of services you are interested:-->
+    <string name="list_of_services_text">Please choose a list of services you are interested:</string>
+    <string name="nail_services">Nail Services:</string>
+    <string name="express_manicure">Express manicure</string>
+    <string name="express_pedicure">Express pedicures</string>
+    <string name="express_gel_manicure">Express Gel manicure</string>
+    <string name="nail_design">Nail design/art</string>
+    <string name="custom_nail_decals">Custom nail decals</string>
+
+    <!--Massage Services:-->
+    <string name="massage_service">Massage Services:</string>
+    <string name="chair_massage">Chair Massage</string>
+    <string name="Reflexology">Reflexology</string>
+    <string name="Shiatsu_Streching">Shiatsu/Streching</string>
+    <string name="Aromatherapy">Aromatherapy</string>
+    <string name="Reiki">Reiki</string>
+    <string name="Hand_foot_massage">Hand/foot massage (with hot stones)</string>
+
+    <!--    Services for Male:-->
+    <string name="Services_for_Male">Services for Male:</string>
+    <string name="Express_manicure_with_buff">Express manicure with buff</string>
+    <string name="Shoe_Shine">Shoe Shine</string>
+    <string name="Razor_Shave">Razor Shave</string>
+
+    <!--Hair & Face:-->
+    <string name="Hair_Face">Hair amp Face</string>
+    <string name="brow_bar">Brow Bar (Eyebrow shaping)</string>
+    <string name="braid_bar">Braid Bar (Hair Braiding or up-do\'s)</string>
+    <string name="lash_bar">Lash Bar (eyelash extensions)</string>
+    <string name="mini_facials">Mini Facials</string>
+    <string name="makeup_touch_ups"> Makeup touch-ups</string>
+    <string name="brow_threading">Brow threading</string>
+
+    <!--Well being:-->
+    <string name="well_being">Well being:</string>
+    <string name="nutriotion_consultation">Nutrition consultation</string>
+    <string name="yoga_classes">Yoga/pilates classes</string>
+    <string name="fitness_inst">Fitness instruction (with fun twists)</string>
+    <string name="number_of_technician">Number of technicians: </string>
+
+    <string name="request_a_quote">Request a Quote</string>
+    <string name="question">Que-</string>
+    <string name="answer">Ans-</string>
 
     <string-array name="timing_array">
         <item>8:00 AM</item>

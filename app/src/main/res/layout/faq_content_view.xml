@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="@dimen/ten_dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:padding="10dp"
+                android:text="@string/question"
+                android:textColor="#fff"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:id="@+id/questionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/service"
+                android:textColor="@color/white_with_alpha"
+                android:textSize="@dimen/sixteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:padding="10dp"
+                android:text="@string/answer"
+                android:textColor="#fff"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:id="@+id/answerTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/service"
+                android:textColor="@color/white_with_alpha"
+                android:textSize="@dimen/sixteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
