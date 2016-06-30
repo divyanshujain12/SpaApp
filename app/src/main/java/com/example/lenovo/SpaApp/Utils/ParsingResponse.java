@@ -43,7 +43,6 @@ public class ParsingResponse {
 
                         Object undefinedObj = jsonArray.opt(i);
 
-
                         if (undefinedObj instanceof JSONObject) {
                             String name = f.getName();
                             Object undefinedInnerObj = ((JSONObject) undefinedObj).opt(name);
