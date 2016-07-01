@@ -6,13 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.LinearLayout;
 
 import com.example.lenovo.SpaApp.R;
-import com.example.lenovo.SpaApp.Utils.Constants;
-import com.example.lenovo.SpaApp.Utils.ParsingResponse;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,6 +28,8 @@ public class FaqFragment extends GlobalFragment {
     ArrayList<String> questionArray;
     HashMap<String, String> answersMap;
     CustomExpandableListAdapter customExpandableListAdapter;
+    @InjectView(R.id.contentLL)
+    LinearLayout contentLL;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -53,18 +51,6 @@ public class FaqFragment extends GlobalFragment {
         answersMap = new HashMap<>();
     }
 
-    @Override
-    public void onJsonObjectSuccess(JSONObject object) throws JSONException {
-        super.onJsonObjectSuccess(object);
-        faqModels = ParsingResponse.getInstance().parseJsonArrayWithJsonObject(object.optJSONArray(Constants.DATA), FaqModel.class);
-
-        for (FaqModel faqModel : faqModels) {
-            questionArray.add(faqModel.getQuestion());
-            answersMap.put(faqModel.getQuestion(), faqModel.getAnswer());
-        }
-        customExpandableListAdapter = new CustomExpandableListAdapter(getActivity(), questionArray, answersMap);
-        expandedLV.setAdapter(customExpandableListAdapter);
-    }
 
     @Override
     public void onDestroyView() {

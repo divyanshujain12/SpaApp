@@ -53,23 +53,23 @@ public final class R {
 		public static final int ic_arrow_up_white = 0x7f02005d;
 	}
 	public static final class id {
-		public static final int dateTitle = 0x7f0e00b7;
-		public static final int daysContainer = 0x7f0e00b5;
-		public static final int leftButton = 0x7f0e00b6;
-		public static final int rightButton = 0x7f0e00b8;
-		public static final int titleLayout = 0x7f0e00b3;
-		public static final int weekLayout = 0x7f0e00b4;
+		public static final int dateTitle = 0x7f0e00b9;
+		public static final int daysContainer = 0x7f0e00b7;
+		public static final int leftButton = 0x7f0e00b8;
+		public static final int rightButton = 0x7f0e00ba;
+		public static final int titleLayout = 0x7f0e00b5;
+		public static final int weekLayout = 0x7f0e00b6;
 	}
 	public static final class layout {
-		public static final int custom_calendar_layout = 0x7f040023;
-		public static final int custom_calendar_title_layout = 0x7f040024;
-		public static final int custom_calendar_weeks_layout = 0x7f040025;
-		public static final int roboto_calendar_week_1 = 0x7f04004e;
-		public static final int roboto_calendar_week_2 = 0x7f04004f;
-		public static final int roboto_calendar_week_3 = 0x7f040050;
-		public static final int roboto_calendar_week_4 = 0x7f040051;
-		public static final int roboto_calendar_week_5 = 0x7f040052;
-		public static final int roboto_calendar_week_6 = 0x7f040053;
+		public static final int custom_calendar_layout = 0x7f040024;
+		public static final int custom_calendar_title_layout = 0x7f040025;
+		public static final int custom_calendar_weeks_layout = 0x7f040026;
+		public static final int roboto_calendar_week_1 = 0x7f040050;
+		public static final int roboto_calendar_week_2 = 0x7f040051;
+		public static final int roboto_calendar_week_3 = 0x7f040052;
+		public static final int roboto_calendar_week_4 = 0x7f040053;
+		public static final int roboto_calendar_week_5 = 0x7f040054;
+		public static final int roboto_calendar_week_6 = 0x7f040055;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f090004;

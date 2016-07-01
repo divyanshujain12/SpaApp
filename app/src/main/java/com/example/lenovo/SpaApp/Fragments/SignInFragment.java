@@ -62,7 +62,7 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         preferences = MyApplication.preference;
-        cdr = new ConnectionDetector(getActivity());
+        cdr = new ConnectionDetector(getContext());
     }
 
 
@@ -105,10 +105,11 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
         try {
             message = object.getString(Constants.MESSAGE);
             JSONObject new_user = object.getJSONObject(Constants.DATA);
-            MySharedPereference.getInstance().setString(getActivity(), Constants.NAME, new_user.getString(Constants.NAME));
-            MySharedPereference.getInstance().setString(getActivity(), Constants.EMAIL, new_user.getString(Constants.EMAIL));
-            MySharedPereference.getInstance().setString(getActivity(), Constants.PHONE_NUMBER, new_user.getString(Constants.PHONE_NUMBER));
-            MySharedPereference.getInstance().setBoolean(getActivity(), Constants.LOGGED_IN, true);
+            MySharedPereference.getInstance().setString(getContext(), Constants.NAME, new_user.getString(Constants.NAME));
+            MySharedPereference.getInstance().setString(getContext(), Constants.EMAIL, new_user.getString(Constants.EMAIL));
+            MySharedPereference.getInstance().setString(getContext(), Constants.PHONE_NUMBER, new_user.getString(Constants.PHONE_NUMBER));
+            MySharedPereference.getInstance().setBoolean(getContext(), Constants.LOGGED_IN, true);
+            MySharedPereference.getInstance().setString(getContext(),Constants.PASSWORD,edtpassword.getText().toString());
 
            /* Realm realm = Realm.getDefaultInstance();
             realm.beginTransaction();
@@ -120,7 +121,7 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
                 SingeltonClass.getInstance().AFTER_LOGIN_ACTION = 0;
                 getActivity().onBackPressed();
             } else {
-                Intent i = new Intent(getActivity(), HomeActivityController.class);
+                Intent i = new Intent(getContext(), HomeActivityController.class);
                 startActivity(i);
                 getActivity().finish();
             }
@@ -152,7 +153,7 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
         if (edtemail.getText().toString().equals("") || edtpassword.getText().toString().equals("")) {
             submitForm();
         } else {
-            CallWebService.getInstance(getActivity(), true).hitJSONObjectVolleyWebService(Request.Method.POST, Constants.WebServices.LOG_IN, createMapForPostingData(), SignInFragment.this);
+            CallWebService.getInstance(getContext(), true).hitJSONObjectVolleyWebService(Request.Method.POST, Constants.WebServices.LOG_IN, createMapForPostingData(), SignInFragment.this);
         }
 
 
@@ -233,9 +234,9 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
 
     @Override
     public void onClick(View v) {
-       /* Intent intent = new Intent(getActivity(), HomeActivity.class);
+       /* Intent intent = new Intent(getContext(), HomeActivity.class);
         startActivity(intent);
-        getActivity().finish();*/
+        getContext().finish();*/
         signinclick();
     }
 
