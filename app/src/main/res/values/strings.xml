@@ -17,6 +17,8 @@
     <string name="enter_number">Enter Number</string>
     <string name="enter_address">Enter Address</string>
     <string name="password">password</string>
+    <string name="enter_subject">Enter Subject</string>
+    <string name="enter_message">Enter Message</string>
     <string name="log_in">LOG IN</string>
     <string name="additional_notes_content">If you have flexibility with booking time,  or notes on your order , please input that here</string>
     <string name="confirm_password">confirm password</string>
@@ -150,6 +152,8 @@
     <string name="corporate_inquiry_first_par">For private and corporate event bookings please visit our website or call us and we’d be happy to help plan your event. </string>
     <string name="website">http://www.myspa2go.com/private-events/</string>
     <string name="spa_number">tel\: 646.241.4477</string>
+
+    <string name="submit">SUBMIT</string>
 
     <string-array name="timing_array">
         <item>8:00 AM</item>

@@ -110,4 +110,8 @@ public class CommonFunctions {
         tv.setTextColor(Color.WHITE);
         snackbar.show();
     }
+
+    public static String getEditTextValue(EditText edt){
+        return edt.getText().toString();
+    }
 }

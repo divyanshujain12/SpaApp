@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/ten_dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@drawable/blue_gradient_drawable"
+            android:padding="@dimen/five_dp"
+            android:textColorHint="@android:color/darker_gray">
+
+            <com.neopixl.pixlui.components.edittext.EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_name"
+                android:inputType="text"
+                android:nextFocusLeft="@+id/edtpassword"
+                android:nextFocusUp="@+id/edtpassword"
+                android:padding="@dimen/ten_dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="@dimen/sixteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@drawable/blue_gradient_drawable"
+            android:padding="@dimen/five_dp"
+            android:textColorHint="@android:color/darker_gray">
+
+            <com.neopixl.pixlui.components.edittext.EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress"
+                android:nextFocusLeft="@+id/edtpassword"
+                android:nextFocusUp="@+id/edtpassword"
+                android:padding="@dimen/ten_dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="@dimen/sixteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@drawable/blue_gradient_drawable"
+            android:padding="@dimen/five_dp"
+            android:textColorHint="@android:color/darker_gray">
+
+            <com.neopixl.pixlui.components.edittext.EditText
+                android:id="@+id/edtNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_number"
+                android:inputType="phone"
+                android:maxLength="14"
+                android:nextFocusLeft="@+id/edtpassword"
+                android:nextFocusUp="@+id/edtpassword"
+                android:padding="@dimen/ten_dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="@dimen/sixteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@drawable/blue_gradient_drawable"
+            android:padding="@dimen/five_dp"
+            android:textColorHint="@android:color/darker_gray">
+
+            <com.neopixl.pixlui.components.edittext.EditText
+                android:id="@+id/edtSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_subject"
+                android:inputType="textEmailSubject"
+                android:nextFocusLeft="@+id/edtpassword"
+                android:nextFocusUp="@+id/edtpassword"
+                android:padding="@dimen/ten_dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="@dimen/sixteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@drawable/blue_gradient_drawable"
+            android:minHeight="@dimen/one_hundred_twenty_sp"
+            android:padding="@dimen/five_dp"
+            android:textColorHint="@android:color/darker_gray">
+
+            <com.neopixl.pixlui.components.edittext.EditText
+                android:id="@+id/edtMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_message"
+                android:inputType="text"
+                android:minHeight="@dimen/fourty_dp"
+                android:minLines="4"
+                android:padding="@dimen/ten_dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="@dimen/sixteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/submitTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="@dimen/fifteen_dp"
+        android:text="@string/submit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/eighteen_sp"
+        pixlui:typeface="Titillium-Regular.otf" />
+</RelativeLayout>

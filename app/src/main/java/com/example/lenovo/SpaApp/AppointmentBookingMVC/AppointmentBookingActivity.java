@@ -11,7 +11,9 @@ import android.widget.ArrayAdapter;
 import com.example.lenovo.SpaApp.CustomViews.ExpandableHeightGridView;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
+import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Utils.AlertMessage;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
@@ -97,10 +99,16 @@ class AppointmentBookingActivity extends GlobalActivity {
 
     protected void submitClickedOK() {
         toolbar.setProductCount();
-        CommonFunctions.showSnackBarWithoutAction(timingGrid, getString(R.string.successfully_added));
-        Intent intent = new Intent(this, HomeActivityController.class);
-        startActivity(intent);
-        finish();
+
+        AlertMessage.showAlertDialogWithOkCallBack(this, getString(R.string.alert), getString(R.string.successfully_added), new SnackBarCallback() {
+            @Override
+            public void doAction() {
+                Intent intent = new Intent(AppointmentBookingActivity.this, HomeActivityController.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 
     public void onResume() {

@@ -75,4 +75,9 @@ public class HomeActivity extends GlobalActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+    }
 }

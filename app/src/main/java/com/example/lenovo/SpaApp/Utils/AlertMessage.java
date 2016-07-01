@@ -81,5 +81,20 @@ public class AlertMessage {
         alertDialog.show();
     }
 
+    public static void showAlertDialogWithOkCallBack(Context context, String title, String message, final SnackBarCallback snackBarCallback) {
+        AlertDialog alertDialog = new AlertDialog.Builder(context, R.style.MyAlertDialogStyle).create();
+        alertDialog.setTitle(title);
+        alertDialog.setMessage(message);
+        alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "YES", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                snackBarCallback.doAction();
+                dialog.dismiss();
+            }
+        });
+
+        alertDialog.show();
+    }
+
 
 }

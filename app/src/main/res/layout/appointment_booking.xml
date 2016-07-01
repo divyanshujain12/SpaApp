@@ -58,56 +58,36 @@
                 android:layout_height="1dp"
                 android:background="@color/white_with_alpha" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="@dimen/five_dp">
-
-                <com.neopixl.pixlui.components.textview.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:padding="10dp"
-                    android:text="@string/name"
-                    android:textColor="#fff"
-                    android:textSize="@dimen/eighteen_sp"
-                    pixlui:typeface="Titillium-Bold.otf" />
-
-                <com.neopixl.pixlui.components.edittext.EditText
-                    android:id="@+id/nameET"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:gravity="center_vertical"
-                    android:hint="@string/enter_name"
-                    android:padding="10dp"
-                    android:textColor="#fff"
-                    android:textColorHint="@android:color/darker_gray"
-                    android:textSize="@dimen/eighteen_sp"
-                    pixlui:typeface="Titillium-Regular.otf" />
-            </LinearLayout>
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:background="@drawable/blue_gradient_drawable"
+                    android:padding="@dimen/five_dp"
+                    android:textColorHint="@android:color/darker_gray">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/white_with_alpha" />
+                    <com.neopixl.pixlui.components.edittext.EditText
+                        android:id="@+id/nameET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/enter_name"
+                        android:padding="10dp"
+                        android:textColor="#fff"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="@dimen/eighteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+                </android.support.design.widget.TextInputLayout>
 
-            <LinearLayout
+
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="@dimen/five_dp">
-
-                <com.neopixl.pixlui.components.textview.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:padding="10dp"
-                    android:text="@string/number"
-                    android:textColor="#fff"
-                    android:textSize="@dimen/eighteen_sp"
-                    pixlui:typeface="Titillium-Bold.otf" />
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
 
                 <com.neopixl.pixlui.components.edittext.EditText
                     android:id="@+id/numberET"
@@ -122,28 +102,15 @@
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/eighteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
-            </LinearLayout>
+            </android.support.design.widget.TextInputLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/white_with_alpha" />
-
-            <LinearLayout
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="@dimen/five_dp">
-
-                <com.neopixl.pixlui.components.textview.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:padding="10dp"
-                    android:text="@string/email"
-                    android:textColor="#fff"
-                    android:textSize="@dimen/eighteen_sp"
-                    pixlui:typeface="Titillium-Bold.otf" />
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
 
                 <com.neopixl.pixlui.components.edittext.EditText
                     android:id="@+id/emailET"
@@ -158,28 +125,15 @@
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/eighteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
-            </LinearLayout>
+          </android.support.design.widget.TextInputLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/white_with_alpha" />
-
-            <LinearLayout
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="@dimen/five_dp">
-
-                <com.neopixl.pixlui.components.textview.TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:padding="10dp"
-                    android:text="@string/address"
-                    android:textColor="#fff"
-                    android:textSize="@dimen/eighteen_sp"
-                    pixlui:typeface="Titillium-Bold.otf" />
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
 
                 <com.neopixl.pixlui.components.edittext.EditText
                     android:id="@+id/addressET"
@@ -188,18 +142,13 @@
                     android:background="@android:color/transparent"
                     android:gravity="top"
                     android:hint="@string/enter_address"
-                    android:minLines="2"
+                    android:minLines="4"
                     android:padding="10dp"
                     android:textColor="#fff"
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/eighteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/white_with_alpha" />
+          </android.support.design.widget.TextInputLayout>
 
 
             <View

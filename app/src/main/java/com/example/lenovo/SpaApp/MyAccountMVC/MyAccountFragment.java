@@ -3,6 +3,7 @@ package com.example.lenovo.SpaApp.MyAccountMVC;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
+import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
 import com.example.lenovo.SpaApp.Utils.CallWebService;
@@ -82,6 +84,10 @@ public class MyAccountFragment extends GlobalFragment {
     private void InitViews() {
         controller = new MyAccountFragmentController();
         HomeActivity.headerText.setText(getArguments().getString("name"));
+        emailTV.setText(MySharedPereference.getInstance().getString(getActivity(), Constants.EMAIL));
+        nameTV.setText(MySharedPereference.getInstance().getString(getActivity(), Constants.NAME));
+        numberTV.setText(MySharedPereference.getInstance().getString(getActivity(), Constants.PHONE_NUMBER));
+        passwordTV.setText(MySharedPereference.getInstance().getString(getActivity(), Constants.PASSWORD));
     }
 
     @Override
@@ -107,7 +113,6 @@ public class MyAccountFragment extends GlobalFragment {
                 controller.showAlertForChangePassword(getContext(), passwordTV);
                 break;
             case R.id.submitTV:
-
                 CallWebService.getInstance(getContext(), true).hitWithJSONObjectVolleyWebService(CallWebService.POST, Constants.WebServices.CHANGE_PASSWORD, createJsonForUpdateAccount(), this);
                 break;
         }
@@ -129,7 +134,12 @@ public class MyAccountFragment extends GlobalFragment {
     @Override
     public void onJsonObjectSuccess(JSONObject object) throws JSONException {
         super.onJsonObjectSuccess(object);
-        AlertMessage.showAlertDialog(getContext(), "ALERT", object.getString(Constants.MESSAGE), false);
+        AlertMessage.showAlertDialogWithOkCallBack(getContext(), getString(R.string.alert), object.getString(Constants.MESSAGE), new SnackBarCallback() {
+            @Override
+            public void doAction() {
+                getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            }
+        });
 
         MySharedPereference.getInstance().setString(getContext(), Constants.NAME, nameTV.getText().toString());
         MySharedPereference.getInstance().setString(getContext(), Constants.EMAIL, emailTV.getText().toString());

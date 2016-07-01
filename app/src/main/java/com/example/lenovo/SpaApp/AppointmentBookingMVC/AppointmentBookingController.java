@@ -58,7 +58,7 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
                 SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
                 dateString = df.format(date);
                 getAvailableSlots(dateString);
-             //   Toast.makeText(AppointmentBookingController.this, dateString, Toast.LENGTH_SHORT).show();
+                //   Toast.makeText(AppointmentBookingController.this, dateString, Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -75,7 +75,7 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
         switch (view.getId()) {
             case R.id.confirmTV:
 
-                if (checkFields())
+                if (checkAndSaveFields())
                     submitClickedOK();
                 break;
         }
@@ -104,7 +104,7 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
         });
     }
 
-    private boolean checkFields() {
+    private boolean checkAndSaveFields() {
 
 
         categoryNameString = serviceTV.getText().toString();
@@ -114,26 +114,37 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
         addressString = addressET.getText().toString();
         additionalString = additionalET.getText().toString();
 
+        if (checkFields()) return false;
+
+        saveDataIntoDatabase();
+
+        return true;
+    }
+
+    private boolean checkFields() {
         if (categoryNameString.isEmpty())
-            return false;
+            return true;
         else if (nameString.isEmpty()) {
             nameET.setError(getString(R.string.err_msg_name));
             nameET.requestFocus();
-            return false;
+            return true;
         } else if (!CommonFunctions.isValidNumber(numberString)) {
             numberET.setError(getString(R.string.err_msg_number));
             nameET.requestFocus();
-            return false;
+            return true;
         } else if (!CommonFunctions.isValidEmail(emailString)) {
             emailET.setError(getString(R.string.err_msg_email));
             nameET.requestFocus();
-            return false;
+            return true;
         } else if (addressString.isEmpty()) {
             addressET.setError(getString(R.string.err_msg_address));
             nameET.requestFocus();
-            return false;
+            return true;
         }
+        return false;
+    }
 
+    private void saveDataIntoDatabase() {
         Realm realm = Realm.getDefaultInstance();
         realm.beginTransaction();
         appointmentBookingModel = realm.createObject(AppointmentBookingModel.class);
@@ -156,8 +167,6 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
         realm.commitTransaction();
         RealmResults<AppointmentBookingModel> bookingModels = realm.allObjects(AppointmentBookingModel.class);
         Log.d("tag", bookingModels.toString());
-
-        return true;
     }
 }
 

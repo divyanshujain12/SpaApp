@@ -82,12 +82,6 @@ public class ToolbarWithBackButton extends LinearLayout implements OnClickListen
             badgeTV.setText(String.valueOf(size));
         } else
             badgeTV.setVisibility(View.GONE);
-       /* try {
-            realm.commitTransaction();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
-
 
     }
 

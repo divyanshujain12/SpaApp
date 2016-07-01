@@ -8,13 +8,12 @@ import android.view.View;
 
 import com.example.lenovo.SpaApp.CorporateEnquiriesMVC.CorporateFragmentController;
 import com.example.lenovo.SpaApp.FAQFragmentMVC.FaqFragmentController;
-import com.example.lenovo.SpaApp.Fragments.ContactFragment;
+import com.example.lenovo.SpaApp.ContactusMVC.ContactFragment;
 import com.example.lenovo.SpaApp.HomeFragmentMVC.HomeFragmentControllers;
 import com.example.lenovo.SpaApp.HowItWork;
 import com.example.lenovo.SpaApp.MainActivity;
 import com.example.lenovo.SpaApp.Models.UserDetailModel;
 import com.example.lenovo.SpaApp.MyAccountMVC.MyAccountFragment;
-import com.example.lenovo.SpaApp.MyAccountMVC.MyAccountFragmentController;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
@@ -83,7 +82,8 @@ public class HomeActivityController extends HomeActivity {
         boolean isPopped = fragmentManager.popBackStackImmediate(name, 0);
         if (fragment != null && !isPopped && fragmentManager.findFragmentByTag(name) == null) {
             fragmentTransaction.replace(R.id.frameLayout, fragment, name);
-            fragmentTransaction.addToBackStack(name);
+            if (!(fragment instanceof HomeFragmentControllers))
+                fragmentTransaction.addToBackStack(name);
             fragmentTransaction.commit();
         }
 

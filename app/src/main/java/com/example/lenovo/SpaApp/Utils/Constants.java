@@ -31,6 +31,8 @@ public class Constants {
     public static String ADDRESS = "address";
     public static String TYPE = "type";
     public static String ORDER_ID = "order_id";
+    public static String SUBJECT = "subject";
+    public static String PHONE = "phone";
 
     public interface WebServices {
 
@@ -54,9 +56,9 @@ public class Constants {
 
         String FAQS = BASE + "faq";
 
-        String CHANGE_PASSWORD = BASE+"changepassword";
+        String CHANGE_PASSWORD = BASE + "changepassword";
 
-        public static String HOME = BASE + "home";
+        String CONTACT_US = BASE + "contactus";
 
         public static String EVENTS = BASE + "events.php";
 

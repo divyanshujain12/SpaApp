@@ -53,31 +53,31 @@ public final class R {
 		public static final int ic_arrow_up_white = 0x7f02005d;
 	}
 	public static final class id {
-		public static final int dateTitle = 0x7f0e00b9;
-		public static final int daysContainer = 0x7f0e00b7;
-		public static final int leftButton = 0x7f0e00b8;
-		public static final int rightButton = 0x7f0e00ba;
-		public static final int titleLayout = 0x7f0e00b5;
-		public static final int weekLayout = 0x7f0e00b6;
+		public static final int dateTitle = 0x7f0e00bf;
+		public static final int daysContainer = 0x7f0e00bd;
+		public static final int leftButton = 0x7f0e00be;
+		public static final int rightButton = 0x7f0e00c0;
+		public static final int titleLayout = 0x7f0e00bb;
+		public static final int weekLayout = 0x7f0e00bc;
 	}
 	public static final class layout {
-		public static final int custom_calendar_layout = 0x7f040024;
-		public static final int custom_calendar_title_layout = 0x7f040025;
-		public static final int custom_calendar_weeks_layout = 0x7f040026;
-		public static final int roboto_calendar_week_1 = 0x7f040050;
-		public static final int roboto_calendar_week_2 = 0x7f040051;
-		public static final int roboto_calendar_week_3 = 0x7f040052;
-		public static final int roboto_calendar_week_4 = 0x7f040053;
-		public static final int roboto_calendar_week_5 = 0x7f040054;
-		public static final int roboto_calendar_week_6 = 0x7f040055;
+		public static final int custom_calendar_layout = 0x7f040025;
+		public static final int custom_calendar_title_layout = 0x7f040026;
+		public static final int custom_calendar_weeks_layout = 0x7f040027;
+		public static final int roboto_calendar_week_1 = 0x7f040051;
+		public static final int roboto_calendar_week_2 = 0x7f040052;
+		public static final int roboto_calendar_week_3 = 0x7f040053;
+		public static final int roboto_calendar_week_4 = 0x7f040054;
+		public static final int roboto_calendar_week_5 = 0x7f040055;
+		public static final int roboto_calendar_week_6 = 0x7f040056;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f090004;
-		public static final int AppTheme = 0x7f090081;
-		public static final int CalendarView = 0x7f0900b1;
-		public static final int CalendarView_DayOfTheMonth = 0x7f0900b2;
-		public static final int CalendarView_DayOfTheWeek = 0x7f0900b3;
-		public static final int CalendarView_MonthTitle = 0x7f0900b4;
+		public static final int AppTheme = 0x7f090082;
+		public static final int CalendarView = 0x7f0900b2;
+		public static final int CalendarView_DayOfTheMonth = 0x7f0900b3;
+		public static final int CalendarView_DayOfTheWeek = 0x7f0900b4;
+		public static final int CalendarView_MonthTitle = 0x7f0900b5;
 	}
 	public static final class styleable {
 		public static final int[] CustomCalendarView = { 0x7f010054, 0x7f010055, 0x7f010056, 0x7f010057, 0x7f010058, 0x7f010059, 0x7f01005a, 0x7f01005b, 0x7f01005c, 0x7f01005d, 0x7f01005e };

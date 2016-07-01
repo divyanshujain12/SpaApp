@@ -11,6 +11,7 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
     </style>
 
     <style name="Toolbar">
@@ -64,5 +65,10 @@
         <item name="android:textColorPrimary">#FFFFFF</item>
         <!-- Used for the background -->
         <item name="android:background">@color/booking_background</item>
+    </style>
+
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/right_in</item>
+        <item name="android:windowExitAnimation">@anim/left_out</item>
     </style>
 </resources>
