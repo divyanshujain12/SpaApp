@@ -65,12 +65,8 @@
             android:name=".AppointmentDescriptionActivity"
             android:theme="@style/MyAnimation.Window" />
         <!--<activity android:name=".AppointmentBookingMVC.AppointmentBookingActivity" />-->
-        <activity
-            android:name=".AppointmentBookingMVC.AppointmentBookingController"
-            android:theme="@style/MyAnimation.Window" />
-        <activity
-            android:name=".MyCartMVC.MyCartController"
-            android:theme="@style/MyAnimation.Window" />
+        <activity android:name=".AppointmentBookingMVC.AppointmentBookingController" />
+        <activity android:name=".MyCartMVC.MyCartController" />
     </application>
 
 </manifest>
