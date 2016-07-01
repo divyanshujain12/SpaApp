@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:2:1-76:12
+ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:2:1-70:12
 	xmlns:android
 		ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:2:11-69
 	package
@@ -80,7 +80,7 @@ ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:20:5-73
 	android:name
 		ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:20:22-70
 application
-ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:22:5-74:19
+ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:22:5-68:19
 MERGED from [com.android.support:appcompat-v7:23.0.1] /home/android/SpaAppNew/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.0.1] /home/android/SpaAppNew/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.0.1] /home/android/SpaAppNew/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/AndroidManifest.xml:22:5-20
@@ -162,22 +162,16 @@ ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:61:9-63:59
 	android:name
 		ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:62:13-47
 activity#com.example.lenovo.SpaApp.AppointmentDescriptionActivity
-ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:64:9-66:57
-	android:theme
-		ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:66:13-54
+ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:64:9-68
 	android:name
-		ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:65:13-59
+		ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:64:19-65
 activity#com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingController
-ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:68:9-70:57
-	android:theme
-		ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:70:13-54
+ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:66:9-88
 	android:name
-		ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:69:13-79
+		ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:66:19-85
 activity#com.example.lenovo.SpaApp.MyCartMVC.MyCartController
-ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:71:9-73:57
-	android:theme
-		ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:73:13-54
+ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:67:9-64
 	android:name
-		ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:72:13-55
+		ADDED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:67:19-61
 android:uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:2:1-76:12 reason: com.imanoweb.calendarview has a targetSdkVersion < 4
+IMPLIED from /home/android/SpaAppNew/app/src/main/AndroidManifest.xml:2:1-70:12 reason: com.imanoweb.calendarview has a targetSdkVersion < 4

@@ -98,12 +98,12 @@ public class HomeActivityController extends HomeActivity {
 
     @Override
     public void onBackPressed() {
-        if (getSupportFragmentManager().getBackStackEntryCount() == 1) {
+       /* if (getSupportFragmentManager().getBackStackEntryCount() == 1) {
             finish();
         } else if (fragmentManager.getBackStackEntryCount() > 1) {
             fragmentManager.popBackStack();
-        } else {
-            super.onBackPressed();
-        }
+        } else {*/
+        super.onBackPressed();
+        // }
     }
 }
