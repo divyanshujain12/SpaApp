@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/requestAQuote">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/ten_dp">
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_details"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/twenty_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:background="@drawable/blue_gradient_drawable"
+                    android:padding="@dimen/five_dp"
+                    android:textColorHint="@android:color/darker_gray">
+
+                    <com.neopixl.pixlui.components.edittext.EditText
+                        android:id="@+id/edtCompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/company_name"
+                        android:inputType="text"
+                        android:nextFocusLeft="@+id/edtpassword"
+                        android:nextFocusUp="@+id/edtpassword"
+                        android:padding="@dimen/ten_dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="@dimen/sixteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:background="@drawable/blue_gradient_drawable"
+                    android:padding="@dimen/five_dp"
+                    android:textColorHint="@android:color/darker_gray">
+
+                    <com.neopixl.pixlui.components.edittext.EditText
+                        android:id="@+id/edtLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/location_of_services"
+                        android:inputType="text"
+                        android:nextFocusLeft="@+id/edtpassword"
+                        android:nextFocusUp="@+id/edtpassword"
+                        android:padding="@dimen/ten_dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="@dimen/sixteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:background="@drawable/blue_gradient_drawable"
+                    android:padding="@dimen/five_dp"
+                    android:textColorHint="@android:color/darker_gray">
+
+                    <com.neopixl.pixlui.components.edittext.EditText
+                        android:id="@+id/edtContactPerson"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/contact_person"
+                        android:inputType="text"
+                        android:nextFocusLeft="@+id/edtpassword"
+                        android:nextFocusUp="@+id/edtpassword"
+                        android:padding="@dimen/ten_dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="@dimen/sixteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:background="@drawable/blue_gradient_drawable"
+                    android:padding="@dimen/five_dp"
+                    android:textColorHint="@android:color/darker_gray">
+
+                    <com.neopixl.pixlui.components.edittext.EditText
+                        android:id="@+id/edtContactMail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/contact_email"
+                        android:inputType="textEmailAddress"
+                        android:nextFocusLeft="@+id/edtpassword"
+                        android:nextFocusUp="@+id/edtpassword"
+                        android:padding="@dimen/ten_dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="@dimen/sixteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:background="@drawable/blue_gradient_drawable"
+                    android:padding="@dimen/five_dp"
+                    android:textColorHint="@android:color/darker_gray">
+
+                    <com.neopixl.pixlui.components.edittext.EditText
+                        android:id="@+id/edtContactNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/contact_phone"
+                        android:inputType="number"
+                        android:nextFocusLeft="@+id/edtpassword"
+                        android:nextFocusUp="@+id/edtpassword"
+                        android:padding="@dimen/ten_dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="@dimen/sixteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:text="@string/book_service_for"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/twenty_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eighteen_sp"
+                android:text="@string/prefered_date"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/monthSP"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/five_dp"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/yearSP"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/five_dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eighteen_sp"
+                android:text="@string/hours_of_services"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/five_dp"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/eighteen_sp"
+                        android:text="@string/from"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sixteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+
+                    <Spinner
+                        android:id="@+id/fromSP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/five_dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/eighteen_sp"
+                        android:text="@string/to"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sixteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+
+                    <Spinner
+                        android:id="@+id/toSP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtApproxGest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/approximate_guests"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:text="@string/massage_service"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/twenty_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/chair_massage"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtChirMassageTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/Reflexology"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtReflexologyTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/Shiatsu_Streching"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtShaitsuTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/Aromatherapy"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtAromaTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/Reiki"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtReikiTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/Hand_foot_massage"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtHandFootTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:text="@string/Services_for_Male"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/twenty_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/express_manicure"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtExpManiTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/Shoe_Shine"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtShoeShineTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/Razor_Shave"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtRazorShaveTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:text="@string/Hair_Face"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/twenty_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/brow_bar"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtBrowBarTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/braid_bar"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtBraidBarTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/lash_bar"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtLashBarTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/mini_facials"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtMiniFacialTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/makeup_touch_ups"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtMakeUpTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/brow_threading"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtBrowThreadingTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:text="@string/well_being"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/twenty_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/nutriotion_consultation"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtNutriConsultTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/yoga_classes"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtYogaTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:button="@xml/custom_checkbox"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/fitness_inst"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@drawable/blue_gradient_drawable"
+                android:padding="@dimen/five_dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.neopixl.pixlui.components.edittext.EditText
+                    android:id="@+id/edtFitnessInstructTech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/number_of_technician"
+                    android:inputType="number"
+                    android:nextFocusLeft="@+id/edtpassword"
+                    android:nextFocusUp="@+id/edtpassword"
+                    android:padding="@dimen/ten_dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/requestAQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/blue_gradient_drawable"
+        android:gravity="center"
+        android:padding="@dimen/fifteen_dp"
+        android:text="@string/request_a_quote"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/twenty_sp"
+        pixlui:typeface="Titillium-Bold.otf" />
+</RelativeLayout>

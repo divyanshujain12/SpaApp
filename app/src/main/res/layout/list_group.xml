@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/question"
+        android:textColor="#fff"
+        android:textSize="@dimen/twenty_two_sp"
+        pixlui:typeface="Titillium-Bold.otf" />
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/listTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/service"
+        android:textColor="#fff"
+        android:textSize="@dimen/twenty_dp"
+        pixlui:typeface="Titillium-Bold.otf" />
+
+</LinearLayout>
