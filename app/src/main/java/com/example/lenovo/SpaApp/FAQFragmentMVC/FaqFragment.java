@@ -2,11 +2,11 @@ package com.example.lenovo.SpaApp.FAQFragmentMVC;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ExpandableListView;
-import android.widget.LinearLayout;
 
 import com.example.lenovo.SpaApp.R;
 
@@ -22,14 +22,13 @@ import butterknife.InjectView;
  */
 public class FaqFragment extends GlobalFragment {
 
-    @InjectView(R.id.expandedLV)
-    ExpandableListView expandedLV;
     ArrayList<FaqModel> faqModels;
     ArrayList<String> questionArray;
     HashMap<String, String> answersMap;
-    CustomExpandableListAdapter customExpandableListAdapter;
-    @InjectView(R.id.contentLL)
-    LinearLayout contentLL;
+    @InjectView(R.id.faqRV)
+    RecyclerView faqRV;
+    /*@InjectView(R.id.contentLL)
+    LinearLayout contentLL;*/
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -49,6 +48,8 @@ public class FaqFragment extends GlobalFragment {
         faqModels = new ArrayList<>();
         questionArray = new ArrayList<>();
         answersMap = new HashMap<>();
+
+        faqRV.setLayoutManager(new LinearLayoutManager(getActivity()));
     }
 
 

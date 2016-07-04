@@ -5,7 +5,7 @@
     android:background="@color/colorPrimary"
     android:orientation="vertical">
 
-    <ExpandableListView
+    <!--<ExpandableListView
         android:id="@+id/expandedLV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,5 +22,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" />
-    </ScrollView>
+    </ScrollView>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/faqRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center" />
 </LinearLayout>

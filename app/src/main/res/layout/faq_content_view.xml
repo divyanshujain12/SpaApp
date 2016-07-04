@@ -13,13 +13,14 @@
         android:background="@drawable/white_border"
         android:orientation="vertical">
 
-        <LinearLayout
+        <RelativeLayout
+            android:id="@+id/questionLL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:orientation="horizontal">
 
             <com.neopixl.pixlui.components.textview.TextView
+                android:id="@+id/questionLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="top"
@@ -33,17 +34,30 @@
                 android:id="@+id/questionTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/questionLabel"
                 android:gravity="center_vertical"
                 android:text="@string/service"
                 android:textColor="@color/white_with_alpha"
                 android:textSize="@dimen/sixteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
-        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/arrowIV"
+                android:layout_width="@dimen/thirty_dp"
+                android:layout_height="@dimen/thirty_dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:src="@drawable/right" />
+        </RelativeLayout>
 
         <LinearLayout
+            android:id="@+id/answerLL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="gone">
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:layout_width="wrap_content"
@@ -57,9 +71,10 @@
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:id="@+id/answerTV"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
+                android:minLines="1"
                 android:text="@string/service"
                 android:textColor="@color/white_with_alpha"
                 android:textSize="@dimen/sixteen_sp"
