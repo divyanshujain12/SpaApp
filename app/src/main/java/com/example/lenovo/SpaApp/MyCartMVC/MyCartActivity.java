@@ -158,9 +158,9 @@ class MyCartActivity extends GlobalActivity {
     }
 
     private void clearData() {
-      /*  realm.beginTransaction();
+        realm.beginTransaction();
         realm.where(AppointmentBookingModel.class).findAll().clear();
-        realm.commitTransaction();*/
+        realm.commitTransaction();
         myCartModels.clear();
         myCartAdapter.notifyDataSetChanged();
         hideContentLayout(true);

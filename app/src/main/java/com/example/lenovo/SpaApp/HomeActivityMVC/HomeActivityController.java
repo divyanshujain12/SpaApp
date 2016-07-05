@@ -6,9 +6,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 
+import com.example.lenovo.SpaApp.ContactusMVC.ContactFragment;
 import com.example.lenovo.SpaApp.CorporateEnquiriesMVC.CorporateFragmentController;
 import com.example.lenovo.SpaApp.FAQFragmentMVC.FaqFragmentController;
-import com.example.lenovo.SpaApp.ContactusMVC.ContactFragment;
 import com.example.lenovo.SpaApp.HomeFragmentMVC.HomeFragmentControllers;
 import com.example.lenovo.SpaApp.HowItWork;
 import com.example.lenovo.SpaApp.MainActivity;
@@ -16,6 +16,8 @@ import com.example.lenovo.SpaApp.Models.UserDetailModel;
 import com.example.lenovo.SpaApp.MyAccountMVC.MyAccountFragment;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.MyAppointmentsFragment;
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Utils.AlertMessage;
+import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.RecyclerItemClickListener;
 
@@ -38,7 +40,7 @@ public class HomeActivityController extends HomeActivity {
                         updateFragment(new HomeFragmentControllers());
                         break;
                     case 1:
-                        updateFragment(MyAppointmentsFragment.getInstance("MY APPOINTMENTS"));
+                        checkLogin(MyAppointmentsFragment.getInstance("MY APPOINTMENTS"));
                         break;
                     case 2:
                         Intent intent1 = new Intent(HomeActivityController.this, HowItWork.class);
@@ -49,13 +51,13 @@ public class HomeActivityController extends HomeActivity {
                         updateFragment(FaqFragmentController.getInstance("FAQ'S"));
                         break;
                     case 4:
-                        updateFragment(MyAccountFragment.getInstance("MY ACCOUNT"));
+                        checkLogin(MyAccountFragment.getInstance("MY ACCOUNT"));
                         break;
                     case 5:
                         updateFragment(CorporateFragmentController.getInstance("CORPORATE INQUIRIES"));
                         break;
                     case 6:
-                        updateFragment(ContactFragment.getInstance("CONTACTS"));
+                        checkLogin(ContactFragment.getInstance("CONTACTS"));
                         break;
                     case 7:
                         MySharedPereference.getInstance().clearSharedPreference(HomeActivityController.this);
@@ -94,6 +96,14 @@ public class HomeActivityController extends HomeActivity {
 
         super.onResume();
         toolbar.setProductCount();
+    }
+
+    private void checkLogin(Fragment fragment) {
+        if (MySharedPereference.getInstance().getBoolean(this, Constants.LOGGED_IN)) {
+            updateFragment(fragment);
+        } else {
+            AlertMessage.showAlertDialogWithCallBack(this, "LOGIN ALERT", getString(R.string.log_in_alert_msg), this);
+        }
     }
 
     @Override

@@ -40,7 +40,7 @@ public class CommonFunctions {
     }
 
     public static boolean isValidEmail(String email) {
-        return !TextUtils.isEmpty(email) && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
+        return !TextUtils.isEmpty(email) && Patterns.EMAIL_ADDRESS.matcher(email).matches();
     }
 
     public static boolean isValidNumber(String number) {

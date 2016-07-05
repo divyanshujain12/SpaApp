@@ -71,6 +71,8 @@
     <string name="add_reminder_text">Do you want to add a reminder to your calendar?</string>
     <string name="set_reminder_alert_content_pre">Your appointment request for this checkout (</string>
     <string name="set_reminder_alert_content_post">) has been placed.</string>
+    <string name="select_city_alert">Kindly Select City First!</string>
+    <string name="invalid_date">Invalid Date</string>
     <string name="update">UPDATE</string>
     <string name="enter_password">NEW PASSWORD</string>
     <string name="reenter_pass">REENTER PASSWORD</string>

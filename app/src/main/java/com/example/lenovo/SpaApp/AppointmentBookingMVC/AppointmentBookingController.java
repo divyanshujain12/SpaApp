@@ -22,9 +22,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Locale;
+import java.util.TimeZone;
 
 import butterknife.OnClick;
 import io.realm.Realm;
@@ -42,12 +45,9 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
         timingGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (previousView != null)
-                    previousView.setBackgroundColor(Color.TRANSPARENT);
-
-                view.setBackgroundColor(Color.BLACK);
-                previousView = view;
                 timeString = ((TextView) view).getText().toString();
+
+                checkDate(view);
             }
         });
 
@@ -57,6 +57,7 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
             public void onDateSelected(Date date) {
                 SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
                 dateString = df.format(date);
+
                 getAvailableSlots(dateString);
                 //   Toast.makeText(AppointmentBookingController.this, dateString, Toast.LENGTH_SHORT).show();
             }
@@ -64,10 +65,45 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
             @Override
             public void onMonthChanged(Date date) {
                 SimpleDateFormat df = new SimpleDateFormat("MM-yyyy");
-                Toast.makeText(AppointmentBookingController.this, df.format(date), Toast.LENGTH_SHORT).show();
+                //   Toast.makeText(AppointmentBookingController.this, df.format(date), Toast.LENGTH_SHORT).show();
             }
         });
 
+    }
+
+    private void checkDate(View view) {
+        if (isDateOK()) {
+            if (previousView != null)
+                previousView.setBackgroundColor(Color.TRANSPARENT);
+
+            view.setBackgroundColor(Color.BLACK);
+            previousView = view;
+
+        } else {
+            CommonFunctions.showSnackBarWithoutAction(timingGrid, getString(R.string.invalid_date));
+            timeString = "";
+        }
+    }
+
+    private boolean isDateOK() {
+        SimpleDateFormat Formatter = new SimpleDateFormat("yyyy-MM-dd hh:mm aa", Locale.ENGLISH);
+        Formatter.setTimeZone(TimeZone.getDefault());
+
+        String tempDateString = dateString + " " + timeString;
+        Date dateD = null;
+        try {
+            dateD = Formatter.parse(tempDateString);
+            double selectedTimeInMS = dateD.getTime();
+            double currentTimeInMS = new Date().getTime();
+
+            if (currentTimeInMS < selectedTimeInMS)
+                return true;
+            else
+                return false;
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @OnClick({R.id.confirmTV})
@@ -140,7 +176,8 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
             addressET.setError(getString(R.string.err_msg_address));
             nameET.requestFocus();
             return true;
-        }
+        } else if (timeString.isEmpty())
+            CommonFunctions.showSnackBarWithoutAction(timingGrid, getString(R.string.invalid_date));
         return false;
     }
 

@@ -40,6 +40,8 @@ public class Constants {
 
         String BASE = "http://whatsupguys.in/demo/spa2go/api/";
 
+        String GET_CITY = BASE + "getcity";
+
         String SIGN_UP = BASE + "registration";
 
         String LOG_IN = BASE + "login";
