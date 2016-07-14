@@ -61,7 +61,7 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
         productModel = SingeltonClass.getInstance().getProductModel(pos);
         categoryTV.setText(SingeltonClass.getInstance().serviceModel.getName());
         productTV.setText(productModel.getName());
-        priceTV.setText(productModel.getCost());
+        priceTV.setText("$ " + productModel.getCost());
         descriptionTV.setText(productModel.getDescription());
         durationTV.setText(productModel.getDuration());
 

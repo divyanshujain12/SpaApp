@@ -49,7 +49,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         ProductModel subServiceModel = subServiceModels.get(position);
         holder.customView.setId(position);
         holder.txtServiceSub.setText(subServiceModel.getName());
-        holder.txtPrice.setText(subServiceModel.getCost());
+        holder.txtPrice.setText("$ " + subServiceModel.getCost());
 
         holder.customView.setOnClickListener(this);
     }

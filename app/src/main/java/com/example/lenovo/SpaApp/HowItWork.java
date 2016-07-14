@@ -23,7 +23,6 @@ public class HowItWork extends AppCompatActivity{
     /*@InjectView(R.id.appLogo)
     ImageView appLogo;*/
     private ViewPager viewpager;
-    private int[] imageViewResources = {R.drawable.spa1, R.drawable.spa2, R.drawable.spa3, R.drawable.spa4};
     private String[] imageTexts = new String[4];
     private HowItWorksPagerAdapter viewPagerAdapter;
     private CirclePageIndicator pagerIndicator;

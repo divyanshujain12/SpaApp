@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import com.example.lenovo.SpaApp.Models.ServiceModel;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Interfaces.RecyclerViewClick;
+import com.example.lenovo.SpaApp.Utils.ImageLoading;
 import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.neopixl.pixlui.components.textview.TextView;
 
@@ -21,11 +22,13 @@ public class HomeServiceCategoryAdapter extends RecyclerView.Adapter<RecyclerVie
     private Context context;
     private int itemsCount = 0;
     private RecyclerViewClick recyclerViewClick;
+    private ImageLoading imageLoading;
     private int[] serviceIncons = {R.drawable.service_icon1, R.drawable.service_icon2, R.drawable.service_icon3, R.drawable.service_icon4, R.drawable.service_icon5, R.drawable.service_icon6};
 
     public HomeServiceCategoryAdapter(Context context, RecyclerViewClick recyclerViewClick) {
         this.context = context;
         this.recyclerViewClick = recyclerViewClick;
+        imageLoading = new ImageLoading(context);
 
     }
 
@@ -48,7 +51,7 @@ public class HomeServiceCategoryAdapter extends RecyclerView.Adapter<RecyclerVie
         ServiceModel serviceModel = SingeltonClass.serviceModelArrayList.get(position);
         //     holder.feedImage.setTag(categoryArray[position]);
         holder.customView.setId(position);
-        holder.serviceIcon.setImageResource(serviceIncons[position]);
+        imageLoading.LoadImage(serviceModel.getIcon(), holder.serviceIcon, null);
         holder.txtServiceName.setText(serviceModel.getName());
         holder.customView.setOnClickListener(this);
     }

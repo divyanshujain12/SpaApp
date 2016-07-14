@@ -83,9 +83,12 @@ public class HomeActivityController extends HomeActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         boolean isPopped = fragmentManager.popBackStackImmediate(name, 0);
         if (fragment != null && !isPopped && fragmentManager.findFragmentByTag(name) == null) {
-            fragmentTransaction.replace(R.id.frameLayout, fragment, name);
-            if (!(fragment instanceof HomeFragmentControllers))
+            if (fragment instanceof HomeFragmentControllers)
+                fragmentTransaction.replace(R.id.frameLayout, fragment);
+            else {
+                fragmentTransaction.replace(R.id.frameLayout, fragment, name);
                 fragmentTransaction.addToBackStack(name);
+            }
             fragmentTransaction.commit();
         }
 

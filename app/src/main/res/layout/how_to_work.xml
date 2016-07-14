@@ -24,11 +24,12 @@
         app:strokeWidth="2dp" />
     <ImageView
         android:id="@+id/appLogo"
-        android:layout_width="@dimen/one_hundred_twenty_sp"
-        android:layout_height="@dimen/one_hundred_twenty_sp"
+        android:layout_width="@dimen/one_hundred_fourty_five_dp"
+        android:layout_height="@dimen/one_hundred_fourty_five_dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/thirty_dp"
-        android:src="@drawable/app_logo" />
+        android:scaleType="fitXY"
+        android:src="@drawable/three_d_logo" />
     <!--<com.neopixl.pixlui.components.textview.TextView
         android:id="@+id/txtSkip"
         android:layout_width="match_parent"

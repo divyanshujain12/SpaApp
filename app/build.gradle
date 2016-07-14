@@ -60,4 +60,5 @@ dependencies {
     compile 'com.jakewharton:butterknife:6.1.0'
     compile project(':Calendarlibrary')
     compile 'io.realm:realm-android:0.83.0+'
+    compile files('libs/universal-image-loader-1.9.3.jar')
 }

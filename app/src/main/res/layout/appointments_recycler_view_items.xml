@@ -4,9 +4,10 @@
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/five_dp"
     cardView:cardBackgroundColor="@android:color/black"
-    cardView:cardCornerRadius="5dp">
+    cardView:cardCornerRadius="@dimen/five_dp"
+    cardView:cardElevation="@dimen/eight_dp"
+    cardView:cardUseCompatPadding="true">
 
     <LinearLayout
         android:layout_width="match_parent"

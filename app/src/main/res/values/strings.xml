@@ -156,6 +156,7 @@
     <string name="spa_number">tel\: 646.241.4477</string>
 
     <string name="submit">SUBMIT</string>
+    <string name="confirm_city">Confirm City</string>
 
     <string-array name="timing_array">
         <item>8:00 AM</item>
