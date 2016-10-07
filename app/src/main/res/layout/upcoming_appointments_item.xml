@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    cardView:cardBackgroundColor="@android:color/black"
+    cardView:cardCornerRadius="@dimen/five_dp"
+    cardView:cardElevation="@dimen/eight_dp"
+    cardView:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/eight_dp"
+            android:text="@string/service_name"
+            android:textColor="#fff"
+            android:textSize="@dimen/sixteen_sp"
+            pixlui:typeface="Titillium-Bold.otf" />
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:id="@+id/descTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/eight_dp"
+            android:text="@string/service_name"
+            android:textColor="#fff"
+            android:textSize="@dimen/fourteen_sp"
+            pixlui:typeface="Titillium-Regular.otf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/five_dp">
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:id="@+id/dateTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="@dimen/five_dp"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:padding="@dimen/seven_dp"
+                android:text="@string/dummy_date"
+                android:textColor="#fff"
+                android:textSize="@dimen/sixteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:id="@+id/durationTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:drawableLeft="@drawable/duration"
+                android:drawablePadding="@dimen/five_dp"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:padding="@dimen/seven_dp"
+                android:text="@string/dummy_duration"
+                android:textColor="#fff"
+                android:textSize="@dimen/sixteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:id="@+id/amountTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:padding="@dimen/seven_dp"
+                android:text="@string/dummy_amount"
+                android:textColor="#fff"
+                android:textSize="@dimen/sixteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+
+        </LinearLayout>
+
+        <include layout="@layout/horizontal_white_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:id="@+id/removeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:padding="@dimen/ten_dp"
+                android:text="@string/remove"
+                android:textColor="#fff"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:id="@+id/addReminderTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:padding="@dimen/ten_dp"
+                android:text="@string/add_reminder"
+                android:textColor="#000"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

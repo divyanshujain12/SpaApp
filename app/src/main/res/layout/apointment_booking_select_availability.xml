@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:showIn="@layout/appointment_booking">
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/select_your_availability"
+        android:textColor="#fff"
+        android:textSize="@dimen/eighteen_sp"
+        pixlui:typeface="Titillium-Bold.otf" />
+
+    <com.imanoweb.calendarview.CustomCalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:calendarBackgroundColor="@android:color/transparent"
+        app:calendarTitleTextColor="@android:color/white"
+        app:currentDayOfMonthColor="@android:color/holo_blue_dark"
+        app:dayOfMonthTextColor="@android:color/white"
+        app:dayOfWeekTextColor="@android:color/white"
+        app:disabledDayBackgroundColor="@android:color/white"
+        app:disabledDayTextColor="@android:color/darker_gray"
+        app:selectedDayBackgroundColor="@android:color/black"
+        app:titleLayoutBackgroundColor="@android:color/black"
+        app:weekLayoutBackgroundColor="@color/colorPrimary" />
+</LinearLayout>

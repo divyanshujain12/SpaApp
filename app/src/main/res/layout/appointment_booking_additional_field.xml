@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/five_dp"
+    tools:showIn="@layout/appointment_booking">
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/additional_notes"
+        android:textColor="#fff"
+        android:textSize="@dimen/eighteen_sp"
+        pixlui:typeface="Titillium-Bold.otf" />
+
+    <com.neopixl.pixlui.components.edittext.EditText
+        android:id="@+id/additionalET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="@string/additional_notes_content"
+        android:minLines="4"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="@dimen/eighteen_sp"
+        pixlui:typeface="Titillium-Regular.otf" />
+</LinearLayout>

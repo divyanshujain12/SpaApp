@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="logged_in_nav_name">
+        <item>Home</item>
+        <item>My Appointments</item>
+        <item>How It Works</item>
+        <item>FAQ</item>
+        <item>My Account</item>
+        <item>Corporate Inquiries</item>
+        <item>Contact</item>
+        <item>Logout</item>
+    </string-array>
+
+    <integer-array name="logged_in_nav_icon">
+        <item>@drawable/home</item>
+        <item>@drawable/my_appointment</item>
+        <item>@drawable/how_it_works</item>
+        <item>@drawable/faq</item>
+        <item>@drawable/my_account</item>
+        <item>@drawable/corporate_inquiries</item>
+        <item>@drawable/contact</item>
+        <item>@drawable/logout</item>
+    </integer-array>
+
+    <string-array name="logged_out_nav_name">
+        <item>Home</item>
+        <item>How It Works</item>
+        <item>FAQ</item>
+        <item>Corporate Inquiries</item>
+        <item>Contact</item>
+        <item>Login or Signup</item>
+    </string-array>
+
+    <integer-array name="logged_out_nav_icon">
+        <item>@drawable/home</item>
+        <item>@drawable/how_it_works</item>
+        <item>@drawable/faq</item>
+        <item>@drawable/corporate_inquiries</item>
+        <item>@drawable/contact</item>
+        <item>@drawable/login</item>
+    </integer-array>
+    <string-array name="service_booking_quantities">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+</resources>
