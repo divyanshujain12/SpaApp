@@ -3,7 +3,7 @@
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/pink_shaded_color"
     android:padding="@dimen/ten_dp"
     android:orientation="vertical">
 
@@ -30,10 +30,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/twenty_dp"
-        android:text="@string/spa_number"
+        android:text="@string/spa_mail"
+
         android:textColorLink="@android:color/holo_blue_dark"
         android:textColor="@android:color/holo_blue_dark"
-        android:autoLink="phone"
+        android:autoLink="email"
         android:textSize="@dimen/eighteen_sp"
         pixlui:typeface="Titillium-Regular.otf" />
 </LinearLayout>

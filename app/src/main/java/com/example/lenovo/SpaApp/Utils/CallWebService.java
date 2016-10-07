@@ -14,6 +14,7 @@ import com.example.lenovo.SpaApp.MyApplication;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 
 /**
@@ -197,19 +198,19 @@ public class CallWebService {
             public void onErrorResponse(final VolleyError error) {
                 MyApplication.getInstance(context).getRequestQueue().getCache().invalidate(url, true);
                 if (customCardleDialog != null) {
-                    customCardleDialog.Fail(error.getMessage());
+                    customCardleDialog.Fail(getErrorMessage(error));
 
                     Handler handler = new Handler();
                     handler.postDelayed(new Runnable() {
                         @Override
                         public void run() {
                             customCardleDialog.dismiss();
-                            callBackinerface.onFailure(error.getMessage());
+                            callBackinerface.onFailure(getErrorMessage(error));
 
                         }
                     }, 2000);
                 } else
-                    callBackinerface.onFailure(error.getMessage());
+                    callBackinerface.onFailure(getErrorMessage(error));
 
 
             }
@@ -217,4 +218,17 @@ public class CallWebService {
 
         MyApplication.getInstance(context).addToRequestQueue(request, url);
     }
+
+    protected String getErrorMessage(VolleyError error) {
+        String body = "";
+        if (error.networkResponse.data != null) {
+            try {
+                body = new String(error.networkResponse.data, "UTF-8");
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+        }
+        return body;
+    }
+
 }

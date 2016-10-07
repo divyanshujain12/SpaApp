@@ -1,8 +1,11 @@
 package com.example.lenovo.SpaApp;
 
 import android.app.Application;
+import android.content.ComponentCallbacks;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.text.TextUtils;
 import android.util.LruCache;
@@ -12,6 +15,11 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
+import com.example.lenovo.SpaApp.AppIntro.AppIntroActivity;
+import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
+import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
+import com.example.lenovo.SpaApp.Utils.Constants;
+import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
@@ -26,7 +34,7 @@ public class MyApplication extends Application {
     private ImageLoader mImageLoader;
     public static SharedPreferences preference;
 
-    public MyApplication(){
+    public MyApplication() {
 
     }
 
@@ -34,7 +42,7 @@ public class MyApplication extends Application {
         MyApplication.context = context;
 
         mRequestQueue = getRequestQueue();
-        preference = getSharedPreferences("BookingApp",MODE_PRIVATE);
+        preference = getSharedPreferences("BookingApp", MODE_PRIVATE);
 
 
         mImageLoader = new ImageLoader(mRequestQueue,
@@ -69,8 +77,10 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         mInstance = this;
+
         RealmConfiguration realmConfiguration = new RealmConfiguration.Builder(mInstance).deleteRealmIfMigrationNeeded().build();
         Realm.setDefaultConfiguration(realmConfiguration);
+
     }
 
     public RequestQueue getRequestQueue() {
@@ -105,6 +115,28 @@ public class MyApplication extends Application {
 
     public ImageLoader getImageLoader() {
         return mImageLoader;
+    }
+
+    @Override
+    public void onTrimMemory(int level) {
+        super.onTrimMemory(level);
+        if (level > TRIM_MEMORY_MODERATE || level>=TRIM_MEMORY_COMPLETE) {
+            // Restart app so data is reloaded
+            android.os.Process.killProcess(android.os.Process.myPid());
+
+        }
+
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        android.os.Process.killProcess(android.os.Process.myPid());
+    }
+
+    @Override
+    public void onTerminate() {
+        super.onTerminate();
     }
 }
 

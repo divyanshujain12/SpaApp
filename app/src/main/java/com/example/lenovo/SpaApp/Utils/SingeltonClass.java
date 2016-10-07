@@ -22,7 +22,7 @@ public class SingeltonClass {
 
     public ServiceModel serviceModel;
 
-    public ProductModel productModel;
+    public ProductModel productModel = null;
 
     public int AFTER_LOGIN_ACTION = 0; //***1 for go back to previous screen*****//
 
@@ -30,12 +30,19 @@ public class SingeltonClass {
     }
 
     public ArrayList<ProductModel> getProductsArrayList(int pos) {
-        serviceModel = serviceModelArrayList.get(pos);
-        productModels = serviceModel.getProducts();
+        if (serviceModelArrayList != null && serviceModelArrayList.size() > 0) {
+            serviceModel = serviceModelArrayList.get(pos);
+            productModels = serviceModel.getProducts();
+        }
         return productModels;
     }
-    public ProductModel getProductModel(int pos){
-        productModel = productModels.get(pos);
+
+    public ProductModel getProductModel(int pos) {
+
+        if (productModels != null && productModels.size() > 0)
+            productModel = productModels.get(pos);
         return productModel;
     }
+
+
 }

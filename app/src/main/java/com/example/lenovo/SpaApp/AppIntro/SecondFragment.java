@@ -1,4 +1,4 @@
-package com.example.lenovo.SpaApp.HowItWorksFragments;
+package com.example.lenovo.SpaApp.AppIntro;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

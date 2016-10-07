@@ -12,7 +12,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
-import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
+import com.example.lenovo.SpaApp.AppIntro.AppIntroActivity;
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
 import com.example.lenovo.SpaApp.Utils.ConnectionDetector;
 import com.example.lenovo.SpaApp.Utils.Constants;
@@ -50,7 +50,7 @@ public class SplashActivity extends AppCompatActivity {
                         i = new Intent(SplashActivity.this, HomeActivityController.class);
 
                     } else {
-                        i = new Intent(SplashActivity.this, HowItWork.class);
+                        i = new Intent(SplashActivity.this, AppIntroActivity.class);
                     }
                     startActivity(i);
                     finish();

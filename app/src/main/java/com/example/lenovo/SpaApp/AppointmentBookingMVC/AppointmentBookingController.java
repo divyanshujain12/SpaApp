@@ -36,8 +36,9 @@ import io.realm.RealmResults;
 /**
  * Created by divyanshu on 5/29/2016.
  */
-public class AppointmentBookingController extends AppointmentBookingActivity {
+public class AppointmentBookingController extends AppointmentBookingActivity implements AdapterView.OnItemSelectedListener {
     View previousView = null;
+
 
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
@@ -50,8 +51,8 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
                 checkDate(view);
             }
         });
-
-
+        quantitySP.setOnItemSelectedListener(this);
+        availableDurationSP.setOnItemSelectedListener(this);
         calendarView.setCalendarListener(new CalendarListener() {
             @Override
             public void onDateSelected(Date date) {
@@ -200,10 +201,26 @@ public class AppointmentBookingController extends AppointmentBookingActivity {
         appointmentBookingModel.setDate(dateString);
         appointmentBookingModel.setTime(timeString);
         appointmentBookingModel.setAdditional_notes(additionalString);
+        appointmentBookingModel.setQuantity(selectedQuantity);
+        appointmentBookingModel.setDuration(selectedDuration);
 
         realm.commitTransaction();
         RealmResults<AppointmentBookingModel> bookingModels = realm.allObjects(AppointmentBookingModel.class);
         Log.d("tag", bookingModels.toString());
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        if (parent == quantitySP) {
+            selectedQuantity = ((TextView) view).getText().toString();
+        } else if (parent == availableDurationSP) {
+            selectedDuration = ((TextView) view).getText().toString();
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 }
 

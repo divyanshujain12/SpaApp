@@ -16,7 +16,7 @@
         android:orientation="vertical">
 
         <com.neopixl.pixlui.components.textview.TextView
-            android:id="@+id/subServiceNameTV"
+            android:id="@+id/titleTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -27,7 +27,7 @@
             pixlui:typeface="Titillium-Bold.otf" />
 
         <com.neopixl.pixlui.components.textview.TextView
-            android:id="@+id/serviceNameTV"
+            android:id="@+id/descTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -87,14 +87,11 @@
                 pixlui:typeface="Titillium-Bold.otf" />
 
         </LinearLayout>
-
         <include layout="@layout/horizontal_white_line" />
-
         <com.neopixl.pixlui.components.textview.TextView
             android:id="@+id/removeTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
             android:gravity="center"
             android:padding="@dimen/ten_dp"
             android:text="@string/remove"

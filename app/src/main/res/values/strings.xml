@@ -31,9 +31,9 @@
     <string name="cancel">Cancel</string>
     <string name="ok">OK</string>
     <string name="skip_to_continue">Skip to continue</string>
-    <string name="dummy_text">Delivering premier beauty and wellness services to your door</string>
+    <string name="dummy_text">BRINGING THE ULTIMATE  SPA EXPERIENCE TO YOU</string>
     <string name="how_it_works">How It Works</string>
-    <string name="our_services">OUR \n SERVICES</string>
+    <string name="our_services">OUR SERVICES</string>
     <string name="openDrawer"></string>
     <string name="lets_get_pampered">LETS GET PAMPERED</string>
     <string name="confirm">CONFIRM BOOKING</string>
@@ -45,7 +45,7 @@
     <string name="address">ADDRESS -</string>
     <string name="additional_notes">ADDITIONAL NOTES -</string>
     <string name="select_your_availability">SELECT YOUR AVAILABILITY -</string>
-    <string name="available_slots">AVAILABLE SLOTS -</string>
+    <string name="available_slots">PREFFERED TIME SLOT -</string>
     <string name="service_name">SERVICE NAME</string>
     <string name="dummy_amount">$ 20</string>
     <string name="dummy_duration">2 HOURS</string>
@@ -53,7 +53,7 @@
     <string name="cost">COST</string>
     <string name="dummy_date">31-may-2016</string>
     <string name="remove">REMOVE</string>
-    <string name="add_to_cart">ADD TO CART</string>
+    <string name="request_now">request now</string>
     <string name="cancel_appointment">CANCEL</string>
     <string name="are_you_sure_cancel">Are you sure you want to cancel this appointment.</string>
     <string name="are_you_sure_remove">Do you really want to remove this appointment.</string>
@@ -61,7 +61,7 @@
     <string name="booking">BOOKING</string>
     <string name="checkout">CHECKOUT</string>
     <string name="no_item">NO ITEM AVAILABLE!</string>
-    <string name="successfully_added">SUCCESSFULLY ADDED!</string>
+    <string name="successfully_added">SUCCESSFULLY ADDED TO YOUR CART!</string>
     <string name="log_in_alert_msg">Kindly log in for make this booking.</string>
     <string name="success">SUCCESS</string>
     <string name="yes">YES</string>
@@ -154,10 +154,24 @@
     <string name="corporate_inquiry_first_par">For private and corporate event bookings please visit our website or call us and we’d be happy to help plan your event. </string>
     <string name="website">http://www.myspa2go.com/private-events/</string>
     <string name="spa_number">tel\: 646.241.4477</string>
+    <string name="spa_mail">info@myspa2go.com</string>
 
     <string name="submit">SUBMIT</string>
     <string name="confirm_city">Confirm City</string>
+    <string name="login_alert">LOGIN ALERT</string>
 
+
+    <string name="facebook">https://www.facebook.com/MYSPA2GO-114998045182831/</string>
+    <string name="instagram">https://www.instagram.com/myspa2go/</string>
+    <string name="twitter">https://twitter.com/myspa2go_nyc</string>
+    <string name="step_5">5. Then sit back , relax and let us bring the ultimate spa experience to you by one of our highly trained professionals.</string>
+    <string name="step_4">4. Once confirmed, credit card payment will be processed.</string>
+    <string name="step_3">3. An email confirming or denying request will be sent to you.</string>
+    <string name="step_2">2. Request a date, time and location to receive services.</string>
+    <string name="step_1">1. Choose a service.</string>
+    <string name="select_duration">Select Duration</string>
+    <string name="select_quantity">Select Quantity</string>
+    <string name="order_place_success_message">we are working on your request. Please stand by for email confirmation.</string>
     <string-array name="timing_array">
         <item>8:00 AM</item>
         <item>9:00 AM</item>

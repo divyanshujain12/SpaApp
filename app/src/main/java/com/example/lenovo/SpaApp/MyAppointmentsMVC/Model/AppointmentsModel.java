@@ -15,6 +15,10 @@ public class AppointmentsModel {
     String additional_notes;
     String status;
     String date;
+    String reminder;
+    String title;
+    String description;
+    String address;
 
     public String getOrder_id() {
         return order_id;
@@ -102,5 +106,37 @@ public class AppointmentsModel {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public String getReminder() {
+        return reminder;
+    }
+
+    public void setReminder(String reminder) {
+        this.reminder = reminder;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }

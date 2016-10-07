@@ -1,5 +1,7 @@
 package com.example.lenovo.SpaApp.HomeActivityMVC;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -19,9 +21,6 @@ import GlobalClasses.GlobalActivity;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-/**
- * Created by Lenovo on 01-03-2016.
- */
 public class HomeActivity extends GlobalActivity {
 
 
@@ -79,5 +78,29 @@ public class HomeActivity extends GlobalActivity {
     public void onBackPressed() {
         super.onBackPressed();
 
+    }
+
+    public void goToFacebook(View view) {
+        openLink(getString(R.string.facebook));
+    }
+
+
+    public void goToInstagram(View view) {
+        openLink(getString(R.string.instagram));
+    }
+
+    public void goToTwitter(View view) {
+        openLink(getString(R.string.twitter));
+    }
+
+    private void openLink(String url) {
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 }

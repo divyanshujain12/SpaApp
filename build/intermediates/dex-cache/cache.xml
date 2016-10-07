@@ -1,3 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/exploded-aar/SpaAppNew/menulibrary/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="dab3ffc2f533e8400b59fb0b3e782f7f9d0d7b03">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/SpaAppNew-menulibrary-unspecified_adec73e91df48bc865938c2d0ebf21608cfc2730.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_e528ea85d80fc97e8f7ad503a258792a0d480c85.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/exploded-aar/com.github.ozodrukh/CircularReveal/1.0.4/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="57c231461bd4ab97550b0b053c159e4f13ffc869">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/com.github.ozodrukh-CircularReveal-1.0.4_0f8cdc3d911dedc43397a10f8fbdca51cf0aca8c.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/libs/pixlui.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="78d2debdd2b4be6b34779cdef6d386d5cdf53e06">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/pixlui_c5738c1e1d82fba59c2e4f92a1b65853f118a8ed.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.0.1_c3c3466dec1cae238c688851ddc795ea22806485.jar" />
+    </item>
+    <item
+        jar="/home/divyanshu/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/library-2.4.0_53429f113fe9a40606c4fdd60e165be25e3c8096.jar" />
+    </item>
+    <item
+        jar="/home/divyanshu/.gradle/caches/modules-2/files-2.1/io.realm/realm-android/0.83.0/fcc995aa3a075352049ed77afb34c61559a73931/realm-android-0.83.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="fcc995aa3a075352049ed77afb34c61559a73931">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/realm-android-0.83.0_2566f2a0fa0bb6b069aaaaec414c6ffadb3a6209.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_1543e4b4aa1902daf71e3fb6d43d0db939d68b82.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/exploded-aar/com.facebook.shimmer/shimmer/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="37e257a25703e692be3f9aa9c4bf7de620e9271a">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/com.facebook.shimmer-shimmer-0.1.0_85479ae4e7e263f12f0bb6c0d12b4e1c8c20cd46.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/exploded-aar/com.dev.sacot41/scviewpager/0.0.4/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4747fb10a7d8577c5df0044df302f2cbfc437aa7">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/com.dev.sacot41-scviewpager-0.0.4_33aa6d41292353cc39f1c3f044065fe04bc9abca.jar" />
+    </item>
+    <item
+        jar="/home/divyanshu/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.1.0/63735f48b82bcd24cdd33821342428252eb1ca5a/butterknife-6.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/butterknife-6.1.0_0b2fec22bf1e3e681e059d676cc097ad6121dd9a.jar" />
+    </item>
+    <item
+        jar="/home/divyanshu/.gradle/caches/modules-2/files-2.1/eu.the4thfloor.volley/com.android.volley/2015.05.28/b0b08cc0ac897e596abe6b263a9507cba875b705/com.android.volley-2015.05.28.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b0b08cc0ac897e596abe6b263a9507cba875b705">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/com.android.volley-2015.05.28_750b98b7436559fb1bad304726c0bad0aad9ba69.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_958279efc422d327445712553928ad2b3c1c3ac2.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.0.1_a2ea5080ec984b52b3a94dbca1f23528e4ccc1e0.jar" />
+    </item>
+    <item
+        jar="/home/divyanshu/android_sdk_ubuntu/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_1f7d01bfdf5aee930bfee21a78880037e1aa4b49.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/exploded-aar/SpaAppNew/animator/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="29c97d45fa645f5e616a9b13f14807f02b2b5a54">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/SpaAppNew-animator-unspecified_5fc62b3d7ac910f57d93665444df483acce1367f.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/libs/universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.3_3e92ab29da4bf412895851dded6b897fc036848e.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.0.1_e59e184310e627dfe769c0d167608503fd7dbf09.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/exploded-aar/SpaAppNew/Calendarlibrary/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9a46725b54ff7f077ee51b09c8939805d59b8d98">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/SpaAppNew-Calendarlibrary-unspecified_b651ab2596f815a643bbdbc41fdfa45b4105a145.jar" />
+    </item>
+    <item
+        jar="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/exploded-aar/SpaAppNew/explosionfield/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="dcb3004addcb7323e6b69882e708ecd7fa9f0d0a">
+        <dex dex="/media/divyanshu/New_Volume/spa/572016/SpaAppNew/app/build/intermediates/pre-dexed/debug/SpaAppNew-explosionfield-unspecified_08cb1e0f0694f3941319f99eca8e9c889eb13916.jar" />
+    </item>
+
+</items>

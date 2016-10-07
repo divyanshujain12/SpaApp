@@ -32,7 +32,10 @@ public class Constants {
     public static String TYPE = "type";
     public static String ORDER_ID = "order_id";
     public static String SUBJECT = "subject";
+    public static String REMINDER = "reminder";
     public static String PHONE = "phone";
+    public static String QUANTITY = "quantity";
+    public static String DURATION = "duration";
 
     public interface WebServices {
 
@@ -62,10 +65,6 @@ public class Constants {
 
         String CONTACT_US = BASE + "contactus";
 
-        public static String EVENTS = BASE + "events.php";
-
-        public static String USER_EVENTS = BASE + "userevents.php?accesstoken=8dd9294632aeed1b62a6bc2eba8b41c5";
-
-
+        String ORDER_REMINDER = BASE + "order_reminder";
     }
 }

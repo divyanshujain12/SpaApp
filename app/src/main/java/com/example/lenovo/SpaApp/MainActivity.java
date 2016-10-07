@@ -6,15 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.view.WindowManager;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.view.animation.DecelerateInterpolator;
-import android.widget.ImageView;
-import android.widget.ViewFlipper;
 
 import com.example.lenovo.SpaApp.Fragments.SignInFragment;
 import com.example.lenovo.SpaApp.Fragments.SignUpFragment;
@@ -44,7 +36,7 @@ public class MainActivity extends GlobalActivity implements UpdateViewPagerPosit
         viewPager.setCurrentItem(getIntent().getIntExtra("pos", 0));
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
-        tabLayout.setTabTextColors(getResources().getColor(R.color.white_with_alpha), getResources().getColor(android.R.color.white));
+        tabLayout.setTabTextColors(getResources().getColor(R.color.button_color), getResources().getColor(android.R.color.white));
     }
 
     private void setupViewPager(ViewPager viewPager) {

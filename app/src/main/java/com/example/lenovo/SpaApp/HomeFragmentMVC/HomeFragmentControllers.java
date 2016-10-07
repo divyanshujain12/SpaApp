@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.example.lenovo.SpaApp.Adapters.ProductsAdapter;
 import com.example.lenovo.SpaApp.AppointmentDescriptionActivity;
+import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.SimpleListener;
@@ -22,6 +23,11 @@ import io.codetail.animation.arcanimator.Side;
  */
 public class HomeFragmentControllers extends HomeFragment implements View.OnClickListener {
 
+
+    public static HomeFragmentControllers getInstance() {
+        HomeFragmentControllers homeFragmentControllers = new HomeFragmentControllers();
+        return homeFragmentControllers;
+    }
 
     public void onResume() {
         super.onResume();

@@ -2,7 +2,7 @@
 <io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/spa3">
+    android:background="@drawable/home_screen">
 
 
     <io.codetail.widget.RevealFrameLayout

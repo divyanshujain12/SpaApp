@@ -3,16 +3,16 @@
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/spa2"
+    android:background="@drawable/second_slide_background"
     android:gravity="center"
     android:orientation="vertical"
-    android:paddingTop="@dimen/eighty_dp">
+    android:paddingTop="@dimen/thirty_dp"
+    android:paddingBottom="@dimen/eighty_dp">
 
     <com.neopixl.pixlui.components.textview.TextView
         android:id="@+id/txtInstruction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:gravity="center"
         android:text="@string/our_services"
         android:textColor="@android:color/black"
@@ -22,52 +22,51 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/eighteen_sp"
         android:orientation="vertical"
-        android:paddingLeft="@dimen/ten_dp">
+        android:paddingLeft="@dimen/fifty_dp"
+        android:paddingRight="@dimen/fifty_dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/one_hundred_dp"
-            android:background="@drawable/category_background_white"
+
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="@dimen/sixty_dp"
-                android:layout_height="@dimen/sixty_dp"
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:background="@drawable/blurred_white_circle"
-                android:padding="@dimen/five_dp"
-                android:src="@drawable/service_icon12" />
+                android:padding="@dimen/three_dp"
+                android:src="@drawable/facial" />
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_marginLeft="@dimen/ten_dp"
                 android:text="Facial"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/twenty_dp"
-                pixlui:typeface="Titillium-Regular.otf" />
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/twenty_five_dp"
-            android:layout_marginRight="@dimen/fifty_four_dp"
             android:layout_marginTop="@dimen/five_dp"
-            android:background="@drawable/category_background_white"
+
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="@dimen/sixty_dp"
-                android:layout_height="@dimen/sixty_dp"
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:background="@drawable/blurred_white_circle"
-                android:padding="@dimen/five_dp"
-                android:src="@drawable/service_icon13" />
+                android:padding="@dimen/eight_dp"
+                android:src="@drawable/stone" />
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:layout_width="wrap_content"
@@ -76,26 +75,24 @@
                 android:gravity="center"
                 android:text="MASSAGE"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/twenty_dp"
-                pixlui:typeface="Titillium-Regular.otf" />
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/fourty_dp"
-            android:layout_marginRight="@dimen/twenty_dp"
             android:layout_marginTop="@dimen/five_dp"
-            android:background="@drawable/category_background_white"
+
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="@dimen/sixty_dp"
-                android:layout_height="@dimen/sixty_dp"
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:background="@drawable/blurred_white_circle"
-                android:padding="@dimen/five_dp"
-                android:src="@drawable/service_icon6" />
+                android:padding="@dimen/eight_dp"
+                android:src="@drawable/nail_polish_bottle" />
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:layout_width="wrap_content"
@@ -104,66 +101,63 @@
                 android:text="Nails"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/twenty_dp"
-                pixlui:typeface="Titillium-Regular.otf" />
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/twenty_five_dp"
-            android:layout_marginRight="@dimen/fifty_four_dp"
             android:layout_marginTop="@dimen/five_dp"
-            android:background="@drawable/category_background_white"
+
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="@dimen/sixty_dp"
-                android:layout_height="@dimen/sixty_dp"
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
 
                 android:background="@drawable/blurred_white_circle"
-                android:padding="@dimen/five_dp"
-                android:src="@drawable/service_icon2" />
+                android:padding="@dimen/eight_dp"
+                android:src="@drawable/blow_dryer" />
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/ten_dp"
-                android:text="Hair and Makeup"
+                android:text="Hair"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/twenty_dp"
-                pixlui:typeface="Titillium-Regular.otf" />
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/one_hundred_dp"
             android:layout_marginTop="@dimen/five_dp"
-            android:background="@drawable/category_background_white"
+
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="@dimen/sixty_dp"
-                android:layout_height="@dimen/sixty_dp"
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_alignParentRight="true"
                 android:background="@drawable/blurred_white_circle"
-                android:padding="@dimen/five_dp"
-                android:src="@drawable/service_icon3" />
+                android:padding="@dimen/eight_dp"
+                android:src="@drawable/lipstick" />
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/ten_dp"
                 android:gravity="center"
-                android:text="Waxing"
+                android:text="Makeup"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/twenty_dp"
-                pixlui:typeface="Titillium-Regular.otf" />
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

@@ -14,10 +14,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
-import com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers.CanceledFragmentController;
-import com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers.HistoryAppointmentsController;
-import com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers.InProgressFragmentController;
-import com.example.lenovo.SpaApp.MyAppointmentsMVC.Controllers.UpcomingAppointmentsController;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.ChildFragments.CanceledFragment;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.ChildFragments.HistoryAppointmentsFragment;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.ChildFragments.InProgressFragment;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.ChildFragments.UpcomingAppointmentsFragment;
 import com.example.lenovo.SpaApp.R;
 
 import butterknife.ButterKnife;
@@ -89,16 +89,16 @@ public class MyAppointmentsFragment extends Fragment {
             Fragment frag = null;
             switch (position) {
                 case 0:
-                    frag = new UpcomingAppointmentsController();
+                    frag = new UpcomingAppointmentsFragment();
                     break;
                 case 1:
-                    frag = new HistoryAppointmentsController();
+                    frag = new HistoryAppointmentsFragment();
                     break;
                 case 2:
-                    frag = new CanceledFragmentController();
+                    frag = new CanceledFragment();
                     break;
                 case 3:
-                    frag = new InProgressFragmentController();
+                    frag = new InProgressFragment();
                     break;
 
             }
@@ -133,5 +133,8 @@ public class MyAppointmentsFragment extends Fragment {
         }
     }
 
-
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
 }

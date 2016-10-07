@@ -3,7 +3,7 @@
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/pink_shaded_color"
     android:orientation="vertical">
 
     <com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton
@@ -25,18 +25,22 @@
             android:layout_marginBottom="@dimen/fifty_dp"
             android:foregroundGravity="center" />
 
-        <com.neopixl.pixlui.components.textview.TextView
-            android:id="@+id/confirmTV"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/fifty_dp"
-            android:layout_alignParentBottom="true"
-            android:background="@android:color/black"
-            android:gravity="center"
-            android:text="@string/checkout"
-            android:textAllCaps="true"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/eighteen_sp"
-            pixlui:typeface="Titillium-Bold.otf" />
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:id="@+id/confirmTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_margin="@dimen/ten_dp"
+                android:padding="@dimen/fifteen_dp"
+                android:text="@string/checkout"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Bold.otf" />
     </RelativeLayout>
 
     <LinearLayout

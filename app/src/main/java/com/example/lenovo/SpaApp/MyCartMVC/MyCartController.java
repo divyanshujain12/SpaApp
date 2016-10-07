@@ -53,6 +53,8 @@ public class MyCartController extends MyCartActivity {
                 object.put(Constants.PRICE, appointmentBookingModel.getCost());
                 object.put(Constants.ADDITIONAL_NOTES, appointmentBookingModel.getAdditional_notes());
                 object.put(Constants.ADDRESS, appointmentBookingModel.getAddress());
+                object.put(Constants.QUANTITY, appointmentBookingModel.getQuantity());
+                object.put(Constants.DURATION, appointmentBookingModel.getDuration());
                 jsonArray.put(object);
             }
             outerObject.put(Constants.EMAIL, MySharedPereference.getInstance().getString(this, Constants.EMAIL));

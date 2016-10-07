@@ -38,7 +38,7 @@
                 android:layout_toRightOf="@+id/questionLabel"
                 android:gravity="center_vertical"
                 android:text="@string/service"
-                android:textColor="@color/white_with_alpha"
+                android:textColor="@color/button_color"
                 android:textSize="@dimen/sixteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -76,7 +76,7 @@
                 android:gravity="center_vertical"
                 android:minLines="1"
                 android:text="@string/service"
-                android:textColor="@color/white_with_alpha"
+                android:textColor="@color/button_color"
                 android:textSize="@dimen/sixteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
         </LinearLayout>

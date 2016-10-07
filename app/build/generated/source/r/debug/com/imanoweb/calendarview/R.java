@@ -21,12 +21,12 @@ public final class R {
 		public static final int weekLayoutBackgroundColor = 0x7f01005c;
 	}
 	public static final class color {
-		public static final int black = 0x7f0d000e;
-		public static final int current_day_of_month = 0x7f0d001f;
-		public static final int day_disabled_background_color = 0x7f0d0020;
-		public static final int day_disabled_text_color = 0x7f0d0021;
-		public static final int selected_day_background = 0x7f0d005d;
-		public static final int white = 0x7f0d006a;
+		public static final int black = 0x7f0d0012;
+		public static final int current_day_of_month = 0x7f0d0024;
+		public static final int day_disabled_background_color = 0x7f0d0025;
+		public static final int day_disabled_text_color = 0x7f0d0026;
+		public static final int selected_day_background = 0x7f0d0062;
+		public static final int white = 0x7f0d0072;
 	}
 	public static final class dimen {
 		public static final int calendarTitlePaddingBottom = 0x7f080082;
@@ -44,32 +44,32 @@ public final class R {
 		public static final int weekTitlePaddingTop = 0x7f0800ba;
 	}
 	public static final class drawable {
-		public static final int button_next_month_selector = 0x7f020048;
-		public static final int button_previous_month_selector = 0x7f020049;
-		public static final int ic_arrow_up_blue = 0x7f02005a;
-		public static final int ic_arrow_up_blue_soft = 0x7f02005b;
-		public static final int ic_arrow_up_gray = 0x7f02005c;
-		public static final int ic_arrow_up_gray_soft = 0x7f02005d;
-		public static final int ic_arrow_up_white = 0x7f02005e;
+		public static final int button_next_month_selector = 0x7f020049;
+		public static final int button_previous_month_selector = 0x7f02004a;
+		public static final int ic_arrow_up_blue = 0x7f020066;
+		public static final int ic_arrow_up_blue_soft = 0x7f020067;
+		public static final int ic_arrow_up_gray = 0x7f020068;
+		public static final int ic_arrow_up_gray_soft = 0x7f020069;
+		public static final int ic_arrow_up_white = 0x7f02006a;
 	}
 	public static final class id {
-		public static final int dateTitle = 0x7f0e00bf;
-		public static final int daysContainer = 0x7f0e00bd;
-		public static final int leftButton = 0x7f0e00be;
-		public static final int rightButton = 0x7f0e00c0;
-		public static final int titleLayout = 0x7f0e00bb;
-		public static final int weekLayout = 0x7f0e00bc;
+		public static final int dateTitle = 0x7f0e00c1;
+		public static final int daysContainer = 0x7f0e00bf;
+		public static final int leftButton = 0x7f0e00c0;
+		public static final int rightButton = 0x7f0e00c2;
+		public static final int titleLayout = 0x7f0e00bd;
+		public static final int weekLayout = 0x7f0e00be;
 	}
 	public static final class layout {
-		public static final int custom_calendar_layout = 0x7f040025;
-		public static final int custom_calendar_title_layout = 0x7f040026;
-		public static final int custom_calendar_weeks_layout = 0x7f040027;
-		public static final int roboto_calendar_week_1 = 0x7f040051;
-		public static final int roboto_calendar_week_2 = 0x7f040052;
-		public static final int roboto_calendar_week_3 = 0x7f040053;
-		public static final int roboto_calendar_week_4 = 0x7f040054;
-		public static final int roboto_calendar_week_5 = 0x7f040055;
-		public static final int roboto_calendar_week_6 = 0x7f040056;
+		public static final int custom_calendar_layout = 0x7f04002b;
+		public static final int custom_calendar_title_layout = 0x7f04002c;
+		public static final int custom_calendar_weeks_layout = 0x7f04002d;
+		public static final int roboto_calendar_week_1 = 0x7f040058;
+		public static final int roboto_calendar_week_2 = 0x7f040059;
+		public static final int roboto_calendar_week_3 = 0x7f04005a;
+		public static final int roboto_calendar_week_4 = 0x7f04005b;
+		public static final int roboto_calendar_week_5 = 0x7f04005c;
+		public static final int roboto_calendar_week_6 = 0x7f04005d;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f090004;

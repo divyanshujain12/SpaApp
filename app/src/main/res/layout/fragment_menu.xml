@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:shimmer="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
@@ -28,14 +27,16 @@
             android:layout_height="@dimen/one_hundred_dp"
             android:layout_centerHorizontal="true"
             android:scaleType="fitXY"
-            android:src="@drawable/three_d_logo" />
+            android:src="@drawable/three_d_logo"
+            android:visibility="gone" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/menuRV"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_above="@+id/view"
             android:layout_below="@+id/appLogo"
+            android:layout_centerInParent="true"
             android:scrollbars="none"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
@@ -54,40 +55,84 @@
             android:layout_alignParentBottom="true"
             android:orientation="horizontal">
 
-            <ImageView
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:padding="@dimen/ten_dp"
-                android:src="@drawable/facebook" />
+                android:clickable="true"
+                android:onClick="goToFacebook">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/ten_dp"
+                    android:src="@drawable/facebook" />
+              <!--  <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/facebook"
+                    android:visibility="visible"
+                    android:autoLink="web"
+                    android:textColorLink="@android:color/transparent"/>-->
+            </RelativeLayout>
 
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/white" />
 
-            <ImageView
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:padding="@dimen/ten_dp"
-                android:src="@drawable/google" />
+                android:clickable="true"
+                android:onClick="goToInstagram">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/ten_dp"
+                    android:src="@drawable/instagram" />
+             <!--   <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/instagram"
+                    android:visibility="visible"
+                    android:autoLink="web"
+                    android:textColorLink="@android:color/transparent"/>-->
+            </RelativeLayout>
 
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/white" />
 
-            <ImageView
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:padding="@dimen/ten_dp"
-                android:src="@drawable/twitter" />
+                android:clickable="true"
+                android:onClick="goToTwitter">
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/ten_dp"
+                    android:src="@drawable/twitter" />
+              <!--  <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/twitter"
+                    android:visibility="visible"
+                    android:autoLink="web"
+                    android:textColorLink="@android:color/transparent"/>-->
+            </RelativeLayout>
         </LinearLayout>
 
 

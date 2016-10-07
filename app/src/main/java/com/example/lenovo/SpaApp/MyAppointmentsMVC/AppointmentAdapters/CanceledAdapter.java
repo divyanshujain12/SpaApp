@@ -52,16 +52,6 @@ public class CanceledAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         bindDefaultFeedItem(position, appointmentsViewHolder);
     }
 
-    private void bindDefaultFeedItem(int position, AppointmentsViewHolder holder) {
-        AppointmentsModel appointmentsModel = appointmentsModels.get(position);
-        holder.serviceNameTV.setText(appointmentsModel.getCategory());
-        holder.subServiceNameTV.setText(appointmentsModel.getService());
-        holder.durationTV.setText(appointmentsModel.getOrder_time());
-        holder.amountTV.setText(appointmentsModel.getPrice());
-        holder.dateTV.setText(appointmentsModel.getOrder_date());
-        holder.removeTV.setId(position);
-        holder.removeTV.setOnClickListener(this);
-    }
 
     @Override
     public int getItemCount() {
@@ -70,18 +60,29 @@ public class CanceledAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
 
     public static class AppointmentsViewHolder extends RecyclerView.ViewHolder {
-        TextView serviceNameTV, subServiceNameTV, durationTV, amountTV, dateTV, removeTV;
+        TextView descTV, titleTV, durationTV, amountTV, dateTV, removeTV;
 
         public AppointmentsViewHolder(View view) {
             super(view);
 
-            serviceNameTV = (TextView) view.findViewById(R.id.serviceNameTV);
-            subServiceNameTV = (TextView) view.findViewById(R.id.subServiceNameTV);
+            descTV = (TextView) view.findViewById(R.id.descTV);
+            titleTV = (TextView) view.findViewById(R.id.titleTV);
             durationTV = (TextView) view.findViewById(R.id.durationTV);
             amountTV = (TextView) view.findViewById(R.id.amountTV);
             dateTV = (TextView) view.findViewById(R.id.dateTV);
             removeTV = (TextView) view.findViewById(R.id.removeTV);
         }
+    }
+
+    private void bindDefaultFeedItem(int position, AppointmentsViewHolder holder) {
+        AppointmentsModel appointmentsModel = appointmentsModels.get(position);
+        holder.descTV.setText(appointmentsModel.getDescription());
+        holder.titleTV.setText(appointmentsModel.getTitle());
+        holder.durationTV.setText(appointmentsModel.getOrder_time());
+        holder.amountTV.setText(appointmentsModel.getPrice());
+        holder.dateTV.setText(appointmentsModel.getOrder_date());
+        holder.removeTV.setId(position);
+        holder.removeTV.setOnClickListener(this);
     }
 
     @Override

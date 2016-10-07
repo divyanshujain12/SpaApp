@@ -9,6 +9,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
@@ -58,7 +59,6 @@ class MyCartActivity extends GlobalActivity {
     TextView confirmTV;
     private String date, address, title, desc, time;
     private long timeInMS = 0;
-    public static final int CALENDARHELPER_PERMISSION_REQUEST_CODE = 99;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +78,7 @@ class MyCartActivity extends GlobalActivity {
         myCartRV.setLayoutManager(new LinearLayoutManager(this));
         realm = Realm.getDefaultInstance();
         myCartModels.addAll(realm.allObjects(AppointmentBookingModel.class));
+        Log.d("My Cart",myCartModels.toString());
         myCartAdapter = new MyCartAdapter(this, myCartModels, this);
         myCartRV.setAdapter(myCartAdapter);
 
@@ -108,7 +109,6 @@ class MyCartActivity extends GlobalActivity {
             totalCost += priceInDounble;
         }
 
-
         AlertMessage.showAlertDialogWithActions(this, getString(R.string.set_reminder_alert_content_pre) + String.valueOf(totalCost) + getString(R.string.set_reminder_alert_content_post), new AlertDialogInterface() {
             @Override
             public void Yes() {
@@ -126,36 +126,9 @@ class MyCartActivity extends GlobalActivity {
     @Override
     public void doAction() {
         super.doAction();
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && (checkSelfPermission(Manifest.permission.WRITE_CALENDAR) != PackageManager.PERMISSION_GRANTED)) {
-            requestCalendarReadWritePermission(this);
-        } else
-            startAddingReminder();
     }
 
-    private void startAddingReminder() {
-        for (AppointmentBookingModel appointmentBookingModel : myCartModels) {
 
-            date = appointmentBookingModel.getDate();
-            address = appointmentBookingModel.getAddress();
-            title = appointmentBookingModel.getName();
-            desc = appointmentBookingModel.getProduct_name();
-            time = appointmentBookingModel.getTime();
-            SimpleDateFormat Formatter = new SimpleDateFormat("yyyy-MM-dd hh:mm aa", Locale.ENGLISH);
-            Formatter.setTimeZone(TimeZone.getDefault());
-
-            try {
-
-                date = date + " " + time;
-                Date dateD = Formatter.parse(date);
-                timeInMS = dateD.getTime();
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
-            AddEventAndReminder.getInstance(this).addEventsToCalender(title, desc, address, timeInMS);
-
-        }
-        clearData();
-    }
 
     private void clearData() {
         realm.beginTransaction();
@@ -164,48 +137,5 @@ class MyCartActivity extends GlobalActivity {
         myCartModels.clear();
         myCartAdapter.notifyDataSetChanged();
         hideContentLayout(true);
-    }
-
-    public void requestCalendarReadWritePermission(Activity caller) {
-        List<String> permissionList = new ArrayList<String>();
-
-        if (ContextCompat.checkSelfPermission(caller, Manifest.permission.WRITE_CALENDAR) != PackageManager.PERMISSION_GRANTED) {
-            permissionList.add(Manifest.permission.WRITE_CALENDAR);
-        }
-
-        if (ContextCompat.checkSelfPermission(caller, Manifest.permission.READ_CALENDAR) != PackageManager.PERMISSION_GRANTED) {
-            permissionList.add(Manifest.permission.READ_CALENDAR);
-        }
-
-        if (permissionList.size() > 0) {
-            String[] permissionArray = new String[permissionList.size()];
-
-            for (int i = 0; i < permissionList.size(); i++) {
-                permissionArray[i] = permissionList.get(i);
-            }
-            ActivityCompat.requestPermissions(caller,
-                    permissionArray,
-                    CALENDARHELPER_PERMISSION_REQUEST_CODE);
-        }
-
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        switch (requestCode) {
-            case CALENDARHELPER_PERMISSION_REQUEST_CODE:
-                if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // Permission Granted
-                    startAddingReminder();
-                } else {
-                    clearData();
-                    // Permission Denied
-                    Toast.makeText(this, "WRITE_CONTACTS Denied", Toast.LENGTH_SHORT)
-                            .show();
-                }
-                break;
-            default:
-                super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
     }
 }

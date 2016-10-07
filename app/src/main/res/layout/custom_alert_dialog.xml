@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/five_dp"
-    cardView:cardCornerRadius="5dp">
+    cardView:cardCornerRadius="5dp"
+    cardView:cardElevation="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/eight_dp"
                 android:gravity="center"
-                android:text="@string/success"
+                android:text="@string/order_place_success_message"
                 android:textColor="#fff"
                 android:textSize="@dimen/twenty_four_sp"
                 pixlui:typeface="Titillium-Bold.otf" />
@@ -45,8 +46,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-           >
+            android:orientation="vertical">
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:id="@+id/contentTV"
@@ -69,6 +69,7 @@
                 android:text="@string/add_reminder_text"
                 android:textColor="#000"
                 android:textSize="@dimen/sixteen_sp"
+                android:visibility="gone"
                 pixlui:typeface="Titillium-Regular.otf" />
 
 
@@ -89,6 +90,7 @@
                     android:text="@string/add_reminder"
                     android:textColor="#fff"
                     android:textSize="@dimen/eighteen_sp"
+                    android:visibility="gone"
                     pixlui:typeface="Titillium-Bold.otf" />
 
 

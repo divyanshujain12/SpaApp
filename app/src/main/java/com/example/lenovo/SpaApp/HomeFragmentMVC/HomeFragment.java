@@ -22,6 +22,7 @@ import com.example.lenovo.SpaApp.Models.ServiceModel;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.Constants;
+import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
 import com.example.lenovo.SpaApp.Utils.RecyclerItemClickListener;
 import com.example.lenovo.SpaApp.Utils.SingeltonClass;
@@ -30,6 +31,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import GlobalClasses.DummyJsons;
 import GlobalClasses.GlobalFragment;
@@ -37,7 +39,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 
-class HomeFragment extends GlobalFragment {
+public class HomeFragment extends GlobalFragment {
 
     protected View mParent;
     protected FrameLayout mBluePair;
@@ -62,12 +64,24 @@ class HomeFragment extends GlobalFragment {
     }
 
     @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+    }
+
+    @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
 
         ButterKnife.inject(this, getView());
+        if (savedInstanceState == null) {
+            initView(view);
+        }
+    }
 
+    private void initView(View view) {
+        CallWebService.getInstance(getActivity(), true).hitJSONObjectVolleyWebService(CallWebService.POST, Constants.WebServices.GET_CATEGORY, createJsonForGetCategories(), this);
         HomeActivity.headerText.setText("SERVICES");
 
         servicesRV = (RecyclerView) view.findViewById(R.id.servicesRV);
@@ -78,15 +92,6 @@ class HomeFragment extends GlobalFragment {
         sheetsView = (LinearLayout) view.findViewById(R.id.sheetsView);
         mParent = view;
         mBluePair = (FrameLayout) view.findViewById(R.id.transition_blue_pair);
-
-        CallWebService.getInstance(getActivity(), true).hitJSONObjectVolleyWebService(CallWebService.GET, Constants.WebServices.GET_CATEGORY, null, this);
-/*
-        try {
-            onJsonObjectSuccess(new JSONObject(DummyJsons.SERVICES_JSON));
-        } catch (JSONException exce) {
-            exce.printStackTrace();
-        }*/
-
     }
 
     @Override
@@ -99,5 +104,16 @@ class HomeFragment extends GlobalFragment {
     @Override
     public void onFailure(String str) {
         super.onFailure(str);
+    }
+
+    private HashMap createJsonForGetCategories() {
+        HashMap<String, String> jsonObject = new HashMap<>();
+        try {
+            jsonObject.put(Constants.CITY_ID, MySharedPereference.getInstance().getString(getContext(), Constants.CITY_ID));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return jsonObject;
     }
 }

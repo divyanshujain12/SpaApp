@@ -20,6 +20,7 @@ public class AppointmentBookingModel extends RealmObject {
     private String duration;
     private String cost;
     private String city_id;
+    private String quantity;
 
     public String getCity_id() {
         return city_id;
@@ -131,5 +132,13 @@ public class AppointmentBookingModel extends RealmObject {
 
     public void setAdditional_notes(String additional_notes) {
         this.additional_notes = additional_notes;
+    }
+
+    public String getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(String quantity) {
+        this.quantity = quantity;
     }
 }

@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingModel;
-import com.example.lenovo.SpaApp.MyCartMVC.MyCartActivity;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
 import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
@@ -54,7 +53,7 @@ public class MyCartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     private void bindDefaultFeedItem(int position, AppointmentsViewHolder holder) {
 
         AppointmentBookingModel appointmentsModel = myCartModels.get(position);
-        holder.serviceNameTV.setText(appointmentsModel.getCategory_id());
+        holder.serviceNameTV.setText(appointmentsModel.getCategory_name());
         holder.subServiceNameTV.setText(appointmentsModel.getProduct_name());
         holder.durationTV.setText(appointmentsModel.getTime());
         holder.amountTV.setText(appointmentsModel.getCost());
@@ -75,8 +74,8 @@ public class MyCartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         public AppointmentsViewHolder(View view) {
             super(view);
 
-            serviceNameTV = (TextView) view.findViewById(R.id.serviceNameTV);
-            subServiceNameTV = (TextView) view.findViewById(R.id.subServiceNameTV);
+            serviceNameTV = (TextView) view.findViewById(R.id.descTV);
+            subServiceNameTV = (TextView) view.findViewById(R.id.titleTV);
             durationTV = (TextView) view.findViewById(R.id.durationTV);
             amountTV = (TextView) view.findViewById(R.id.amountTV);
             dateTV = (TextView) view.findViewById(R.id.dateTV);

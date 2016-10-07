@@ -10,8 +10,10 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.AppointmentAdapters.HistoryAdapter;
+import com.example.lenovo.SpaApp.MyAppointmentsMVC.CreateCommonJSON;
 import com.example.lenovo.SpaApp.MyAppointmentsMVC.Model.AppointmentsModel;
 import com.example.lenovo.SpaApp.R;
+import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
 import com.neopixl.pixlui.components.textview.TextView;
@@ -38,6 +40,7 @@ public class HistoryAppointmentsFragment extends GlobalFragment {
     ProgressBar progressBar;
     @InjectView(R.id.noItemTV)
     TextView noItemTV;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -53,6 +56,7 @@ public class HistoryAppointmentsFragment extends GlobalFragment {
 
         appointmentsRV.setLayoutManager(new LinearLayoutManager(getActivity()));
         appointmentsModels = new ArrayList<>();
+         CallWebService.getInstance(getActivity(), false).hitWithJSONObjectVolleyWebService(CallWebService.POST, Constants.WebServices.MY_SERVICES, CreateCommonJSON.getInstance().createJSONForGetAppointments(getActivity(), "2"), this);
         historyAdapter = new HistoryAdapter(getActivity(), appointmentsModels);
 
     }
@@ -66,12 +70,14 @@ public class HistoryAppointmentsFragment extends GlobalFragment {
     @Override
     public void onJsonObjectSuccess(JSONObject object) {
         try {
+
             ItemAvailable(true, "");
             JSONArray data = object.getJSONArray(Constants.DATA);
             appointmentsModels = ParsingResponse.getInstance().parseJsonArrayWithJsonObject(data, AppointmentsModel.class);
             historyAdapter = new HistoryAdapter(getActivity(), appointmentsModels);
-            appointmentsRV.setAdapter(historyAdapter);
-        } catch (JSONException e) {
+
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -80,15 +86,24 @@ public class HistoryAppointmentsFragment extends GlobalFragment {
     @Override
     public void onFailure(String str) {
         super.onFailure(str);
-        ItemAvailable(false, str);
+        if (isAdded())
+            ItemAvailable(false, str);
     }
 
     private void ItemAvailable(boolean b, String Text) {
-        progressBar.setVisibility(View.GONE);
+        if (progressBar != null)
+            progressBar.setVisibility(View.GONE);
         if (!b) {
             noItemTV.setText(Text);
             appointmentsRV.setVisibility(View.GONE);
             noItemTV.setVisibility(View.VISIBLE);
         }
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser && appointmentsRV != null && historyAdapter != null)
+            appointmentsRV.setAdapter(historyAdapter);
     }
 }

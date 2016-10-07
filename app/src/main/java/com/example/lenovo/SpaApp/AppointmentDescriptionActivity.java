@@ -59,12 +59,19 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
         setToolBar();
         pos = getIntent().getIntExtra(Constants.POS, -1);
         productModel = SingeltonClass.getInstance().getProductModel(pos);
+        if (productModel != null) {
+            setDataToView();
+        } else
+            finish();
+
+    }
+
+    private void setDataToView() {
         categoryTV.setText(SingeltonClass.getInstance().serviceModel.getName());
         productTV.setText(productModel.getName());
         priceTV.setText("$ " + productModel.getCost());
         descriptionTV.setText(productModel.getDescription());
         durationTV.setText(productModel.getDuration());
-
     }
 
     private void setToolBar() {
@@ -80,7 +87,8 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
                     Intent intent = new Intent(this, AppointmentBookingController.class);
                     startActivity(intent);
                 } else {
-                    AlertMessage.showAlertDialogWithCallBack(this, "LOGIN ALERT", getString(R.string.log_in_alert_msg), this);
+                    goForLogin();
+                   /* AlertMessage.showAlertDialogWithCallBack(this, "LOGIN ALERT", getString(R.string.log_in_alert_msg), this);*/
                 }
                 break;
         }
@@ -100,6 +108,10 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
     public void doAction() {
         super.doAction();
 
+
+    }
+
+    private void goForLogin() {
         SingeltonClass.getInstance().AFTER_LOGIN_ACTION = 1;
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

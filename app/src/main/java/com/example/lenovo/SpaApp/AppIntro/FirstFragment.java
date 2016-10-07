@@ -1,8 +1,7 @@
-package com.example.lenovo.SpaApp.HowItWorksFragments;
+package com.example.lenovo.SpaApp.AppIntro;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,16 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.example.lenovo.SpaApp.R;
-import com.example.lenovo.SpaApp.SelectCityActivity;
 import com.neopixl.pixlui.components.textview.TextView;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import butterknife.OnClick;
 import tyrantgit.explosionfield.ExplosionField;
 
 /**
@@ -28,12 +24,12 @@ import tyrantgit.explosionfield.ExplosionField;
 public class FirstFragment extends Fragment{
     @InjectView(R.id.txtSkip)
     TextView txtSkip;
-    @InjectView(R.id.txtSignIn)
+   /* @InjectView(R.id.txtSignIn)
     TextView txtSignIn;
     @InjectView(R.id.txtSignUp)
     TextView txtSignUp;
     @InjectView(R.id.bottomViews)
-    LinearLayout bottomViews;
+    LinearLayout bottomViews;*/
   /*  @InjectView(R.id.appLogo)
     ImageView appLogo;*/
     @InjectView(R.id.txtInstruction)
@@ -71,7 +67,7 @@ public class FirstFragment extends Fragment{
         ButterKnife.reset(this);
     }
 
-    @OnClick({R.id.txtSkip, R.id.txtSignIn, R.id.txtSignUp})
+    /*@OnClick({R.id.txtSkip, R.id.txtSignIn, R.id.txtSignUp})
     public void onClick(View view) {
         mExplosionField.explode(view);
         intent = new Intent(getActivity(), SelectCityActivity.class);
@@ -96,5 +92,5 @@ public class FirstFragment extends Fragment{
             startActivity(intent);
             getActivity().finish();
         }
-    };
+    };*/
 }

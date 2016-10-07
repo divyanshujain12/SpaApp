@@ -19,12 +19,19 @@ public class MenuFragmentAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
     private Context context;
     private int itemsCount = 0;
-    private String[] serviceName = {"Home", "My Appointments", "How It Works", "FAQ", "My Account", "Corporate Inquiries", "Contact", "LogIn Or SignUp"};
-    private int[] serviceIcons = {R.drawable.appointment, R.drawable.buy_services, R.drawable.contact, R.drawable.setting};
+    private String[] serviceName;
+    private int[] serviceIcons;
 
     public MenuFragmentAdapter(Context context) {
-        if (MySharedPereference.getInstance().getBoolean(context, Constants.LOGGED_IN))
-            serviceName[serviceName.length - 1] = "Logout";
+
+        if (MySharedPereference.getInstance().getBoolean(context, Constants.LOGGED_IN)) {
+            serviceName = context.getResources().getStringArray(R.array.logged_in_nav_name);
+            serviceIcons = context.getResources().getIntArray(R.array.logged_in_nav_icon);
+            serviceIcons = new int[]{R.drawable.home, R.drawable.my_appointment, R.drawable.how_it_works, R.drawable.faq, R.drawable.my_account, R.drawable.corporate_inquiries, R.drawable.contact, R.drawable.logout};
+        } else {
+            serviceName = context.getResources().getStringArray(R.array.logged_out_nav_name);
+            serviceIcons = new int[]{R.drawable.home, R.drawable.how_it_works, R.drawable.faq, R.drawable.corporate_inquiries, R.drawable.contact, R.drawable.login};
+        }
         this.context = context;
 
     }
@@ -45,7 +52,7 @@ public class MenuFragmentAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
     private void bindDefaultFeedItem(int position, CellFeedViewHolder holder) {
         //     holder.feedImage.setTag(categoryArray[position]);
-        //  holder.imgMenuIcon.setImageResource(serviceIcons[position]);
+        holder.imgMenuIcon.setImageResource(serviceIcons[position]);
         holder.txtMenuName.setText(serviceName[position]);
     }
 

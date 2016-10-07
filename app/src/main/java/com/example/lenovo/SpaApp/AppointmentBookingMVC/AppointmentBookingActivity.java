@@ -1,12 +1,11 @@
 package com.example.lenovo.SpaApp.AppointmentBookingMVC;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import com.example.lenovo.SpaApp.CustomViews.ExpandableHeightGridView;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
@@ -14,7 +13,6 @@ import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
 import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
-import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.SingeltonClass;
@@ -24,7 +22,6 @@ import com.neopixl.pixlui.components.textview.TextView;
 
 import org.json.JSONObject;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Locale;
@@ -58,11 +55,16 @@ class AppointmentBookingActivity extends GlobalActivity {
     EditText additionalET;
     @InjectView(R.id.calendar_view)
     CustomCalendarView calendarView;
+    @InjectView(R.id.availableDurationSP)
+    Spinner availableDurationSP;
+    @InjectView(R.id.quantitySP)
+    Spinner quantitySP;
     private boolean ifExpand = true;
-    protected ArrayList<String> availableTimeSlotsArray = new ArrayList<>();
+    protected String[] availableDurations = null;
     protected AppointmentBookingModel appointmentBookingModel = null;
     protected ArrayAdapter<CharSequence> arrayAdapter;
     protected String categoryNameString, nameString, numberString, emailString, addressString, dateString, timeString, additionalString;
+    String selectedDuration = "", selectedQuantity = "1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +74,10 @@ class AppointmentBookingActivity extends GlobalActivity {
         setContentView(R.layout.appointment_booking);
         ButterKnife.inject(this);
 
-
+        if (SingeltonClass.getInstance().serviceModel == null) {
+            goToHome();
+            return;
+        }
         InitViews();
     }
 
@@ -81,6 +86,12 @@ class AppointmentBookingActivity extends GlobalActivity {
         serviceTV.setText(SingeltonClass.getInstance().serviceModel.getName());
 
         toolbar.InitToolbar(this, getString(R.string.booking));
+
+        nameET.setText(MySharedPereference.getInstance().getString(this, Constants.NAME));
+
+        numberET.setText(MySharedPereference.getInstance().getString(this, Constants.PHONE_NUMBER));
+
+        emailET.setText(MySharedPereference.getInstance().getString(this, Constants.EMAIL));
 
         timingGrid.setExpanded(true);
 
@@ -94,8 +105,21 @@ class AppointmentBookingActivity extends GlobalActivity {
 
         calendarView.setCustomTypeface(Typeface.createFromAsset(getAssets(), "fonts/Titillium-Regular.otf"));
 
-    }
+        availableDurations = SingeltonClass.getInstance().productModel.getDuration().trim().split(",");
 
+        ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<>(this, R.layout.single_textview, getResources().getStringArray(R.array.service_booking_quantities));
+        // Drop down layout style - list view with radio button
+        spinnerAdapter.setDropDownViewResource(R.layout.single_dropdown_textview);
+
+        quantitySP.setAdapter(spinnerAdapter);
+
+        spinnerAdapter = new ArrayAdapter<>(this, R.layout.single_textview, availableDurations);
+        selectedDuration = availableDurations[0];
+        spinnerAdapter.setDropDownViewResource(R.layout.single_dropdown_textview);
+
+        availableDurationSP.setAdapter(spinnerAdapter);
+
+    }
 
     protected void submitClickedOK() {
         toolbar.setProductCount();
@@ -103,9 +127,7 @@ class AppointmentBookingActivity extends GlobalActivity {
         AlertMessage.showAlertDialogWithOkCallBack(this, getString(R.string.alert), getString(R.string.successfully_added), new SnackBarCallback() {
             @Override
             public void doAction() {
-                Intent intent = new Intent(AppointmentBookingActivity.this, HomeActivityController.class);
-                startActivity(intent);
-                finish();
+                goToHome();
             }
         });
 
@@ -132,5 +154,13 @@ class AppointmentBookingActivity extends GlobalActivity {
     @Override
     public void onJsonObjectSuccess(JSONObject object) {
         super.onJsonObjectSuccess(object);
+    }
+
+
+    private void goToHome() {
+        Intent intent = new Intent(this, HomeActivityController.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
     }
 }

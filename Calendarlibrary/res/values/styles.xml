@@ -3,10 +3,13 @@
     <style name="AppBaseTheme" parent="android:Theme.Light"></style>
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:background">@android:color/transparent</item>
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
-    <style name="CalendarView" />
+    <style name="CalendarView" >
+        <item name="android:background">@android:color/transparent</item>
+    </style>
 
     <style name="CalendarView.MonthTitle">
         <item name="android:textSize">16sp</item>

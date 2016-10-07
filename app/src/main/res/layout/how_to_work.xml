@@ -22,15 +22,8 @@
         app:radius="5dp"
         app:strokeColor="@android:color/transparent"
         app:strokeWidth="2dp" />
-    <ImageView
-        android:id="@+id/appLogo"
-        android:layout_width="@dimen/one_hundred_fourty_five_dp"
-        android:layout_height="@dimen/one_hundred_fourty_five_dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/thirty_dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/three_d_logo" />
-    <!--<com.neopixl.pixlui.components.textview.TextView
+
+    <com.neopixl.pixlui.components.textview.TextView
         android:id="@+id/txtSkip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,19 +35,20 @@
         android:text="@string/skip_to_continue"
         android:textColor="@android:color/black"
         android:textSize="@dimen/fourteen_sp"
+        android:visibility="gone"
         pixlui:typeface="Titillium-Regular.otf" />
 
-    <com.example.lenovo.SpaApp.Utils.CirclePageIndicator
-        android:id="@+id/pagerIndicator"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/bottomViews"
-        android:padding="@dimen/ten_dp"
-        app:fillColor="@android:color/white"
-        app:pageColor="@android:color/black"
-        app:radius="5dp"
-        app:strokeColor="@android:color/transparent"
-        app:strokeWidth="2dp" />
+    <!-- <com.example.lenovo.SpaApp.Utils.CirclePageIndicator
+         android:id="@+id/pagerIndicator"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/bottomViews"
+         android:padding="@dimen/ten_dp"
+         app:fillColor="@android:color/white"
+         app:pageColor="@android:color/black"
+         app:radius="5dp"
+         app:strokeColor="@android:color/transparent"
+         app:strokeWidth="2dp" />-->
 
     <LinearLayout
         android:id="@+id/bottomViews"
@@ -64,6 +58,7 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="@dimen/fifteen_dp"
+        android:layout_marginBottom="@dimen/twenty_five_dp"
         android:visibility="visible">
 
         <com.neopixl.pixlui.components.textview.TextView
@@ -97,5 +92,5 @@
             android:textSize="@dimen/eighteen_sp"
             pixlui:typeface="Titillium-Regular.otf" />
 
-    </LinearLayout>-->
+    </LinearLayout>
 </RelativeLayout>

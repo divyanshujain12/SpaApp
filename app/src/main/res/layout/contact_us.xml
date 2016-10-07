@@ -3,7 +3,7 @@
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/pink_shaded_color"
     android:orientation="vertical">
 
     <LinearLayout
@@ -134,29 +134,19 @@
                 pixlui:typeface="Titillium-Regular.otf" />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
-    <android.support.v7.widget.CardView xmlns:cardView="http://schemas.android.com/apk/res-auto"
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/submitTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        cardView:cardBackgroundColor="@color/white_with_alpha"
-        cardView:cardCornerRadius="@dimen/five_dp"
-        cardView:cardElevation="@dimen/eight_dp"
-        cardView:cardUseCompatPadding="true">
-
-        <com.neopixl.pixlui.components.textview.TextView
-            android:id="@+id/submitTV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="@dimen/fifteen_dp"
-            android:text="@string/submit"
-            android:textAllCaps="true"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/eighteen_sp"
-            pixlui:typeface="Titillium-Bold.otf" />
-    </android.support.v7.widget.CardView>
-
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:padding="@dimen/fifteen_dp"
+        android:text="@string/submit"
+        android:layout_margin="@dimen/ten_dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/eighteen_sp"
+        pixlui:typeface="Titillium-Bold.otf" />
 </RelativeLayout>

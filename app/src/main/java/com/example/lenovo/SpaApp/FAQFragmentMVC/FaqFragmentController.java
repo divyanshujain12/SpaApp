@@ -1,16 +1,9 @@
 package com.example.lenovo.SpaApp.FAQFragmentMVC;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import com.example.lenovo.SpaApp.Adapters.ViewPagerAdapter;
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
-import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.CallWebService;
-import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
 

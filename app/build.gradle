@@ -51,7 +51,7 @@ dependencies {
     compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
     compile files('libs/pixlui.jar')
     compile 'com.android.support:recyclerview-v7:23.0.1'
-    compile 'com.android.support:cardview-v7:21.0.+'
+    compile 'com.android.support:cardview-v7:23.0.+'
     compile project(':explosionfield')
     compile 'com.facebook.shimmer:shimmer:0.1.0@aar'
     compile 'com.github.ozodrukh:CircularReveal:1.0.4@aar'
@@ -60,5 +60,6 @@ dependencies {
     compile 'com.jakewharton:butterknife:6.1.0'
     compile project(':Calendarlibrary')
     compile 'io.realm:realm-android:0.83.0+'
+    compile "com.dev.sacot41:scviewpager:0.0.4"
     compile files('libs/universal-image-loader-1.9.3.jar')
 }

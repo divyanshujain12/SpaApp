@@ -23,7 +23,7 @@ public class HomeServiceCategoryAdapter extends RecyclerView.Adapter<RecyclerVie
     private int itemsCount = 0;
     private RecyclerViewClick recyclerViewClick;
     private ImageLoading imageLoading;
-    private int[] serviceIncons = {R.drawable.service_icon1, R.drawable.service_icon2, R.drawable.service_icon3, R.drawable.service_icon4, R.drawable.service_icon5, R.drawable.service_icon6};
+//    private int[] serviceIncons = {R.drawable.service_icon1, R.drawable.service_icon2, R.drawable.service_icon3, R.drawable.service_icon4, R.drawable.service_icon5, R.drawable.service_icon6};
 
     public HomeServiceCategoryAdapter(Context context, RecyclerViewClick recyclerViewClick) {
         this.context = context;
