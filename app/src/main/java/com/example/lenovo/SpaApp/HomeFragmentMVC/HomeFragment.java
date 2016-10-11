@@ -3,6 +3,7 @@ package com.example.lenovo.SpaApp.HomeFragmentMVC;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
@@ -26,6 +27,7 @@ import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
 import com.example.lenovo.SpaApp.Utils.RecyclerItemClickListener;
 import com.example.lenovo.SpaApp.Utils.SingeltonClass;
+import com.example.lenovo.SpaApp.Utils.SpacesItemDecoration;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -85,7 +87,10 @@ public class HomeFragment extends GlobalFragment {
         HomeActivity.headerText.setText("SERVICES");
 
         servicesRV = (RecyclerView) view.findViewById(R.id.servicesRV);
-        servicesRV.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL));
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
+        SpacesItemDecoration spacesItemDecoration = new SpacesItemDecoration((int)getResources().getDimension(R.dimen.five_dp));
+        servicesRV.setLayoutManager(gridLayoutManager);
+        servicesRV.addItemDecoration(spacesItemDecoration);
 
         recyclerview = (RecyclerView) view.findViewById(R.id.recyclerview);
 
