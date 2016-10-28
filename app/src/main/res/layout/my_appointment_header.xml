@@ -23,7 +23,7 @@
             android:textSize="@dimen/sixteen_sp"
             pixlui:typeface="Titillium-Bold.otf" />
 
-        <include layout="@layout/vertical_line_white" />
+        <include layout="@layout/vertical_line_black" />
 
         <com.neopixl.pixlui.components.textview.TextView
             android:layout_width="0dp"
@@ -36,7 +36,7 @@
             android:textSize="@dimen/sixteen_sp"
             pixlui:typeface="Titillium-Bold.otf" />
 
-        <include layout="@layout/vertical_line_white" />
+        <include layout="@layout/vertical_line_black" />
 
         <com.neopixl.pixlui.components.textview.TextView
             android:layout_width="0dp"

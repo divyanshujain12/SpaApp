@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pink_shaded_color"
+    android:background="@color/colorPrimary"
     android:orientation="vertical">
 
     <com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton

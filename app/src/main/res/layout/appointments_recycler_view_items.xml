@@ -4,7 +4,7 @@
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    cardView:cardBackgroundColor="@android:color/black"
+    cardView:cardBackgroundColor="@color/colorPrimary"
     cardView:cardCornerRadius="@dimen/five_dp"
     cardView:cardElevation="@dimen/eight_dp"
     cardView:cardUseCompatPadding="true">

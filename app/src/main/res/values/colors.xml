@@ -15,6 +15,9 @@
     <color name="background_medium_with_alpha">#AA202020</color>
     <color name="orange">#ffa500</color>
     <color name="booking_background">#1D212A</color>
-<color name="background_bottom_color">#C01483</color>
+    <color name="background_bottom_color">#C01483</color>
     <color name="black_with_five_five">#55202020</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_grey">#545454</color>
+    <color name="textfield_background">#ECF0F1</color>
 </resources>
