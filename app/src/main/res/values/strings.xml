@@ -172,6 +172,9 @@
     <string name="select_duration">Select Duration</string>
     <string name="select_quantity">Select Quantity</string>
     <string name="order_place_success_message">we are working on your request. Please stand by for email confirmation.</string>
+    <string name="therapist_gender">Therapist Gender</string>
+    <string name="massage_table">Massage Table</string>
+    <string name="flexible_with_time">flexible with time</string>
     <string-array name="timing_array">
         <item>8:00 AM</item>
         <item>9:00 AM</item>

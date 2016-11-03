@@ -51,4 +51,13 @@
         <item>9</item>
         <item>10</item>
     </string-array>
+    <string-array name="massage_table_array">
+        <item>Table required</item>
+        <item>I have table</item>
+    </string-array>
+    <string-array name="therapist_gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>No Preference</item>
+    </string-array>
 </resources>

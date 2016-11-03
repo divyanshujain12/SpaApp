@@ -3,8 +3,10 @@ package com.example.lenovo.SpaApp.AppointmentBookingMVC;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 
 import com.example.lenovo.SpaApp.CustomViews.ExpandableHeightGridView;
@@ -17,6 +19,7 @@ import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.imanoweb.calendarview.CustomCalendarView;
+import com.neopixl.pixlui.components.checkbox.CheckBox;
 import com.neopixl.pixlui.components.edittext.EditText;
 import com.neopixl.pixlui.components.textview.TextView;
 
@@ -59,6 +62,14 @@ class AppointmentBookingActivity extends GlobalActivity {
     Spinner availableDurationSP;
     @InjectView(R.id.quantitySP)
     Spinner quantitySP;
+    @InjectView(R.id.therapistGenderSP)
+    Spinner therapistGenderSP;
+    @InjectView(R.id.massageTableSP)
+    Spinner massageTableSP;
+    @InjectView(R.id.bookingMassageLL)
+    LinearLayout bookingMassageLL;
+    @InjectView(R.id.timeFlexibleCB)
+    CheckBox timeFlexibleCB;
     private boolean ifExpand = true;
     protected String[] availableDurations = null;
     protected AppointmentBookingModel appointmentBookingModel = null;
@@ -108,17 +119,30 @@ class AppointmentBookingActivity extends GlobalActivity {
         availableDurations = SingeltonClass.getInstance().productModel.getDuration().trim().split(",");
 
         ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<>(this, R.layout.single_textview, getResources().getStringArray(R.array.service_booking_quantities));
-        // Drop down layout style - list view with radio button
         spinnerAdapter.setDropDownViewResource(R.layout.single_dropdown_textview);
-
         quantitySP.setAdapter(spinnerAdapter);
 
         spinnerAdapter = new ArrayAdapter<>(this, R.layout.single_textview, availableDurations);
         selectedDuration = availableDurations[0];
         spinnerAdapter.setDropDownViewResource(R.layout.single_dropdown_textview);
-
         availableDurationSP.setAdapter(spinnerAdapter);
+        String catID = SingeltonClass.getInstance().serviceModel.getCategory_id();
+        if (catID.equals("9") || catID.equals("11"))
+            initDataForMassageCategory();
+        else
+            bookingMassageLL.setVisibility(View.GONE);
 
+    }
+
+    private void initDataForMassageCategory() {
+        ArrayAdapter<String> spinnerAdapter;
+        spinnerAdapter = new ArrayAdapter<>(this, R.layout.single_textview, getResources().getStringArray(R.array.therapist_gender_array));
+        spinnerAdapter.setDropDownViewResource(R.layout.single_dropdown_textview);
+        therapistGenderSP.setAdapter(spinnerAdapter);
+
+        spinnerAdapter = new ArrayAdapter<>(this, R.layout.single_textview, getResources().getStringArray(R.array.massage_table_array));
+        spinnerAdapter.setDropDownViewResource(R.layout.single_dropdown_textview);
+        massageTableSP.setAdapter(spinnerAdapter);
     }
 
     protected void submitClickedOK() {
