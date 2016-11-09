@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.example.lenovo.SpaApp.R;
@@ -35,7 +36,7 @@ public class FirstFragment extends Fragment{
     @InjectView(R.id.txtInstruction)
     TextView txtInstruction;
     @InjectView(R.id.contentRL)
-    RelativeLayout contentRL;
+    LinearLayout contentRL;
     @InjectView(R.id.mainContainer)
     RelativeLayout mainContainer;
     private ExplosionField mExplosionField;

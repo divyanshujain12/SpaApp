@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:padding="@dimen/ten_dp"
-        app:fillColor="@android:color/white"
+        app:fillColor="@color/background_bottom_color"
         app:pageColor="@android:color/black"
         app:radius="5dp"
         app:strokeColor="@android:color/transparent"
@@ -60,7 +60,7 @@
         android:orientation="horizontal"
         android:padding="@dimen/fifteen_dp"
         android:layout_marginBottom="@dimen/twenty_five_dp"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <com.neopixl.pixlui.components.textview.TextView
             android:id="@+id/txtSignIn"

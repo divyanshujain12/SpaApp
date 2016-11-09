@@ -90,10 +90,24 @@ public class SelectCityActivity extends GlobalActivity implements RecyclerViewCl
     @Override
     public void onClickItem(int position, View view) {
         if (card != null)
-            card.setCardBackgroundColor(getResources().getColor(R.color.background_medium_with_alpha));
+            card.setCardBackgroundColor(getResources().getColor(R.color.white));
         card = (CardView) view;
-        card.setCardBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        card.setCardBackgroundColor(getResources().getColor(R.color.background_bottom_color));
 
         selectedCityID = selectCityModels.get(position).getCity_id();
+
+        if (selectedCityID.length() > 0) {
+            MySharedPereference.getInstance().setString(this, Constants.CITY_ID, selectedCityID);
+            int pos = getIntent().getIntExtra("pos", -1);
+            Intent i = new Intent(this, HomeActivityController.class);
+            if (pos > -1) {
+                i = new Intent(this, MainActivity.class);
+                i.putExtra("pos", pos);
+            }
+            startActivity(i);
+            finish();
+        } else {
+            CommonFunctions.showSnackBarWithoutAction(cityRV, getString(R.string.select_city_alert));
+        }
     }
 }

@@ -6,8 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
-import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivity;
 import com.example.lenovo.SpaApp.R;
 import com.neopixl.pixlui.components.textview.TextView;
 
@@ -23,12 +23,18 @@ public class HowItWorksChildFragment extends GlobalFragment {
     ImageView stepIconIV;
     @InjectView(R.id.stepTextTV)
     TextView stepTextTV;
+    @InjectView(R.id.mainContainer)
+    LinearLayout mainContainer;
 
-    public static HowItWorksChildFragment getInstance(String name, int icon) {
+    String[] stepsName;
+    int[] stepsIcon, stepsBackground;
+    @InjectView(R.id.stepFirstIconIV)
+    ImageView stepFirstIconIV;
+
+    public static HowItWorksChildFragment getInstance(int position) {
         HowItWorksChildFragment howItWorksChildFragment = new HowItWorksChildFragment();
         Bundle bundle = new Bundle();
-        bundle.putString("name", name);
-        bundle.putInt("resource", icon);
+        bundle.putInt("position", position);
         howItWorksChildFragment.setArguments(bundle);
 
         return howItWorksChildFragment;
@@ -49,12 +55,30 @@ public class HowItWorksChildFragment extends GlobalFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
+        initializeArrays();
+        int position = getArguments().getInt("position");
         if (savedInstanceState == null) {
-            stepIconIV.setImageResource(getArguments().getInt("resource"));
-            stepTextTV.setText(getArguments().getString("name"));
+            checkForFirstPos(position);
+            stepTextTV.setText(stepsName[position]);
+            mainContainer.setBackgroundResource(stepsBackground[position]);
         }
 
+    }
+
+    private void checkForFirstPos(int position) {
+        if (position == 0) {
+            stepFirstIconIV.setImageResource(stepsIcon[position]);
+            stepFirstIconIV.setVisibility(View.VISIBLE);
+            stepIconIV.setVisibility(View.GONE);
+        } else
+            stepIconIV.setImageResource(stepsIcon[position]);
+    }
+
+    private void initializeArrays() {
+        stepsName = new String[]{getString(R.string.step_1), getString(R.string.step_2), getString(R.string.step_3), getString(R.string.step_4), getString(R.string.step_5)};
+        //stepsIcon = new int[]{R.drawable.service, R.drawable.calender, R.drawable.mail, R.drawable.card, R.drawable.chair};
+        stepsIcon = new int[]{R.drawable.logoblack_with_icons, R.drawable.icon_calender, R.drawable.icon_mail, R.drawable.icon_card, R.drawable.icon_relax};
+        stepsBackground = new int[]{R.drawable.intro_login_bg, R.drawable.how_it_works_two, R.drawable.how_it_works_three, R.drawable.how_it_works_four, R.drawable.how_it_works_five};
     }
 
     @Override

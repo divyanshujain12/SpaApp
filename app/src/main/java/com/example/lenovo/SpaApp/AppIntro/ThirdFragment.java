@@ -81,9 +81,9 @@ public class ThirdFragment extends GlobalFragment implements RecyclerViewClick {
     @Override
     public void onClickItem(int position, View view) {
         if (card != null)
-            card.setCardBackgroundColor(getResources().getColor(R.color.background_medium_with_alpha));
+            card.setCardBackgroundColor(getResources().getColor(R.color.white));
         card = (CardView) view;
-        card.setCardBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        card.setCardBackgroundColor(getResources().getColor(R.color.background_bottom_color));
 
         selectedCityID = selectCityModels.get(position).getCity_id();
 

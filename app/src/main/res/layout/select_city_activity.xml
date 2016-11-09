@@ -3,7 +3,7 @@
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/new_york_back">
+    android:background="@drawable/select_city_bg">
 
     <com.neopixl.pixlui.components.textview.TextView
         android:id="@+id/cityTitle"
@@ -30,16 +30,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/ten_dp"
         android:background="@drawable/button"
         android:clickable="true"
         android:gravity="center"
-        android:layout_margin="@dimen/ten_dp"
         android:onClick="ConfirmCity"
         android:padding="@dimen/fifteen_dp"
         android:text="@string/confirm_city"
         android:textAllCaps="true"
         android:textColor="@android:color/white"
         android:textSize="@dimen/eighteen_sp"
+        android:visibility="gone"
         pixlui:typeface="Titillium-Bold.otf" />
 
 </RelativeLayout>

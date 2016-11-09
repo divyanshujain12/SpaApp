@@ -10,7 +10,8 @@
         <ImageView
             android:id="@+id/cartIV"
             style="@style/ImageView.Hamburger"
-            android:src="@drawable/cart" />
+            android:src="@drawable/icon_cart"
+            />
 
         <com.neopixl.pixlui.components.textview.TextView
             xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"

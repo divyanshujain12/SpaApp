@@ -22,7 +22,7 @@
     <string name="log_in">LOG IN</string>
     <string name="additional_notes_content">If you have flexibility with booking time,  or notes on your order , please input that here</string>
     <string name="confirm_password">confirm password</string>
-    <string name="sign_up">SIGN UP</string>
+    <string name="sign_up">CREATE ACCOUNT</string>
 
     <string name="mismatch_password">Passwords did not match</string>
     <string name="alert">ALERT</string>
@@ -31,7 +31,7 @@
     <string name="cancel">Cancel</string>
     <string name="ok">OK</string>
     <string name="skip_to_continue">Skip to continue</string>
-    <string name="dummy_text">BRINGING THE ULTIMATE  SPA EXPERIENCE TO YOU</string>
+    <string name="dummy_text">BRINGING THE ULTIMATE \n SPA EXPERIENCE TO YOU</string>
     <string name="how_it_works">How It Works</string>
     <string name="our_services">OUR SERVICES</string>
     <string name="openDrawer"></string>

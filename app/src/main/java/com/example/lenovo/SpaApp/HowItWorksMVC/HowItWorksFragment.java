@@ -25,8 +25,7 @@ public class HowItWorksFragment extends GlobalFragment {
 
     @InjectView(R.id.view_pager)
     ViewPager viewPager;
-    String[] stepsName;
-    int[] stepsIcon;
+
     @InjectView(R.id.indicator)
     CirclePageIndicator indicator;
 
@@ -66,8 +65,6 @@ public class HowItWorksFragment extends GlobalFragment {
     }
 
     private void initViews() {
-        stepsName = new String[]{getString(R.string.step_1), getString(R.string.step_2), getString(R.string.step_3), getString(R.string.step_4), getString(R.string.step_5)};
-        stepsIcon = new int[]{R.drawable.service, R.drawable.calender, R.drawable.mail, R.drawable.card, R.drawable.chair};
 
         PagerAdapter pagerAdapter = new PagerAdapter(getChildFragmentManager());
         viewPager.setAdapter(pagerAdapter);
@@ -95,12 +92,12 @@ public class HowItWorksFragment extends GlobalFragment {
 
         @Override
         public Fragment getItem(int position) {
-            return HowItWorksChildFragment.getInstance(stepsName[position], stepsIcon[position]);
+            return HowItWorksChildFragment.getInstance(position);
         }
 
         @Override
         public int getCount() {
-            return stepsIcon.length;
+            return 5;
         }
 
     }

@@ -4,37 +4,43 @@
     android:id="@+id/mainContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/first_slide_background"
+    android:background="@drawable/intro_login_bg"
     android:orientation="vertical"
     android:paddingBottom="@dimen/twenty_five_dp">
 
-    <ImageView
+    <!--<ImageView
         android:id="@+id/appLogo"
-        android:layout_width="@dimen/one_hundred_fourty_five_dp"
-        android:layout_height="@dimen/one_hundred_fourty_five_dp"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="@dimen/thirty_dp"
+        android:layout_width="@dimen/eighty_dp"
+        android:layout_height="@dimen/eighty_dp"
+        android:layout_centerHorizontal="true"
         android:scaleType="fitXY"
-        android:src="@drawable/three_d_logo" />
+        android:baseline="@+id/contentRL"
+        android:src="@drawable/logo_white" />-->
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/contentRL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="visible"
-        android:paddingBottom="@dimen/seventy_dp">
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="@dimen/one_hundred_twenty_sp"
+            android:layout_height="@dimen/one_hundred_twenty_sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_white" />
 
         <com.neopixl.pixlui.components.textview.TextView
             android:id="@+id/txtInstruction"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/fifty_dp"
             android:gravity="center"
-            android:padding="@dimen/fifteen_dp"
-            android:layout_alignParentBottom="true"
+            android:paddingTop="@dimen/thirty_dp"
             android:text="@string/dummy_text"
-
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/twenty_six_sp"
             android:visibility="visible"
             pixlui:typeface="Titillium-Regular.otf" />
@@ -90,5 +96,5 @@
                 pixlui:typeface="Titillium-Regular.otf" />
 
         </LinearLayout>-->
-    </RelativeLayout>
+    </LinearLayout>
 </RelativeLayout>
