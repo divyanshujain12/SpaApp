@@ -5,7 +5,7 @@
     android:id="@+id/toolbarView"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:background="@color/header_color"
+    android:background="@android:color/transparent"
     app:contentInsetEnd="0dp"
     app:contentInsetLeft="0dp"
     app:contentInsetRight="0dp"
@@ -35,7 +35,7 @@
             android:singleLine="true"
             android:text="APPOINTMENT"
             android:textAllCaps="true"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:textSize="20sp"
             pixlui:typeface="Titillium-Bold.otf" />
 

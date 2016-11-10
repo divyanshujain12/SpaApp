@@ -6,6 +6,6 @@
     android:layout_height="wrap_content"
     android:padding="@dimen/five_dp"
     android:text="CATEGORY NAME"
-    android:textColor="@android:color/white"
+    android:textColor="@android:color/black"
     android:textSize="@dimen/fourteen_sp"
     pixlui:typeface="Titillium-Regular.otf"/>

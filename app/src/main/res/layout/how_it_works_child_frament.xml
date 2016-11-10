@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/pink_shaded_color"
     android:gravity="center"
+    android:paddingTop="?attr/actionBarSize"
     android:orientation="vertical">
 
     <ImageView

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:showIn="@layout/appointment_booking">
+    >
 
     <com.neopixl.pixlui.components.textview.TextView
         android:layout_width="wrap_content"
@@ -24,13 +24,13 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         app:calendarBackgroundColor="@android:color/transparent"
-        app:calendarTitleTextColor="@android:color/white"
-        app:currentDayOfMonthColor="@android:color/holo_blue_dark"
-        app:dayOfMonthTextColor="@android:color/white"
-        app:dayOfWeekTextColor="@android:color/white"
+        app:calendarTitleTextColor="@android:color/black"
+        app:currentDayOfMonthColor="@color/background_bottom_color"
+        app:dayOfMonthTextColor="@color/black"
+        app:dayOfWeekTextColor="@color/black"
         app:disabledDayBackgroundColor="@android:color/white"
         app:disabledDayTextColor="@android:color/darker_gray"
-        app:selectedDayBackgroundColor="@android:color/black"
-        app:titleLayoutBackgroundColor="@android:color/black"
-        app:weekLayoutBackgroundColor="@color/colorPrimary" />
+        app:selectedDayBackgroundColor="@color/background_bottom_color"
+        app:titleLayoutBackgroundColor="@android:color/transparent"
+        app:weekLayoutBackgroundColor="@android:color/transparent" />
 </LinearLayout>

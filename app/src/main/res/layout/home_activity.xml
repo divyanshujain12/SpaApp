@@ -5,19 +5,11 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_gravity="top"
-        android:background="@color/colorPrimaryDark" />
-
     <!--content-->
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize"
         android:scrollbars="none" />
 
     <com.example.lenovo.SpaApp.CustomViews.ToolbarWithHamburg

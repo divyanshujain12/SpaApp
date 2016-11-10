@@ -4,7 +4,6 @@
     android:id="@+id/bookingMassageLL"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimary"
     android:baselineAligned="false"
     android:orientation="horizontal">
 
@@ -21,7 +20,7 @@
             android:gravity="center_vertical"
             android:padding="10dp"
             android:text="@string/therapist_gender"
-            android:textColor="#fff"
+            android:textColor="@color/black"
             android:textSize="@dimen/eighteen_sp"
             pixlui:typeface="Titillium-Bold.otf" />
 
@@ -30,11 +29,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/therapist_gender_array" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/button_color" />
     </LinearLayout>
 
     <LinearLayout
@@ -50,7 +44,7 @@
             android:gravity="center_vertical"
             android:padding="10dp"
             android:text="@string/massage_table"
-            android:textColor="#fff"
+            android:textColor="@color/black"
             android:textSize="@dimen/eighteen_sp"
             pixlui:typeface="Titillium-Bold.otf" />
 
@@ -60,9 +54,6 @@
             android:layout_height="wrap_content"
             android:entries="@array/massage_table_array" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/button_color" />
+
     </LinearLayout>
 </LinearLayout>

@@ -10,13 +10,10 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
 import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingModel;
 import com.example.lenovo.SpaApp.MyCartMVC.MyCartController;
 import com.example.lenovo.SpaApp.R;
-import com.example.lenovo.SpaApp.Utils.Constants;
-import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.neopixl.pixlui.components.textview.TextView;
 
 import io.realm.Realm;
@@ -41,10 +38,10 @@ public class ToolbarWithHamburg extends LinearLayout implements View.OnClickList
 
     public void InitToolbar(AppCompatActivity context, String name) {
         realm = Realm.getDefaultInstance();
-      //  realm.beginTransaction();
+        //  realm.beginTransaction();
         this.activity = context;
         LayoutInflater inflater = LayoutInflater.from(context);
-        View customToolbarView = inflater.inflate(R.layout.view_feed_toolbar, this);
+        inflater.inflate(R.layout.view_feed_toolbar, this);
 
         toolbar = (Toolbar) findViewById(R.id.customToolbar);
         content_hamburger = (ImageView) findViewById(R.id.content_hamburger);
@@ -78,8 +75,7 @@ public class ToolbarWithHamburg extends LinearLayout implements View.OnClickList
         if (size > 0) {
             badgeTV.setVisibility(View.VISIBLE);
             badgeTV.setText(String.valueOf(size));
-        }
-        else
+        } else
             badgeTV.setVisibility(View.GONE);
 
       /*  try {

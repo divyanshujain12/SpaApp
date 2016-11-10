@@ -1,9 +1,11 @@
 package com.example.lenovo.SpaApp.AppointmentBookingMVC;
 
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
@@ -42,7 +44,6 @@ public class AppointmentBookingController extends AppointmentBookingActivity imp
 
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-
         timingGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

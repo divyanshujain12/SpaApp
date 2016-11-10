@@ -34,7 +34,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/ten_dp"
-                    android:background="@drawable/blue_gradient_drawable"
+                    android:background="@drawable/black_seventy_seven"
                     android:padding="@dimen/five_dp"
                     android:textColorHint="@android:color/darker_gray">
 
@@ -59,7 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/ten_dp"
-                    android:background="@drawable/blue_gradient_drawable"
+                    android:background="@drawable/black_seventy_seven"
                     android:padding="@dimen/five_dp"
                     android:textColorHint="@android:color/darker_gray">
 
@@ -84,7 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/ten_dp"
-                    android:background="@drawable/blue_gradient_drawable"
+                    android:background="@drawable/black_seventy_seven"
                     android:padding="@dimen/five_dp"
                     android:textColorHint="@android:color/darker_gray">
 
@@ -109,7 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/ten_dp"
-                    android:background="@drawable/blue_gradient_drawable"
+                    android:background="@drawable/black_seventy_seven"
                     android:padding="@dimen/five_dp"
                     android:textColorHint="@android:color/darker_gray">
 
@@ -133,7 +133,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/ten_dp"
-                    android:background="@drawable/blue_gradient_drawable"
+                    android:background="@drawable/black_seventy_seven"
                     android:padding="@dimen/five_dp"
                     android:textColorHint="@android:color/darker_gray">
 
@@ -177,7 +177,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:orientation="horizontal">
 
                 <Spinner
@@ -209,7 +209,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -267,7 +267,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -312,7 +312,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -347,7 +347,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -382,7 +382,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -417,7 +417,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -452,7 +452,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -487,7 +487,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -531,7 +531,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -566,7 +566,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -601,7 +601,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -646,7 +646,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -681,7 +681,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -716,7 +716,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -751,7 +751,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -786,7 +786,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -820,7 +820,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:layout_marginTop="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
@@ -865,7 +865,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -900,7 +900,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -935,7 +935,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/blue_gradient_drawable"
+                android:background="@drawable/black_seventy_seven"
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -962,7 +962,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/blue_gradient_drawable"
+        android:background="@drawable/black_seventy_seven"
         android:gravity="center"
         android:padding="@dimen/fifteen_dp"
         android:text="@string/request_a_quote"

@@ -4,7 +4,8 @@
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/service_description_bg"
+    android:fitsSystemWindows="true"
     android:orientation="vertical">
 
 
@@ -43,7 +44,7 @@
                         android:layout_height="wrap_content"
                         android:padding="@dimen/five_dp"
                         android:text="CATEGORY NAME"
-                        android:textColor="@android:color/white"
+                        android:textColor="@android:color/black"
                         android:textSize="@dimen/twenty_sp"
                         pixlui:typeface="Titillium-Bold.otf" />
 
@@ -53,7 +54,7 @@
                         android:layout_height="wrap_content"
                         android:padding="@dimen/five_dp"
                         android:text="SUB_CATEGORY NAME"
-                        android:textColor="@android:color/white"
+                        android:textColor="@android:color/black"
                         android:textSize="@dimen/sixteen_sp"
                         pixlui:typeface="Titillium-Regular.otf" />
 
@@ -68,7 +69,7 @@
                     android:layout_marginRight="@dimen/ten_dp"
                     android:padding="@dimen/five_dp"
                     android:text="$ 20"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/twenty_six_sp"
                     pixlui:typeface="Satisfy-Regular.ttf" />
 
@@ -92,7 +93,7 @@
                     android:padding="@dimen/five_dp"
                     android:text="Description"
                     android:textAllCaps="true"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/eighteen_sp"
                     pixlui:typeface="Titillium-Bold.otf" />
 
@@ -102,7 +103,7 @@
                     android:layout_height="wrap_content"
                     android:padding="@dimen/five_dp"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
 
@@ -113,7 +114,7 @@
                     android:padding="@dimen/five_dp"
                     android:text="DURATION"
                     android:textAllCaps="true"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/eighteen_sp"
                     pixlui:typeface="Titillium-Bold.otf" />
 
@@ -123,7 +124,7 @@
                     android:layout_height="wrap_content"
                     android:padding="@dimen/five_dp"
                     android:text="2 HOURS"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/eighteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
 

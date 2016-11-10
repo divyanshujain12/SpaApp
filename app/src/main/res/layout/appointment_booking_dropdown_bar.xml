@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    tools:showIn="@layout/appointment_booking">
+    >
 
     <LinearLayout
         android:layout_width="0dp"
@@ -20,7 +20,7 @@
             android:gravity="center_vertical"
             android:padding="10dp"
             android:text="@string/select_duration"
-            android:textColor="#fff"
+            android:textColor="@color/black"
             android:textSize="@dimen/eighteen_sp"
             pixlui:typeface="Titillium-Bold.otf" />
 
@@ -28,11 +28,6 @@
             android:id="@+id/availableDurationSP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/button_color" />
     </LinearLayout>
 
     <LinearLayout
@@ -47,16 +42,12 @@
             android:gravity="center_vertical"
             android:padding="10dp"
             android:text="@string/select_quantity"
-            android:textColor="#fff"
+            android:textColor="@color/black"
             android:textSize="@dimen/eighteen_sp"
             pixlui:typeface="Titillium-Bold.otf" />
         <Spinner
             android:id="@+id/quantitySP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/button_color" />
     </LinearLayout>
 </LinearLayout>

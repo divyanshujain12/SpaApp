@@ -15,7 +15,7 @@ import butterknife.ButterKnife;
 /**
  * Created by divyanshu.jain on 6/13/2016.
  */
-class CorporateFragment extends GlobalFragment {
+public class CorporateFragment extends GlobalFragment {
 
     Context context;
     @Nullable

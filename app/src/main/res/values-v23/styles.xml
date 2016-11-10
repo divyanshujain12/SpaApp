@@ -8,6 +8,7 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:windowFullscreen">true</item>
     </style>
+
     <style name="MyAnimation.Window" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/right_in</item>
         <item name="android:windowExitAnimation">@anim/left_out</item>
