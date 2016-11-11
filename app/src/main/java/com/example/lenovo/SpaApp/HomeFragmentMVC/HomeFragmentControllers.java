@@ -1,22 +1,13 @@
 package com.example.lenovo.SpaApp.HomeFragmentMVC;
 
 import android.content.Intent;
-import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.os.Build;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.view.View;
 
-import com.example.lenovo.SpaApp.Adapters.ProductsAdapter;
-import com.example.lenovo.SpaApp.AppointmentDescriptionActivity;
-import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
-import com.example.lenovo.SpaApp.Utils.CommonFunctions;
+import com.example.lenovo.SpaApp.CategoryProducts.ProductsActivity;
+import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.Constants;
-import com.example.lenovo.SpaApp.Utils.SimpleListener;
-import com.example.lenovo.SpaApp.Utils.SingeltonClass;
-import com.nineoldandroids.animation.Animator;
-
-import io.codetail.animation.SupportAnimator;
-import io.codetail.animation.ViewAnimationUtils;
-import io.codetail.animation.arcanimator.ArcAnimator;
-import io.codetail.animation.arcanimator.Side;
 
 /**
  * Created by divyanshu on 5/29/2016.
@@ -35,78 +26,22 @@ public class HomeFragmentControllers extends HomeFragment implements View.OnClic
     }
 
     public void onServiceSelected(View view, int pos) {
-        recyclerview.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL));
-        recyclerview.setAdapter(new ProductsAdapter(getActivity(), SingeltonClass.getInstance().getProductsArrayList(pos), this));
-        clickedView = view;
-        startBlueX = CommonFunctions.centerX(clickedView);
-        startBlueY = CommonFunctions.centerY(clickedView);
-
-        endBlueX = mParent.getRight() / 2;
-        endBlueY = (int) (mParent.getBottom() * 0.95f);
-        ArcAnimator arcAnimator = ArcAnimator.createArcAnimator(clickedView, endBlueX,
-                endBlueY, 90, Side.LEFT)
-                .setDuration(500);
-        arcAnimator.addListener(new SimpleListener() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                sheetsView.setVisibility(View.INVISIBLE);
-                clickedView.setVisibility(View.INVISIBLE);
-                appearBluePair();
-            }
-        });
-        arcAnimator.start();
+        Intent intent = new Intent(getActivity(), ProductsActivity.class);
+        intent.putExtra(Constants.POS, pos);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            createTransitionAnimation(view, intent);
+        } else {
+            startActivity(intent);
+        }
+        // recyclerview.setAdapter(new ProductsAdapter(getActivity(), SingeltonClass.getInstance().getProductsArrayList(pos), this));
     }
 
-
-    void appearBluePair() {
-        mBluePair.setVisibility(View.VISIBLE);
-
-        float finalRadius = Math.max(mBluePair.getWidth(), mBluePair.getHeight()) * 1.5f;
-
-        SupportAnimator animator = ViewAnimationUtils.createCircularReveal(mBluePair, endBlueX, endBlueY, clickedView.getWidth() / 2f,
-                finalRadius);
-        animator.setDuration(500);
-        animator.setInterpolator(ACCELERATE);
-        animator.addListener(new SimpleListener() {
-            @Override
-            public void onAnimationEnd() {
-
-            }
-        });
-        animator.start();
-    }
-
-    public void disappearBluePair() {
-        float finalRadius = Math.max(mBluePair.getWidth(), mBluePair.getHeight()) * 1.5f;
-
-        SupportAnimator animator = ViewAnimationUtils.createCircularReveal(mBluePair, endBlueX, endBlueY,
-                finalRadius, clickedView.getWidth() / 2f);
-        animator.setDuration(500);
-        animator.addListener(new SimpleListener() {
-            @Override
-            public void onAnimationEnd() {
-                sheetsView.setVisibility(View.VISIBLE);
-                mBluePair.setVisibility(View.INVISIBLE);
-                returnBlue();
-            }
-        });
-        animator.setInterpolator(DECELERATE);
-        animator.start();
-    }
-
-    void returnBlue() {
-        clickedView.setVisibility(View.VISIBLE);
-        ArcAnimator arcAnimator = ArcAnimator.createArcAnimator(clickedView, startBlueX,
-                startBlueY, 90, Side.LEFT)
-                .setDuration(500);
-        arcAnimator.addListener(new SimpleListener() {
-            @Override
-            public void onAnimationEnd() {
-                sheetsView.setVisibility(View.VISIBLE);
-            }
-        });
-        arcAnimator.start();
-
+    private void createTransitionAnimation(View view, Intent intent) {
+        View imageView = view.findViewById(R.id.serviceIcon);
+        imageView.setTransitionName(getString(R.string.imageview_transition_name));
+        ActivityOptionsCompat options = ActivityOptionsCompat.
+                makeSceneTransitionAnimation(getActivity(), imageView, imageView.getTransitionName());
+        getActivity().startActivity(intent, options.toBundle());
     }
 
     private void OnServiceClick(View view, int pos) {
@@ -116,7 +51,7 @@ public class HomeFragmentControllers extends HomeFragment implements View.OnClic
 
     @Override
     public void onClick(View v) {
-        disappearBluePair();
+
     }
 
     @Override
@@ -125,13 +60,6 @@ public class HomeFragmentControllers extends HomeFragment implements View.OnClic
         View parentView = (View) view.getParent();
         if (parentView == servicesRV)
             OnServiceClick(view, position);
-
-        else if (parentView == recyclerview) {
-            disappearBluePair();
-            Intent intent = new Intent(getActivity(), AppointmentDescriptionActivity.class);
-            intent.putExtra(Constants.POS, position);
-            startActivity(intent);
-        }
 
     }
 }

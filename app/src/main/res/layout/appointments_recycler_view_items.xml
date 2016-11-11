@@ -4,9 +4,8 @@
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    cardView:cardBackgroundColor="@color/colorPrimary"
-    cardView:cardCornerRadius="@dimen/five_dp"
-    cardView:cardElevation="@dimen/eight_dp"
+    cardView:cardCornerRadius="@dimen/two_dp"
+    cardView:cardElevation="@dimen/five_dp"
     cardView:cardUseCompatPadding="true">
 
     <LinearLayout
@@ -22,7 +21,7 @@
             android:gravity="center_vertical"
             android:padding="@dimen/eight_dp"
             android:text="@string/service_name"
-            android:textColor="#fff"
+            android:textColor="@color/black"
             android:textSize="@dimen/sixteen_sp"
             pixlui:typeface="Titillium-Bold.otf" />
 
@@ -33,7 +32,7 @@
             android:gravity="center_vertical"
             android:padding="@dimen/eight_dp"
             android:text="@string/service_name"
-            android:textColor="#fff"
+            android:textColor="@color/black"
             android:textSize="@dimen/fourteen_sp"
             pixlui:typeface="Titillium-Regular.otf" />
 
@@ -52,10 +51,9 @@
                 android:drawableLeft="@drawable/calendar"
                 android:drawablePadding="@dimen/five_dp"
                 android:foregroundGravity="center_vertical"
-                android:gravity="center_vertical"
-                android:padding="@dimen/seven_dp"
+                android:gravity="center_vertical|start"
                 android:text="@string/dummy_date"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:textSize="@dimen/sixteen_sp"
                 pixlui:typeface="Titillium-Bold.otf" />
 
@@ -70,7 +68,7 @@
                 android:gravity="center_vertical"
                 android:padding="@dimen/seven_dp"
                 android:text="@string/dummy_duration"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:textSize="@dimen/sixteen_sp"
                 pixlui:typeface="Titillium-Bold.otf" />
 
@@ -82,7 +80,7 @@
                 android:gravity="right"
                 android:padding="@dimen/seven_dp"
                 android:text="@string/dummy_amount"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:textSize="@dimen/sixteen_sp"
                 pixlui:typeface="Titillium-Bold.otf" />
 
@@ -95,7 +93,7 @@
             android:gravity="center"
             android:padding="@dimen/ten_dp"
             android:text="@string/remove"
-            android:textColor="#fff"
+            android:textColor="@color/black"
             android:textSize="@dimen/eighteen_sp"
             pixlui:typeface="Titillium-Bold.otf" />
     </LinearLayout>

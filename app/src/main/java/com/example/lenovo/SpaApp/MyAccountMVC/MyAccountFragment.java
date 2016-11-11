@@ -33,8 +33,6 @@ import butterknife.OnClick;
 public class MyAccountFragment extends GlobalFragment {
 
     protected static FragmentActivity context;
-    @InjectView(R.id.logo)
-    ImageView logo;
     @InjectView(R.id.emailLL)
     LinearLayout emailLL;
     @InjectView(R.id.nameLL)

@@ -39,7 +39,6 @@ public class HomeFragment extends GlobalFragment {
     protected FrameLayout mBluePair;
     protected float startBlueX;
     protected float startBlueY;
-    protected RecyclerView recyclerview;
     protected RecyclerView servicesRV;
     protected int endBlueX;
     protected int endBlueY;
@@ -81,7 +80,6 @@ public class HomeFragment extends GlobalFragment {
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
         servicesRV.setHasFixedSize(true);
         servicesRV.setLayoutManager(gridLayoutManager);
-        recyclerview = (RecyclerView) view.findViewById(R.id.recyclerview);
         sheetsView = (LinearLayout) view.findViewById(R.id.sheetsView);
         mParent = view;
         mBluePair = (FrameLayout) view.findViewById(R.id.transition_blue_pair);

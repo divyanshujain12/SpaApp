@@ -3,213 +3,212 @@
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:paddingTop="?attr/actionBarSize"
-    android:orientation="vertical">
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="@dimen/one_hundred_twenty_sp"
-        android:layout_height="@dimen/one_hundred_twenty_sp"
-        android:layout_centerHorizontal="true"
-        android:scaleType="fitXY"
-        android:src="@drawable/three_d_logo" />
-
-
-    <LinearLayout
+    <android.support.v7.widget.CardView
+        xmlns:cardView="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/logo"
-        android:orientation="vertical"
-        android:padding="@dimen/five_dp">
+        cardView:cardCornerRadius="@dimen/two_dp"
+        cardView:cardElevation="@dimen/five_dp"
+        cardView:cardUseCompatPadding="true">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:id="@+id/emailLL"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="@dimen/five_dp">
-
-                <com.neopixl.pixlui.components.textview.TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:padding="@dimen/five_dp"
-                    android:text="@string/email"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/eighteen_sp"
-                    pixlui:typeface="Titillium-Bold.otf" />
-
-                <com.neopixl.pixlui.components.textview.TextView
-                    android:id="@+id/emailTV"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:padding="@dimen/five_dp"
-                    android:text="abc@gmail.com"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/sixteen_sp"
-                    pixlui:typeface="Titillium-Regular.otf" />
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/right" />
-        </RelativeLayout>
-
-        <include layout="@layout/horizontal_white_line" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:id="@+id/nameLL"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="@dimen/five_dp">
-
-                <com.neopixl.pixlui.components.textview.TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:padding="@dimen/five_dp"
-                    android:text="@string/name"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/eighteen_sp"
-                    pixlui:typeface="Titillium-Bold.otf" />
-
-                <com.neopixl.pixlui.components.textview.TextView
-                    android:id="@+id/nameTV"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:padding="@dimen/five_dp"
-                    android:text="abc"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/sixteen_sp"
-                    pixlui:typeface="Titillium-Regular.otf" />
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/right" />
-        </RelativeLayout>
-
-        <include layout="@layout/horizontal_white_line" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:id="@+id/numberLL"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="@dimen/five_dp">
-
-                <com.neopixl.pixlui.components.textview.TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:padding="@dimen/five_dp"
-                    android:text="@string/number"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/eighteen_sp"
-                    pixlui:typeface="Titillium-Bold.otf" />
-
-                <com.neopixl.pixlui.components.textview.TextView
-                    android:id="@+id/numberTV"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:padding="@dimen/five_dp"
-                    android:text="9876543210"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/sixteen_sp"
-                    pixlui:typeface="Titillium-Regular.otf" />
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/right" />
-        </RelativeLayout>
-
-        <include layout="@layout/horizontal_white_line" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:id="@+id/passwordLL"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="@dimen/five_dp">
-
-                <com.neopixl.pixlui.components.textview.TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:padding="@dimen/five_dp"
-                    android:text="@string/pass_caps"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/eighteen_sp"
-                    pixlui:typeface="Titillium-Bold.otf" />
-
-                <com.neopixl.pixlui.components.textview.TextView
-                    android:id="@+id/passwordTV"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:inputType="textPassword"
-                    android:padding="@dimen/five_dp"
-                    android:text="@string/email"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/sixteen_sp"
-                    pixlui:typeface="Titillium-Regular.otf" />
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/right" />
-        </RelativeLayout>
-
-        <include layout="@layout/horizontal_white_line" />
-    </LinearLayout>
-
-        <com.neopixl.pixlui.components.textview.TextView
-            android:id="@+id/submitTV"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_alignParentBottom="true"
-            android:padding="@dimen/fifteen_dp"
-            android:layout_margin="@dimen/ten_dp"
-            android:text="@string/update"
-            android:textAllCaps="true"
-            android:background="@drawable/button"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/eighteen_sp"
-            pixlui:typeface="Titillium-Bold.otf" />
+            android:orientation="vertical"
+            android:padding="@dimen/five_dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/emailLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/five_dp">
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/five_dp"
+                        android:text="@string/email"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/eighteen_sp"
+                        pixlui:typeface="Titillium-Bold.otf" />
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:id="@+id/emailTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/five_dp"
+                        android:text="abc@gmail.com"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sixteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+
+            <include layout="@layout/horizontal_white_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/nameLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/five_dp">
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/five_dp"
+                        android:text="@string/name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/eighteen_sp"
+                        pixlui:typeface="Titillium-Bold.otf" />
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:id="@+id/nameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/five_dp"
+                        android:text="abc"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sixteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+
+            <include layout="@layout/horizontal_white_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/numberLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/five_dp">
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/five_dp"
+                        android:text="@string/number"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/eighteen_sp"
+                        pixlui:typeface="Titillium-Bold.otf" />
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:id="@+id/numberTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/five_dp"
+                        android:text="9876543210"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sixteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+
+            <include layout="@layout/horizontal_white_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/passwordLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/five_dp">
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/five_dp"
+                        android:text="@string/pass_caps"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/eighteen_sp"
+                        pixlui:typeface="Titillium-Bold.otf" />
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:id="@+id/passwordTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/five_dp"
+                        android:text="@string/email"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sixteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+
+            <include layout="@layout/horizontal_white_line" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/submitTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/ten_dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:padding="@dimen/fifteen_dp"
+        android:text="@string/update"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/eighteen_sp"
+        pixlui:typeface="Titillium-Bold.otf" />
 
 </RelativeLayout>

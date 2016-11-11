@@ -19,14 +19,16 @@
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
-        android:name="com.example.lenovo.SpaApp.MyApplication"
+        android:name=".MyApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.example.lenovo.SpaApp.SplashActivity"
+            android:name=".SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -36,23 +38,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.lenovo.SpaApp.MainActivity"
+            android:name=".MainActivity"
             android:label="MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
-            android:name="com.example.lenovo.SpaApp.ForgotPassword"
+            android:name=".ForgotPassword"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AppIntro.AppIntroActivity"
             android:configChanges="orientation|keyboard"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
-            <!--   <intent-filter>
+
+            <!--
+               <intent-filter>
                    <action android:name="android.intent.action.MAIN" />
 
                    <category android:name="android.intent.category.LAUNCHER" />
-               </intent-filter>-->
+               </intent-filter>
+            -->
         </activity>
         <activity
             android:name=".HomeActivityMVC.HomeActivityController"
@@ -64,12 +68,15 @@
         <activity
             android:name=".AppointmentDescriptionActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <!--<activity android:name=".AppointmentBookingMVC.AppointmentBookingActivity" />-->
+        <!-- <activity android:name=".AppointmentBookingMVC.AppointmentBookingActivity" /> -->
         <activity
             android:name=".AppointmentBookingMVC.AppointmentBookingController"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MyCartMVC.MyCartController"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CategoryProducts.ProductsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 

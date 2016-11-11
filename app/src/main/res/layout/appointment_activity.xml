@@ -39,7 +39,7 @@
                     android:padding="@dimen/ten_dp">
 
                     <com.neopixl.pixlui.components.textview.TextView
-                        android:id="@+id/categoryTV"
+                        android:id="@+id/categoryIV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="@dimen/five_dp"

@@ -1,85 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:orientation="vertical"
-    android:padding="@dimen/ten_dp">
+    android:layout_height="wrap_content"
+    cardView:cardCornerRadius="@dimen/two_dp"
+    cardView:cardElevation="@dimen/five_dp"
+    cardView:cardUseCompatPadding="true">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/white_border"
-        android:orientation="vertical">
-
-        <RelativeLayout
-            android:id="@+id/questionLL"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <com.neopixl.pixlui.components.textview.TextView
-                android:id="@+id/questionLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="top"
-                android:padding="10dp"
-                android:text="@string/question"
-                android:textColor="#fff"
-                android:textSize="@dimen/eighteen_sp"
-                pixlui:typeface="Titillium-Bold.otf" />
-
-            <com.neopixl.pixlui.components.textview.TextView
-                android:id="@+id/questionTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/questionLabel"
-                android:gravity="center_vertical"
-                android:text="@string/service"
-                android:textColor="@color/button_color"
-                android:textSize="@dimen/sixteen_sp"
-                pixlui:typeface="Titillium-Regular.otf" />
-
-            <ImageView
-                android:id="@+id/arrowIV"
-                android:layout_width="@dimen/thirty_dp"
-                android:layout_height="@dimen/thirty_dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_gravity="right"
-                android:src="@drawable/right" />
-        </RelativeLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/two_dp">
 
         <LinearLayout
-            android:id="@+id/answerLL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:visibility="gone">
+            android:orientation="vertical">
 
-            <com.neopixl.pixlui.components.textview.TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="top"
-                android:padding="10dp"
-                android:text="@string/answer"
-                android:textColor="#fff"
-                android:textSize="@dimen/eighteen_sp"
-                pixlui:typeface="Titillium-Bold.otf" />
-
-            <com.neopixl.pixlui.components.textview.TextView
-                android:id="@+id/answerTV"
+            <RelativeLayout
+                android:id="@+id/questionLL"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:minLines="1"
-                android:text="@string/service"
-                android:textColor="@color/button_color"
-                android:textSize="@dimen/sixteen_sp"
-                pixlui:typeface="Titillium-Regular.otf" />
+                android:orientation="horizontal">
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:id="@+id/questionLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:padding="10dp"
+                    android:text="@string/question"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/eighteen_sp"
+                    pixlui:typeface="Titillium-Bold.otf" />
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:id="@+id/questionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/questionLabel"
+                    android:gravity="center_vertical"
+                    android:text="@string/service"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+
+                <ImageView
+                    android:id="@+id/arrowIV"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/next" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/answerLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:padding="10dp"
+                    android:text="@string/answer"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/eighteen_sp"
+                    pixlui:typeface="Titillium-Bold.otf" />
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:id="@+id/answerTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minLines="1"
+                    android:text="@string/service"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
+            </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
-    >>>>>>> origin/master
-</LinearLayout>
+</android.support.v7.widget.CardView>

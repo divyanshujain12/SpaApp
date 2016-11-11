@@ -23,7 +23,6 @@ import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
 import com.neopixl.pixlui.components.textview.TextView;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -70,10 +69,11 @@ public class ThirdFragment extends GlobalFragment implements RecyclerViewClick {
     @Override
     public void onJsonObjectSuccess(JSONObject object) {
         try {
+
             selectCityModels = ParsingResponse.getInstance().parseJsonArrayWithJsonObject(object.getJSONArray(Constants.DATA), SelectCityModel.class);
             selectCityAdapter = new SelectCityAdapter(getActivity(), this, selectCityModels);
             cityRV.setAdapter(selectCityAdapter);
-        } catch (JSONException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -106,6 +106,14 @@ public class ThirdFragment extends GlobalFragment implements RecyclerViewClick {
     public void onDestroyView() {
         super.onDestroyView();
         ButterKnife.reset(this);
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+
+        }
     }
 }
 

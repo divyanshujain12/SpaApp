@@ -4,13 +4,11 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingController;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
 import com.example.lenovo.SpaApp.Models.ProductModel;
-import com.example.lenovo.SpaApp.Utils.AlertMessage;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.SingeltonClass;
@@ -26,7 +24,7 @@ import butterknife.OnClick;
  */
 public class AppointmentDescriptionActivity extends GlobalActivity {
 
-    @InjectView(R.id.categoryTV)
+    @InjectView(R.id.categoryIV)
     TextView categoryTV;
     @InjectView(R.id.subCategoryTV)
     TextView productTV;
