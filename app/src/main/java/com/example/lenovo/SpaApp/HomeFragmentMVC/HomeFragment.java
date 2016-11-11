@@ -77,16 +77,11 @@ public class HomeFragment extends GlobalFragment {
     private void initView(View view) {
         CallWebService.getInstance(getActivity(), true).hitJSONObjectVolleyWebService(CallWebService.POST, Constants.WebServices.GET_CATEGORY, createJsonForGetCategories(), this);
         HomeActivity.headerText.setText("SERVICES");
-
         servicesRV = (RecyclerView) view.findViewById(R.id.servicesRV);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
         servicesRV.setHasFixedSize(true);
-        // SpacesItemDecoration spacesItemDecoration = new SpacesItemDecoration((int)getResources().getDimension(R.dimen.five_dp));
         servicesRV.setLayoutManager(gridLayoutManager);
-        // servicesRV.addItemDecoration(spacesItemDecoration);
-
         recyclerview = (RecyclerView) view.findViewById(R.id.recyclerview);
-
         sheetsView = (LinearLayout) view.findViewById(R.id.sheetsView);
         mParent = view;
         mBluePair = (FrameLayout) view.findViewById(R.id.transition_blue_pair);

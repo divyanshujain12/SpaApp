@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/how_it_works_five"/>
-    <item android:drawable="@drawable/white_with_gradient"/>
+    <!--<item android:drawable="@drawable/how_it_works_five" />-->
+    <item android:drawable="@drawable/white_with_gradient" />
 </layer-list>
