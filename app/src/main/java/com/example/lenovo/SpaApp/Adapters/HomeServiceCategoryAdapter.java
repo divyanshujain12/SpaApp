@@ -14,6 +14,8 @@ import com.example.lenovo.SpaApp.Utils.ImageLoading;
 import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.neopixl.pixlui.components.textview.TextView;
 
+import java.util.ArrayList;
+
 /**
  * Created by divyanshu on 4/6/2016.
  */
@@ -22,12 +24,14 @@ public class HomeServiceCategoryAdapter extends RecyclerView.Adapter<RecyclerVie
     private Context context;
     private int itemsCount = 0;
     private RecyclerViewClick recyclerViewClick;
+    private ArrayList<ServiceModel> serviceModels;
     private ImageLoading imageLoading;
 //    private int[] serviceIncons = {R.drawable.service_icon1, R.drawable.service_icon2, R.drawable.service_icon3, R.drawable.service_icon4, R.drawable.service_icon5, R.drawable.service_icon6};
 
-    public HomeServiceCategoryAdapter(Context context, RecyclerViewClick recyclerViewClick) {
+    public HomeServiceCategoryAdapter(Context context, RecyclerViewClick recyclerViewClick, ArrayList<ServiceModel> serviceModels) {
         this.context = context;
         this.recyclerViewClick = recyclerViewClick;
+        this.serviceModels = serviceModels;
         imageLoading = new ImageLoading(context);
 
     }
@@ -48,7 +52,7 @@ public class HomeServiceCategoryAdapter extends RecyclerView.Adapter<RecyclerVie
 
     private void bindDefaultFeedItem(int position, CellFeedViewHolder holder) {
 
-        ServiceModel serviceModel = SingeltonClass.serviceModelArrayList.get(position);
+        ServiceModel serviceModel = serviceModels.get(position);
         //     holder.feedImage.setTag(categoryArray[position]);
         holder.customView.setId(position);
         imageLoading.LoadImage(serviceModel.getIcon(), holder.serviceIcon, null);
@@ -68,7 +72,7 @@ public class HomeServiceCategoryAdapter extends RecyclerView.Adapter<RecyclerVie
 
     @Override
     public int getItemCount() {
-        return SingeltonClass.serviceModelArrayList.size();
+        return serviceModels.size();
     }
 
     @Override

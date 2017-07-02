@@ -4,10 +4,8 @@ package com.example.lenovo.SpaApp.Fragments;
  * Created by Mangal on 2/5/2016.
  */
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.TextInputLayout;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -19,7 +17,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import com.android.volley.Request;
-import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
 import com.example.lenovo.SpaApp.Interfaces.UpdateViewPagerPosition;
 import com.example.lenovo.SpaApp.MyApplication;
 import com.example.lenovo.SpaApp.R;
@@ -27,7 +24,6 @@ import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 import com.example.lenovo.SpaApp.Utils.ConnectionDetector;
 import com.example.lenovo.SpaApp.Utils.Constants;
-import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.neopixl.pixlui.components.edittext.EditText;
 
 import org.json.JSONArray;
@@ -47,14 +43,14 @@ public class SignUpFragment extends GlobalFragment implements View.OnClickListen
     Button signup;
     ConnectionDetector cdr;
     EditText edtxtName, edtemail, edtpassword, cnfedtpassword;
-    TextInputLayout inpName, tilEmail, tilpassword, tilcnfpassword;
+    //TextInputLayout inpName, tilEmail, tilpassword, tilcnfpassword;
     View v;
     CommonFunctions commonFunctions;
     @InjectView(R.id.edtxtNumber)
     EditText edtxtNumber;
-    @InjectView(R.id.inpNumber)
-    TextInputLayout inpNumber;
     UpdateViewPagerPosition updateViewPagerPosition;
+    @InjectView(R.id.addressET)
+    EditText addressET;
 
     public SignUpFragment() {
         // Required empty public constructor
@@ -83,10 +79,10 @@ public class SignUpFragment extends GlobalFragment implements View.OnClickListen
         edtpassword = (EditText) v.findViewById(R.id.edtxtpassword);
         cnfedtpassword = (EditText) v.findViewById(R.id.cnfedtxtpassword);
 
-        inpName = (TextInputLayout) v.findViewById(R.id.inpName);
-        tilEmail = (TextInputLayout) v.findViewById(R.id.inpEmail);
-        tilpassword = (TextInputLayout) v.findViewById(R.id.inppassword);
-        tilcnfpassword = (TextInputLayout) v.findViewById(R.id.inpcnfpassword);
+        //inpName = (TextInputLayout) v.findViewById(R.id.inpName);
+        //tilEmail = (TextInputLayout) v.findViewById(R.id.inpEmail);
+        //tilpassword = (TextInputLayout) v.findViewById(R.id.inppassword);
+        //tilcnfpassword = (TextInputLayout) v.findViewById(R.id.inpcnfpassword);
         edtxtName.addTextChangedListener(new MyTextWatcher(edtxtName));
         edtemail.addTextChangedListener(new MyTextWatcher(edtemail));
         edtpassword.addTextChangedListener(new MyTextWatcher(edtpassword));
@@ -140,11 +136,11 @@ public class SignUpFragment extends GlobalFragment implements View.OnClickListen
         String email = edtemail.getText().toString().trim();
 
         if (email.isEmpty() || !isValidEmail(email)) {
-            tilEmail.setError(getString(R.string.err_msg_email));
+            edtemail.setError(getString(R.string.err_msg_email));
             requestFocus(edtemail);
             return false;
         } else {
-            tilEmail.setErrorEnabled(false);
+            edtemail.setError(null);
         }
 
         return true;
@@ -156,11 +152,11 @@ public class SignUpFragment extends GlobalFragment implements View.OnClickListen
 
     private boolean validatePassword() {
         if (edtpassword.getText().toString().trim().isEmpty()) {
-            tilpassword.setError(getString(R.string.err_msg_password));
+            edtpassword.setError(getString(R.string.err_msg_password));
             requestFocus(edtpassword);
             return false;
         } else {
-            tilpassword.setErrorEnabled(false);
+            edtpassword.setError(null);
         }
 
         return true;
@@ -168,11 +164,11 @@ public class SignUpFragment extends GlobalFragment implements View.OnClickListen
 
     private boolean validatePasswords() {
         if (!edtpassword.getText().toString().trim().equals(cnfedtpassword.getText().toString())) {
-            tilcnfpassword.setError(getString(R.string.mismatch_password));
+            cnfedtpassword.setError(getString(R.string.mismatch_password));
             //requestFocus(cnfedtpassword);
             return false;
         } else {
-            tilcnfpassword.setErrorEnabled(false);
+            cnfedtpassword.setError(null);
         }
 
         return true;
@@ -201,7 +197,7 @@ public class SignUpFragment extends GlobalFragment implements View.OnClickListen
         public void afterTextChanged(Editable editable) {
             switch (view.getId()) {
                 case R.id.edtxtName:
-                    commonFunctions.validateName(edtxtName, inpName);
+                    commonFunctions.validateName(edtxtName);
                     break;
                 case R.id.edtxtEmail:
                     validateEmail();
@@ -213,7 +209,7 @@ public class SignUpFragment extends GlobalFragment implements View.OnClickListen
                     validatePasswords();
                     break;
                 case R.id.edtxtNumber:
-                    commonFunctions.validatePhone(edtxtNumber, inpNumber);
+                    commonFunctions.validatePhone(edtxtNumber);
                     break;
             }
         }
@@ -230,12 +226,12 @@ public class SignUpFragment extends GlobalFragment implements View.OnClickListen
 
     private void submitForm() {
 
-        if (!commonFunctions.validateName(edtxtName, inpName))
+        if (!commonFunctions.validateName(edtxtName))
             return;
         if (!validateEmail()) {
             return;
         }
-        if (!commonFunctions.validatePhone(edtxtNumber, inpNumber)) {
+        if (!commonFunctions.validatePhone(edtxtNumber)) {
             return;
         }
         if (!validatePassword()) {
@@ -243,6 +239,9 @@ public class SignUpFragment extends GlobalFragment implements View.OnClickListen
         }
 
         if (!validatePasswords()) {
+            return;
+        }
+        if (!commonFunctions.validateAddress(addressET)) {
             return;
         }
 
@@ -265,6 +264,7 @@ public class SignUpFragment extends GlobalFragment implements View.OnClickListen
         hashMap.put(Constants.PASSWORD, edtpassword.getText().toString());
         hashMap.put(Constants.NAME, edtxtName.getText().toString());
         hashMap.put(Constants.PHONE_NUMBER, edtxtNumber.getText().toString());
+        hashMap.put(Constants.ADDRESS, addressET.getText().toString());
 
         return hashMap;
     }

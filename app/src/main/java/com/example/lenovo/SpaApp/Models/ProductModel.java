@@ -1,9 +1,12 @@
 package com.example.lenovo.SpaApp.Models;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 /**
  * Created by Lenovo on 23-03-2016.
  */
-public class ProductModel {
+public class ProductModel implements Parcelable{
     String id;
     String category_id;
     String city_id;
@@ -12,6 +15,31 @@ public class ProductModel {
     String price;
     String duration;
     String image;
+
+    public ProductModel(){}
+
+    protected ProductModel(Parcel in) {
+        id = in.readString();
+        category_id = in.readString();
+        city_id = in.readString();
+        title = in.readString();
+        description = in.readString();
+        price = in.readString();
+        duration = in.readString();
+        image = in.readString();
+    }
+
+    public static final Creator<ProductModel> CREATOR = new Creator<ProductModel>() {
+        @Override
+        public ProductModel createFromParcel(Parcel in) {
+            return new ProductModel(in);
+        }
+
+        @Override
+        public ProductModel[] newArray(int size) {
+            return new ProductModel[size];
+        }
+    };
 
     public String getCategory_id() {
         return category_id;
@@ -77,4 +105,20 @@ public class ProductModel {
         this.price = cost;
     }
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(id);
+        dest.writeString(category_id);
+        dest.writeString(city_id);
+        dest.writeString(title);
+        dest.writeString(description);
+        dest.writeString(price);
+        dest.writeString(duration);
+        dest.writeString(image);
+    }
 }

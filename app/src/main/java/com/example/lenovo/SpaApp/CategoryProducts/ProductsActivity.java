@@ -11,10 +11,10 @@ import android.widget.ImageView;
 import com.example.lenovo.SpaApp.Adapters.ProductsAdapter;
 import com.example.lenovo.SpaApp.AppointmentDescriptionActivity;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
+import com.example.lenovo.SpaApp.Models.ServiceModel;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.ImageLoading;
-import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 
 import GlobalClasses.GlobalActivity;
 import butterknife.ButterKnife;
@@ -29,6 +29,7 @@ public class ProductsActivity extends GlobalActivity {
     ImageLoading imageLoading;
     @InjectView(R.id.toolbar)
     ToolbarWithBackButton toolbar;
+    public ServiceModel serviceModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,12 +46,13 @@ public class ProductsActivity extends GlobalActivity {
     private void initViews() {
         imageLoading = new ImageLoading(this);
         int pos = getIntent().getIntExtra(Constants.POS, 0);
-        toolbar.InitToolbar(this, SingeltonClass.serviceModelArrayList.get(pos).getName());
-        imageLoading.LoadImage(SingeltonClass.serviceModelArrayList.get(pos).getIcon(), categoryIV, null);
+        serviceModel = getIntent().getParcelableExtra(Constants.DATA);
+        toolbar.InitToolbar(this, serviceModel.getName());
+        imageLoading.LoadImage(serviceModel.getIcon(), categoryIV, null);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         productsRV.setHasFixedSize(true);
         productsRV.setLayoutManager(linearLayoutManager);
-        productsRV.setAdapter(new ProductsAdapter(this, SingeltonClass.getInstance().getProductsArrayList(pos), this));
+        productsRV.setAdapter(new ProductsAdapter(this, serviceModel.getProducts(), this));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             categoryIV.setTransitionName(getString(R.string.imageview_transition_name));
 
@@ -62,6 +64,7 @@ public class ProductsActivity extends GlobalActivity {
         super.onClickItem(position, view);
         Intent intent = new Intent(this, AppointmentDescriptionActivity.class);
         intent.putExtra(Constants.POS, position);
+        intent.putExtra(Constants.DATA,serviceModel);
         startActivity(intent);
     }
 }

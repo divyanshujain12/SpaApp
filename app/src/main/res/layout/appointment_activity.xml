@@ -110,13 +110,47 @@
                 <com.neopixl.pixlui.components.textview.TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:layout_gravity="center"
                     android:padding="@dimen/five_dp"
-                    android:text="DURATION"
+                    android:text="Select Package"
                     android:textAllCaps="true"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/eighteen_sp"
                     pixlui:typeface="Titillium-Bold.otf" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fifteen_dp"
+                        android:padding="@dimen/five_dp"
+                        android:text="DURATION"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/eighteen_sp"
+                        pixlui:typeface="Titillium-Bold.otf" />
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/fifteen_dp"
+                        android:padding="@dimen/five_dp"
+                        android:text="PRICE"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/eighteen_sp"
+                        pixlui:typeface="Titillium-Bold.otf" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/timeAndDuratinLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
 
                 <com.neopixl.pixlui.components.textview.TextView
                     android:id="@+id/durationTV"
@@ -126,24 +160,25 @@
                     android:text="2 HOURS"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/eighteen_sp"
+                    android:visibility="gone"
                     pixlui:typeface="Titillium-Regular.otf" />
 
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
-        <com.neopixl.pixlui.components.textview.TextView
-            android:id="@+id/confirmTV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_alignParentBottom="true"
-            android:padding="@dimen/fifteen_dp"
-            android:layout_margin="@dimen/ten_dp"
-            android:text="@string/lets_get_pampered"
-            android:textAllCaps="true"
-            android:background="@drawable/button"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/eighteen_sp"
-            pixlui:typeface="Titillium-Bold.otf" />
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/confirmTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/ten_dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:padding="@dimen/fifteen_dp"
+        android:text="@string/lets_get_pampered"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/eighteen_sp"
+        pixlui:typeface="Titillium-Bold.otf" />
 </RelativeLayout>

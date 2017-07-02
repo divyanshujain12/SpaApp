@@ -1,12 +1,10 @@
 package com.example.lenovo.SpaApp.AppointmentBookingMVC;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
@@ -15,11 +13,12 @@ import com.example.lenovo.SpaApp.CustomViews.ExpandableHeightGridView;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
 import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
+import com.example.lenovo.SpaApp.Models.ProductModel;
+import com.example.lenovo.SpaApp.Models.ServiceModel;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
-import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.imanoweb.calendarview.CustomCalendarView;
 import com.neopixl.pixlui.components.checkbox.CheckBox;
 import com.neopixl.pixlui.components.edittext.EditText;
@@ -78,6 +77,8 @@ class AppointmentBookingActivity extends GlobalActivity {
     protected ArrayAdapter<CharSequence> arrayAdapter;
     protected String categoryNameString, nameString, numberString, emailString, addressString, dateString, timeString, additionalString;
     String selectedDuration = "", selectedQuantity = "1";
+    protected ServiceModel serviceModel;
+    protected ProductModel productModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,16 +91,18 @@ class AppointmentBookingActivity extends GlobalActivity {
         setContentView(R.layout.appointment_booking);
         ButterKnife.inject(this);
 
-        if (SingeltonClass.getInstance().serviceModel == null) {
+        /*if (SingeltonClass.getInstance().serviceModel == null) {
             goToHome();
             return;
-        }
+        }*/
         InitViews();
     }
 
     private void InitViews() {
-
-        serviceTV.setText(SingeltonClass.getInstance().serviceModel.getName());
+        serviceModel = getIntent().getParcelableExtra(Constants.DATA);
+        int pos = getIntent().getIntExtra(Constants.POS, 0);
+        productModel = serviceModel.getProducts().get(pos);
+        serviceTV.setText(serviceModel.getName());
 
         toolbar.InitToolbar(this, getString(R.string.booking));
 
@@ -108,6 +111,8 @@ class AppointmentBookingActivity extends GlobalActivity {
         numberET.setText(MySharedPereference.getInstance().getString(this, Constants.PHONE_NUMBER));
 
         emailET.setText(MySharedPereference.getInstance().getString(this, Constants.EMAIL));
+
+        addressET.setText(MySharedPereference.getInstance().getString(this, Constants.ADDRESS));
 
         timingGrid.setExpanded(true);
 
@@ -121,7 +126,7 @@ class AppointmentBookingActivity extends GlobalActivity {
 
         calendarView.setCustomTypeface(Typeface.createFromAsset(getAssets(), "fonts/Titillium-Regular.otf"));
 
-        availableDurations = SingeltonClass.getInstance().productModel.getDuration().trim().split(",");
+        availableDurations = productModel.getDuration().trim().split(",");
 
         ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<>(this, R.layout.single_textview, getResources().getStringArray(R.array.service_booking_quantities));
         spinnerAdapter.setDropDownViewResource(R.layout.single_dropdown_textview);
@@ -131,7 +136,7 @@ class AppointmentBookingActivity extends GlobalActivity {
         selectedDuration = availableDurations[0];
         spinnerAdapter.setDropDownViewResource(R.layout.single_dropdown_textview);
         availableDurationSP.setAdapter(spinnerAdapter);
-        String catID = SingeltonClass.getInstance().serviceModel.getCategory_id();
+        String catID = serviceModel.getCategory_id();
         if (catID.equals("9") || catID.equals("11"))
             initDataForMassageCategory();
         else
@@ -172,9 +177,9 @@ class AppointmentBookingActivity extends GlobalActivity {
 
         HashMap<String, String> hashMap = new HashMap<>();
         hashMap.put(Constants.EMAIL, MySharedPereference.getInstance().getString(this, Constants.EMAIL));
-        hashMap.put(Constants.CITY_ID, SingeltonClass.getInstance().serviceModel.getCity_id());
-        hashMap.put(Constants.CATEGORY_ID, SingeltonClass.getInstance().serviceModel.getCategory_id());
-        hashMap.put(Constants.ID, SingeltonClass.getInstance().productModel.getId());
+        hashMap.put(Constants.CITY_ID, serviceModel.getCity_id());
+        hashMap.put(Constants.CATEGORY_ID, serviceModel.getCategory_id());
+        hashMap.put(Constants.ID, productModel.getId());
         hashMap.put(Constants.DATE, date);
         return hashMap;
 

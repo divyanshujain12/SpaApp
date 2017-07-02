@@ -28,6 +28,7 @@ public class HomeFragmentControllers extends HomeFragment implements View.OnClic
     public void onServiceSelected(View view, int pos) {
         Intent intent = new Intent(getActivity(), ProductsActivity.class);
         intent.putExtra(Constants.POS, pos);
+        intent.putExtra(Constants.DATA, serviceModelArrayList.get(pos));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             createTransitionAnimation(view, intent);
         } else {

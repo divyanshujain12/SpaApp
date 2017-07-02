@@ -64,6 +64,28 @@ public class CommonFunctions {
 
         return true;
     }
+    public boolean validateName(EditText inputName) {
+        if (inputName.getText().toString().trim().isEmpty()) {
+            inputName.setError(((Activity) context).getString(R.string.err_msg_name));
+            requestFocus(inputName);
+            return false;
+        } else {
+            inputName.setError(null);
+        }
+
+        return true;
+    }
+    public boolean validateAddress(EditText inputName) {
+        if (inputName.getText().toString().trim().isEmpty()) {
+            inputName.setError(((Activity) context).getString(R.string.err_msg_address));
+            requestFocus(inputName);
+            return false;
+        } else {
+            inputName.setError(null);
+        }
+
+        return true;
+    }
 
     public boolean validatePhone(EditText inputPhone, TextInputLayout inputLayoutPhone) {
         try {
@@ -73,6 +95,21 @@ public class CommonFunctions {
                 return false;
             } else {
                 inputLayoutPhone.setErrorEnabled(false);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return true;
+    }
+    public boolean validatePhone(EditText inputPhone) {
+        try {
+            if (Integer.parseInt(inputPhone.getText().toString().trim()) < 10) {
+                inputPhone.setError(((Activity) context).getString(R.string.err_msg_number));
+                requestFocus(inputPhone);
+                return false;
+            } else {
+                inputPhone.setError(null);
             }
         } catch (Exception e) {
             e.printStackTrace();

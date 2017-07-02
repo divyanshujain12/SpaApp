@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -28,7 +27,6 @@ import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 import com.example.lenovo.SpaApp.Utils.ConnectionDetector;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
-import com.example.lenovo.SpaApp.Utils.ParsingResponse;
 import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.neopixl.pixlui.components.button.Button;
 import com.neopixl.pixlui.components.edittext.EditText;
@@ -39,8 +37,6 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 
-import io.realm.Realm;
-
 
 public class SignInFragment extends Fragment implements View.OnClickListener, CallBackInterface {
 
@@ -49,7 +45,7 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
     Button signin;
     ConnectionDetector cdr;
     EditText edtemail, edtpassword;
-    TextInputLayout tilEmail, tilpassword;
+    //TextInputLayout tilEmail, tilpassword;
     View v;
     UserDetailModel userDetailModel;
 
@@ -88,8 +84,8 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
         signin = (com.neopixl.pixlui.components.button.Button) getView().findViewById(R.id.signin_button);
         edtemail = (EditText) getView().findViewById(R.id.edtEmail);
         edtpassword = (EditText) getView().findViewById(R.id.edtpassword);
-        tilEmail = (TextInputLayout) getView().findViewById(R.id.tilEmail);
-        tilpassword = (TextInputLayout) getView().findViewById(R.id.tilpassword);
+        //tilEmail = (TextInputLayout) getView().findViewById(R.id.tilEmail);
+        //tilpassword = (TextInputLayout) getView().findViewById(R.id.tilpassword);
         edtemail.addTextChangedListener(new MyTextWatcher(edtemail));
         edtpassword.addTextChangedListener(new MyTextWatcher(edtpassword));
         signin.setOnClickListener(this);
@@ -109,7 +105,8 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
             MySharedPereference.getInstance().setString(getContext(), Constants.EMAIL, new_user.getString(Constants.EMAIL));
             MySharedPereference.getInstance().setString(getContext(), Constants.PHONE_NUMBER, new_user.getString(Constants.PHONE_NUMBER));
             MySharedPereference.getInstance().setBoolean(getContext(), Constants.LOGGED_IN, true);
-            MySharedPereference.getInstance().setString(getContext(),Constants.PASSWORD,edtpassword.getText().toString());
+            MySharedPereference.getInstance().setString(getContext(), Constants.PASSWORD, edtpassword.getText().toString());
+            MySharedPereference.getInstance().setString(getContext(), Constants.ADDRESS, new_user.getString(Constants.ADDRESS));
 
            /* Realm realm = Realm.getDefaultInstance();
             realm.beginTransaction();
@@ -178,12 +175,11 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
         String email = edtemail.getText().toString().trim();
 
         if (email.isEmpty() || !isValidEmail(email)) {
-            tilEmail.setError(getString(R.string.err_msg_email));
+            edtemail.setError(getString(R.string.err_msg_email));
             //requestFocus(edtemail);
             return false;
-        } else {
-            tilEmail.setErrorEnabled(false);
-        }
+        } else
+            edtemail.setError(null);
 
         return true;
     }
@@ -194,11 +190,11 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
 
     private boolean validatePassword() {
         if (edtpassword.getText().toString().trim().isEmpty()) {
-            tilpassword.setError(getString(R.string.err_msg_password));
+            edtpassword.setError(getString(R.string.err_msg_password));
             // requestFocus(edtpassword);
             return false;
         } else {
-            tilpassword.setErrorEnabled(false);
+            edtpassword.setError(null);
         }
 
         return true;
@@ -221,10 +217,10 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Ca
         public void afterTextChanged(Editable editable) {
             switch (view.getId()) {
                 case R.id.edtEmail:
-                    validateEmail();
+                    // validateEmail();
                     break;
                 case R.id.edtpassword:
-                    validatePassword();
+                    //  validatePassword();
                     break;
             }
 

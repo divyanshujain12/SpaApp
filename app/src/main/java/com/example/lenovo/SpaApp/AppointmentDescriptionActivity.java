@@ -3,12 +3,14 @@ package com.example.lenovo.SpaApp;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingController;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
 import com.example.lenovo.SpaApp.Models.ProductModel;
+import com.example.lenovo.SpaApp.Models.ServiceModel;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.SingeltonClass;
@@ -42,6 +44,12 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
     ProductModel productModel;
     @InjectView(R.id.durationTV)
     TextView durationTV;
+    @InjectView(R.id.timeAndDuratinLL)
+    LinearLayout timeAndDurationLL;
+    String[] availableDurations;
+    String[] availableCost;
+    View selectedView = null;
+    public ServiceModel serviceModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +67,8 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
     private void InitViews() {
         setToolBar();
         pos = getIntent().getIntExtra(Constants.POS, -1);
-        productModel = SingeltonClass.getInstance().getProductModel(pos);
+        serviceModel = getIntent().getParcelableExtra(Constants.DATA);
+        productModel = serviceModel.getProducts().get(pos);
         if (productModel != null) {
             setDataToView();
         } else
@@ -68,11 +77,12 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
     }
 
     private void setDataToView() {
-        categoryTV.setText(SingeltonClass.getInstance().serviceModel.getName());
+        categoryTV.setText(serviceModel.getName());
         productTV.setText(productModel.getName());
         priceTV.setText("$ " + productModel.getCost());
         descriptionTV.setText(productModel.getDescription());
         durationTV.setText(productModel.getDuration());
+        addTimeAndDurationView();
     }
 
     private void setToolBar() {
@@ -86,6 +96,8 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
             case R.id.confirmTV:
                 if (MySharedPereference.getInstance().getBoolean(this, Constants.LOGGED_IN)) {
                     Intent intent = new Intent(this, AppointmentBookingController.class);
+                    intent.putExtra(Constants.DATA,serviceModel);
+                    intent.putExtra(Constants.POS,pos);
                     startActivity(intent);
                 } else {
                     goForLogin();
@@ -117,5 +129,43 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
 
+    }
+
+    private void addTimeAndDurationView() {
+
+        String catID = serviceModel.getCategory_id();
+        if (catID.equals("9") || catID.equals("11")) {
+            availableDurations = getResources().getStringArray(R.array.massage_duration_array);
+            availableCost = getResources().getStringArray(R.array.massage_duration_cost);
+        } else {
+            availableDurations = productModel.getDuration().trim().split(",");
+            availableCost = productModel.getCost().trim().split(",");
+        }
+        for (int i = 0; i < availableDurations.length; i++) {
+            View view = LayoutInflater.from(this).inflate(R.layout.product_duration_and_cost_view, null);
+            TextView durationTV = (TextView) view.findViewById(R.id.durationTV);
+            TextView priceTV = (TextView) view.findViewById(R.id.priceTV);
+
+            durationTV.setText(availableDurations[i]);
+            priceTV.setText(availableCost[i]);
+
+            view.setId(i);
+            timeAndDurationLL.addView(view);
+
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int pos = v.getId();
+                    productModel.setDuration(availableDurations[pos]);
+                    productModel.setCost(availableCost[pos]);
+                    v.setBackgroundColor(getResources().getColor(R.color.background_bottom_color));
+                    if (selectedView != null) {
+                        selectedView.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    }
+                    selectedView = v;
+
+                }
+            });
+        }
     }
 }

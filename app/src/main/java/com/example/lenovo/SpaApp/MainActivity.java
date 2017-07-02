@@ -27,8 +27,6 @@ public class MainActivity extends GlobalActivity implements UpdateViewPagerPosit
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
         viewPager = (NonSwipeableViewPager) findViewById(R.id.viewpager);
@@ -37,6 +35,7 @@ public class MainActivity extends GlobalActivity implements UpdateViewPagerPosit
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.setTabTextColors(getResources().getColor(R.color.button_color), getResources().getColor(android.R.color.white));
+        tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.white));
     }
 
     private void setupViewPager(ViewPager viewPager) {

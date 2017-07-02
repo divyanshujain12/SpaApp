@@ -176,6 +176,7 @@
     <string name="massage_table">Massage Table</string>
     <string name="flexible_with_time">flexible with time</string>
     <string name="imageview_transition_name">imageview transition name</string>
+    <string name="forgot_password">Forgot Password?</string>
     <string-array name="timing_array">
         <item>8:00 AM</item>
         <item>9:00 AM</item>

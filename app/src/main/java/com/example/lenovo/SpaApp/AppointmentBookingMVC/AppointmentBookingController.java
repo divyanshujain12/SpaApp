@@ -1,14 +1,11 @@
 package com.example.lenovo.SpaApp.AppointmentBookingMVC;
 
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Toast;
 
 import com.example.lenovo.SpaApp.Interfaces.CallBackInterface;
 import com.example.lenovo.SpaApp.R;
@@ -52,6 +49,7 @@ public class AppointmentBookingController extends AppointmentBookingActivity imp
                 checkDate(view);
             }
         });
+
         quantitySP.setOnItemSelectedListener(this);
         availableDurationSP.setOnItemSelectedListener(this);
         calendarView.setCalendarListener(new CalendarListener() {
@@ -188,13 +186,13 @@ public class AppointmentBookingController extends AppointmentBookingActivity imp
         realm.beginTransaction();
         appointmentBookingModel = realm.createObject(AppointmentBookingModel.class);
 
-        appointmentBookingModel.setCategory_id(SingeltonClass.getInstance().serviceModel.getCategory_id());
-        appointmentBookingModel.setCategory_name(SingeltonClass.getInstance().serviceModel.getName());
-        appointmentBookingModel.setProduct_name(SingeltonClass.getInstance().productModel.getName());
-        appointmentBookingModel.setDuration(SingeltonClass.getInstance().productModel.getDuration());
-        appointmentBookingModel.setCity_id(SingeltonClass.getInstance().productModel.getCity_id());
-        appointmentBookingModel.setProduct_id(SingeltonClass.getInstance().productModel.getId());
-        appointmentBookingModel.setCost(SingeltonClass.getInstance().productModel.getCost());
+        appointmentBookingModel.setCategory_id(serviceModel.getCategory_id());
+        appointmentBookingModel.setCategory_name(serviceModel.getName());
+        appointmentBookingModel.setProduct_name(productModel.getName());
+        appointmentBookingModel.setDuration(productModel.getDuration());
+        appointmentBookingModel.setCity_id(productModel.getCity_id());
+        appointmentBookingModel.setProduct_id(productModel.getId());
+        appointmentBookingModel.setCost(productModel.getCost());
         appointmentBookingModel.setName(nameString);
         appointmentBookingModel.setNumber(numberString);
         appointmentBookingModel.setEmail_id(emailString);

@@ -21,11 +21,11 @@ import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
-import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import GlobalClasses.GlobalFragment;
@@ -49,6 +49,7 @@ public class HomeFragment extends GlobalFragment {
     TextView txtCancel;
     protected final static AccelerateInterpolator ACCELERATE = new AccelerateInterpolator();
     protected final static DecelerateInterpolator DECELERATE = new DecelerateInterpolator();
+    public ArrayList<ServiceModel> serviceModelArrayList = new ArrayList<>();
 
     @Nullable
     @Override
@@ -88,8 +89,8 @@ public class HomeFragment extends GlobalFragment {
     @Override
     public void onJsonObjectSuccess(JSONObject object) throws JSONException {
         super.onJsonObjectSuccess(object);
-        SingeltonClass.serviceModelArrayList = (ParsingResponse.getInstance().parseJsonArrayWithJsonObject(object.getJSONArray(Constants.DATA), ServiceModel.class));
-        servicesRV.setAdapter(new HomeServiceCategoryAdapter(getActivity(), this));
+        serviceModelArrayList = (ParsingResponse.getInstance().parseJsonArrayWithJsonObject(object.getJSONArray(Constants.DATA), ServiceModel.class));
+        servicesRV.setAdapter(new HomeServiceCategoryAdapter(getActivity(), this,serviceModelArrayList));
     }
 
     @Override
