@@ -19,8 +19,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar"
-        android:layout_marginBottom="@dimen/fifty_four_dp">
+        android:layout_above="@+id/bottomLL"
+        android:layout_below="@+id/toolbar">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                         android:id="@+id/categoryIV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="@dimen/five_dp"
+                        android:padding="@dimen/three_dp"
                         android:text="CATEGORY NAME"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/twenty_sp"
@@ -52,7 +52,7 @@
                         android:id="@+id/subCategoryTV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="@dimen/five_dp"
+                        android:padding="@dimen/three_dp"
                         android:text="SUB_CATEGORY NAME"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/sixteen_sp"
@@ -69,9 +69,9 @@
                     android:layout_marginRight="@dimen/ten_dp"
                     android:padding="@dimen/five_dp"
                     android:text="$ 20"
-                    android:visibility="gone"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/twenty_six_sp"
+                    android:visibility="gone"
                     pixlui:typeface="Satisfy-Regular.ttf" />
 
                 <View
@@ -91,7 +91,7 @@
                 <com.neopixl.pixlui.components.textview.TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/five_dp"
+                    android:padding="@dimen/three_dp"
                     android:text="Description"
                     android:textAllCaps="true"
                     android:textColor="@android:color/black"
@@ -102,22 +102,36 @@
                     android:id="@+id/descriptionTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/five_dp"
+                    android:padding="@dimen/three_dp"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
 
-                <com.neopixl.pixlui.components.textview.TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:padding="@dimen/five_dp"
-                    android:text="Select Package"
-                    android:textAllCaps="true"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/eighteen_sp"
-                    pixlui:typeface="Titillium-Bold.otf" />
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/five_dp"
+                        android:text="Select Package"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/eighteen_sp"
+                        pixlui:typeface="Titillium-Bold.otf" />
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(First package is default)"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/fourteen_sp"
+                        pixlui:typeface="Titillium-Regular.otf" />
+                </LinearLayout>
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -127,7 +141,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/fifteen_dp"
-                        android:padding="@dimen/five_dp"
+                        android:padding="@dimen/three_dp"
                         android:text="DURATION"
                         android:textAllCaps="true"
                         android:textColor="@android:color/black"
@@ -139,7 +153,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
                         android:layout_marginTop="@dimen/fifteen_dp"
-                        android:padding="@dimen/five_dp"
+                        android:padding="@dimen/three_dp"
                         android:text="PRICE"
                         android:textAllCaps="true"
                         android:textColor="@android:color/black"
@@ -168,18 +182,39 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.neopixl.pixlui.components.textview.TextView
-        android:id="@+id/confirmTV"
+    <LinearLayout
+        android:id="@+id/bottomLL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="@dimen/ten_dp"
-        android:background="@drawable/button"
-        android:gravity="center"
-        android:padding="@dimen/fifteen_dp"
-        android:text="@string/lets_get_pampered"
-        android:textAllCaps="true"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/eighteen_sp"
-        pixlui:typeface="Titillium-Bold.otf" />
+        android:orientation="vertical">
+
+        <com.neopixl.pixlui.components.textview.TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:padding="@dimen/five_dp"
+            android:text="a minimum booking of $85 is required for any in-home service."
+
+            android:textColor="@color/background_bottom_color"
+            android:textSize="@dimen/fourteen_sp"
+            pixlui:typeface="Titillium-Regular.otf" />
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:id="@+id/confirmTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:padding="@dimen/fifteen_dp"
+            android:text="@string/lets_get_pampered"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/eighteen_sp"
+            pixlui:typeface="Titillium-Bold.otf" />
+    </LinearLayout>
+
 </RelativeLayout>

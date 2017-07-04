@@ -3,7 +3,6 @@
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     android:orientation="vertical">
 
     <LinearLayout
@@ -26,7 +25,7 @@
             android:gravity="center"
             android:text="@string/no_item"
             android:textAllCaps="true"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/twenty_four_sp"
             pixlui:typeface="Satisfy-Regular.ttf" />
     </LinearLayout>

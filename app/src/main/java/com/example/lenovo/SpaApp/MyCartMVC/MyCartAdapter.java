@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingModel;
+import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
-import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
 import com.neopixl.pixlui.components.textview.TextView;
 
 import java.util.ArrayList;
@@ -56,7 +56,7 @@ public class MyCartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         holder.serviceNameTV.setText(appointmentsModel.getCategory_name());
         holder.subServiceNameTV.setText(appointmentsModel.getProduct_name());
         holder.durationTV.setText(appointmentsModel.getTime());
-        holder.amountTV.setText(appointmentsModel.getCost());
+        holder.amountTV.setText(context.getResources().getString(R.string.doller_symbol) + appointmentsModel.getCost());
         holder.dateTV.setText(appointmentsModel.getDate());
         holder.removeTV.setId(position);
         holder.removeTV.setOnClickListener(this);
