@@ -66,8 +66,8 @@
         <item>120 minutes</item>
     </string-array>
     <string-array name="massage_duration_cost">
-        <item>$ 150</item>
-        <item>$ 190</item>
-        <item>$ 300</item>
+        <item>150</item>
+        <item>190</item>
+        <item>300</item>
     </string-array>
 </resources>

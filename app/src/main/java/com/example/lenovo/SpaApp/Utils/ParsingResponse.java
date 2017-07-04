@@ -1,64 +1,58 @@
-package com.example.lenovo.SpaApp.Utils;
-
-import org.json.JSONArray;
+package com.example.lenovo.SpaApp.Utils;import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
- * Created by deii on 11/3/2015.
+ * Created by Divyanshu jain on 11/3/2015.
  */
 public class ParsingResponse {
 
-    private static ParsingResponse parsingResponse = null;
-    private ParsingResponse(){
+    private static ParsingResponse universalParser = null;
+    private Class modelClass;
+
+    private ParsingResponse() {
 
     }
-    public static ParsingResponse getInstance(){
-        if(parsingResponse == null)
-            parsingResponse = new ParsingResponse();
 
-        return parsingResponse;
+    public static ParsingResponse getInstance() {
+        if (universalParser == null)
+            universalParser = new ParsingResponse();
+
+        return universalParser;
     }
 
 
     public <T> ArrayList<T> parseJsonArrayWithJsonObject(JSONArray jsonArray, Class modelClass) {
-        Object obj = null;
+        this.modelClass = modelClass;
+        Object modelClassObject;
 
         ArrayList<T> data = new ArrayList<>();
 
         try {
 
             for (int i = 0; i < jsonArray.length(); i++) {
-                obj = modelClass.newInstance();
-                if (obj instanceof String || obj instanceof Integer || obj instanceof Boolean) {
+                modelClassObject = modelClass.newInstance();
+                if (modelClassObject instanceof String || modelClassObject instanceof Integer || modelClassObject instanceof Boolean) {
                     Object undefinedObj = jsonArray.opt(i);
-                    if (undefinedObj != null && !undefinedObj.equals(null) && !undefinedObj.equals(""))
+                    if (undefinedObj != null && !undefinedObj.equals(null) && !undefinedObj.equals("") && !undefinedObj.equals("null"))
                         data.add((T) undefinedObj);
                 } else {
                     for (Field f : modelClass.getDeclaredFields()) {
                         f.setAccessible(true);
-
                         Object undefinedObj = jsonArray.opt(i);
-
                         if (undefinedObj instanceof JSONObject) {
-                            String name = f.getName();
-                            Object undefinedInnerObj = ((JSONObject) undefinedObj).opt(name);
-                            if (undefinedInnerObj instanceof JSONArray) {
-                                ParameterizedType stringListType = (ParameterizedType) f.getGenericType();
-                                Class<?> stringListClass = (Class<?>) stringListType.getActualTypeArguments()[0];
-                                ArrayList<T> list = parseJsonArrayWithJsonObject((JSONArray) undefinedInnerObj, stringListClass);
-                                f.set(obj, list);
-                            } else if (undefinedInnerObj != null)
-                                f.set(obj, undefinedInnerObj);
-
-                        } else {
-                            f.set(obj, undefinedObj);
+                            IterateForJsonObject(modelClassObject, f, (JSONObject) undefinedObj);
+                        } else if (undefinedObj instanceof JSONArray)
+                            getJsonArrayFromObject(modelClassObject, f, (JSONArray) undefinedObj);
+                        else if (undefinedObj != null) {
+                            f.set(modelClassObject, undefinedObj);
                         }
                     }
-                    data.add((T) obj);
+                    data.add((T) modelClassObject);
                 }
             }
 
@@ -73,36 +67,66 @@ public class ParsingResponse {
     }
 
     public <T> T parseJsonObject(JSONObject jsonObject, Class modelClass) {
-
-        Object object = null;
-
+        Object modelClassObject = null;
         T data = null;
-
         try {
-            object = modelClass.newInstance();
-
+            this.modelClass = modelClass;
+            modelClassObject = modelClass.newInstance();
             for (Field f : modelClass.getDeclaredFields()) {
-
                 f.setAccessible(true);
-                Object undefinedInnerObj = jsonObject.opt(f.getName());
-                if (undefinedInnerObj instanceof JSONArray) {
-
-                    ParameterizedType stringListType = (ParameterizedType) f.getGenericType();
-                    Class<?> stringListClass = (Class<?>) stringListType.getActualTypeArguments()[0];
-                    ArrayList<T> list = parseJsonArrayWithJsonObject((JSONArray) undefinedInnerObj, stringListClass);
-                    f.set(object, list);
-
-                } else
-                    f.set(object, jsonObject.opt(f.getName()));
-
+                String name = f.getName();
+                if (!jsonObject.isNull(name)) {
+                    Object undefinedInnerObj = jsonObject.opt(f.getName());
+                    if (undefinedInnerObj instanceof JSONArray) {
+                        getJsonArrayFromObject(modelClassObject, f, (JSONArray) undefinedInnerObj);
+                    } else if (undefinedInnerObj instanceof JSONObject)
+                        getJsonObjectFromObject(modelClassObject, (JSONObject) undefinedInnerObj);
+                    else if (undefinedInnerObj != null)
+                        f.set(modelClassObject, jsonObject.opt(f.getName()));
+                }
             }
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        data =((T) object);
+        data = ((T) modelClassObject);
 
         return data;
+    }
+
+    private <T> void getJsonArrayFromObject(Object obj, Field f, JSONArray undefinedInnerObj) throws IllegalAccessException {
+        ParameterizedType stringListType = (ParameterizedType) f.getGenericType();
+        Class<?> stringListClass = (Class<?>) stringListType.getActualTypeArguments()[0];
+        ArrayList<T> list = parseJsonArrayWithJsonObject(undefinedInnerObj, stringListClass);
+        f.set(obj, list);
+    }
+
+    private <T> void IterateForJsonObject(Object modelClassObject, Field f, JSONObject undefinedObj) throws IllegalAccessException {
+        String name = f.getName();
+        if (undefinedObj.isNull(name))
+            return;
+        Object undefinedInnerObj = undefinedObj.opt(name);
+        if (undefinedInnerObj instanceof JSONArray) {
+            getJsonArrayFromObject(modelClassObject, f, (JSONArray) undefinedInnerObj);
+        } else if (undefinedInnerObj instanceof JSONObject) {
+            getJsonObjectFromObject(modelClassObject, (JSONObject) undefinedInnerObj);
+        } else if (undefinedInnerObj != null && !undefinedInnerObj.equals("null"))
+            f.set(modelClassObject, undefinedInnerObj);
+    }
+
+    private void getJsonObjectFromObject(Object modelClassObject, JSONObject undefinedInnerObj) throws IllegalAccessException {
+        JSONObject json = undefinedInnerObj;
+        Iterator<String> keys = json.keys();
+        while (keys.hasNext()) {
+            try {
+                Field field = modelClass.getDeclaredField(keys.next());
+                field.setAccessible(true);
+                IterateForJsonObject(modelClassObject, field, undefinedInnerObj);
+
+            } catch (NoSuchFieldException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

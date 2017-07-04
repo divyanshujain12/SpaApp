@@ -16,16 +16,17 @@
         android:orientation="horizontal"
         android:padding="@dimen/five_dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center">-->
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:id="@+id/txtServiceSub"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="center_vertical"
                 android:text="SERVICE NAME"
                 android:textColor="@color/black"
                 android:textSize="@dimen/twenty_sp"
@@ -38,10 +39,11 @@
                 android:layout_marginTop="@dimen/five_dp"
                 android:gravity="center"
                 android:text="$20"
+                android:visibility="gone"
                 android:textColor="@color/black"
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
-        </LinearLayout>
+        <!--</LinearLayout>-->
 
         <ImageView
             android:layout_width="wrap_content"

@@ -134,7 +134,7 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
     private void addTimeAndDurationView() {
 
         String catID = serviceModel.getCategory_id();
-        if (catID.equals("9") || catID.equals("11")) {
+        if (catID.equals(Constants.MASSAGE_CATEGORY_ONE) || catID.equals(Constants.MASSAGE_CATEGORY_TWO)) {
             availableDurations = getResources().getStringArray(R.array.massage_duration_array);
             availableCost = getResources().getStringArray(R.array.massage_duration_cost);
         } else {
@@ -147,7 +147,7 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
             TextView priceTV = (TextView) view.findViewById(R.id.priceTV);
 
             durationTV.setText(availableDurations[i]);
-            priceTV.setText(availableCost[i]);
+            priceTV.setText(getString(R.string.doller_symbol)+availableCost[i]);
 
             view.setId(i);
             timeAndDurationLL.addView(view);

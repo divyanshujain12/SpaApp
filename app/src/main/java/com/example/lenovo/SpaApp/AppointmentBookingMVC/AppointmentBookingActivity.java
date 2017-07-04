@@ -71,6 +71,10 @@ class AppointmentBookingActivity extends GlobalActivity {
     LinearLayout bookingMassageLL;
     @InjectView(R.id.timeFlexibleCB)
     CheckBox timeFlexibleCB;
+    @InjectView(R.id.durationTV)
+    TextView durationTV;
+    @InjectView(R.id.priceTV)
+    TextView priceTV;
     private boolean ifExpand = true;
     protected String[] availableDurations = null;
     protected AppointmentBookingModel appointmentBookingModel = null;
@@ -106,6 +110,10 @@ class AppointmentBookingActivity extends GlobalActivity {
 
         toolbar.InitToolbar(this, getString(R.string.booking));
 
+        durationTV.setText(productModel.getDuration());
+
+        priceTV.setText(getString(R.string.doller_symbol) + productModel.getCost());
+
         nameET.setText(MySharedPereference.getInstance().getString(this, Constants.NAME));
 
         numberET.setText(MySharedPereference.getInstance().getString(this, Constants.PHONE_NUMBER));
@@ -137,7 +145,7 @@ class AppointmentBookingActivity extends GlobalActivity {
         spinnerAdapter.setDropDownViewResource(R.layout.single_dropdown_textview);
         availableDurationSP.setAdapter(spinnerAdapter);
         String catID = serviceModel.getCategory_id();
-        if (catID.equals("9") || catID.equals("11"))
+        if (catID.equals(Constants.MASSAGE_CATEGORY_ONE) || catID.equals(Constants.MASSAGE_CATEGORY_TWO))
             initDataForMassageCategory();
         else
             bookingMassageLL.setVisibility(View.GONE);

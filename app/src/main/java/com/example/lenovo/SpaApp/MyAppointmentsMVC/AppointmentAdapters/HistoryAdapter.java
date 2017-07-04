@@ -78,7 +78,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         holder.descTV.setText(appointmentsModel.getDescription());
         holder.titleTV.setText(appointmentsModel.getTitle());
         holder.durationTV.setText(appointmentsModel.getOrder_time());
-        holder.amountTV.setText(appointmentsModel.getPrice());
+        holder.amountTV.setText(context.getResources().getString(R.string.doller_symbol)+appointmentsModel.getPrice());
         holder.dateTV.setText(appointmentsModel.getOrder_date());
         holder.removeTV.setId(position);
         holder.removeTV.setOnClickListener(this);

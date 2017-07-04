@@ -36,6 +36,8 @@ public class Constants {
     public static String PHONE = "phone";
     public static String QUANTITY = "quantity";
     public static String DURATION = "duration";
+    public static String MASSAGE_CATEGORY_ONE = "9";
+    public static String MASSAGE_CATEGORY_TWO = "11";
 
     public interface WebServices {
 

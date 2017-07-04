@@ -135,7 +135,7 @@ public class HomeActivityController extends HomeActivity {
         String name = fragment.getClass().getName();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         boolean isPopped = fragmentManager.popBackStackImmediate(name, 0);
-        if (fragment != null && !isPopped && fragmentManager.findFragmentByTag(name) == null) {
+        if (fragment != null && !isPopped) {
             if (fragment instanceof HomeFragmentControllers)
                 fragmentTransaction.replace(R.id.frameLayout, fragment);
             else {

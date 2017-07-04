@@ -36,22 +36,21 @@
             android:textSize="@dimen/fourteen_sp"
             pixlui:typeface="Titillium-Regular.otf" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="@dimen/five_dp">
+            android:paddingLeft="@dimen/eight_dp"
+            android:paddingRight="@dimen/eight_dp">
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:id="@+id/dateTV"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:drawableLeft="@drawable/calendar"
-                android:drawablePadding="@dimen/five_dp"
-                android:foregroundGravity="center_vertical"
-                android:gravity="center_vertical|start"
+                android:layout_gravity="start"
+                android:paddingBottom="@dimen/seven_dp"
+                android:paddingTop="@dimen/seven_dp"
                 android:text="@string/dummy_date"
                 android:textColor="@color/black"
                 android:textSize="@dimen/sixteen_sp"
@@ -59,11 +58,9 @@
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:id="@+id/durationTV"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:drawableLeft="@drawable/duration"
-                android:drawablePadding="@dimen/five_dp"
+                android:layout_gravity="center"
                 android:foregroundGravity="center_vertical"
                 android:gravity="center_vertical"
                 android:padding="@dimen/seven_dp"
@@ -74,18 +71,19 @@
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:id="@+id/amountTV"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:gravity="right"
+                android:layout_gravity="right"
                 android:padding="@dimen/seven_dp"
                 android:text="@string/dummy_amount"
                 android:textColor="@color/black"
                 android:textSize="@dimen/sixteen_sp"
                 pixlui:typeface="Titillium-Bold.otf" />
 
-        </LinearLayout>
+        </FrameLayout>
+
         <include layout="@layout/horizontal_white_line" />
+
         <com.neopixl.pixlui.components.textview.TextView
             android:id="@+id/removeTV"
             android:layout_width="match_parent"

@@ -69,6 +69,7 @@
                     android:layout_marginRight="@dimen/ten_dp"
                     android:padding="@dimen/five_dp"
                     android:text="$ 20"
+                    android:visibility="gone"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/twenty_six_sp"
                     pixlui:typeface="Satisfy-Regular.ttf" />

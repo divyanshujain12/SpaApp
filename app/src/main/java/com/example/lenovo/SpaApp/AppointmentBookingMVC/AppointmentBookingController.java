@@ -76,7 +76,7 @@ public class AppointmentBookingController extends AppointmentBookingActivity imp
             if (previousView != null)
                 previousView.setBackgroundColor(Color.TRANSPARENT);
 
-            view.setBackgroundColor(Color.BLACK);
+            view.setBackgroundColor(getResources().getColor(R.color.background_bottom_color));
             previousView = view;
 
         } else {

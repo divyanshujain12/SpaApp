@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/booking_background"
-    android:orientation="vertical"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
     <com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton
         android:id="@+id/toolbar"
@@ -30,8 +30,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"
-        android:layout_above="@+id/confirmTV">
+        android:layout_above="@+id/confirmTV"
+        android:layout_below="@+id/toolbar">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,11 +40,13 @@
 
             <include layout="@layout/appointment_booking_service_name" />
 
+            <include layout="@layout/appointment_booking_cost_and_duration_view" />
+
             <include layout="@layout/vertical_line" />
 
             <include layout="@layout/appointment_booking_top_four_fields" />
 
-            <include layout="@layout/vertical_line" />
+            <!--<include layout="@layout/vertical_line" />-->
 
             <include layout="@layout/appointment_booking_dropdown_bar" />
 

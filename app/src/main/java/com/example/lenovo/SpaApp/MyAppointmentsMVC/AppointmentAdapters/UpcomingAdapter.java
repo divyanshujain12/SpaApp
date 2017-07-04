@@ -97,7 +97,7 @@ public class UpcomingAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         holder.descTV.setText(appointmentsModel.getDescription());
         holder.titleTV.setText(appointmentsModel.getTitle());
         holder.durationTV.setText(appointmentsModel.getOrder_time());
-        holder.amountTV.setText(appointmentsModel.getPrice());
+        holder.amountTV.setText(activity.getResources().getString(R.string.doller_symbol)+appointmentsModel.getPrice());
         holder.dateTV.setText(appointmentsModel.getOrder_date());
         holder.removeTV.setText(activity.getString(R.string.cancel_appointment));
         holder.removeTV.setTag(position);
