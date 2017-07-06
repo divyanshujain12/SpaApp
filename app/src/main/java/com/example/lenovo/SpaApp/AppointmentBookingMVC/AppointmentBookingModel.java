@@ -5,7 +5,7 @@ import io.realm.RealmObject;
 /**
  * Created by divyanshu.jain on 6/2/2016.
  */
-public class AppointmentBookingModel extends RealmObject {
+public class AppointmentBookingModel extends RealmObject{
     private String category_id;
     private String product_id;
     private String category_name;
@@ -21,6 +21,7 @@ public class AppointmentBookingModel extends RealmObject {
     private String cost;
     private String city_id;
     private String quantity;
+    private String therapistType;
 
     public String getCity_id() {
         return city_id;
@@ -140,5 +141,13 @@ public class AppointmentBookingModel extends RealmObject {
 
     public void setQuantity(String quantity) {
         this.quantity = quantity;
+    }
+
+    public String getTherapistType() {
+        return therapistType;
+    }
+
+    public void setTherapistType(String therapistType) {
+        this.therapistType = therapistType;
     }
 }

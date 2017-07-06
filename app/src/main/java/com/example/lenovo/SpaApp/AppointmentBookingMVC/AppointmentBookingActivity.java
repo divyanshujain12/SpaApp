@@ -5,6 +5,7 @@ import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
@@ -33,11 +34,12 @@ import java.util.Locale;
 import GlobalClasses.GlobalActivity;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.OnItemSelected;
 
 /**
  * Created by divyanshu.jain on 5/27/2016.
  */
-class AppointmentBookingActivity extends GlobalActivity {
+class AppointmentBookingActivity extends GlobalActivity implements AdapterView.OnItemSelectedListener {
 
     @InjectView(R.id.timingGrid)
     protected ExpandableHeightGridView timingGrid;
@@ -83,6 +85,8 @@ class AppointmentBookingActivity extends GlobalActivity {
     String selectedDuration = "", selectedQuantity = "1";
     protected ServiceModel serviceModel;
     protected ProductModel productModel;
+    protected String[] therapistArray;
+    String therapistType;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -153,14 +157,13 @@ class AppointmentBookingActivity extends GlobalActivity {
     }
 
     private void initDataForMassageCategory() {
-        ArrayAdapter<String> spinnerAdapter;
-        spinnerAdapter = new ArrayAdapter<>(this, R.layout.single_textview, getResources().getStringArray(R.array.therapist_gender_array));
-        spinnerAdapter.setDropDownViewResource(R.layout.single_dropdown_textview);
-        therapistGenderSP.setAdapter(spinnerAdapter);
 
-        spinnerAdapter = new ArrayAdapter<>(this, R.layout.single_textview, getResources().getStringArray(R.array.massage_table_array));
-        spinnerAdapter.setDropDownViewResource(R.layout.single_dropdown_textview);
-        massageTableSP.setAdapter(spinnerAdapter);
+        ArrayAdapter<String> spinnerAdapter;
+        therapistGenderSP.setOnItemSelectedListener(this);
+        therapistArray = getResources().getStringArray(R.array.therapist_gender_array);
+        spinnerAdapter = new ArrayAdapter<>(this, R.layout.single_textview, therapistArray);
+        //spinnerAdapter.setDropDownViewResource(R.layout.single_dropdown_textview);
+        therapistGenderSP.setAdapter(spinnerAdapter);
     }
 
     protected void submitClickedOK() {
@@ -204,5 +207,15 @@ class AppointmentBookingActivity extends GlobalActivity {
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        therapistType = therapistArray[position];
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 }

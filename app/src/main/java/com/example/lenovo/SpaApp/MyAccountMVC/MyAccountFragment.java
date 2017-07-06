@@ -53,6 +53,14 @@ public class MyAccountFragment extends GlobalFragment {
     TextView passwordTV;
 
     MyAccountFragmentController controller;
+    @InjectView(R.id.emailIV)
+    ImageView emailIV;
+    @InjectView(R.id.nameIV)
+    ImageView nameIV;
+    @InjectView(R.id.numberIV)
+    ImageView numberIV;
+    @InjectView(R.id.passwordIV)
+    ImageView passwordIV;
 
     public static MyAccountFragment getInstance(String Name) {
         MyAccountFragment fragment = new MyAccountFragment();
@@ -94,20 +102,20 @@ public class MyAccountFragment extends GlobalFragment {
         ButterKnife.reset(this);
     }
 
-    @OnClick({R.id.emailLL, R.id.nameLL, R.id.numberLL, R.id.passwordLL, R.id.submitTV})
+    @OnClick({R.id.emailIV, R.id.nameIV, R.id.numberIV, R.id.passwordIV, R.id.submitTV})
     public void onClick(View view) {
 
         switch (view.getId()) {
-            case R.id.emailLL:
+            case R.id.emailIV:
                 controller.showAlertForUpdateData(getContext(), getString(R.string.old_email), emailTV.getText().toString(), getString(R.string.new_email), getString(R.string.enter_email), MyAccountFragmentController.EMAIL, emailTV);
                 break;
-            case R.id.nameLL:
+            case R.id.nameIV:
                 controller.showAlertForUpdateData(getContext(), getString(R.string.old_name), nameTV.getText().toString(), getString(R.string.new_name), getString(R.string.enter_name), MyAccountFragmentController.NAME, nameTV);
                 break;
-            case R.id.numberLL:
+            case R.id.numberIV:
                 controller.showAlertForUpdateData(getContext(), getString(R.string.old_number), numberTV.getText().toString(), getString(R.string.new_number), getString(R.string.enter_number), MyAccountFragmentController.NUMBER, numberTV);
                 break;
-            case R.id.passwordLL:
+            case R.id.passwordIV:
                 controller.showAlertForChangePassword(getContext(), passwordTV);
                 break;
             case R.id.submitTV:

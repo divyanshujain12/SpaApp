@@ -13,7 +13,6 @@ import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
-import com.example.lenovo.SpaApp.Utils.SingeltonClass;
 import com.imanoweb.calendarview.CalendarListener;
 import com.neopixl.pixlui.components.textview.TextView;
 
@@ -202,6 +201,7 @@ public class AppointmentBookingController extends AppointmentBookingActivity imp
         appointmentBookingModel.setAdditional_notes(additionalString);
         appointmentBookingModel.setQuantity(selectedQuantity);
         appointmentBookingModel.setDuration(selectedDuration);
+        appointmentBookingModel.setTherapistType(therapistType);
 
         realm.commitTransaction();
         RealmResults<AppointmentBookingModel> bookingModels = realm.allObjects(AppointmentBookingModel.class);

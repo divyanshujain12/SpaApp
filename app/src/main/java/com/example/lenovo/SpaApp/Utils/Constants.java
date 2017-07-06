@@ -38,6 +38,7 @@ public class Constants {
     public static String DURATION = "duration";
     public static String MASSAGE_CATEGORY_ONE = "9";
     public static String MASSAGE_CATEGORY_TWO = "11";
+    public static String PREFERENCE = "preference";
 
     public interface WebServices {
 

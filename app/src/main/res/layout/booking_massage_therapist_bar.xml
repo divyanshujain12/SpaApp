@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/five_dp"
         android:layout_weight="1"
+        android:visibility="gone"
         android:orientation="vertical">
 
         <com.neopixl.pixlui.components.textview.TextView
