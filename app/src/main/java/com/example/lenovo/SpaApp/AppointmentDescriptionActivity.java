@@ -141,6 +141,8 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
             availableDurations = productModel.getDuration().trim().split(",");
             availableCost = productModel.getCost().trim().split(",");
         //}
+        productModel.setDuration(availableDurations[0]);
+        productModel.setCost(availableCost[0]);
         for (int i = 0; i < availableDurations.length; i++) {
             View view = LayoutInflater.from(this).inflate(R.layout.product_duration_and_cost_view, null);
             TextView durationTV = (TextView) view.findViewById(R.id.durationTV);
