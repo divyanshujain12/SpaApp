@@ -120,11 +120,11 @@ public class MyApplication extends Application {
     @Override
     public void onTrimMemory(int level) {
         super.onTrimMemory(level);
-        if (level > TRIM_MEMORY_MODERATE || level>=TRIM_MEMORY_COMPLETE) {
-            // Restart app so data is reloaded
-            android.os.Process.killProcess(android.os.Process.myPid());
-
-        }
+//        if (level > TRIM_MEMORY_MODERATE || level>=TRIM_MEMORY_COMPLETE) {
+//            // Restart app so data is reloaded
+//            android.os.Process.killProcess(android.os.Process.myPid());
+//
+//        }
 
     }
 

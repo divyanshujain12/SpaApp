@@ -7,13 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 
 import com.example.lenovo.SpaApp.Interfaces.RecyclerViewClick;
 import com.example.lenovo.SpaApp.Models.SelectCityModel;
-import com.example.lenovo.SpaApp.Models.ServiceModel;
 import com.example.lenovo.SpaApp.R;
-import com.example.lenovo.SpaApp.Utils.SingeltonClass;
+import com.example.lenovo.SpaApp.Utils.ImageLoading;
+import com.example.lenovo.SpaApp.Utils.RoundedImageView;
 import com.neopixl.pixlui.components.textview.TextView;
 
 import java.util.ArrayList;
@@ -27,11 +26,13 @@ public class SelectCityAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     private RecyclerViewClick recyclerViewClick;
     private ArrayList<SelectCityModel> selectCityModels;
     private int lastPosition = -1;
+    private ImageLoading imageLoading;
 
     public SelectCityAdapter(Context context, RecyclerViewClick recyclerViewClick, ArrayList<SelectCityModel> selectCityModels) {
         this.context = context;
         this.recyclerViewClick = recyclerViewClick;
         this.selectCityModels = selectCityModels;
+        imageLoading = new ImageLoading(context, true);
 
     }
 
@@ -55,6 +56,7 @@ public class SelectCityAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         holder.customView.setId(position);
         holder.cityNumberTV.setText(String.valueOf(position + 1));
         holder.cityNameTV.setText(selectCityModels.get(position).getName());
+        imageLoading.LoadImage(selectCityModels.get(position).getThumbnail(), holder.cityIV, null);
         holder.customView.setOnClickListener(this);
         setAnimation(holder.customView, position);
     }
@@ -77,12 +79,14 @@ public class SelectCityAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     public static class CellFeedViewHolder extends RecyclerView.ViewHolder {
         TextView cityNumberTV, cityNameTV;
         View customView;
+        RoundedImageView cityIV;
 
         public CellFeedViewHolder(View view) {
             super(view);
             customView = view;
             cityNumberTV = (TextView) view.findViewById(R.id.cityNumberTV);
             cityNameTV = (TextView) view.findViewById(R.id.cityNameTV);
+            cityIV = (RoundedImageView) view.findViewById(R.id.cityIV);
         }
     }
 

@@ -8,6 +8,7 @@ public class SelectCityModel {
     private String name;
     private String status;
     private String edate;
+    private String thumbnail;
 
     public String getCity_id() {
         return city_id;
@@ -39,5 +40,13 @@ public class SelectCityModel {
 
     public void setEdate(String edate) {
         this.edate = edate;
+    }
+
+    public String getThumbnail() {
+        return thumbnail;
+    }
+
+    public void setThumbnail(String thumbnail) {
+        this.thumbnail = thumbnail;
     }
 }

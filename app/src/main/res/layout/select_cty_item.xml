@@ -15,6 +15,11 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
+        <com.example.lenovo.SpaApp.Utils.RoundedImageView
+            android:id="@+id/cityIV"
+            android:layout_width="@dimen/fourty_dp"
+            android:layout_height="@dimen/fourty_dp" />
+
         <com.neopixl.pixlui.components.textview.TextView
             android:id="@+id/cityNumberTV"
             android:layout_width="wrap_content"
@@ -24,6 +29,7 @@
             android:text="1"
             android:textColor="#fff"
             android:textSize="@dimen/twenty_six_sp"
+            android:visibility="gone"
             pixlui:typeface="Titillium-Bold.otf" />
 
         <com.neopixl.pixlui.components.textview.TextView
