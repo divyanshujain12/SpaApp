@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:2:1-83:12
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
 	package
 		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:3:5-40
 		INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml
@@ -81,7 +81,7 @@ ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:22:5-75
 	android:name
 		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:22:22-72
 application
-ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:24:5-81:19
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:24:5-79:19
 MERGED from [com.android.support:design:23.1.0] D:\prs\SpaApp\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:cardview-v7:23.0.1] D:\prs\SpaApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.1\AndroidManifest.xml:22:5-20
 MERGED from [SpaApp:explosionfield:unspecified] D:\prs\SpaApp\app\build\intermediates\exploded-aar\SpaApp\explosionfield\unspecified\AndroidManifest.xml:11:5-14:19
@@ -111,16 +111,6 @@ ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:30:9-39:20
 		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:33:13-56
 	android:name
 		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:31:13-43
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:34:13-38:29
-action#android.intent.action.MAIN
-ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:35:17-69
-	android:name
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:35:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:37:17-77
-	android:name
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:37:27-74
 activity#com.example.lenovo.SpaApp.MainActivity
 ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:40:9-43:59
 	android:label
@@ -136,7 +126,7 @@ ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:44:9-46:59
 	android:name
 		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:45:13-43
 activity#com.example.lenovo.SpaApp.AppIntro.AppIntroActivity
-ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:47:9-60:20
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:47:9-58:20
 	android:screenOrientation
 		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:50:13-49
 	android:configChanges
@@ -145,41 +135,51 @@ ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:47:9-60:20
 		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:51:13-56
 	android:name
 		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:48:13-54
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:53:16-57:32
+action#android.intent.action.MAIN
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:54:20-72
+	android:name
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:54:28-69
+category#android.intent.category.LAUNCHER
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:56:20-80
+	android:name
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:56:30-77
 activity#com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController
-ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:61:9-64:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:59:9-62:59
 	android:launchMode
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:63:13-44
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:61:13-44
 	android:theme
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:64:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:62:13-56
 	android:name
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:62:13-67
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:60:13-67
 activity#com.example.lenovo.SpaApp.SelectCityActivity
-ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:65:9-67:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:63:9-65:59
 	android:theme
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:67:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:65:13-56
 	android:name
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:66:13-47
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:64:13-47
 activity#com.example.lenovo.SpaApp.AppointmentDescriptionActivity
-ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:68:9-70:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:66:9-68:59
 	android:theme
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:70:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:68:13-56
 	android:name
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:69:13-59
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:67:13-59
 activity#com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingController
-ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:72:9-74:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:70:9-72:59
 	android:theme
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:74:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:72:13-56
 	android:name
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:73:13-79
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:71:13-79
 activity#com.example.lenovo.SpaApp.MyCartMVC.MyCartController
-ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:75:9-77:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:73:9-75:59
 	android:theme
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:77:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:75:13-56
 	android:name
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:76:13-55
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:74:13-55
 activity#com.example.lenovo.SpaApp.CategoryProducts.ProductsActivity
-ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:78:9-80:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:76:9-78:59
 	android:theme
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:80:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:78:13-56
 	android:name
-		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:79:13-62
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:77:13-62

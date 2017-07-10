@@ -11,9 +11,12 @@ import android.view.WindowManager;
 import android.view.animation.AnimationUtils;
 
 import com.example.lenovo.SpaApp.Adapters.HowItWorksPagerAdapter;
+import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.SelectCityActivity;
 import com.example.lenovo.SpaApp.Utils.CirclePageIndicator;
+import com.example.lenovo.SpaApp.Utils.Constants;
+import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -36,6 +39,11 @@ public class AppIntroActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
+        if (MySharedPereference.getInstance().getBoolean(this, Constants.LOGGED_IN)) {
+            Intent i = new Intent(this, HomeActivityController.class);
+            startActivity(i);
+
+        }
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -53,7 +61,7 @@ public class AppIntroActivity extends AppCompatActivity {
 
         viewpager = (ViewPager) findViewById(R.id.viewpager);
         viewPagerAdapter = new HowItWorksPagerAdapter(getSupportFragmentManager());
-        viewPagerAdapter.addFragment(new FirstFragment(), "");
+        //viewPagerAdapter.addFragment(new FirstFragment(), "");
         viewPagerAdapter.addFragment(new SecondFragment(), "");
         viewPagerAdapter.addFragment(new ThirdFragment(), "");
         viewpager.setAdapter(viewPagerAdapter);
