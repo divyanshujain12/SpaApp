@@ -41,6 +41,7 @@ public class AppIntroActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         if (MySharedPereference.getInstance().getBoolean(this, Constants.LOGGED_IN)) {
             Intent i = new Intent(this, HomeActivityController.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(i);
 
         }
