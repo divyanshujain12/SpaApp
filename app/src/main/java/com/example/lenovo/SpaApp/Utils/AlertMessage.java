@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
-import android.view.WindowManager;
 
 import com.example.lenovo.SpaApp.Interfaces.AlertDialogInterface;
 import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
@@ -92,6 +91,29 @@ public class AlertMessage {
                 dialog.dismiss();
             }
         });
+
+        alertDialog.show();
+    }
+
+    public static void showAlertDialogWithBothCallback(Context context, String title, String message, String positiveText, String negativeText, final AlertDialogInterface alertDialogInterface) {
+        AlertDialog alertDialog = new AlertDialog.Builder(context, R.style.MyAlertDialogStyle).create();
+        alertDialog.setTitle(title);
+        alertDialog.setMessage(message);
+        alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, positiveText, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                alertDialogInterface.Yes();
+                dialog.dismiss();
+            }
+        });
+        alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, negativeText, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                alertDialogInterface.No();
+                dialog.dismiss();
+            }
+        });
+
 
         alertDialog.show();
     }

@@ -3,6 +3,7 @@ package com.example.lenovo.SpaApp.HomeFragmentMVC;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -80,7 +81,7 @@ public class HomeFragment extends GlobalFragment {
         servicesRV = (RecyclerView) view.findViewById(R.id.servicesRV);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
         servicesRV.setHasFixedSize(true);
-        servicesRV.setLayoutManager(gridLayoutManager);
+        servicesRV.setLayoutManager(new LinearLayoutManager(getContext()));
         sheetsView = (LinearLayout) view.findViewById(R.id.sheetsView);
         mParent = view;
         mBluePair = (FrameLayout) view.findViewById(R.id.transition_blue_pair);
@@ -90,7 +91,7 @@ public class HomeFragment extends GlobalFragment {
     public void onJsonObjectSuccess(JSONObject object) throws JSONException {
         super.onJsonObjectSuccess(object);
         serviceModelArrayList = (ParsingResponse.getInstance().parseJsonArrayWithJsonObject(object.getJSONArray(Constants.DATA), ServiceModel.class));
-        servicesRV.setAdapter(new HomeServiceCategoryAdapter(getActivity(), this,serviceModelArrayList));
+        servicesRV.setAdapter(new HomeServiceCategoryAdapter(getActivity(), this, serviceModelArrayList));
     }
 
     @Override

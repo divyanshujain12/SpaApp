@@ -60,10 +60,6 @@
 
             <include layout="@layout/vertical_line" />
 
-            <include layout="@layout/appointment_booking_additional_field" />
-
-            <include layout="@layout/vertical_line" />
-
             <com.neopixl.pixlui.components.checkbox.CheckBox
                 android:id="@+id/timeFlexibleCB"
                 android:layout_width="wrap_content"
@@ -71,6 +67,11 @@
                 android:text="@string/flexible_with_time"
                 android:textColor="@color/black"
                 pixlui:typeface="Titillium-Regular.otf" />
+
+            <include layout="@layout/vertical_line" />
+
+            <include layout="@layout/appointment_booking_additional_field" />
+
 
             <include layout="@layout/vertical_line" />
         </LinearLayout>

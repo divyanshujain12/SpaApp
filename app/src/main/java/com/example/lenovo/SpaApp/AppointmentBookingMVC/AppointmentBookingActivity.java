@@ -13,9 +13,10 @@ import android.widget.Spinner;
 import com.example.lenovo.SpaApp.CustomViews.ExpandableHeightGridView;
 import com.example.lenovo.SpaApp.CustomViews.ToolbarWithBackButton;
 import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
-import com.example.lenovo.SpaApp.Interfaces.SnackBarCallback;
+import com.example.lenovo.SpaApp.Interfaces.AlertDialogInterface;
 import com.example.lenovo.SpaApp.Models.ProductModel;
 import com.example.lenovo.SpaApp.Models.ServiceModel;
+import com.example.lenovo.SpaApp.MyCartMVC.MyCartController;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
 import com.example.lenovo.SpaApp.Utils.Constants;
@@ -34,7 +35,6 @@ import java.util.Locale;
 import GlobalClasses.GlobalActivity;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import butterknife.OnItemSelected;
 
 /**
  * Created by divyanshu.jain on 5/27/2016.
@@ -168,15 +168,28 @@ class AppointmentBookingActivity extends GlobalActivity implements AdapterView.O
 
     protected void submitClickedOK() {
         toolbar.setProductCount();
+        AlertMessage.showAlertDialogWithBothCallback(this, "Alert", "Almost finished!  Checkout now or add additional services.", "CHECKOUT", "ADD MORE", new AlertDialogInterface() {
+            @Override
+            public void Yes() {
+                Intent intent = new Intent(AppointmentBookingActivity.this, MyCartController.class);
+                startActivity(intent);
+                finish();
+            }
 
-        AlertMessage.showAlertDialogWithOkCallBack(this, getString(R.string.alert), getString(R.string.successfully_added), new SnackBarCallback() {
+            @Override
+            public void No() {
+                goToHome();
+            }
+        });
+        /*AlertMessage.showAlertDialogWithOkCallBack(this, getString(R.string.alert), getString(R.string.successfully_added), new SnackBarCallback() {
             @Override
             public void doAction() {
                 goToHome();
             }
-        });
+        });*/
 
     }
+
 
     public void onResume() {
         super.onResume();

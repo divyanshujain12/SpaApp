@@ -27,10 +27,10 @@ public class MenuFragmentAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         if (MySharedPereference.getInstance().getBoolean(context, Constants.LOGGED_IN)) {
             serviceName = context.getResources().getStringArray(R.array.logged_in_nav_name);
             serviceIcons = context.getResources().getIntArray(R.array.logged_in_nav_icon);
-            serviceIcons = new int[]{R.drawable.home, R.drawable.my_appointment, R.drawable.how_it_works, R.drawable.faq, R.drawable.my_account, R.drawable.corporate_inquiries, R.drawable.contact, R.drawable.logout};
+            serviceIcons = new int[]{R.drawable.home, R.drawable.my_appointment ,R.drawable.my_account, R.drawable.how_it_works,  R.drawable.corporate_inquiries, R.drawable.contact, R.drawable.logout};
         } else {
             serviceName = context.getResources().getStringArray(R.array.logged_out_nav_name);
-            serviceIcons = new int[]{R.drawable.home, R.drawable.how_it_works, R.drawable.faq, R.drawable.corporate_inquiries, R.drawable.contact, R.drawable.login};
+            serviceIcons = new int[]{R.drawable.home, R.drawable.how_it_works, R.drawable.corporate_inquiries, R.drawable.contact, R.drawable.login};
         }
         this.context = context;
 

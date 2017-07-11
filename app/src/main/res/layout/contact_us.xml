@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:paddingTop="?attr/actionBarSize"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/ten_dp"
-            android:background="@drawable/black_seventy_seven"
+
             android:padding="@dimen/five_dp"
             android:textColorHint="@android:color/darker_gray">
 
@@ -31,17 +31,19 @@
                 android:nextFocusLeft="@+id/edtpassword"
                 android:nextFocusUp="@+id/edtpassword"
                 android:padding="@dimen/ten_dp"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textColorHint="@android:color/darker_gray"
                 android:textSize="@dimen/sixteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
         </android.support.design.widget.TextInputLayout>
 
+        <include layout="@layout/vertical_line" />
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/ten_dp"
-            android:background="@drawable/black_seventy_seven"
+
             android:padding="@dimen/five_dp"
             android:textColorHint="@android:color/darker_gray">
 
@@ -55,17 +57,19 @@
                 android:nextFocusLeft="@+id/edtpassword"
                 android:nextFocusUp="@+id/edtpassword"
                 android:padding="@dimen/ten_dp"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textColorHint="@android:color/darker_gray"
                 android:textSize="@dimen/sixteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
         </android.support.design.widget.TextInputLayout>
 
+        <include layout="@layout/vertical_line" />
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/ten_dp"
-            android:background="@drawable/black_seventy_seven"
+
             android:padding="@dimen/five_dp"
             android:textColorHint="@android:color/darker_gray">
 
@@ -80,17 +84,19 @@
                 android:nextFocusLeft="@+id/edtpassword"
                 android:nextFocusUp="@+id/edtpassword"
                 android:padding="@dimen/ten_dp"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textColorHint="@android:color/darker_gray"
                 android:textSize="@dimen/sixteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
         </android.support.design.widget.TextInputLayout>
 
+        <include layout="@layout/vertical_line" />
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/ten_dp"
-            android:background="@drawable/black_seventy_seven"
+
             android:padding="@dimen/five_dp"
             android:textColorHint="@android:color/darker_gray">
 
@@ -104,17 +110,18 @@
                 android:nextFocusLeft="@+id/edtpassword"
                 android:nextFocusUp="@+id/edtpassword"
                 android:padding="@dimen/ten_dp"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textColorHint="@android:color/darker_gray"
                 android:textSize="@dimen/sixteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
         </android.support.design.widget.TextInputLayout>
 
+        <include layout="@layout/vertical_line" />
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/ten_dp"
-            android:background="@drawable/black_seventy_seven"
             android:minHeight="@dimen/one_hundred_twenty_sp"
             android:padding="@dimen/five_dp"
             android:textColorHint="@android:color/darker_gray">
@@ -129,11 +136,13 @@
                 android:minHeight="@dimen/fourty_dp"
                 android:minLines="4"
                 android:padding="@dimen/ten_dp"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textColorHint="@android:color/darker_gray"
                 android:textSize="@dimen/sixteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
         </android.support.design.widget.TextInputLayout>
+
+        <include layout="@layout/vertical_line" />
     </LinearLayout>
 
     <com.neopixl.pixlui.components.textview.TextView
@@ -141,11 +150,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/ten_dp"
         android:background="@drawable/button"
         android:gravity="center"
         android:padding="@dimen/fifteen_dp"
         android:text="@string/submit"
-        android:layout_margin="@dimen/ten_dp"
         android:textAllCaps="true"
         android:textColor="@android:color/white"
         android:textSize="@dimen/eighteen_sp"

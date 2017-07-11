@@ -3,9 +3,8 @@
     <string-array name="logged_in_nav_name">
         <item>Home</item>
         <item>My Appointments</item>
-        <item>How It Works</item>
-        <item>FAQ</item>
         <item>My Account</item>
+        <item>How It Works</item>
         <item>Corporate Inquiries</item>
         <item>Contact</item>
         <item>Logout</item>

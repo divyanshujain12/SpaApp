@@ -98,21 +98,18 @@ public class HomeActivityController extends HomeActivity {
                 checkLogin(MyAppointmentsFragment.getInstance("MY APPOINTMENTS"));
                 break;
             case 2:
-                checkLogin(HowItWorksFragment.getInstance("How It Works"));
-                break;
-            case 3:
-                updateFragment(FaqFragmentController.getInstance("FAQ'S"));
-                break;
-            case 4:
                 checkLogin(MyAccountFragment.getInstance("MY ACCOUNT"));
                 break;
-            case 5:
+            case 3:
+                checkLogin(HowItWorksFragment.getInstance("How It Works"));
+                break;
+            case 4:
                 updateFragment(CorporateFragmentController.getInstance("CORPORATE INQUIRIES"));
                 break;
-            case 6:
+            case 5:
                 checkLogin(ContactFragment.getInstance("CONTACTS"));
                 break;
-            case 7:
+            case 6:
                 logout();
                 break;
         }
