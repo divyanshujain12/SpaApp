@@ -53,12 +53,12 @@ public final class R {
 		public static final int ic_arrow_up_white = 0x7f020079;
 	}
 	public static final class id {
-		public static final int dateTitle = 0x7f0e00cd;
-		public static final int daysContainer = 0x7f0e00cb;
-		public static final int leftButton = 0x7f0e00cc;
-		public static final int rightButton = 0x7f0e00ce;
-		public static final int titleLayout = 0x7f0e00c9;
-		public static final int weekLayout = 0x7f0e00ca;
+		public static final int dateTitle = 0x7f0e00df;
+		public static final int daysContainer = 0x7f0e00dd;
+		public static final int leftButton = 0x7f0e00de;
+		public static final int rightButton = 0x7f0e00e0;
+		public static final int titleLayout = 0x7f0e00db;
+		public static final int weekLayout = 0x7f0e00dc;
 	}
 	public static final class layout {
 		public static final int custom_calendar_layout = 0x7f04002f;

@@ -3,8 +3,9 @@
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:orientation="vertical">
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,7 +22,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/company_details"
-                android:textColor="@android:color/white"
                 android:textSize="@dimen/twenty_sp"
                 pixlui:typeface="Titillium-Bold.otf" />
 
@@ -34,7 +34,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/ten_dp"
-                    android:background="@drawable/black_seventy_seven"
+
                     android:padding="@dimen/five_dp"
                     android:textColorHint="@android:color/darker_gray">
 
@@ -48,18 +48,18 @@
                         android:nextFocusLeft="@+id/edtpassword"
                         android:nextFocusUp="@+id/edtpassword"
                         android:padding="@dimen/ten_dp"
-                        android:textColor="@android:color/white"
                         android:textColorHint="@android:color/darker_gray"
                         android:textSize="@dimen/sixteen_sp"
                         pixlui:typeface="Titillium-Regular.otf" />
                 </android.support.design.widget.TextInputLayout>
 
+                <include layout="@layout/horizontal_white_line" />
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/ten_dp"
-                    android:background="@drawable/black_seventy_seven"
+
                     android:padding="@dimen/five_dp"
                     android:textColorHint="@android:color/darker_gray">
 
@@ -73,18 +73,19 @@
                         android:nextFocusLeft="@+id/edtpassword"
                         android:nextFocusUp="@+id/edtpassword"
                         android:padding="@dimen/ten_dp"
-                        android:textColor="@android:color/white"
+
                         android:textColorHint="@android:color/darker_gray"
                         android:textSize="@dimen/sixteen_sp"
                         pixlui:typeface="Titillium-Regular.otf" />
                 </android.support.design.widget.TextInputLayout>
 
+                <include layout="@layout/horizontal_white_line" />
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/ten_dp"
-                    android:background="@drawable/black_seventy_seven"
+
                     android:padding="@dimen/five_dp"
                     android:textColorHint="@android:color/darker_gray">
 
@@ -98,18 +99,19 @@
                         android:nextFocusLeft="@+id/edtpassword"
                         android:nextFocusUp="@+id/edtpassword"
                         android:padding="@dimen/ten_dp"
-                        android:textColor="@android:color/white"
+
                         android:textColorHint="@android:color/darker_gray"
                         android:textSize="@dimen/sixteen_sp"
                         pixlui:typeface="Titillium-Regular.otf" />
                 </android.support.design.widget.TextInputLayout>
 
+                <include layout="@layout/horizontal_white_line" />
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/ten_dp"
-                    android:background="@drawable/black_seventy_seven"
+
                     android:padding="@dimen/five_dp"
                     android:textColorHint="@android:color/darker_gray">
 
@@ -123,17 +125,19 @@
                         android:nextFocusLeft="@+id/edtpassword"
                         android:nextFocusUp="@+id/edtpassword"
                         android:padding="@dimen/ten_dp"
-                        android:textColor="@android:color/white"
+
                         android:textColorHint="@android:color/darker_gray"
                         android:textSize="@dimen/sixteen_sp"
                         pixlui:typeface="Titillium-Regular.otf" />
                 </android.support.design.widget.TextInputLayout>
 
+                <include layout="@layout/horizontal_white_line" />
+
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/ten_dp"
-                    android:background="@drawable/black_seventy_seven"
+
                     android:padding="@dimen/five_dp"
                     android:textColorHint="@android:color/darker_gray">
 
@@ -147,12 +151,13 @@
                         android:nextFocusLeft="@+id/edtpassword"
                         android:nextFocusUp="@+id/edtpassword"
                         android:padding="@dimen/ten_dp"
-                        android:textColor="@android:color/white"
+
                         android:textColorHint="@android:color/darker_gray"
                         android:textSize="@dimen/sixteen_sp"
                         pixlui:typeface="Titillium-Regular.otf" />
                 </android.support.design.widget.TextInputLayout>
 
+                <include layout="@layout/horizontal_white_line" />
             </LinearLayout>
 
             <com.neopixl.pixlui.components.textview.TextView
@@ -160,7 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/twenty_dp"
                 android:text="@string/book_service_for"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/twenty_sp"
                 pixlui:typeface="Titillium-Bold.otf" />
 
@@ -169,7 +174,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/eighteen_sp"
                 android:text="@string/prefered_date"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -177,7 +182,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:orientation="horizontal">
 
                 <Spinner
@@ -196,12 +201,13 @@
 
             </LinearLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.textview.TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/eighteen_sp"
                 android:text="@string/hours_of_services"
-                android:textColor="@android:color/white"
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -209,7 +215,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -226,7 +231,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/eighteen_sp"
                         android:text="@string/from"
-                        android:textColor="@android:color/white"
+
                         android:textSize="@dimen/sixteen_sp"
                         pixlui:typeface="Titillium-Regular.otf" />
 
@@ -237,6 +242,7 @@
 
                         />
                 </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -251,7 +257,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/eighteen_sp"
                         android:text="@string/to"
-                        android:textColor="@android:color/white"
+
                         android:textSize="@dimen/sixteen_sp"
                         pixlui:typeface="Titillium-Regular.otf" />
 
@@ -260,14 +266,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
-
             </LinearLayout>
+
+            <include layout="@layout/horizontal_white_line" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -281,30 +288,32 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/twenty_dp"
                 android:text="@string/massage_service"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/twenty_sp"
                 pixlui:typeface="Titillium-Bold.otf" />
 
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/chairMassageCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/chair_massage"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -312,7 +321,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -326,20 +335,22 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/reflexologyCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/Reflexology"
-                android:textColor="@android:color/white"
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -347,7 +358,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -361,20 +372,23 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/shiatsuCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/Shiatsu_Streching"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -382,12 +396,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
                 <com.neopixl.pixlui.components.edittext.EditText
-                    android:id="@+id/edtShaitsuTech"
+                    android:id="@+id/edtShiatsuTech"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
@@ -396,20 +410,23 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/aromaCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/Aromatherapy"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -417,7 +434,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -431,20 +448,23 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/reikiCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/Reiki"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -452,7 +472,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -466,20 +486,23 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/handFootCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/Hand_foot_massage"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -487,7 +510,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -501,29 +524,32 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
+
+            <include layout="@layout/horizontal_white_line" />
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/twenty_dp"
                 android:text="@string/Services_for_Male"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/twenty_sp"
                 pixlui:typeface="Titillium-Bold.otf" />
 
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/expManiCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/express_manicure"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -531,7 +557,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -545,20 +571,23 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/showShineCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/Shoe_Shine"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -566,7 +595,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -580,20 +609,23 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/razorShaveCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/Razor_Shave"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -601,7 +633,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -615,30 +647,32 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/twenty_dp"
                 android:text="@string/Hair_Face"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/twenty_sp"
                 pixlui:typeface="Titillium-Bold.otf" />
 
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/browBarCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/brow_bar"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -646,7 +680,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -660,20 +694,23 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/braidBarCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/braid_bar"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -681,7 +718,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -695,20 +732,23 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/lashBarCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/lash_bar"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -716,7 +756,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -730,20 +770,23 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/miniFacialCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/mini_facials"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -751,7 +794,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -765,20 +808,23 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/makeupCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/makeup_touch_ups"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -786,7 +832,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -800,29 +846,32 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/browThreadCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/brow_threading"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/black_seventy_seven"
-                android:padding="@dimen/five_dp"
+
                 android:layout_marginTop="@dimen/five_dp"
+                android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
                 <com.neopixl.pixlui.components.edittext.EditText
@@ -835,29 +884,32 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
+
+            <include layout="@layout/horizontal_white_line" />
 
             <com.neopixl.pixlui.components.textview.TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/twenty_dp"
                 android:text="@string/well_being"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/twenty_sp"
                 pixlui:typeface="Titillium-Bold.otf" />
 
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/nutriConsultCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/nutriotion_consultation"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -865,7 +917,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -879,20 +931,23 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/yogaClassesCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/yoga_classes"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -900,7 +955,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -914,20 +969,23 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
 
+            <include layout="@layout/horizontal_white_line" />
+
             <com.neopixl.pixlui.components.checkbox.CheckBox
+                android:id="@+id/fitnessInstCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:button="@xml/custom_checkbox"
                 android:paddingLeft="@dimen/five_dp"
                 android:text="@string/fitness_inst"
-                android:textColor="@android:color/white"
+
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -935,7 +993,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:background="@drawable/black_seventy_seven"
+
                 android:padding="@dimen/five_dp"
                 android:textColorHint="@android:color/darker_gray">
 
@@ -949,11 +1007,13 @@
                     android:nextFocusLeft="@+id/edtpassword"
                     android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
-                    android:textColor="@android:color/white"
+
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="@dimen/sixteen_sp"
                     pixlui:typeface="Titillium-Regular.otf" />
             </android.support.design.widget.TextInputLayout>
+
+            <include layout="@layout/horizontal_white_line" />
         </LinearLayout>
     </ScrollView>
 
@@ -962,11 +1022,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/black_seventy_seven"
+        android:background="@color/background_bottom_color"
         android:gravity="center"
         android:padding="@dimen/fifteen_dp"
         android:text="@string/request_a_quote"
-        android:textColor="@android:color/white"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/ten_dp"
         android:textSize="@dimen/twenty_sp"
         pixlui:typeface="Titillium-Bold.otf" />
 </RelativeLayout>
