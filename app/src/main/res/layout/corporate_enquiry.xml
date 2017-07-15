@@ -174,7 +174,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/eighteen_sp"
                 android:text="@string/prefered_date"
+                android:textSize="@dimen/eighteen_sp"
+                pixlui:typeface="Titillium-Regular.otf" />
 
+            <com.neopixl.pixlui.components.textview.TextView
+                android:id="@+id/preferredDateTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/select_your_preferred_data"
+                android:padding="@dimen/ten_dp"
+                android:text=""
                 android:textSize="@dimen/eighteen_sp"
                 pixlui:typeface="Titillium-Regular.otf" />
 
@@ -182,8 +191,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <Spinner
                     android:id="@+id/monthSP"
@@ -215,57 +224,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/five_dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="visible">
 
-                <LinearLayout
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:id="@+id/fromTimeTV"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/five_dp"
                     android:layout_weight="1"
+                    android:hint="@string/from"
+                    android:padding="@dimen/ten_dp"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
 
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <com.neopixl.pixlui.components.textview.TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/eighteen_sp"
-                        android:text="@string/from"
-
-                        android:textSize="@dimen/sixteen_sp"
-                        pixlui:typeface="Titillium-Regular.otf" />
-
-                    <Spinner
-                        android:id="@+id/fromSP"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        />
-                </LinearLayout>
-
-
-                <LinearLayout
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:id="@+id/toTimeTV"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/five_dp"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                    android:hint="@string/to"
+                    android:padding="@dimen/ten_dp"
+                    android:textSize="@dimen/sixteen_sp"
+                    pixlui:typeface="Titillium-Regular.otf" />
 
-                    <com.neopixl.pixlui.components.textview.TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/eighteen_sp"
-                        android:text="@string/to"
 
-                        android:textSize="@dimen/sixteen_sp"
-                        pixlui:typeface="Titillium-Regular.otf" />
-
-                    <Spinner
-                        android:id="@+id/toSP"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
             </LinearLayout>
 
             <include layout="@layout/horizontal_white_line" />
@@ -284,9 +267,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/approximate_guests"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -331,9 +313,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -368,9 +349,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -406,9 +386,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -444,9 +423,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -482,9 +460,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -520,9 +497,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -567,9 +543,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -605,9 +580,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -643,9 +617,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -690,9 +663,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -728,9 +700,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -766,9 +737,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -804,9 +774,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -842,9 +811,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -880,9 +848,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -927,9 +894,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -965,9 +931,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -1003,9 +968,8 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="@string/number_of_technician"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:nextFocusLeft="@+id/edtpassword"
-                    android:nextFocusUp="@+id/edtpassword"
                     android:padding="@dimen/ten_dp"
 
                     android:textColorHint="@android:color/darker_gray"
@@ -1022,12 +986,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/ten_dp"
         android:background="@color/background_bottom_color"
         android:gravity="center"
         android:padding="@dimen/fifteen_dp"
         android:text="@string/request_a_quote"
         android:textColor="@color/white"
-        android:layout_margin="@dimen/ten_dp"
         android:textSize="@dimen/twenty_sp"
         pixlui:typeface="Titillium-Bold.otf" />
 </RelativeLayout>

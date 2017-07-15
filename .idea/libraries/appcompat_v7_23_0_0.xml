@@ -4,8 +4,8 @@
       <root url="jar://$PROJECT_DIR$/mcalendarview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/mcalendarview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res" />
-      <root url="jar://$PROJECT_DIR$/mcalendarview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/8abc441db64e0def11b8059f674c72e6e506706c/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/8abc441db64e0def11b8059f674c72e6e506706c/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

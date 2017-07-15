@@ -3,183 +3,111 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\divyanshu.jain\.gradle\caches\modules-2\files-2.1\eu.the4thfloor.volley\com.android.volley\2015.05.28\b0b08cc0ac897e596abe6b263a9507cba875b705\com.android.volley-2015.05.28.jar"
+        jar="D:\Projects\SpaApp\Calendarlibrary\build\intermediates\bundles\default\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="b0b08cc0ac897e596abe6b263a9507cba875b705">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\com.android.volley-2015.05.28_6ab610e6e5181382f1acea8efdc4af4bec3bb9eb.jar" />
+        sha1="7607ab24235745cb163a7d3b0eba746cf0f910c0">
+        <dex dex="D:\Projects\SpaApp\app\build\intermediates\pre-dexed\debug\classes_2ddc17c5a0403823344443504076bfaa0faa5954.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\divyanshu.jain\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\library-2.4.0_94040e2ece0496862d8e0878a31cb3ad750d6682.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\divyanshu.jain\.gradle\caches\modules-2\files-2.1\io.realm\realm-android\0.83.0\fcc995aa3a075352049ed77afb34c61559a73931\realm-android-0.83.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fcc995aa3a075352049ed77afb34c61559a73931">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\realm-android-0.83.0_7a85c1e767ed4c79de84b181db7507543fade020.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\prs\SpaApp\app\build\intermediates\exploded-aar\com.github.ozodrukh\CircularReveal\1.0.4\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="57c231461bd4ab97550b0b053c159e4f13ffc869">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\com.github.ozodrukh-CircularReveal-1.0.4_515723c0e59c557265c88957557998c29d255600.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\prs\SpaApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.0.1_5a7cf8c66b06e4e85eb9bbf54a6d0db6806813b2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\prs\SpaApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0_10e27ca5673fd20974988dc6d1b705fdbc86c18c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\prs\SpaApp\app\build\intermediates\exploded-aar\com.facebook.shimmer\shimmer\0.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="37e257a25703e692be3f9aa9c4bf7de620e9271a">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\com.facebook.shimmer-shimmer-0.1.0_ff59987eb129248943323e568153caa6bba28036.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\prs\SpaApp\app\build\intermediates\exploded-aar\SpaApp\animator\unspecified\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="43352a2a55c02421f9273d005fc72f929ba69f1f">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\SpaApp-animator-unspecified_50cae19ab111335843cd81ac033e7453719055ae.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\prs\SpaApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.0_1119d743152e9af2d4b2989ceac932c1642b0443.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\prs\SpaApp\app\build\intermediates\exploded-aar\SpaApp\explosionfield\unspecified\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="148ee59653a33922158dee0685399e23e9a8bf24">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\SpaApp-explosionfield-unspecified_2500e507d7711ad3972e4b00235b81373b178343.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\prs\SpaApp\app\build\intermediates\exploded-aar\com.dev.sacot41\scviewpager\0.0.4\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4747fb10a7d8577c5df0044df302f2cbfc437aa7">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\com.dev.sacot41-scviewpager-0.0.4_c2d54119949721c9e5311707fd5e5ef78a206277.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\prs\SpaApp\app\libs\pixlui.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="78d2debdd2b4be6b34779cdef6d386d5cdf53e06">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\pixlui_c1cc81b6d36802e65bc884fce6c90adf1df2f4ee.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\divyanshu.jain\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.1.0\63735f48b82bcd24cdd33821342428252eb1ca5a\butterknife-6.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\butterknife-6.1.0_b04625f9cd0a708c484b835b6e5188f438f69b20.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\prs\SpaApp\app\build\intermediates\exploded-aar\SpaApp\menulibrary\unspecified\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e068d5732dadd015edb1ac1ed9a40555a5c251d4">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\SpaApp-menulibrary-unspecified_63e72ff93ce5739bd9f09cc675294958febbd3c0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\prs\SpaApp\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.1.0_82d8921c30f489df4286bad83956cad43b0a335e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\prs\SpaApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.0_850582de175dda87d36e443d27f9b1bf38df92e8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\prs\SpaApp\app\libs\universal-image-loader-1.9.3.jar"
+        jar="D:\Projects\SpaApp\app\libs\universal-image-loader-1.9.3.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3_5b5a15fbe4499de87b458ed63b4f41d2cd58bb1f.jar" />
+        <dex dex="D:\Projects\SpaApp\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3_260b7385be464ce9e8826ed94ac5977f856a5e0c.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jar="C:\Users\divyanshuPC\.android\build-cache\566dfc38519bb6752a45c03fefbd079a3447fca8\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0_fc80e34357bf597130664351e7099bedb8a017ea.jar" />
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="D:\Projects\SpaApp\app\build\intermediates\pre-dexed\debug\classes_43ea54adb643053997b3637b551d2eb671d0f2a8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="D:\prs\SpaApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jar="D:\Projects\SpaApp\explosionfield\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="148ee59653a33922158dee0685399e23e9a8bf24">
+        <dex dex="D:\Projects\SpaApp\app\build\intermediates\pre-dexed\debug\classes_e2c262ee71fc6811610376fe62ef6c916f44c020.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projects\SpaApp\animator\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d52ff15a958fcb42e29ab068f6061407a67c2bba">
+        <dex dex="D:\Projects\SpaApp\app\build\intermediates\pre-dexed\debug\classes_d005877e92e048576b08da2240a070f96194afc2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\softwares\android_sdk_and_studio\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="D:\Projects\SpaApp\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_f881333cf11802a2aeb5eb32fa16aedfa4b25175.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\divyanshuPC\.android\build-cache\83cae55430a3982a4da978ea2ebd4bfc7497b843\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="D:\Projects\SpaApp\app\build\intermediates\pre-dexed\debug\classes_c28742d4aa3841cb7f79914fbad5b1e5f1a36d34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\divyanshuPC\.android\build-cache\566dfc38519bb6752a45c03fefbd079a3447fca8\output\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="D:\Projects\SpaApp\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_2f4abe8bc25c56654b4738fad20589905bbd4767.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projects\SpaApp\app\libs\pixlui.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78d2debdd2b4be6b34779cdef6d386d5cdf53e06">
+        <dex dex="D:\Projects\SpaApp\app\build\intermediates\pre-dexed\debug\pixlui_b34c136fea693d2ba48e18031533df69815c0b84.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\divyanshuPC\.android\build-cache\f50c680ba9b1138d38b3b2b6a0243fedd5645f5a\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.1.0_82dce34a3f95cf55af77ba3fa70efcc20ea84315.jar" />
+        <dex dex="D:\Projects\SpaApp\app\build\intermediates\pre-dexed\debug\classes_1fcac22c300e82e89e90b678e88d627236e7336f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="D:\prs\SpaApp\app\build\intermediates\exploded-aar\SpaApp\Calendarlibrary\unspecified\jars\classes.jar"
+        jar="C:\Users\divyanshuPC\.android\build-cache\7ad327c89437752582f2a4ad08a62ebdee0195f1\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="1c4688ca505d040e858585ced786d7608d06fff4">
-        <dex dex="D:\prs\SpaApp\app\build\intermediates\pre-dexed\debug\SpaApp-Calendarlibrary-unspecified_b99e05e231e87b6df305bc5cc7b8b744f79d8c57.jar" />
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="D:\Projects\SpaApp\app\build\intermediates\pre-dexed\debug\classes_675411421aa6cbe8e19e57746e40006ec36125b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projects\SpaApp\menulibrary\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e068d5732dadd015edb1ac1ed9a40555a5c251d4">
+        <dex dex="D:\Projects\SpaApp\app\build\intermediates\pre-dexed\debug\classes_65d660419109dff3e864b94b7dd4400d41ed3be4.jar" />
     </item>
 
 </items>

@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="shimmer-0.1.0">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.facebook.shimmer/shimmer/0.1.0/res" />
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.facebook.shimmer/shimmer/0.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/ca846156658dc0307e8265c494f816fae97bd947/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/ca846156658dc0307e8265c494f816fae97bd947/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

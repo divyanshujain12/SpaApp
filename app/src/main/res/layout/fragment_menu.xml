@@ -27,7 +27,7 @@
             android:layout_height="@dimen/one_hundred_dp"
             android:layout_centerHorizontal="true"
             android:scaleType="fitXY"
-            android:src="@drawable/three_d_logo"
+
             android:visibility="gone" />
 
         <android.support.v7.widget.RecyclerView

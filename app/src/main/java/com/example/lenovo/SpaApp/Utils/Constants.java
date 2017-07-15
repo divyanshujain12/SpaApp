@@ -40,6 +40,33 @@ public class Constants {
     public static String MASSAGE_CATEGORY_TWO = "11";
     public static String PREFERENCE = "preference";
 
+    public static String COMPANY_NAME = "company_name";
+    public static String LOCATION_OF_SERVICE = "location_of_service";
+    public static String CONTACT_PERSON = "contact_person";
+    public static String PREFERRED_DATE = "preferred_date";
+    public static String TIME_FROM = "time_from";
+    public static String TIME_TO = "time_to";
+    public static String NUMBER_OF_GUESTS = "number_of_guests";
+    public static String CHAIR_MASSAGE = "chair_massage";
+    public static String REFLEXOLOGY = "reflexology";
+    public static String SHIATSU_STRETCHING = "shiatsu_stretching";
+    public static String AROMATHERAPY = "aromatherapy";
+    public static String REIKI = "reiki";
+    public static String HAND_FOOT_MASSAGE = "hand_foot_massage";
+    public static String EXPRESS_MANICRE = "express_manicure";
+    public static String SHOE_SHINE = "shoe_shine";
+    public static String RAZOR_SHAVE = "razor_shave";
+    public static String BROW_BAR = "brow_bar";
+    public static String BRAID_BAR = "braid_bar";
+    public static String LASH_BAR = "lash_bar";
+    public static String MINI_FACIAL = "mini_facial";
+    public static String MAKEUP_TOUCH_UPS = "makeup_touch_ups";
+    public static String BROW_THREADING = "brow_threading";
+    public static String NUTRITION_CONSULTATION = "nutrition_consultation";
+    public static String YOGA_CLASSES = "yoga_classes";
+    public static String FITNESS_INSTRUCTION = "fitness_instruction";
+
+
     public interface WebServices {
 
         //public static String BASE = "http://whatsupguys.in/demo/trust1_api/api/";

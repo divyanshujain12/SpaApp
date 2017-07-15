@@ -11,5 +11,5 @@
         android:layout_height="@dimen/two_hundred_fifty_dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/thirty_dp"
-        android:src="@drawable/three_d_logo" />
+        android:src="@drawable/logo_white" />
 </RelativeLayout>

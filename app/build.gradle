@@ -62,4 +62,5 @@ dependencies {
     compile 'io.realm:realm-android:0.83.0+'
     compile "com.dev.sacot41:scviewpager:0.0.4"
     compile files('libs/universal-image-loader-1.9.3.jar')
+    compile 'com.wdullaer:materialdatetimepicker:2.5.0'
 }

@@ -179,6 +179,7 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="price">price</string>
     <string name="doller_symbol">$ </string>
+    <string name="select_your_preferred_data">Select your preferred Data</string>
     <string-array name="timing_array">
         <item>8:00 AM</item>
         <item>8:30 AM</item>
