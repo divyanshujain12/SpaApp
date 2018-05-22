@@ -191,13 +191,11 @@
         android:orientation="vertical">
 
         <com.neopixl.pixlui.components.textview.TextView
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:gravity="center"
             android:padding="@dimen/five_dp"
-            android:text="a minimum booking of $85 is required for any in-home service."
+            android:text="@string/please_note_we_kindly_request_a_minimum_booking_order_of_85"
 
             android:textColor="@color/background_bottom_color"
             android:textSize="@dimen/fourteen_sp"

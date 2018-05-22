@@ -147,6 +147,7 @@ public class CorporateFragment extends GlobalFragment implements CompoundButton.
     public static final String DATE_FORMAT = "yyyy-MM-dd";
     Calendar mcurrentDate, mCurrentTime;
 
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -328,6 +329,7 @@ public class CorporateFragment extends GlobalFragment implements CompoundButton.
                 break;
         }
     }
+
 
     private String getDataFromEditText(EditText editText) {
         return editText.getText().toString();

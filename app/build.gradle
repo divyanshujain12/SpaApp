@@ -58,8 +58,10 @@ dependencies {
     compile project(':animator')
     compile project(':menulibrary')
     compile 'com.jakewharton:butterknife:6.1.0'
+    annotationProcessor 'com.jakewharton:butterknife:6.1.0'
     compile project(':Calendarlibrary')
     compile 'io.realm:realm-android:0.83.0+'
+    annotationProcessor 'io.realm:realm-android:0.83.0+'
     compile "com.dev.sacot41:scviewpager:0.0.4"
     compile files('libs/universal-image-loader-1.9.3.jar')
     compile 'com.wdullaer:materialdatetimepicker:2.5.0'
