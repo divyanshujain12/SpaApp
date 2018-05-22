@@ -50,6 +50,8 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
     String[] availableCost;
     View selectedView = null;
     public ServiceModel serviceModel;
+    @InjectView(R.id.minimumOrderTV)
+    TextView minimumOrderTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,12 +98,12 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
             case R.id.confirmTV:
                 if (MySharedPereference.getInstance().getBoolean(this, Constants.LOGGED_IN)) {
                     Intent intent = new Intent(this, AppointmentBookingController.class);
-                    intent.putExtra(Constants.DATA,serviceModel);
-                    intent.putExtra(Constants.POS,pos);
+                    intent.putExtra(Constants.DATA, serviceModel);
+                    intent.putExtra(Constants.POS, pos);
                     startActivity(intent);
                 } else {
                     goForLogin();
-                   /* AlertMessage.showAlertDialogWithCallBack(this, "LOGIN ALERT", getString(R.string.log_in_alert_msg), this);*/
+                    /* AlertMessage.showAlertDialogWithCallBack(this, "LOGIN ALERT", getString(R.string.log_in_alert_msg), this);*/
                 }
                 break;
         }
@@ -138,8 +140,8 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
 //            availableDurations = getResources().getStringArray(R.array.massage_duration_array);
 //            availableCost = getResources().getStringArray(R.array.massage_duration_cost);
 //        } else {
-            availableDurations = productModel.getDuration().trim().split(",");
-            availableCost = productModel.getCost().trim().split(",");
+        availableDurations = productModel.getDuration().trim().split(",");
+        availableCost = productModel.getCost().trim().split(",");
         //}
         productModel.setDuration(availableDurations[0]);
         productModel.setCost(availableCost[0]);
@@ -149,7 +151,7 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
             TextView priceTV = (TextView) view.findViewById(R.id.priceTV);
 
             durationTV.setText(availableDurations[i]);
-            priceTV.setText(getString(R.string.doller_symbol)+availableCost[i]);
+            priceTV.setText(getString(R.string.doller_symbol) + availableCost[i]);
 
             view.setId(i);
             timeAndDurationLL.addView(view);
