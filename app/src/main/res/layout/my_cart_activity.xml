@@ -35,7 +35,7 @@
             android:clickable="true"
             android:gravity="center"
             android:padding="@dimen/fifteen_dp"
-            android:text="@string/checkout"
+            android:text="@string/send_enquiry"
             android:textAllCaps="true"
             android:textColor="@android:color/white"
             android:textSize="@dimen/eighteen_sp"
