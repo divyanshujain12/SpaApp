@@ -1,0 +1,80 @@
+Index: .idea/libraries/recyclerview_v7_23_0_1.xml
+===================================================================
+--- .idea/libraries/recyclerview_v7_23_0_1.xml	(revision bd5e02b428c7dc762206bb61174678dcb2052aee)
++++ .idea/libraries/recyclerview_v7_23_0_1.xml	
+@@ -1,8 +1,8 @@
+ <component name="libraryTable">
+   <library name="recyclerview-v7-23.0.1">
+     <CLASSES>
+-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/res" />
+-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar!/" />
++      <root url="jar://$USER_HOME$/.android/build-cache/c59414d1d51f2d0ec601df3040043160d28c894b/output/jars/classes.jar!/" />
++      <root url="file://$USER_HOME$/.android/build-cache/c59414d1d51f2d0ec601df3040043160d28c894b/output/res" />
+     </CLASSES>
+     <JAVADOC />
+     <SOURCES>
+\ No newline at end of file
+Index: .idea/libraries/appcompat_v7_23_0_1.xml
+===================================================================
+--- .idea/libraries/appcompat_v7_23_0_1.xml	(revision bd5e02b428c7dc762206bb61174678dcb2052aee)
++++ .idea/libraries/appcompat_v7_23_0_1.xml	
+@@ -4,8 +4,8 @@
+       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/annotations.zip!/" />
+     </ANNOTATIONS>
+     <CLASSES>
+-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar!/" />
+-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res" />
++      <root url="jar://$USER_HOME$/.android/build-cache/d127f5fc5c7a2ddcb481ec02e82cc5b57738e208/output/jars/classes.jar!/" />
++      <root url="file://$USER_HOME$/.android/build-cache/d127f5fc5c7a2ddcb481ec02e82cc5b57738e208/output/res" />
+     </CLASSES>
+     <JAVADOC />
+     <SOURCES>
+\ No newline at end of file
+Index: .idea/libraries/support_annotations_23_0_1.xml
+===================================================================
+--- .idea/libraries/support_annotations_23_0_1.xml	(revision bd5e02b428c7dc762206bb61174678dcb2052aee)
++++ .idea/libraries/support_annotations_23_0_1.xml	
+@@ -1,7 +1,7 @@
+ <component name="libraryTable">
+   <library name="support-annotations-23.0.1">
+     <CLASSES>
+-      <root url="jar://C:/AndroidSDK/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar!/" />
++      <root url="jar://E:/softwares/android_sdk_and_studio/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar!/" />
+     </CLASSES>
+     <JAVADOC />
+     <SOURCES>
+\ No newline at end of file
+Index: .idea/libraries/design_23_0_1.xml
+===================================================================
+--- .idea/libraries/design_23_0_1.xml	(revision bd5e02b428c7dc762206bb61174678dcb2052aee)
++++ .idea/libraries/design_23_0_1.xml	
+@@ -4,8 +4,8 @@
+       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/annotations.zip!/" />
+     </ANNOTATIONS>
+     <CLASSES>
+-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar!/" />
+-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/res" />
++      <root url="jar://$USER_HOME$/.android/build-cache/551f29991b9bf5d0625d09aa00de56c35b5b2052/output/jars/classes.jar!/" />
++      <root url="file://$USER_HOME$/.android/build-cache/551f29991b9bf5d0625d09aa00de56c35b5b2052/output/res" />
+     </CLASSES>
+     <JAVADOC />
+     <SOURCES />
+\ No newline at end of file
+Index: .idea/libraries/support_v4_23_0_1.xml
+===================================================================
+--- .idea/libraries/support_v4_23_0_1.xml	(revision bd5e02b428c7dc762206bb61174678dcb2052aee)
++++ .idea/libraries/support_v4_23_0_1.xml	
+@@ -4,9 +4,9 @@
+       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/annotations.zip!/" />
+     </ANNOTATIONS>
+     <CLASSES>
+-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/res" />
+-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar!/" />
+-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar!/" />
++      <root url="file://$USER_HOME$/.android/build-cache/492919b5ad39f1e6ad2ffac7b62f122c794fe45f/output/res" />
++      <root url="jar://$USER_HOME$/.android/build-cache/492919b5ad39f1e6ad2ffac7b62f122c794fe45f/output/jars/classes.jar!/" />
++      <root url="jar://$USER_HOME$/.android/build-cache/492919b5ad39f1e6ad2ffac7b62f122c794fe45f/output/jars/libs/internal_impl-23.0.1.jar!/" />
+     </CLASSES>
+     <JAVADOC />
+     <SOURCES>
+\ No newline at end of file

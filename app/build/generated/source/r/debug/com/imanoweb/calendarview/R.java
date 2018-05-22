@@ -56,9 +56,9 @@ public final class R {
         public static final int dateTitle = 0x7f080058;
         public static final int daysContainer = 0x7f08005f;
         public static final int leftButton = 0x7f0800b4;
-        public static final int rightButton = 0x7f080103;
-        public static final int titleLayout = 0x7f08014a;
-        public static final int weekLayout = 0x7f08016a;
+        public static final int rightButton = 0x7f080104;
+        public static final int titleLayout = 0x7f08014b;
+        public static final int weekLayout = 0x7f08016b;
     }
     public static final class layout {
         public static final int custom_calendar_layout = 0x7f0a002f;

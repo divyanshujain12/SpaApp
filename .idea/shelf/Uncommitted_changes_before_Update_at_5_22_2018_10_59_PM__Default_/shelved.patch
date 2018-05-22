@@ -1,0 +1,171 @@
+Index: .idea/libraries/appcompat_v7_23_0_0.xml
+===================================================================
+--- .idea/libraries/appcompat_v7_23_0_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
++++ .idea/libraries/appcompat_v7_23_0_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
+@@ -1,12 +0,0 @@
+-<component name="libraryTable">
+-  <library name="appcompat-v7-23.0.0">
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.android/build-cache/8abc441db64e0def11b8059f674c72e6e506706c/output/jars/classes.jar!/" />
+-      <root url="file://$USER_HOME$/.android/build-cache/8abc441db64e0def11b8059f674c72e6e506706c/output/res" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://E:/softwares/android_sdk_and_studio/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.0.0/appcompat-v7-23.0.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/support_annotations_23_0_0.xml
+===================================================================
+--- .idea/libraries/support_annotations_23_0_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
++++ .idea/libraries/support_annotations_23_0_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
+@@ -1,11 +0,0 @@
+-<component name="libraryTable">
+-  <library name="support-annotations-23.0.0">
+-    <CLASSES>
+-      <root url="jar://E:/softwares/android_sdk_and_studio/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://E:/softwares/android_sdk_and_studio/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/support_v4_23_0_0.xml
+===================================================================
+--- .idea/libraries/support_v4_23_0_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
++++ .idea/libraries/support_v4_23_0_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="support-v4-23.0.0">
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.android/build-cache/6ce4b613c42536c6aeebee038668889e521cab4c/output/jars/classes.jar!/" />
+-      <root url="file://$USER_HOME$/.android/build-cache/6ce4b613c42536c6aeebee038668889e521cab4c/output/res" />
+-      <root url="jar://$USER_HOME$/.android/build-cache/6ce4b613c42536c6aeebee038668889e521cab4c/output/jars/libs/internal_impl-23.0.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://E:/softwares/android_sdk_and_studio/sdk/extras/android/m2repository/com/android/support/support-v4/23.0.0/support-v4-23.0.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/butterknife_6_1_0.xml
+===================================================================
+--- .idea/libraries/butterknife_6_1_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
++++ .idea/libraries/butterknife_6_1_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
+@@ -1,11 +0,0 @@
+-<component name="libraryTable">
+-  <library name="butterknife-6.1.0">
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.1.0/63735f48b82bcd24cdd33821342428252eb1ca5a/butterknife-6.1.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.1.0/282f5b78b68e7e5cbaa2f4266265f7f5cc783ee6/butterknife-6.1.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/CircularReveal_1_0_4.xml
+===================================================================
+--- .idea/libraries/CircularReveal_1_0_4.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
++++ .idea/libraries/CircularReveal_1_0_4.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="CircularReveal-1.0.4">
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.android/build-cache/6d60c00901b5637c20587268ebba856be8c57685/output/jars/classes.jar!/" />
+-      <root url="file://$USER_HOME$/.android/build-cache/6d60c00901b5637c20587268ebba856be8c57685/output/res" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/shimmer_0_1_0.xml
+===================================================================
+--- .idea/libraries/shimmer_0_1_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
++++ .idea/libraries/shimmer_0_1_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
+@@ -1,12 +0,0 @@
+-<component name="libraryTable">
+-  <library name="shimmer-0.1.0">
+-    <CLASSES>
+-      <root url="file://$USER_HOME$/.android/build-cache/ca846156658dc0307e8265c494f816fae97bd947/output/res" />
+-      <root url="jar://$USER_HOME$/.android/build-cache/ca846156658dc0307e8265c494f816fae97bd947/output/jars/classes.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.shimmer/shimmer/0.1.0/594e6d2fddad066bd3fbb29bb2a4988a72cf64de/shimmer-0.1.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/realm_android_0_83_0.xml
+===================================================================
+--- .idea/libraries/realm_android_0_83_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
++++ .idea/libraries/realm_android_0_83_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
+@@ -1,11 +0,0 @@
+-<component name="libraryTable">
+-  <library name="realm-android-0.83.0">
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-android/0.83.0/fcc995aa3a075352049ed77afb34c61559a73931/realm-android-0.83.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-android/0.83.0/98b6640c1e71ee0b8637510c5ef61ee8afbfd270/realm-android-0.83.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/pixlui.xml
+===================================================================
+--- .idea/libraries/pixlui.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
++++ .idea/libraries/pixlui.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
+@@ -1,9 +0,0 @@
+-<component name="libraryTable">
+-  <library name="pixlui">
+-    <CLASSES>
+-      <root url="jar://$PROJECT_DIR$/app/libs/pixlui.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/library_2_4_0.xml
+===================================================================
+--- .idea/libraries/library_2_4_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
++++ .idea/libraries/library_2_4_0.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
+@@ -1,11 +0,0 @@
+-<component name="libraryTable">
+-  <library name="library-2.4.0">
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/83d41901478fa8795254244acbafd03f14224dab/library-2.4.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/com_android_volley_2015_05_28.xml
+===================================================================
+--- .idea/libraries/com_android_volley_2015_05_28.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
++++ .idea/libraries/com_android_volley_2015_05_28.xml	(revision 652327cbd8ae6d96a9d87b879c53e958a1afbc92)
+@@ -1,11 +0,0 @@
+-<component name="libraryTable">
+-  <library name="com.android.volley-2015.05.28">
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/eu.the4thfloor.volley/com.android.volley/2015.05.28/b0b08cc0ac897e596abe6b263a9507cba875b705/com.android.volley-2015.05.28.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/eu.the4thfloor.volley/com.android.volley/2015.05.28/e8cd87c24cec5f0df5597fc4eb134e201057a70f/com.android.volley-2015.05.28-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file

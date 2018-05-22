@@ -30,9 +30,9 @@ public final class R {
         public static final int cw_270 = 0x7f080055;
         public static final int cw_90 = 0x7f080056;
         public static final int linear = 0x7f0800b7;
-        public static final int radial = 0x7f0800f7;
-        public static final int restart = 0x7f080100;
-        public static final int reverse = 0x7f080101;
+        public static final int radial = 0x7f0800f8;
+        public static final int restart = 0x7f080101;
+        public static final int reverse = 0x7f080102;
     }
     public static final class styleable {
         public static final int[] ShimmerFrameLayout = { 0x7f030028, 0x7f03002c, 0x7f030033, 0x7f030080, 0x7f030081, 0x7f030096, 0x7f030097, 0x7f0300af, 0x7f0300ed, 0x7f0300ee, 0x7f0300ef, 0x7f0300f0, 0x7f0300f1, 0x7f03010b, 0x7f030142 };
