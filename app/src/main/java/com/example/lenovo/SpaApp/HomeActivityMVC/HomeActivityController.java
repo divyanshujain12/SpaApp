@@ -23,6 +23,7 @@ import com.example.lenovo.SpaApp.Utils.AlertMessage;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
 import com.example.lenovo.SpaApp.Utils.RecyclerItemClickListener;
+import com.example.lenovo.SpaApp.coveredLocationsFragment.ConveredLocationFragment;
 
 import io.realm.Realm;
 
@@ -82,6 +83,9 @@ public class HomeActivityController extends HomeActivity {
                 updateFragment(ContactFragment.getInstance("CONTACTS"));
                 break;
             case 5:
+                updateFragment(ConveredLocationFragment.getInstance("COVERED LOCATIONS"));
+                break;
+            case 6:
                 logout();
                 break;
         }
@@ -110,6 +114,9 @@ public class HomeActivityController extends HomeActivity {
                 checkLogin(ContactFragment.getInstance("CONTACTS"));
                 break;
             case 6:
+                updateFragment(ConveredLocationFragment.getInstance("COVERED LOCATIONS"));
+                break;
+            case 7:
                 logout();
                 break;
         }

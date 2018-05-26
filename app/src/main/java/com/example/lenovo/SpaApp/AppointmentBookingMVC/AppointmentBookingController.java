@@ -148,7 +148,7 @@ public class AppointmentBookingController extends AppointmentBookingActivity imp
         emailString = emailET.getText().toString();
         addressString = addressET.getText().toString();
         additionalString = additionalET.getText().toString();
-
+        zipCodeString = zipCodeET.getText().toString();
         if (checkFields()) return false;
 
         saveDataIntoDatabase();
@@ -165,18 +165,24 @@ public class AppointmentBookingController extends AppointmentBookingActivity imp
             return true;
         } else if (!CommonFunctions.isValidNumber(numberString)) {
             numberET.setError(getString(R.string.err_msg_number));
-            nameET.requestFocus();
+            numberET.requestFocus();
             return true;
         } else if (!CommonFunctions.isValidEmail(emailString)) {
             emailET.setError(getString(R.string.err_msg_email));
-            nameET.requestFocus();
+            emailET.requestFocus();
             return true;
         } else if (addressString.isEmpty()) {
             addressET.setError(getString(R.string.err_msg_address));
-            nameET.requestFocus();
+            addressET.requestFocus();
             return true;
-        } else if (timeString.isEmpty())
+        } else if (zipCodeString.isEmpty()) {
+            zipCodeET.setError(getString(R.string.zip_validation_error));
+            zipCodeET.requestFocus();
+            return true;
+        } else if (timeString.isEmpty()) {
             CommonFunctions.showSnackBarWithoutAction(timingGrid, getString(R.string.invalid_date));
+            return true;
+        }
         return false;
     }
 
@@ -202,6 +208,7 @@ public class AppointmentBookingController extends AppointmentBookingActivity imp
         appointmentBookingModel.setQuantity(selectedQuantity);
         appointmentBookingModel.setDuration(selectedDuration);
         appointmentBookingModel.setTherapistType(therapistType);
+        appointmentBookingModel.setZipCode(zipCodeString);
 
         realm.commitTransaction();
         RealmResults<AppointmentBookingModel> bookingModels = realm.allObjects(AppointmentBookingModel.class);

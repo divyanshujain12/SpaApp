@@ -53,6 +53,7 @@ public class MyCartController extends MyCartActivity {
                 object.put(Constants.PRICE, appointmentBookingModel.getCost());
                 object.put(Constants.ADDITIONAL_NOTES, appointmentBookingModel.getAdditional_notes());
                 object.put(Constants.ADDRESS, appointmentBookingModel.getAddress());
+                object.put(Constants.ADDRESS1, appointmentBookingModel.getZipCode());
                 object.put(Constants.QUANTITY, appointmentBookingModel.getQuantity());
                 object.put(Constants.DURATION, appointmentBookingModel.getDuration());
                 object.put(Constants.PREFERENCE, appointmentBookingModel.getTherapistType());

@@ -29,6 +29,7 @@ public class Constants {
     public static String NUMBER = "number";
     public static String MENU = "menu";
     public static String ADDRESS = "address";
+    public static String ADDRESS1 = "address1";
     public static String TYPE = "type";
     public static String ORDER_ID = "order_id";
     public static String SUBJECT = "subject";

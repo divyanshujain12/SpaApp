@@ -53,23 +53,23 @@ public final class R {
         public static final int ic_arrow_up_white = 0x7f070079;
     }
     public static final class id {
-        public static final int dateTitle = 0x7f080058;
-        public static final int daysContainer = 0x7f08005f;
-        public static final int leftButton = 0x7f0800b4;
-        public static final int rightButton = 0x7f080104;
-        public static final int titleLayout = 0x7f08014b;
-        public static final int weekLayout = 0x7f08016b;
+        public static final int dateTitle = 0x7f08005a;
+        public static final int daysContainer = 0x7f080061;
+        public static final int leftButton = 0x7f0800b6;
+        public static final int rightButton = 0x7f080106;
+        public static final int titleLayout = 0x7f08014d;
+        public static final int weekLayout = 0x7f08016d;
     }
     public static final class layout {
-        public static final int custom_calendar_layout = 0x7f0a002f;
-        public static final int custom_calendar_title_layout = 0x7f0a0030;
-        public static final int custom_calendar_weeks_layout = 0x7f0a0031;
-        public static final int roboto_calendar_week_1 = 0x7f0a0069;
-        public static final int roboto_calendar_week_2 = 0x7f0a006a;
-        public static final int roboto_calendar_week_3 = 0x7f0a006b;
-        public static final int roboto_calendar_week_4 = 0x7f0a006c;
-        public static final int roboto_calendar_week_5 = 0x7f0a006d;
-        public static final int roboto_calendar_week_6 = 0x7f0a006e;
+        public static final int custom_calendar_layout = 0x7f0a0031;
+        public static final int custom_calendar_title_layout = 0x7f0a0032;
+        public static final int custom_calendar_weeks_layout = 0x7f0a0033;
+        public static final int roboto_calendar_week_1 = 0x7f0a006b;
+        public static final int roboto_calendar_week_2 = 0x7f0a006c;
+        public static final int roboto_calendar_week_3 = 0x7f0a006d;
+        public static final int roboto_calendar_week_4 = 0x7f0a006e;
+        public static final int roboto_calendar_week_5 = 0x7f0a006f;
+        public static final int roboto_calendar_week_6 = 0x7f0a0070;
     }
     public static final class style {
         public static final int AppBaseTheme = 0x7f0e0004;

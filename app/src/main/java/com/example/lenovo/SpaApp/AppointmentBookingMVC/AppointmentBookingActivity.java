@@ -16,11 +16,13 @@ import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
 import com.example.lenovo.SpaApp.Interfaces.AlertDialogInterface;
 import com.example.lenovo.SpaApp.Models.ProductModel;
 import com.example.lenovo.SpaApp.Models.ServiceModel;
+import com.example.lenovo.SpaApp.Models.ValidationModel;
 import com.example.lenovo.SpaApp.MyCartMVC.MyCartController;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
+import com.example.lenovo.SpaApp.Utils.Validation;
 import com.imanoweb.calendarview.CustomCalendarView;
 import com.neopixl.pixlui.components.checkbox.CheckBox;
 import com.neopixl.pixlui.components.edittext.EditText;
@@ -53,6 +55,8 @@ class AppointmentBookingActivity extends GlobalActivity implements AdapterView.O
     protected EditText emailET;
     @InjectView(R.id.addressET)
     protected EditText addressET;
+    @InjectView(R.id.zipCodeET)
+    protected EditText zipCodeET;
     @InjectView(R.id.confirmTV)
     protected TextView confirmTV;
     @InjectView(R.id.serviceTV)
@@ -81,12 +85,14 @@ class AppointmentBookingActivity extends GlobalActivity implements AdapterView.O
     protected String[] availableDurations = null;
     protected AppointmentBookingModel appointmentBookingModel = null;
     protected ArrayAdapter<CharSequence> arrayAdapter;
-    protected String categoryNameString, nameString, numberString, emailString, addressString, dateString, timeString, additionalString;
+    protected String categoryNameString, nameString, numberString, emailString, addressString, dateString, timeString, additionalString,zipCodeString;
+
     String selectedDuration = "", selectedQuantity = "1";
     protected ServiceModel serviceModel;
     protected ProductModel productModel;
     protected String[] therapistArray;
     String therapistType;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

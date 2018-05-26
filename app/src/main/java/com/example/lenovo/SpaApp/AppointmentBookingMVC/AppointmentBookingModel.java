@@ -22,6 +22,7 @@ public class AppointmentBookingModel extends RealmObject{
     private String city_id;
     private String quantity;
     private String therapistType;
+    private String zipCode;
 
     public String getCity_id() {
         return city_id;
@@ -149,5 +150,13 @@ public class AppointmentBookingModel extends RealmObject{
 
     public void setTherapistType(String therapistType) {
         this.therapistType = therapistType;
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
     }
 }

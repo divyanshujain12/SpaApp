@@ -85,6 +85,11 @@ public class AppointmentDescriptionActivity extends GlobalActivity {
         descriptionTV.setText(productModel.getDescription());
         durationTV.setText(productModel.getDuration());
         addTimeAndDurationView();
+
+        if (productModel.getCategory_id().equals("8") || productModel.getCategory_id().equals("18"))
+            minimumOrderTV.setVisibility(View.VISIBLE);
+        else
+            minimumOrderTV.setVisibility(View.GONE);
     }
 
     private void setToolBar() {
