@@ -1,0 +1,1251 @@
+Index: animator/animator.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- animator/animator.iml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ animator/animator.iml	(revision )
+@@ -67,14 +67,6 @@
+       <sourceFolder url="file://$MODULE_DIR$/src/main/jni" isTestSource="false" />
+       <sourceFolder url="file://$MODULE_DIR$/src/main/rs" isTestSource="false" />
+       <sourceFolder url="file://$MODULE_DIR$/src/main/shaders" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/jni" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/assets" type="java-test-resource" />
+@@ -83,6 +75,14 @@
+       <sourceFolder url="file://$MODULE_DIR$/src/test/jni" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/jni" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/bundles" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
+\ No newline at end of file
+Index: .idea/libraries/butterknife_6_1_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/butterknife_6_1_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ .idea/libraries/butterknife_6_1_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
+@@ -1,11 +0,0 @@
+-<component name="libraryTable">
+-  <library name="butterknife-6.1.0">
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.1.0/63735f48b82bcd24cdd33821342428252eb1ca5a/butterknife-6.1.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.1.0/282f5b78b68e7e5cbaa2f4266265f7f5cc783ee6/butterknife-6.1.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/CircularReveal_1_0_4.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/CircularReveal_1_0_4.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ .idea/libraries/CircularReveal_1_0_4.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="CircularReveal-1.0.4">
+-    <CLASSES>
+-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.ozodrukh/CircularReveal/1.0.4/jars/classes.jar!/" />
+-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.ozodrukh/CircularReveal/1.0.4/res" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: mcalendarview/mcalendarview.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mcalendarview/mcalendarview.iml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ mcalendarview/mcalendarview.iml	(revision )
+@@ -67,14 +67,6 @@
+       <sourceFolder url="file://$MODULE_DIR$/src/main/jni" isTestSource="false" />
+       <sourceFolder url="file://$MODULE_DIR$/src/main/rs" isTestSource="false" />
+       <sourceFolder url="file://$MODULE_DIR$/src/main/shaders" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/jni" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/assets" type="java-test-resource" />
+@@ -83,6 +75,14 @@
+       <sourceFolder url="file://$MODULE_DIR$/src/test/jni" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/jni" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/bundles" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars" />
+\ No newline at end of file
+Index: .idea/libraries/support_annotations_23_0_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/support_annotations_23_0_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ .idea/libraries/support_annotations_23_0_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
+@@ -1,11 +0,0 @@
+-<component name="libraryTable">
+-  <library name="support-annotations-23.0.0">
+-    <CLASSES>
+-      <root url="jar://C:/AndroidSDK/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://C:/AndroidSDK/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: app/src/main/java/com/example/lenovo/SpaApp/CorporateEnquiriesMVC/CorporateFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/lenovo/SpaApp/CorporateEnquiriesMVC/CorporateFragment.java	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ app/src/main/java/com/example/lenovo/SpaApp/CorporateEnquiriesMVC/CorporateFragment.java	(revision )
+@@ -120,6 +120,7 @@
+     @InjectView(R.id.requestAQuote)
+     TextView requestAQuote;
+ 
++
+     @Nullable
+     @Override
+     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+@@ -248,6 +249,7 @@
+                 break;
+         }
+     }
++
+ 
+     private void enableDisableEditText(EditText editText, boolean enable) {
+         editText.setEnabled(enable);
+Index: menulibrary/menulibrary.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- menulibrary/menulibrary.iml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ menulibrary/menulibrary.iml	(revision )
+@@ -67,14 +67,6 @@
+       <sourceFolder url="file://$MODULE_DIR$/src/main/jni" isTestSource="false" />
+       <sourceFolder url="file://$MODULE_DIR$/src/main/rs" isTestSource="false" />
+       <sourceFolder url="file://$MODULE_DIR$/src/main/shaders" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/assets" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/aidl" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/jni" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
+       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
+       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
+@@ -83,6 +75,14 @@
+       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/jni" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/assets" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/aidl" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/jni" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/bundles" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
+\ No newline at end of file
+Index: .idea/libraries/appcompat_v7_23_0_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/appcompat_v7_23_0_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ .idea/libraries/appcompat_v7_23_0_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
+@@ -1,15 +0,0 @@
+-<component name="libraryTable">
+-  <library name="appcompat-v7-23.0.0">
+-    <ANNOTATIONS>
+-      <root url="jar://$PROJECT_DIR$/mcalendarview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/annotations.zip!/" />
+-    </ANNOTATIONS>
+-    <CLASSES>
+-      <root url="file://$PROJECT_DIR$/mcalendarview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res" />
+-      <root url="jar://$PROJECT_DIR$/mcalendarview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://C:/AndroidSDK/extras/android/m2repository/com/android/support/appcompat-v7/23.0.0/appcompat-v7-23.0.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ .idea/misc.xml	(revision )
+@@ -1,0 +1,0 @@
+Index: app/src/main/java/com/example/lenovo/SpaApp/Models/ValidationModel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/lenovo/SpaApp/Models/ValidationModel.java	(revision )
++++ app/src/main/java/com/example/lenovo/SpaApp/Models/ValidationModel.java	(revision )
+@@ -0,0 +1,45 @@
++package com.example.lenovo.SpaApp.Models;
++
++import android.view.View;
++
++public class ValidationModel {
++    public View view;
++    public int validationType;
++    public String errorMessage;
++
++
++    public ValidationModel(View view, int validationType, String errorMessage) {
++        this.view = view;
++        this.validationType = validationType;
++        this.errorMessage = errorMessage;
++    }
++
++    public View getView() {
++        return view;
++    }
++
++    public void setView(View editText) {
++        this.view = editText;
++    }
++
++    public int getValidationType() {
++        return validationType;
++    }
++
++    public void setValidationType(int validationType) {
++        this.validationType = validationType;
++    }
++
++    public String getErrorMessage() {
++        return errorMessage;
++    }
++
++    public void setErrorMessage(String errorMessage) {
++        this.errorMessage = errorMessage;
++    }
++
++    @Override
++    public boolean equals(Object o) {
++        return view == ((ValidationModel) o).getView();
++    }
++}
+\ No newline at end of file
+Index: Calendarlibrary/Calendarlibrary.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Calendarlibrary/Calendarlibrary.iml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ Calendarlibrary/Calendarlibrary.iml	(revision )
+@@ -66,14 +66,6 @@
+       <sourceFolder url="file://$MODULE_DIR$/src/main/jni" isTestSource="false" />
+       <sourceFolder url="file://$MODULE_DIR$/src/main/rs" isTestSource="false" />
+       <sourceFolder url="file://$MODULE_DIR$/src/main/shaders" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/assets" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/aidl" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/jni" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
+       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
+       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
+@@ -82,6 +74,14 @@
+       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/jni" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/assets" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/aidl" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/jni" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/bundles" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
+\ No newline at end of file
+Index: .idea/libraries/library_2_4_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/library_2_4_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ .idea/libraries/library_2_4_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
+@@ -1,11 +0,0 @@
+-<component name="libraryTable">
+-  <library name="library-2.4.0">
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/83d41901478fa8795254244acbafd03f14224dab/library-2.4.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/com_android_volley_2015_05_28.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/com_android_volley_2015_05_28.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ .idea/libraries/com_android_volley_2015_05_28.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
+@@ -1,11 +0,0 @@
+-<component name="libraryTable">
+-  <library name="com.android.volley-2015.05.28">
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/eu.the4thfloor.volley/com.android.volley/2015.05.28/b0b08cc0ac897e596abe6b263a9507cba875b705/com.android.volley-2015.05.28.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/eu.the4thfloor.volley/com.android.volley/2015.05.28/e8cd87c24cec5f0df5597fc4eb134e201057a70f/com.android.volley-2015.05.28-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/realm_android_0_83_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/realm_android_0_83_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ .idea/libraries/realm_android_0_83_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
+@@ -1,11 +0,0 @@
+-<component name="libraryTable">
+-  <library name="realm-android-0.83.0">
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-android/0.83.0/fcc995aa3a075352049ed77afb34c61559a73931/realm-android-0.83.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-android/0.83.0/98b6640c1e71ee0b8637510c5ef61ee8afbfd270/realm-android-0.83.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/support_v4_23_0_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/support_v4_23_0_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ .idea/libraries/support_v4_23_0_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
+@@ -1,16 +0,0 @@
+-<component name="libraryTable">
+-  <library name="support-v4-23.0.0">
+-    <ANNOTATIONS>
+-      <root url="jar://$PROJECT_DIR$/mcalendarview/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/annotations.zip!/" />
+-    </ANNOTATIONS>
+-    <CLASSES>
+-      <root url="jar://$PROJECT_DIR$/mcalendarview/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar!/" />
+-      <root url="file://$PROJECT_DIR$/mcalendarview/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/res" />
+-      <root url="jar://$PROJECT_DIR$/mcalendarview/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://C:/AndroidSDK/extras/android/m2repository/com/android/support/support-v4/23.0.0/support-v4-23.0.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: app/src/main/java/com/example/lenovo/SpaApp/Utils/Validation.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/lenovo/SpaApp/Utils/Validation.java	(revision )
++++ app/src/main/java/com/example/lenovo/SpaApp/Utils/Validation.java	(revision )
+@@ -0,0 +1,119 @@
++package com.example.lenovo.SpaApp.Utils;
++
++
++import android.app.Activity;
++import android.support.annotation.Nullable;
++import android.util.Patterns;
++import android.view.View;
++import android.widget.Toast;
++
++import com.androidadvance.topsnackbar.TSnackbar;
++
++import com.example.lenovo.SpaApp.Models.ValidationModel;
++import com.neopixl.pixlui.components.edittext.EditText;
++import com.neopixl.pixlui.components.textview.TextView;
++
++import java.util.ArrayList;
++import java.util.HashMap;
++
++/**
++ * Created by divyanshu.jain on 9/16/2016.
++ */
++public class Validation {
++    public final static int TYPE_NAME_VALIDATION = 0;
++    public final static int TYPE_EMAIL_VALIDATION = 1;
++    public final static int TYPE_PHONE_VALIDATION = 2;
++    public final static int TYPE_PASSWORD_VALIDATION = 3;
++    public final static int TYPE_EMPTY_FIELD_VALIDATION = 4;
++    private EditText editText = null;
++    private TextView textView = null;
++    private Toast snackbar;
++    private ArrayList<ValidationModel> validationModels = new ArrayList<>();
++
++    public void addValidationField(ValidationModel validationModel) {
++        validationModels.add(validationModel);
++    }
++
++    public void removeValidationField(ValidationModel validationModel) {
++        validationModels.remove(validationModel);
++    }
++
++    public HashMap<View, String> validate(View view) {
++        snackbar = CommonFunctions.getInstance().getErrorSnackbar(view);
++        HashMap<View, String> valueMap = getHashMap();
++        if (valueMap == null) return null;
++        return valueMap;
++    }
++
++    public HashMap<View, String> validate(Activity activity) {
++        snackbar = CommonFunctions.getInstance().getErrorSnackbar(activity);
++        HashMap<View, String> valueMap = getHashMap();
++        if (valueMap == null) return null;
++        return valueMap;
++    }
++
++    @Nullable
++    private HashMap<View, String> getHashMap() {
++        HashMap<View, String> valueMap = new HashMap<>();
++
++        for (ValidationModel validationModel : validationModels) {
++            if (validationModel.getView() instanceof EditText) {
++                editText = (EditText) validationModel.getView();
++                textView = null;
++            } else if (validationModel.getView() instanceof TextView) {
++                textView = (TextView) validationModel.getView();
++                editText = null;
++            }
++
++
++            String editTextValue = (editText == null ? textView : editText).getText().toString();
++            boolean status = false;
++            switch (validationModel.validationType) {
++                case TYPE_NAME_VALIDATION:
++                    status = validateName(editTextValue);
++                    break;
++                case TYPE_EMAIL_VALIDATION:
++                    status = validateEmail(editTextValue);
++                    break;
++                case TYPE_PHONE_VALIDATION:
++                    status = validatePhone(editTextValue);
++                    break;
++                case TYPE_PASSWORD_VALIDATION:
++                    status = validateName(editTextValue);
++                    break;
++                case TYPE_EMPTY_FIELD_VALIDATION:
++                    status = validateName(editTextValue);
++                    break;
++            }
++            if (!status) {
++                snackbar.setText(validationModel.errorMessage).show();
++                return null;
++
++            }
++            valueMap.put((editText == null ? textView : editText), editTextValue);
++        }
++        return valueMap;
++    }
++
++    private boolean validateName(String editTextValue) {
++        if (editTextValue.length() == 0)
++            return false;
++        else
++            return true;
++    }
++
++    private boolean validateEmail(String editTextValue) {
++        if (editTextValue.length() == 0 || !Patterns.EMAIL_ADDRESS.matcher(editTextValue).matches())
++            return false;
++        else
++            return true;
++    }
++
++    private boolean validatePhone(String editTextValue) {
++        if (editTextValue.length() == 0 || !Patterns.PHONE.matcher(editTextValue).matches())
++            return false;
++        else
++            return true;
++    }
++
++}
+Index: .idea/libraries/pixlui.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/pixlui.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ .idea/libraries/pixlui.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
+@@ -1,9 +0,0 @@
+-<component name="libraryTable">
+-  <library name="pixlui">
+-    <CLASSES>
+-      <root url="jar://$PROJECT_DIR$/app/libs/pixlui.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/shimmer_0_1_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/shimmer_0_1_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ .idea/libraries/shimmer_0_1_0.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
+@@ -1,12 +0,0 @@
+-<component name="libraryTable">
+-  <library name="shimmer-0.1.0">
+-    <CLASSES>
+-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.facebook.shimmer/shimmer/0.1.0/res" />
+-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.facebook.shimmer/shimmer/0.1.0/jars/classes.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.shimmer/shimmer/0.1.0/594e6d2fddad066bd3fbb29bb2a4988a72cf64de/shimmer-0.1.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ .idea/workspace.xml	(revision )
+@@ -6,10 +6,12 @@
+     </shared>
+   </component>
+   <component name="AndroidLogFilters">
+-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
++    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="9f60721d-ded5-49bc-8065-07b7eb82ab26" name="Default" comment="">
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Models/ValidationModel.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Utils/Validation.java" />
+       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/CircularReveal_1_0_4.xml" afterPath="" />
+       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_0_0.xml" afterPath="" />
+       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/butterknife_6_1_0.xml" afterPath="" />
+@@ -20,14 +22,13 @@
+       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/shimmer_0_1_0.xml" afterPath="" />
+       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_0_0.xml" afterPath="" />
+       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_0_0.xml" afterPath="" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Calendarlibrary/Calendarlibrary.iml" afterPath="$PROJECT_DIR$/Calendarlibrary/Calendarlibrary.iml" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/lenovo/SpaApp/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/lenovo/SpaApp/R.java" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/imanoweb/calendarview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/imanoweb/calendarview/R.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/animator/animator.iml" afterPath="$PROJECT_DIR$/animator/animator.iml" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/CorporateEnquiriesMVC/CorporateFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/CorporateEnquiriesMVC/CorporateFragment.java" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/corporate_enquiry.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/corporate_enquiry.xml" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/explosionfield/explosionfield.iml" afterPath="$PROJECT_DIR$/explosionfield/explosionfield.iml" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mcalendarview/mcalendarview.iml" afterPath="$PROJECT_DIR$/mcalendarview/mcalendarview.iml" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menulibrary/menulibrary.iml" afterPath="$PROJECT_DIR$/menulibrary/menulibrary.iml" />
+     </list>
+     <ignored path="SpaApp.iws" />
+@@ -62,25 +63,24 @@
+   </component>
+   <component name="FileEditorManager">
+     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+-      <file leaf-file-name="CorporateFragment.java" pinned="false" current-in-tab="true">
++      <file leaf-file-name="CorporateFragment.java" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/CorporateEnquiriesMVC/CorporateFragment.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="439">
+-              <caret line="254" column="1" selection-start-line="254" selection-start-column="1" selection-end-line="254" selection-end-column="1" />
++            <state relative-caret-position="3995">
++              <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="corporate_enquiry.xml" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/corporate_enquiry.xml">
+-          <provider editor-type-id="android-designer2">
+-            <state />
+-          </provider>
++      <file leaf-file-name="Validation.java" pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Utils/Validation.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="17493">
+-              <caret line="1029" column="44" selection-start-line="1029" selection-start-column="44" selection-end-line="1029" selection-end-column="44" />
+-              <folding />
++            <state relative-caret-position="238">
++              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+@@ -5442,8 +5442,6 @@
+   <component name="IdeDocumentHistory">
+     <option name="CHANGED_PATHS">
+       <list>
+-        <option value="$PROJECT_DIR$/local.properties" />
+-        <option value="$PROJECT_DIR$/app/src/main/res/layout/appointment_booking_cost_and_duration_view.xml" />
+         <option value="$PROJECT_DIR$/app/src/main/res/layout/appointment_booking_dropdown_bar.xml" />
+         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Utils/ParsingResponse.java" />
+         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/MyAppointmentsMVC/AppointmentAdapters/HistoryAdapter.java" />
+@@ -5493,6 +5491,8 @@
+         <option value="$PROJECT_DIR$/captures/com.divyanshu.Structure_2017.07.11_18.56-2.txt" />
+         <option value="$PROJECT_DIR$/app/src/main/res/layout/corporate_enquiry.xml" />
+         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/CorporateEnquiriesMVC/CorporateFragment.java" />
++        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Models/ValidationModel.java" />
++        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Utils/Validation.java" />
+       </list>
+     </option>
+   </component>
+@@ -5527,11 +5527,11 @@
+       <foldersAlwaysOnTop value="true" />
+     </navigator>
+     <panes>
++      <pane id="PackagesPane" />
+       <pane id="AndroidView">
+         <subPane />
+       </pane>
+       <pane id="Scope" />
+-      <pane id="Scratches" />
+       <pane id="ProjectPane">
+         <subPane>
+           <PATH>
+@@ -5746,7 +5746,7 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="CorporateEnquiriesMVC" />
++              <option name="myItemId" value="Utils" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+           </PATH>
+@@ -5772,13 +5772,17 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="assets" />
++              <option name="myItemId" value="java" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="fonts" />
++              <option name="myItemId" value="SpaApp" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="Models" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
+           </PATH>
+           <PATH>
+             <PATH_ELEMENT>
+@@ -5794,35 +5798,25 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="build" />
++              <option name="myItemId" value="src" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="tmp" />
++              <option name="myItemId" value="main" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+-          </PATH>
+-          <PATH>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="SpaApp" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
++              <option name="myItemId" value="java" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+               <option name="myItemId" value="SpaApp" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="app" />
++              <option name="myItemId" value="CorporateEnquiriesMVC" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="build" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="outputs" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+           </PATH>
+           <PATH>
+             <PATH_ELEMENT>
+@@ -5838,15 +5832,15 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="build" />
++              <option name="myItemId" value="src" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="outputs" />
++              <option name="myItemId" value="main" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="apk" />
++              <option name="myItemId" value="assets" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+           </PATH>
+@@ -5870,13 +5864,13 @@
+           </PATH>
+         </subPane>
+       </pane>
+-      <pane id="PackagesPane" />
++      <pane id="Scratches" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
+     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+     <property name="settings.editor.splitter.proportion" value="0.2" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/spa screenshots" />
+     <property name="android.sdk.path" value="C:/AndroidSDK" />
+     <property name="device.picker.selection" value="SGA6KJSOSSFUBA95" />
+     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
+@@ -5885,7 +5879,14 @@
+     <property name="SHOW_ALL_PROCESSES" value="true" />
+     <property name="DEBUGGER_ID" value="Auto" />
+     <property name="UI_DESIGNER_EDITOR_MODE.CaptureAnalysis.SHOW" value="false" />
++    <property name="ScreenshotViewer.SavePath" value="$USER_HOME$/Desktop/spa screenshots" />
+   </component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="D:\prs\SpaApp\app\src\main\java\com\example\lenovo\SpaApp\Models" />
++      <recent name="D:\prs\SpaApp\app\src\main\java\com\example\lenovo\SpaApp\Utils" />
++    </key>
++  </component>
+   <component name="RunManager" selected="Android App.app">
+     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+       <module name="" />
+@@ -6272,7 +6273,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1499779880081</updated>
+     </task>
+-    <option name="localTasksCounter" value="9" />
++    <task id="LOCAL-00009" summary="cost and duration,&#10;my appointments crash fix">
++      <created>1499953631075</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1499953631075</updated>
++    </task>
++    <option name="localTasksCounter" value="10" />
+     <servers />
+   </component>
+   <component name="ToolWindowManager">
+@@ -6287,7 +6295,7 @@
+       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1331058" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
++      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.029010238" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.023890786" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+@@ -6296,12 +6304,12 @@
+       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28517398" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
++      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28214827" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50341296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46245733" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+@@ -6529,72 +6537,6 @@
+     <watches-manager />
+   </component>
+   <component name="editorHistoryManager">
+-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/MyCartMVC/MyCartModel.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="85">
+-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+-      <provider editor-type-id="android-designer2">
+-        <state />
+-      </provider>
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="68">
+-          <caret line="4" column="51" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="51" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/MyApplication.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="272">
+-          <caret line="117" column="5" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+-          <folding />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/select_cty_item.xml">
+-      <provider editor-type-id="android-designer2">
+-        <state />
+-      </provider>
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="373">
+-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Models/SelectCityModel.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="459">
+-          <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Adapters/SelectCityAdapter.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="425">
+-          <caret line="58" column="97" selection-start-line="58" selection-start-column="97" selection-end-line="58" selection-end-column="97" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/signup_layout.xml">
+-      <provider editor-type-id="android-designer2">
+-        <state />
+-      </provider>
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="170">
+-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Fragments/SignUpFragment.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="436">
+-          <caret line="73" column="43" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
+-        </state>
+-      </provider>
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/MainActivity.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="306">
+@@ -6627,41 +6569,25 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/AppIntro/ThirdFragment.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="17">
+-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+-          <folding />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Utils/CallWebService.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="181">
+-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+-          <folding />
+-        </state>
+-      </provider>
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/home_activity.xml">
+-      <provider editor-type-id="android-designer2">
+-        <state />
+-      </provider>
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="102">
+           <caret line="6" column="35" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="35" />
+         </state>
+       </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_transitionloop.xml">
+       <provider editor-type-id="android-designer2">
+         <state />
+       </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_transitionloop.xml">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="234">
+           <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+         </state>
+       </provider>
++      <provider editor-type-id="android-designer2">
++        <state />
++      </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
+       <provider selected="true" editor-type-id="text-editor">
+@@ -6685,14 +6611,14 @@
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_alert_dialog.xml">
+-      <provider editor-type-id="android-designer2">
+-        <state />
+-      </provider>
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="0">
+           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+         </state>
+       </provider>
++      <provider editor-type-id="android-designer2">
++        <state />
++      </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Utils/AlertMessage.java">
+       <provider selected="true" editor-type-id="text-editor">
+@@ -6725,14 +6651,14 @@
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_products.xml">
+-      <provider editor-type-id="android-designer2">
+-        <state />
+-      </provider>
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="0">
+           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+         </state>
+       </provider>
++      <provider editor-type-id="android-designer2">
++        <state />
++      </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/CategoryProducts/ProductsActivity.java">
+       <provider selected="true" editor-type-id="text-editor">
+@@ -6742,14 +6668,14 @@
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/home_service_categories_adapter.xml">
+-      <provider editor-type-id="android-designer2">
+-        <state />
+-      </provider>
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="0">
+           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+         </state>
+       </provider>
++      <provider editor-type-id="android-designer2">
++        <state />
++      </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Adapters/HomeServiceCategoryAdapter.java">
+       <provider selected="true" editor-type-id="text-editor">
+@@ -6766,14 +6692,14 @@
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/appointment_booking.xml">
+-      <provider editor-type-id="android-designer2">
+-        <state />
+-      </provider>
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="309">
+           <caret line="68" column="58" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
+         </state>
+       </provider>
++      <provider editor-type-id="android-designer2">
++        <state />
++      </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/AppointmentBookingMVC/AppointmentBookingActivity.java">
+       <provider selected="true" editor-type-id="text-editor">
+@@ -6788,21 +6714,13 @@
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item.xml">
+-      <provider editor-type-id="android-designer2">
+-        <state />
+-      </provider>
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="292">
+           <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+         </state>
+       </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/HomeFragmentMVC/HomeFragment.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="4">
+-          <caret line="85" column="15" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="15" />
+-          <folding />
+-        </state>
++      <provider editor-type-id="android-designer2">
++        <state />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/AppIntro/AppIntroActivity.java">
+@@ -6812,14 +6730,6 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/AppointmentDescriptionActivity.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="408">
+-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+-          <folding />
+-        </state>
+-      </provider>
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/ContactusMVC/ContactFragment.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="595">
+@@ -6873,15 +6783,15 @@
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/contact_us.xml">
+-      <provider editor-type-id="android-designer2">
+-        <state />
+-      </provider>
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="391">
+           <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+           <folding />
+         </state>
+       </provider>
++      <provider editor-type-id="android-designer2">
++        <state />
++      </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-nodpi/hair_and_makeup.png">
+       <provider selected="true" editor-type-id="images">
+@@ -6894,26 +6804,26 @@
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/corporate_inquiries_new.xml">
+-      <provider editor-type-id="android-designer2">
+-        <state />
+-      </provider>
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="102">
+           <caret line="6" column="44" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="44" />
+           <folding />
+         </state>
+       </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/vertical_line_black.xml">
+       <provider editor-type-id="android-designer2">
+         <state />
+       </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/vertical_line_black.xml">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="0">
+           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+           <folding />
+         </state>
+       </provider>
++      <provider editor-type-id="android-designer2">
++        <state />
++      </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+       <provider selected="true" editor-type-id="text-editor">
+@@ -6923,21 +6833,87 @@
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/corporate_enquiry.xml">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="17493">
++          <caret line="1029" column="44" selection-start-line="1029" selection-start-column="44" selection-end-line="1029" selection-end-column="44" />
++          <folding />
++        </state>
++      </provider>
+       <provider editor-type-id="android-designer2">
+         <state />
+       </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/AppIntro/ThirdFragment.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="17493">
+-          <caret line="1029" column="44" selection-start-line="1029" selection-start-column="44" selection-end-line="1029" selection-end-column="44" />
++        <state relative-caret-position="17">
++          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
++    <entry file="file://$USER_HOME$/Desktop/spa screenshots/device-2017-07-14-154320.png" />
++    <entry file="file://$USER_HOME$/Desktop/spa screenshots/device-2017-07-14-154451.png" />
++    <entry file="file://$USER_HOME$/Desktop/spa screenshots/device-2017-07-14-154511.png" />
++    <entry file="file://$USER_HOME$/Desktop/spa screenshots/device-2017-07-14-154520.png" />
++    <entry file="file://$USER_HOME$/Desktop/spa screenshots/device-2017-07-14-154537.png" />
++    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/product_duration_and_cost_view.xml">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="81">
++          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
++          <folding />
++        </state>
++      </provider>
++      <provider editor-type-id="android-designer2">
++        <state />
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/AppointmentDescriptionActivity.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="215">
++          <caret line="146" column="73" selection-start-line="146" selection-start-column="73" selection-end-line="146" selection-end-column="73" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/HomeFragmentMVC/HomeFragment.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="444">
++          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Utils/CallWebService.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="186">
++          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/CorporateEnquiriesMVC/CorporateFragment.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="439">
+-          <caret line="254" column="1" selection-start-line="254" selection-start-column="1" selection-end-line="254" selection-end-column="1" />
++        <state relative-caret-position="3995">
++          <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+           <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Models/ValidationModel.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="0">
++          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Utils/Validation.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="238">
++          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+\ No newline at end of file
+Index: explosionfield/explosionfield.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- explosionfield/explosionfield.iml	(revision 3919844160c6ef8167a27b634918230bd4e597f0)
++++ explosionfield/explosionfield.iml	(revision )
+@@ -67,14 +67,6 @@
+       <sourceFolder url="file://$MODULE_DIR$/src/main/jni" isTestSource="false" />
+       <sourceFolder url="file://$MODULE_DIR$/src/main/rs" isTestSource="false" />
+       <sourceFolder url="file://$MODULE_DIR$/src/main/shaders" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/jni" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/assets" type="java-test-resource" />
+@@ -83,6 +75,14 @@
+       <sourceFolder url="file://$MODULE_DIR$/src/test/jni" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
+       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/jni" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/bundles" />
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
+\ No newline at end of file

@@ -1,0 +1,290 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"NullableNotNullManager\">\n    <option name=\"myDefaultNullable\" value=\"android.support.annotation.Nullable\" />\n    <option name=\"myDefaultNotNull\" value=\"android.support.annotation.NonNull\" />\n    <option name=\"myNullables\">\n      <value>\n        <list size=\"4\">\n          <item index=\"0\" class=\"java.lang.String\" itemvalue=\"org.jetbrains.annotations.Nullable\" />\n          <item index=\"1\" class=\"java.lang.String\" itemvalue=\"javax.annotation.Nullable\" />\n          <item index=\"2\" class=\"java.lang.String\" itemvalue=\"edu.umd.cs.findbugs.annotations.Nullable\" />\n          <item index=\"3\" class=\"java.lang.String\" itemvalue=\"android.support.annotation.Nullable\" />\n        </list>\n      </value>\n    </option>\n    <option name=\"myNotNulls\">\n      <value>\n        <list size=\"4\">\n          <item index=\"0\" class=\"java.lang.String\" itemvalue=\"org.jetbrains.annotations.NotNull\" />\n          <item index=\"1\" class=\"java.lang.String\" itemvalue=\"javax.annotation.Nonnull\" />\n          <item index=\"2\" class=\"java.lang.String\" itemvalue=\"edu.umd.cs.findbugs.annotations.NonNull\" />\n          <item index=\"3\" class=\"java.lang.String\" itemvalue=\"android.support.annotation.NonNull\" />\n        </list>\n      </value>\n    </option>\n  </component>\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_7\" default=\"true\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\n  </component>\n  <component name=\"ProjectType\">\n    <option name=\"id\" value=\"Android\" />\n  </component>\n  <component name=\"masterDetails\">\n    <states>\n      <state key=\"ProjectJDKs.UI\">\n        <settings>\n          <last-edited>1.8</last-edited>\n          <splitter-proportions>\n            <option name=\"proportions\">\n              <list>\n                <option value=\"0.2\" />\n              </list>\n            </option>\n          </splitter-proportions>\n        </settings>\n      </state>\n    </states>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(date 1526981699000)
++++ .idea/misc.xml	(date 1526983038646)
+@@ -24,7 +24,7 @@
+       </value>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1526981699000)
++++ .idea/workspace.xml	(date 1526983038599)
+@@ -10,51 +10,8 @@
+     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="9f60721d-ded5-49bc-8065-07b7eb82ab26" name="Default" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/CircularReveal_1_0_4.xml" afterPath="" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_0_0.xml" afterPath="" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/butterknife_6_1_0.xml" afterPath="" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/com_android_volley_2015_05_28.xml" afterPath="" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/library_2_4_0.xml" afterPath="" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/pixlui.xml" afterPath="" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/realm_android_0_83_0.xml" afterPath="" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/shimmer_0_1_0.xml" afterPath="" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_0_0.xml" afterPath="" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_0_0.xml" afterPath="" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
++    <list default="true" id="9f60721d-ded5-49bc-8065-07b7eb82ab26" name="Default" comment="cost and duration,&#10;my appointments crash fix">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+-      <change beforePath="$PROJECT_DIR$/Calendarlibrary/Calendarlibrary.iml" afterPath="$PROJECT_DIR$/Calendarlibrary/Calendarlibrary.iml" />
+-      <change beforePath="$PROJECT_DIR$/Calendarlibrary/build/generated/source/r/debug/com/imanoweb/calendarview/R.java" afterPath="$PROJECT_DIR$/Calendarlibrary/build/generated/source/r/debug/com/imanoweb/calendarview/R.java" />
+-      <change beforePath="$PROJECT_DIR$/Calendarlibrary/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/Calendarlibrary/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
+-      <change beforePath="$PROJECT_DIR$/Calendarlibrary/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/Calendarlibrary/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
+-      <change beforePath="$PROJECT_DIR$/Calendarlibrary/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/Calendarlibrary/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" />
+-      <change beforePath="$PROJECT_DIR$/Calendarlibrary/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/Calendarlibrary/build/intermediates/incremental/packageDebugResources/merger.xml" />
+-      <change beforePath="$PROJECT_DIR$/Calendarlibrary/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/Calendarlibrary/build/intermediates/incremental/packageReleaseResources/merger.xml" />
+-      <change beforePath="$PROJECT_DIR$/Calendarlibrary/build/outputs/aar/Calendarlibrary-debug.aar" afterPath="$PROJECT_DIR$/Calendarlibrary/build/outputs/aar/Calendarlibrary-debug.aar" />
+-      <change beforePath="$PROJECT_DIR$/Calendarlibrary/build/outputs/aar/Calendarlibrary-release.aar" afterPath="$PROJECT_DIR$/Calendarlibrary/build/outputs/aar/Calendarlibrary-release.aar" />
+-      <change beforePath="$PROJECT_DIR$/animator/animator.iml" afterPath="$PROJECT_DIR$/animator/animator.iml" />
+-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" />
+-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
+-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/cardview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/cardview/R.java" />
+-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" />
+-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/lenovo/SpaApp/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/lenovo/SpaApp/R.java" />
+-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/facebook/shimmer/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/facebook/shimmer/R.java" />
+-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/imanoweb/calendarview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/imanoweb/calendarview/R.java" />
+-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/yalantis/guillotine/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/yalantis/guillotine/R.java" />
+-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/tyrant/explosionfield/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/tyrant/explosionfield/R.java" />
+-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
+-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/CorporateEnquiriesMVC/CorporateFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/CorporateEnquiriesMVC/CorporateFragment.java" />
+-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Utils/Validation.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Utils/Validation.java" />
+-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/appointment_activity.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/appointment_activity.xml" />
+-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+-      <change beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+-      <change beforePath="$PROJECT_DIR$/explosionfield/explosionfield.iml" afterPath="$PROJECT_DIR$/explosionfield/explosionfield.iml" />
+-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+-      <change beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+-      <change beforePath="$PROJECT_DIR$/mcalendarview/mcalendarview.iml" afterPath="$PROJECT_DIR$/mcalendarview/mcalendarview.iml" />
+-      <change beforePath="$PROJECT_DIR$/menulibrary/menulibrary.iml" afterPath="$PROJECT_DIR$/menulibrary/menulibrary.iml" />
+     </list>
+     <ignored path="SpaApp.iws" />
+     <ignored path=".idea/workspace.xml" />
+@@ -89,8 +46,8 @@
+       <file leaf-file-name="HomeFragment.java" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/HomeFragmentMVC/HomeFragment.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="99">
+-              <caret line="85" column="23" lean-forward="true" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
++            <state relative-caret-position="918">
++              <caret line="85" column="23" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+               <folding />
+             </state>
+           </provider>
+@@ -99,7 +56,7 @@
+       <file leaf-file-name="AppointmentDescriptionActivity.java" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/AppointmentDescriptionActivity.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="187">
++            <state relative-caret-position="697">
+               <caret line="60" column="40" lean-forward="false" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+               <folding />
+             </state>
+@@ -114,9 +71,7 @@
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="157">
+               <caret line="192" column="56" lean-forward="false" selection-start-line="192" selection-start-column="56" selection-end-line="192" selection-end-column="56" />
+-              <folding>
+-                <element signature="e#9371#9440#0" expanded="true" />
+-              </folding>
++              <folding />
+             </state>
+           </provider>
+         </entry>
+@@ -126,9 +81,7 @@
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="459">
+               <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+-              <folding>
+-                <element signature="e#1797#1839#0" expanded="true" />
+-              </folding>
++              <folding />
+             </state>
+           </provider>
+         </entry>
+@@ -136,7 +89,7 @@
+       <file leaf-file-name="CallWebService.java" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Utils/CallWebService.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="303">
++            <state relative-caret-position="1003">
+               <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+               <folding />
+             </state>
+@@ -146,7 +99,7 @@
+       <file leaf-file-name="ThirdFragment.java" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/AppIntro/ThirdFragment.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="170">
++            <state relative-caret-position="731">
+               <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+               <folding />
+             </state>
+@@ -6722,7 +6675,6 @@
+       <foldersAlwaysOnTop value="true" />
+     </navigator>
+     <panes>
+-      <pane id="PackagesPane" />
+       <pane id="ProjectPane">
+         <subPane>
+           <expand>
+@@ -6769,9 +6721,10 @@
+           <select />
+         </subPane>
+       </pane>
++      <pane id="Scratches" />
+       <pane id="AndroidView" />
+       <pane id="Scope" />
+-      <pane id="Scratches" />
++      <pane id="PackagesPane" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
+@@ -7206,9 +7159,8 @@
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+-    <editor active="true" />
+     <layout>
+-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+@@ -7219,17 +7171,17 @@
+       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.023890786" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15110357" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15110357" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28366113" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
++      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06281833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06281833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+@@ -7791,7 +7743,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="203">
+           <caret line="360" column="38" lean-forward="false" selection-start-line="360" selection-start-column="38" selection-end-line="360" selection-end-column="38" />
+-          <folding />
+         </state>
+       </provider>
+     </entry>
+@@ -7809,7 +7760,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="204">
+           <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+-          <folding />
+         </state>
+       </provider>
+     </entry>
+@@ -7817,7 +7767,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="119">
+           <caret line="73" column="61" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="61" />
+-          <folding />
+         </state>
+       </provider>
+     </entry>
+@@ -7825,9 +7774,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="436">
+           <caret line="119" column="1" lean-forward="false" selection-start-line="119" selection-start-column="1" selection-end-line="119" selection-end-column="1" />
+-          <folding>
+-            <element signature="imports" expanded="false" />
+-          </folding>
+         </state>
+       </provider>
+     </entry>
+@@ -7835,7 +7781,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="255">
+           <caret line="16" column="17" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="16" selection-end-column="17" />
+-          <folding />
+         </state>
+       </provider>
+     </entry>
+@@ -7851,15 +7796,13 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="459">
+           <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+-          <folding>
+-            <element signature="e#1797#1839#0" expanded="true" />
+-          </folding>
++          <folding />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/AppIntro/ThirdFragment.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="170">
++        <state relative-caret-position="731">
+           <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+           <folding />
+         </state>
+@@ -7867,7 +7810,7 @@
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/Utils/CallWebService.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="303">
++        <state relative-caret-position="1003">
+           <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+           <folding />
+         </state>
+@@ -7875,15 +7818,15 @@
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/HomeFragmentMVC/HomeFragment.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="99">
+-          <caret line="85" column="23" lean-forward="true" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
++        <state relative-caret-position="918">
++          <caret line="85" column="23" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lenovo/SpaApp/AppointmentDescriptionActivity.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="187">
++        <state relative-caret-position="697">
+           <caret line="60" column="40" lean-forward="false" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+           <folding />
+         </state>
+@@ -7896,9 +7839,7 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="157">
+           <caret line="192" column="56" lean-forward="false" selection-start-line="192" selection-start-column="56" selection-end-line="192" selection-end-column="56" />
+-          <folding>
+-            <element signature="e#9371#9440#0" expanded="true" />
+-          </folding>
++          <folding />
+         </state>
+       </provider>
+     </entry>

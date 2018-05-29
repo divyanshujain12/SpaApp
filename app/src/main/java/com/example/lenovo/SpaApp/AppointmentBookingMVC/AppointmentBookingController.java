@@ -13,6 +13,7 @@ import com.example.lenovo.SpaApp.Utils.CallWebService;
 import com.example.lenovo.SpaApp.Utils.CommonFunctions;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.ParsingResponse;
+import com.github.badoualy.datepicker.DatePickerTimeline;
 import com.imanoweb.calendarview.CalendarListener;
 import com.neopixl.pixlui.components.textview.TextView;
 
@@ -23,6 +24,7 @@ import org.json.JSONObject;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
@@ -51,22 +53,39 @@ public class AppointmentBookingController extends AppointmentBookingActivity imp
 
         quantitySP.setOnItemSelectedListener(this);
         availableDurationSP.setOnItemSelectedListener(this);
-        calendarView.setCalendarListener(new CalendarListener() {
+
+        calendarVW.setOnDateSelectedListener(new DatePickerTimeline.OnDateSelectedListener() {
             @Override
-            public void onDateSelected(Date date) {
+            public void onDateSelected(int year, int month, int day, int index) {
+                Calendar calendar = Calendar.getInstance();
+                calendar.set(Calendar.YEAR, year);
+                calendar.set(Calendar.MONTH, month);
+                calendar.set(Calendar.DAY_OF_MONTH, day);
+                Date date = calendar.getTime();
                 SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
                 dateString = df.format(date);
 
                 getAvailableSlots(dateString);
-                //   Toast.makeText(AppointmentBookingController.this, dateString, Toast.LENGTH_SHORT).show();
-            }
 
-            @Override
-            public void onMonthChanged(Date date) {
-                SimpleDateFormat df = new SimpleDateFormat("MM-yyyy");
-                //   Toast.makeText(AppointmentBookingController.this, df.format(date), Toast.LENGTH_SHORT).show();
             }
         });
+
+//        calendarView.setCalendarListener(new CalendarListener() {
+//            @Override
+//            public void onDateSelected(Date date) {
+//                SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+//                dateString = df.format(date);
+//
+//                getAvailableSlots(dateString);
+//                //   Toast.makeText(AppointmentBookingController.this, dateString, Toast.LENGTH_SHORT).show();
+//            }
+//
+//            @Override
+//            public void onMonthChanged(Date date) {
+//                SimpleDateFormat df = new SimpleDateFormat("MM-yyyy");
+//                //   Toast.makeText(AppointmentBookingController.this, df.format(date), Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
     }
 

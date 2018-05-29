@@ -1,6 +1,7 @@
 package com.example.lenovo.SpaApp.AppointmentBookingMVC;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
@@ -16,13 +17,12 @@ import com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController;
 import com.example.lenovo.SpaApp.Interfaces.AlertDialogInterface;
 import com.example.lenovo.SpaApp.Models.ProductModel;
 import com.example.lenovo.SpaApp.Models.ServiceModel;
-import com.example.lenovo.SpaApp.Models.ValidationModel;
 import com.example.lenovo.SpaApp.MyCartMVC.MyCartController;
 import com.example.lenovo.SpaApp.R;
 import com.example.lenovo.SpaApp.Utils.AlertMessage;
 import com.example.lenovo.SpaApp.Utils.Constants;
 import com.example.lenovo.SpaApp.Utils.MySharedPereference;
-import com.example.lenovo.SpaApp.Utils.Validation;
+import com.github.badoualy.datepicker.DatePickerTimeline;
 import com.imanoweb.calendarview.CustomCalendarView;
 import com.neopixl.pixlui.components.checkbox.CheckBox;
 import com.neopixl.pixlui.components.edittext.EditText;
@@ -81,17 +81,20 @@ class AppointmentBookingActivity extends GlobalActivity implements AdapterView.O
     TextView durationTV;
     @InjectView(R.id.priceTV)
     TextView priceTV;
+    @InjectView(R.id.calendarVW)
+    DatePickerTimeline calendarVW;
     private boolean ifExpand = true;
     protected String[] availableDurations = null;
     protected AppointmentBookingModel appointmentBookingModel = null;
     protected ArrayAdapter<CharSequence> arrayAdapter;
-    protected String categoryNameString, nameString, numberString, emailString, addressString, dateString, timeString, additionalString,zipCodeString;
+    protected String categoryNameString, nameString, numberString, emailString, addressString, dateString, timeString, additionalString, zipCodeString;
 
     String selectedDuration = "", selectedQuantity = "1";
     protected ServiceModel serviceModel;
     protected ProductModel productModel;
     protected String[] therapistArray;
     String therapistType;
+    private Calendar calendar;
 
 
     @Override
@@ -138,11 +141,16 @@ class AppointmentBookingActivity extends GlobalActivity implements AdapterView.O
 
         calendarView.setFirstDayOfWeek(Calendar.MONDAY);
 
-        calendarView.setShowOverflowDate(false);
+        calendarView.setShowOverflowDate(true);
+
+        calendarView.setShowDividers(LinearLayout.SHOW_DIVIDER_MIDDLE);
+
 
         calendarView.refreshCalendar(currentCalendar);
 
         calendarView.setCustomTypeface(Typeface.createFromAsset(getAssets(), "fonts/Titillium-Regular.otf"));
+
+        setupCalendar();
 
         availableDurations = productModel.getDuration().trim().split(",");
 
@@ -160,6 +168,18 @@ class AppointmentBookingActivity extends GlobalActivity implements AdapterView.O
         else
             bookingMassageLL.setVisibility(View.GONE);
 
+    }
+
+    private void setupCalendar() {
+        calendar = Calendar.getInstance();
+        calendarVW.setFirstVisibleDate(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
+        calendar.add(Calendar.MONTH, 1);
+        calendarVW.setLastVisibleDate(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
+        calendarVW.getMonthView().setColorBeforeSelection(Color.parseColor("#ffffff"));
+        calendarVW.getMonthView().setColorSelected(Color.parseColor("#ffffff"));
+        calendarVW.getMonthView().setDefaultColor(Color.parseColor("#ffffff"));
+        calendarVW.getMonthView().setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        calendarVW.centerOnSelection();
     }
 
     private void initDataForMassageCategory() {

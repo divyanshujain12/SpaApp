@@ -81,7 +81,8 @@ public class HomeFragment extends GlobalFragment {
         servicesRV = (RecyclerView) view.findViewById(R.id.servicesRV);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
         servicesRV.setHasFixedSize(true);
-        servicesRV.setLayoutManager(new LinearLayoutManager(getContext()));
+        servicesRV.setLayoutManager(gridLayoutManager
+        );
         sheetsView = (LinearLayout) view.findViewById(R.id.sheetsView);
         mParent = view;
         mBluePair = (FrameLayout) view.findViewById(R.id.transition_blue_pair);

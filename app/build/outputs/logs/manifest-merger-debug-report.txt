@@ -1,236 +1,311 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
-MERGED from [com.android.support:design:23.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\design-23.1.0.aar\8d0de861787d39f86d8a01866a767a74\AndroidManifest.xml:17:1-24:12
-MERGED from [com.dev.sacot41:scviewpager:0.0.4] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\scviewpager-0.0.4.aar\03676c64dbafcab02c37017e392a59d6\AndroidManifest.xml:2:1-16:12
-MERGED from [com.android.support:appcompat-v7:23.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.1.0.aar\f48d699b0f381368a7b617f5c3360ffe\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:recyclerview-v7:23.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-23.1.0.aar\598fb0e09c3bc28c4ec51ea446172918\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:23.0.1] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.0.1.aar\a0421953ac167fd660fa24fecae1420e\AndroidManifest.xml:17:1-24:12
-MERGED from [:explosionfield] D:\Projects\SpaApp\explosionfield\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-16:12
-MERGED from [com.facebook.shimmer:shimmer:0.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\shimmer-0.1.0.aar\43b7eccc3e72f38982c7b4131b432746\AndroidManifest.xml:2:1-11:12
-MERGED from [com.github.ozodrukh:CircularReveal:1.0.4] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\CircularReveal-1.0.4.aar\1eed8d6843f566f108f8d86e6444eaa1\AndroidManifest.xml:2:1-12:12
-MERGED from [:animator] D:\Projects\SpaApp\animator\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-14:12
-MERGED from [:menulibrary] D:\Projects\SpaApp\menulibrary\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-14:12
-MERGED from [:Calendarlibrary] D:\Projects\SpaApp\Calendarlibrary\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-6:12
-MERGED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\3297bbf9270a0b473e93ec1cd7b933f3\AndroidManifest.xml:17:1-30:12
-MERGED from [com.android.support:support-v4:23.1.1] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\support-v4-23.1.1.aar\240ff706267be76b9f3b81a985fbd719\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
+INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
+INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
+INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
+MERGED from [com.android.support:design:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\ed5c23a145663ca34f7064ad7c50d2a3\AndroidManifest.xml:17:1-31:12
+MERGED from [com.github.badoualy:datepicker-timeline:c6dcd05737] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\datepicker-timeline-c6dcd05737.aar\e9ebb42b35e3f282cc0654eb6ee54e10\AndroidManifest.xml:2:1-13:12
+MERGED from [com.dev.sacot41:scviewpager:0.0.4] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\scviewpager-0.0.4.aar\ea1d3201be5452cf1e2f97d9b91b5705\AndroidManifest.xml:2:1-16:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\dccd794d779377a1c9e948212e09d6ca\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\b4c41f24258df5d7baa27f7e387f3e54\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.0.1.aar\1ea12740420a143a0891f94bb76a2608\AndroidManifest.xml:17:1-24:12
+MERGED from [:explosionfield] D:\prs\SpaApp\explosionfield\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-16:12
+MERGED from [com.facebook.shimmer:shimmer:0.1.0] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\shimmer-0.1.0.aar\4296e5747ae56b87933b0d01b34f0922\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.ozodrukh:CircularReveal:1.0.4] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\CircularReveal-1.0.4.aar\e4248f38cd03938d7cde0210cd09d3bc\AndroidManifest.xml:2:1-12:12
+MERGED from [:animator] D:\prs\SpaApp\animator\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-14:12
+MERGED from [:menulibrary] D:\prs\SpaApp\menulibrary\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-13:12
+MERGED from [:Calendarlibrary] D:\prs\SpaApp\Calendarlibrary\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-5:12
+MERGED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\2afd7319d459a5917424e9408bded803\AndroidManifest.xml:17:1-30:12
+MERGED from [com.android.support:transition:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\23ab6b91e43e64f5d24cdc41a2e62ab7\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\017f09c1219c35145493b2596fbd8841\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a93d0adc079d19a7bb662be02467313e\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\df65207559548822816dc9e97a57fafa\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\ebe22fa8093b9d6d5bcdc3ca97558f9e\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\096597b99076690bd179aab53b19e3d3\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\5e33763f31b6d1d44cefee9f57b7deda\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf177519bf902d11a2766ddd4a259bbc\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\80a09910e6166b2227583695331865e2\AndroidManifest.xml:17:1-31:12
+INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
+INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
+INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:2:1-81:12
 	package
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:3:5-40
-		INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:23.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\design-23.1.0.aar\8d0de861787d39f86d8a01866a767a74\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:23.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\design-23.1.0.aar\8d0de861787d39f86d8a01866a767a74\AndroidManifest.xml:20:5-43
-MERGED from [com.dev.sacot41:scviewpager:0.0.4] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\scviewpager-0.0.4.aar\03676c64dbafcab02c37017e392a59d6\AndroidManifest.xml:7:5-9:41
-MERGED from [com.dev.sacot41:scviewpager:0.0.4] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\scviewpager-0.0.4.aar\03676c64dbafcab02c37017e392a59d6\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.1.0.aar\f48d699b0f381368a7b617f5c3360ffe\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.1.0.aar\f48d699b0f381368a7b617f5c3360ffe\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-23.1.0.aar\598fb0e09c3bc28c4ec51ea446172918\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-23.1.0.aar\598fb0e09c3bc28c4ec51ea446172918\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:23.0.1] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.0.1.aar\a0421953ac167fd660fa24fecae1420e\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:23.0.1] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.0.1.aar\a0421953ac167fd660fa24fecae1420e\AndroidManifest.xml:20:5-43
-MERGED from [:explosionfield] D:\Projects\SpaApp\explosionfield\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:explosionfield] D:\Projects\SpaApp\explosionfield\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.shimmer:shimmer:0.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\shimmer-0.1.0.aar\43b7eccc3e72f38982c7b4131b432746\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.shimmer:shimmer:0.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\shimmer-0.1.0.aar\43b7eccc3e72f38982c7b4131b432746\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.ozodrukh:CircularReveal:1.0.4] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\CircularReveal-1.0.4.aar\1eed8d6843f566f108f8d86e6444eaa1\AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.ozodrukh:CircularReveal:1.0.4] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\CircularReveal-1.0.4.aar\1eed8d6843f566f108f8d86e6444eaa1\AndroidManifest.xml:6:5-8:41
-MERGED from [:animator] D:\Projects\SpaApp\animator\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:animator] D:\Projects\SpaApp\animator\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:menulibrary] D:\Projects\SpaApp\menulibrary\build\intermediates\manifests\full\debug\AndroidManifest.xml:8:5-10:41
-MERGED from [:menulibrary] D:\Projects\SpaApp\menulibrary\build\intermediates\manifests\full\debug\AndroidManifest.xml:8:5-10:41
-MERGED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\3297bbf9270a0b473e93ec1cd7b933f3\AndroidManifest.xml:22:5-24:41
-MERGED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\3297bbf9270a0b473e93ec1cd7b933f3\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:23.1.1] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\support-v4-23.1.1.aar\240ff706267be76b9f3b81a985fbd719\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\support-v4-23.1.1.aar\240ff706267be76b9f3b81a985fbd719\AndroidManifest.xml:20:5-43
-INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:7:5-9:41
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\ed5c23a145663ca34f7064ad7c50d2a3\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\ed5c23a145663ca34f7064ad7c50d2a3\AndroidManifest.xml:21:5-23:62
+MERGED from [com.github.badoualy:datepicker-timeline:c6dcd05737] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\datepicker-timeline-c6dcd05737.aar\e9ebb42b35e3f282cc0654eb6ee54e10\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.badoualy:datepicker-timeline:c6dcd05737] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\datepicker-timeline-c6dcd05737.aar\e9ebb42b35e3f282cc0654eb6ee54e10\AndroidManifest.xml:7:5-9:41
+MERGED from [com.dev.sacot41:scviewpager:0.0.4] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\scviewpager-0.0.4.aar\ea1d3201be5452cf1e2f97d9b91b5705\AndroidManifest.xml:7:5-9:41
+MERGED from [com.dev.sacot41:scviewpager:0.0.4] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\scviewpager-0.0.4.aar\ea1d3201be5452cf1e2f97d9b91b5705\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\dccd794d779377a1c9e948212e09d6ca\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\dccd794d779377a1c9e948212e09d6ca\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\b4c41f24258df5d7baa27f7e387f3e54\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\b4c41f24258df5d7baa27f7e387f3e54\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.0.1.aar\1ea12740420a143a0891f94bb76a2608\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.0.1.aar\1ea12740420a143a0891f94bb76a2608\AndroidManifest.xml:20:5-43
+MERGED from [:explosionfield] D:\prs\SpaApp\explosionfield\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:explosionfield] D:\prs\SpaApp\explosionfield\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.shimmer:shimmer:0.1.0] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\shimmer-0.1.0.aar\4296e5747ae56b87933b0d01b34f0922\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.shimmer:shimmer:0.1.0] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\shimmer-0.1.0.aar\4296e5747ae56b87933b0d01b34f0922\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.ozodrukh:CircularReveal:1.0.4] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\CircularReveal-1.0.4.aar\e4248f38cd03938d7cde0210cd09d3bc\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.ozodrukh:CircularReveal:1.0.4] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\CircularReveal-1.0.4.aar\e4248f38cd03938d7cde0210cd09d3bc\AndroidManifest.xml:6:5-8:41
+MERGED from [:animator] D:\prs\SpaApp\animator\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:animator] D:\prs\SpaApp\animator\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:menulibrary] D:\prs\SpaApp\menulibrary\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:menulibrary] D:\prs\SpaApp\menulibrary\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\2afd7319d459a5917424e9408bded803\AndroidManifest.xml:22:5-24:41
+MERGED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\2afd7319d459a5917424e9408bded803\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\23ab6b91e43e64f5d24cdc41a2e62ab7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\23ab6b91e43e64f5d24cdc41a2e62ab7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\017f09c1219c35145493b2596fbd8841\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\017f09c1219c35145493b2596fbd8841\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a93d0adc079d19a7bb662be02467313e\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a93d0adc079d19a7bb662be02467313e\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\df65207559548822816dc9e97a57fafa\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\df65207559548822816dc9e97a57fafa\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\ebe22fa8093b9d6d5bcdc3ca97558f9e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\ebe22fa8093b9d6d5bcdc3ca97558f9e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\096597b99076690bd179aab53b19e3d3\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\096597b99076690bd179aab53b19e3d3\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\5e33763f31b6d1d44cefee9f57b7deda\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\5e33763f31b6d1d44cefee9f57b7deda\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf177519bf902d11a2766ddd4a259bbc\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf177519bf902d11a2766ddd4a259bbc\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\80a09910e6166b2227583695331865e2\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\80a09910e6166b2227583695331865e2\AndroidManifest.xml:21:5-23:58
+INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\ed5c23a145663ca34f7064ad7c50d2a3\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:9:9-38
-		INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:8:9-35
-		INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:11:5-67
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:11:22-64
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:11:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:12:5-79
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:12:22-76
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:12:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:13:5-80
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:13:5-80
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:13:22-77
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:13:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:14:5-81
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:14:5-81
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:14:22-78
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:14:22-78
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:15:5-71
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:15:5-71
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:15:22-68
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:15:22-68
 uses-permission#android.permission.WAKE_LOCK
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:16:5-68
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:16:5-68
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:16:22-65
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:16:22-65
 uses-permission#android.permission.USE_CREDENTIALS
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:17:5-74
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:17:5-74
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:17:22-71
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:17:22-71
 uses-permission#android.permission.CLEAR_APP_CACHE
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:18:5-74
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:18:5-74
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:18:22-71
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:18:22-71
 uses-permission#android.permission.READ_CALENDAR
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:19:5-72
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:19:5-72
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:19:22-69
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:19:22-69
 uses-permission#android.permission.WRITE_CALENDAR
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:20:5-73
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:20:5-73
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:20:22-70
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:20:22-70
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:22:5-75
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:22:5-75
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:22:22-72
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:22:22-72
 application
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:24:5-79:19
-MERGED from [com.android.support:design:23.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\design-23.1.0.aar\8d0de861787d39f86d8a01866a767a74\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:23.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\design-23.1.0.aar\8d0de861787d39f86d8a01866a767a74\AndroidManifest.xml:22:5-20
-MERGED from [com.dev.sacot41:scviewpager:0.0.4] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\scviewpager-0.0.4.aar\03676c64dbafcab02c37017e392a59d6\AndroidManifest.xml:11:5-14:19
-MERGED from [com.dev.sacot41:scviewpager:0.0.4] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\scviewpager-0.0.4.aar\03676c64dbafcab02c37017e392a59d6\AndroidManifest.xml:11:5-14:19
-MERGED from [com.android.support:appcompat-v7:23.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.1.0.aar\f48d699b0f381368a7b617f5c3360ffe\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.1.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.1.0.aar\f48d699b0f381368a7b617f5c3360ffe\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:23.0.1] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.0.1.aar\a0421953ac167fd660fa24fecae1420e\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:23.0.1] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.0.1.aar\a0421953ac167fd660fa24fecae1420e\AndroidManifest.xml:22:5-20
-MERGED from [:explosionfield] D:\Projects\SpaApp\explosionfield\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-14:19
-MERGED from [:explosionfield] D:\Projects\SpaApp\explosionfield\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-14:19
-MERGED from [com.github.ozodrukh:CircularReveal:1.0.4] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\CircularReveal-1.0.4.aar\1eed8d6843f566f108f8d86e6444eaa1\AndroidManifest.xml:10:5-20
-MERGED from [com.github.ozodrukh:CircularReveal:1.0.4] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\CircularReveal-1.0.4.aar\1eed8d6843f566f108f8d86e6444eaa1\AndroidManifest.xml:10:5-20
-MERGED from [:animator] D:\Projects\SpaApp\animator\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-12:19
-MERGED from [:animator] D:\Projects\SpaApp\animator\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-12:19
-MERGED from [:menulibrary] D:\Projects\SpaApp\menulibrary\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-20
-MERGED from [:menulibrary] D:\Projects\SpaApp\menulibrary\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-20
-MERGED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\3297bbf9270a0b473e93ec1cd7b933f3\AndroidManifest.xml:28:5-20
-MERGED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\3297bbf9270a0b473e93ec1cd7b933f3\AndroidManifest.xml:28:5-20
-MERGED from [com.android.support:support-v4:23.1.1] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\support-v4-23.1.1.aar\240ff706267be76b9f3b81a985fbd719\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\support-v4-23.1.1.aar\240ff706267be76b9f3b81a985fbd719\AndroidManifest.xml:22:5-20
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:24:5-79:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\ed5c23a145663ca34f7064ad7c50d2a3\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\ed5c23a145663ca34f7064ad7c50d2a3\AndroidManifest.xml:29:5-20
+MERGED from [com.github.badoualy:datepicker-timeline:c6dcd05737] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\datepicker-timeline-c6dcd05737.aar\e9ebb42b35e3f282cc0654eb6ee54e10\AndroidManifest.xml:11:5-47
+MERGED from [com.github.badoualy:datepicker-timeline:c6dcd05737] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\datepicker-timeline-c6dcd05737.aar\e9ebb42b35e3f282cc0654eb6ee54e10\AndroidManifest.xml:11:5-47
+MERGED from [com.dev.sacot41:scviewpager:0.0.4] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\scviewpager-0.0.4.aar\ea1d3201be5452cf1e2f97d9b91b5705\AndroidManifest.xml:11:5-14:19
+MERGED from [com.dev.sacot41:scviewpager:0.0.4] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\scviewpager-0.0.4.aar\ea1d3201be5452cf1e2f97d9b91b5705\AndroidManifest.xml:11:5-14:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\dccd794d779377a1c9e948212e09d6ca\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\dccd794d779377a1c9e948212e09d6ca\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.0.1.aar\1ea12740420a143a0891f94bb76a2608\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.0.1.aar\1ea12740420a143a0891f94bb76a2608\AndroidManifest.xml:22:5-20
+MERGED from [:explosionfield] D:\prs\SpaApp\explosionfield\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-14:19
+MERGED from [:explosionfield] D:\prs\SpaApp\explosionfield\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-14:19
+MERGED from [com.github.ozodrukh:CircularReveal:1.0.4] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\CircularReveal-1.0.4.aar\e4248f38cd03938d7cde0210cd09d3bc\AndroidManifest.xml:10:5-20
+MERGED from [com.github.ozodrukh:CircularReveal:1.0.4] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\CircularReveal-1.0.4.aar\e4248f38cd03938d7cde0210cd09d3bc\AndroidManifest.xml:10:5-20
+MERGED from [:animator] D:\prs\SpaApp\animator\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-12:19
+MERGED from [:animator] D:\prs\SpaApp\animator\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-12:19
+MERGED from [:menulibrary] D:\prs\SpaApp\menulibrary\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-20
+MERGED from [:menulibrary] D:\prs\SpaApp\menulibrary\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-20
+MERGED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\2afd7319d459a5917424e9408bded803\AndroidManifest.xml:28:5-20
+MERGED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\2afd7319d459a5917424e9408bded803\AndroidManifest.xml:28:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\23ab6b91e43e64f5d24cdc41a2e62ab7\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\23ab6b91e43e64f5d24cdc41a2e62ab7\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\017f09c1219c35145493b2596fbd8841\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\017f09c1219c35145493b2596fbd8841\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a93d0adc079d19a7bb662be02467313e\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a93d0adc079d19a7bb662be02467313e\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\df65207559548822816dc9e97a57fafa\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\df65207559548822816dc9e97a57fafa\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\ebe22fa8093b9d6d5bcdc3ca97558f9e\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\ebe22fa8093b9d6d5bcdc3ca97558f9e\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\096597b99076690bd179aab53b19e3d3\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\096597b99076690bd179aab53b19e3d3\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\5e33763f31b6d1d44cefee9f57b7deda\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\5e33763f31b6d1d44cefee9f57b7deda\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf177519bf902d11a2766ddd4a259bbc\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf177519bf902d11a2766ddd4a259bbc\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\80a09910e6166b2227583695331865e2\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\80a09910e6166b2227583695331865e2\AndroidManifest.xml:29:5-20
 	android:supportsRtl
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:28:9-35
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:28:9-35
 	android:label
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:27:9-41
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:27:9-41
 	android:allowBackup
-		ADDED from [com.dev.sacot41:scviewpager:0.0.4] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\scviewpager-0.0.4.aar\03676c64dbafcab02c37017e392a59d6\AndroidManifest.xml:12:9-35
+		ADDED from [com.github.badoualy:datepicker-timeline:c6dcd05737] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\datepicker-timeline-c6dcd05737.aar\e9ebb42b35e3f282cc0654eb6ee54e10\AndroidManifest.xml:11:18-44
 	android:icon
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:26:9-43
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:26:9-43
 	android:theme
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:29:9-40
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:29:9-40
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:25:9-38
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:25:9-38
 activity#com.example.lenovo.SpaApp.SplashActivity
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:30:9-39:20
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:30:9-39:20
 	android:label
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:32:13-45
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:32:13-45
 	android:theme
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:33:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:33:13-56
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:31:13-43
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:31:13-43
 activity#com.example.lenovo.SpaApp.MainActivity
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:40:9-43:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:40:9-43:59
 	android:label
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:42:13-41
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:42:13-41
 	android:theme
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:43:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:43:13-56
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:41:13-41
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:41:13-41
 activity#com.example.lenovo.SpaApp.ForgotPassword
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:44:9-46:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:44:9-46:59
 	android:theme
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:46:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:46:13-56
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:45:13-43
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:45:13-43
 activity#com.example.lenovo.SpaApp.AppIntro.AppIntroActivity
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:47:9-58:20
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:47:9-58:20
 	android:screenOrientation
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:50:13-49
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:50:13-49
 	android:configChanges
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:49:13-57
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:49:13-57
 	android:theme
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:51:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:51:13-56
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:48:13-54
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:53:16-57:32
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:48:13-54
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:53:16-57:32
 action#android.intent.action.MAIN
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:54:20-72
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:54:20-72
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:54:28-69
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:54:28-69
 category#android.intent.category.LAUNCHER
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:56:20-80
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:56:20-80
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:56:30-77
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:56:30-77
 activity#com.example.lenovo.SpaApp.HomeActivityMVC.HomeActivityController
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:59:9-62:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:59:9-62:59
 	android:launchMode
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:61:13-44
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:61:13-44
 	android:theme
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:62:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:62:13-56
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:60:13-67
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:60:13-67
 activity#com.example.lenovo.SpaApp.SelectCityActivity
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:63:9-65:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:63:9-65:59
 	android:theme
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:65:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:65:13-56
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:64:13-47
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:64:13-47
 activity#com.example.lenovo.SpaApp.AppointmentDescriptionActivity
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:66:9-68:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:66:9-68:59
 	android:theme
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:68:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:68:13-56
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:67:13-59
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:67:13-59
 activity#com.example.lenovo.SpaApp.AppointmentBookingMVC.AppointmentBookingController
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:70:9-72:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:70:9-72:59
 	android:theme
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:72:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:72:13-56
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:71:13-79
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:71:13-79
 activity#com.example.lenovo.SpaApp.MyCartMVC.MyCartController
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:73:9-75:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:73:9-75:59
 	android:theme
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:75:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:75:13-56
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:74:13-55
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:74:13-55
 activity#com.example.lenovo.SpaApp.CategoryProducts.ProductsActivity
-ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:76:9-78:59
+ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:76:9-78:59
 	android:theme
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:78:13-56
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:78:13-56
 	android:name
-		ADDED from D:\Projects\SpaApp\app\src\main\AndroidManifest.xml:77:13-62
+		ADDED from D:\prs\SpaApp\app\src\main\AndroidManifest.xml:77:13-62
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\ed5c23a145663ca34f7064ad7c50d2a3\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\dccd794d779377a1c9e948212e09d6ca\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\dccd794d779377a1c9e948212e09d6ca\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\b4c41f24258df5d7baa27f7e387f3e54\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\b4c41f24258df5d7baa27f7e387f3e54\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\23ab6b91e43e64f5d24cdc41a2e62ab7\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\23ab6b91e43e64f5d24cdc41a2e62ab7\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\017f09c1219c35145493b2596fbd8841\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\017f09c1219c35145493b2596fbd8841\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a93d0adc079d19a7bb662be02467313e\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a93d0adc079d19a7bb662be02467313e\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\df65207559548822816dc9e97a57fafa\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\df65207559548822816dc9e97a57fafa\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\ebe22fa8093b9d6d5bcdc3ca97558f9e\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\ebe22fa8093b9d6d5bcdc3ca97558f9e\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\096597b99076690bd179aab53b19e3d3\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\096597b99076690bd179aab53b19e3d3\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\5e33763f31b6d1d44cefee9f57b7deda\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\5e33763f31b6d1d44cefee9f57b7deda\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf177519bf902d11a2766ddd4a259bbc\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf177519bf902d11a2766ddd4a259bbc\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\80a09910e6166b2227583695331865e2\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\80a09910e6166b2227583695331865e2\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\ed5c23a145663ca34f7064ad7c50d2a3\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\ed5c23a145663ca34f7064ad7c50d2a3\AndroidManifest.xml:26:9-47
 uses-permission#android.permission.VIBRATE
-ADDED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\3297bbf9270a0b473e93ec1cd7b933f3\AndroidManifest.xml:26:5-66
+ADDED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\2afd7319d459a5917424e9408bded803\AndroidManifest.xml:26:5-66
 	android:name
-		ADDED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshuPC\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\3297bbf9270a0b473e93ec1cd7b933f3\AndroidManifest.xml:26:22-63
+		ADDED from [com.wdullaer:materialdatetimepicker:2.5.0] C:\Users\divyanshu.jain\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-2.5.0.aar\2afd7319d459a5917424e9408bded803\AndroidManifest.xml:26:22-63

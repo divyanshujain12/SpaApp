@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <com.neopixl.pixlui.components.textview.TextView
         android:layout_width="wrap_content"
@@ -18,6 +16,17 @@
         android:textSize="@dimen/eighteen_sp"
         pixlui:typeface="Titillium-Bold.otf" />
 
+
+    <com.github.badoualy.datepicker.DatePickerTimeline
+        android:id="@+id/calendarVW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mti_bgLblDateSelectedColor="@color/background_dark"
+        app:mti_bgLblTodayColor="@color/background_dark"
+        app:mti_lblLabelColor="@color/background_dark"
+        app:mti_primaryColor="@color/colorPrimary"
+        app:mti_primaryDarkColor="@color/background_dark" />
+
     <com.imanoweb.calendarview.CustomCalendarView
         android:id="@+id/calendar_view"
         android:layout_width="match_parent"
@@ -28,6 +37,7 @@
         app:currentDayOfMonthColor="@color/background_bottom_color"
         app:dayOfMonthTextColor="@color/black"
         app:dayOfWeekTextColor="@color/black"
+        android:visibility="gone"
         app:disabledDayBackgroundColor="@android:color/white"
         app:disabledDayTextColor="@android:color/darker_gray"
         app:selectedDayBackgroundColor="@color/background_bottom_color"
